@@ -1,0 +1,235 @@
+[
+  {
+    "id": "K-01",
+    "title": "Right plant, right place: match plants to site light, soil and moisture first",
+    "statement": "Inventory the site's sun exposure, soil and natural moisture regime and select plants adapted to those conditions; plants that fit the site need less irrigation or drainage, while shade-adapted plants placed in too much sun show scorch. Aesthetic choices (e.g. flower colour) are then made within the site's light conditions rather than ahead of them.",
+    "type": "sourced_principle",
+    "topics": ["site_fit", "water", "maintenance"],
+    "source": {
+      "title": "Right Plant, Right Place: The Art and Science of Landscape Design - Plant Selection and Siting (ENH1156/EP416)",
+      "publisher": "UF/IFAS Extension (EDIS), University of Florida; authors Geoffrey Denny and Gail Hansen",
+      "url": "https://ask.ifas.ufl.edu/publication/EP416",
+      "year": "n.d. (page footer: 2024)",
+      "accessed": "2026-10-22",
+      "support_note": "Page advises: \"Try to select plants that match the site's natural moisture regime.\" It also says shade-adapted plants show sunburn/scald in too much sun, and that light conditions should govern colour choices (warm, bright colours for shade)."
+    },
+    "applies_when": ["phase:site_analysis", "intent:any", "site:shade", "site:wet", "site:dry", "intent:low_water"]
+  },
+  {
+    "id": "K-02",
+    "title": "Space plants by mature spread, not container size",
+    "statement": "Set plants out at the mature width given in a reliable horticultural reference (plant tags can be wrong), e.g. a shrub that matures at 8 ft wide is spaced 8 ft apart; for a sheared hedge subtract roughly 2 ft so canopies overlap. Overcrowded plants compete for light, water and nutrients, lose inner foliage and individual form, invite pests and disease, and force periodic thinning.",
+    "type": "sourced_principle",
+    "topics": ["spacing", "maintenance"],
+    "source": {
+      "title": "Proper landscape plant spacing saves time, money",
+      "publisher": "University of Georgia College of Agricultural and Environmental Sciences (CAES Field Report); author Gary L. Wade, Extension Horticulturist",
+      "url": "https://fieldreport.caes.uga.edu/news/proper-landscape-plant-spacing-saves-time-money/",
+      "year": "2006",
+      "accessed": "2026-10-22",
+      "support_note": "Dwarf yaupon holly example (8 ft wide, space 8 ft apart); hedges: subtract ~2 ft from mature width. Crowded plants begin \"competing for space, light, water and nutrients\" and need thinning every 3-5 years."
+    },
+    "applies_when": ["phase:layout", "element:shrub", "element:hedge", "intent:low_maintenance"]
+  },
+  {
+    "id": "K-03",
+    "title": "Compose in vertical layers: ground, foreground, midground, background",
+    "statement": "Arrange planting in vertical layers from the ground layer (about 6 in, including turf) through a foreground (6 in to 2 ft) and midground (2 to 5 ft) to a background of trees and large shrubs that screen or form a canopy; let heights undulate along the horizon rather than stepping uniformly. Horizontal layers are the overlapping plant masses running front to back within a bed.",
+    "type": "sourced_principle",
+    "topics": ["layering", "composition"],
+    "source": {
+      "title": "Landscape Design: Arranging Plants in the Landscape (ENH1188/EP449)",
+      "publisher": "UF/IFAS Extension (EDIS), University of Florida; authors Gail Hansen and Keighly Graves",
+      "url": "https://ask.ifas.ufl.edu/publication/EP449",
+      "year": "n.d. (page footer: 2024)",
+      "accessed": "2026-10-22",
+      "support_note": "Defines layers: \"The lowest layer of vertical plants is the ground layer\"; midground \"consists of plants from 2 feet to 5 feet\"; background is trees and large shrubs; \"The height should undulate from high to low and back to high.\""
+    },
+    "applies_when": ["phase:composition", "intent:structure", "intent:screening", "intent:canopy"]
+  },
+  {
+    "id": "K-04",
+    "title": "Design planting as layered, designed plant communities (ecology plus visual composition)",
+    "statement": "Planting design for public, institutional and private landscapes combines an ecological approach with visual and spatial composition, treating vegetation as layered assemblages - vegetation layers and designed plant communities - rather than as isolated specimens. The textbook treats visual properties of plants, visual composition and plant assemblages as distinct design topics.",
+    "type": "sourced_principle",
+    "topics": ["layering", "composition", "ecology"],
+    "source": {
+      "title": "The Planting Design Handbook, 3rd edition (print ISBN 9781472415493; eBook ISBN 9781315554648; British Library record also lists 9781317021247)",
+      "publisher": "Routledge, London; author Nick Robinson",
+      "url": "https://www.routledge.com/The-Planting-Design-Handbook/Robinson/p/book/9781472415493",
+      "year": "2016",
+      "accessed": "2026-10-22",
+      "support_note": "Publisher description: widely used landscape-architecture text since 1992, combines an ecological approach with visual and spatial composition, and highlights \"the role of vegetation layers and designed plant communities\"; contents include Visual Composition and Plant Assemblages chapters. ISBNs confirmed via British Library catalogue https://eld.bl.uk/catalog/017898181. The specific 'structural vs ornamental layer' wording is NOT on the publisher page and is not claimed here."
+    },
+    "applies_when": ["phase:concept", "intent:structure", "intent:naturalistic", "intent:ecology"]
+  },
+  {
+    "id": "K-05",
+    "title": "Balance bloom and colour across the whole year",
+    "statement": "Colour is the most temporary plant characteristic, so plan bloom periods deliberately and balance the location and amount of seasonal colour through the year; draw interest from all plant parts - flowers, fruit, bark and stems - not flowers alone.",
+    "type": "sourced_principle",
+    "topics": ["seasonal_succession", "composition"],
+    "source": {
+      "title": "Landscape Design: Arranging Plants in the Landscape (ENH1188/EP449)",
+      "publisher": "UF/IFAS Extension (EDIS), University of Florida; authors Gail Hansen and Keighly Graves",
+      "url": "https://ask.ifas.ufl.edu/publication/EP449",
+      "year": "n.d. (page footer: 2024)",
+      "accessed": "2026-10-22",
+      "support_note": "\"Color is the most temporary characteristic of plant material.\" Page advises keeping bloom periods in mind and balancing the location and amount of colour throughout the year, using flowers, fruit, bark and stems."
+    },
+    "applies_when": ["intent:colour", "intent:seasonal_interest", "season:all"]
+  },
+  {
+    "id": "K-06",
+    "title": "Use evergreens for year-round and winter structure",
+    "statement": "Evergreen shrubs supply constant form and year-round structure, and become the dominant visual element in winter when deciduous and herbaceous plants have faded; they serve as border backdrops, clipped forms and dense hedges.",
+    "type": "sourced_principle",
+    "topics": ["seasonal_succession", "layering", "composition"],
+    "source": {
+      "title": "Evergreen shrubs",
+      "publisher": "Royal Horticultural Society (RHS)",
+      "url": "https://www.rhs.org.uk/plants/types/shrubs/evergreen",
+      "year": "n.d.",
+      "accessed": "2026-10-22",
+      "support_note": "\"Evergreen shrubs add year-round structure.\" In winter \"they really come to the fore\"; useful as backdrop to borders, clipped shapes and dense hedges. No specific evergreen-to-deciduous ratio is given on this page."
+    },
+    "applies_when": ["season:winter", "intent:structure", "intent:seasonal_interest", "intent:screening"]
+  },
+  {
+    "id": "K-07",
+    "title": "Pollinator support: diverse plants, overlapping bloom all season, native clumps",
+    "statement": "Support pollinators with a wide variety of plants whose flowering periods overlap so that food is available throughout the growing season (early-spring willows for emerging bumble bee queens, for example); planting native flowers in clumps attracts more pollinators than scattered individuals, and showy hybrids may produce little pollen or nectar.",
+    "type": "sourced_principle",
+    "topics": ["ecology", "seasonal_succession", "composition"],
+    "source": {
+      "title": "Habitat Planning (Pollinator Conservation Program)",
+      "publisher": "The Xerces Society for Invertebrate Conservation",
+      "url": "https://xerces.org/pollinator-conservation/habitat-restoration/planning",
+      "year": "n.d.",
+      "accessed": "2026-10-22",
+      "support_note": "\"Planting clumps of native flowers will attract more pollinators.\" Also: use a wide variety of plants with overlapping flowering periods for resources throughout the growing season; willows nourish bumble bee queens in spring; be wary of fancy hybrids with little pollen/nectar. Corroborated by Xerces blog (Morris & Foltz Jordan, 2020) https://xerces.org/blog/earth-week-urban-habitat: choose flowers that bloom in succession through the season; spring or fall bloom is often the limiting gap; natives support the widest array of native pollinators."
+    },
+    "applies_when": ["intent:pollinators", "intent:ecology", "intent:native", "season:early_spring", "season:fall"]
+  },
+  {
+    "id": "K-08",
+    "title": "Hydrozone by water need; drought-tolerant plants still need 1-3 years of establishment watering",
+    "statement": "Identify each plant's water requirement and group plants with similar needs into the same area or irrigation zone (hydrozone), from no-irrigation zones up to frequently watered ones, so irrigation can be matched to the planting. Most plants, including drought-tolerant ones, need supplemental water during establishment - a few months for turf, one to three years for trees and shrubs - after which irrigation can be reduced.",
+    "type": "sourced_principle",
+    "topics": ["water", "maintenance", "site_fit"],
+    "source": {
+      "title": "Chapter 25: Waterwise Landscaping, in The Pacific Northwest Gardener's Handbook: Growing for the Future",
+      "publisher": "Washington State University Extension; authors Bob Simmons, Teresa C. Koenig and Richard Koenig",
+      "url": "https://extension.wsu.edu/pnw-gardeners-handbook/chapter-25-waterwise-landscaping/",
+      "year": "n.d. (page footer: 2026)",
+      "accessed": "2026-10-22",
+      "support_note": "Advises to \"group those with similar requirements in the same area or irrigation zone\"; \"during establishment, most plants will need supplemental irrigation\"; trees and shrubs \"may take one to three years.\" Corroborated by CSU Extension GardenNotes #411 (2014, rev. 2025) https://extension.colostate.edu/resource/water-wise-landscape-design-steps/ (\"Hydrozoning groups plants with similar water needs\"; even xeric plants need water during establishment) and by UBC's article on the Metro Vancouver / UBC Botanical Garden Grow Green Guide https://beyond.ubc.ca/top-tips-for-gardening-in-a-drought/ (drought-resistant plants need regular watering for the first few years)."
+    },
+    "applies_when": ["intent:low_water", "phase:irrigation_design", "phase:establishment", "region:metro_vancouver"]
+  },
+  {
+    "id": "K-09",
+    "title": "Metro Vancouver summer water restrictions (May 1 - Oct 15): what applies to trees, shrubs and flowers",
+    "statement": "Metro Vancouver's regional water restrictions are in effect from May 1 to October 15. Under Stage 1, trees, shrubs and flowers may be watered any day at any time by hand (water container, soaker hose, drip irrigation, or hose with a spring-loaded nozzle), and by sprinkler any day from 5-9 am (residential) or 4-9 am (non-residential); lawn watering is limited to one assigned day per week by address with morning time windows, new lawns need a municipal permit, and vegetable gardens may be watered at any time. Higher stages tighten these rules (the page links to Stage 2 and Stage 2-3 summaries), so planting that relies on sprinklers in summer should be avoided.",
+    "type": "sourced_principle",
+    "topics": ["water", "maintenance"],
+    "source": {
+      "title": "Lawn Watering Restrictions | Metro Vancouver",
+      "publisher": "Metro Vancouver (regional district)",
+      "url": "https://metrovancouver.org/services/water/water-restrictions",
+      "year": "2026 (page as fetched)",
+      "accessed": "2026-10-22",
+      "support_note": "\"Water restrictions are in effect from May 1 to October 15.\" Trees/shrubs/flowers: hand watering, soaker hose, drip or spring-loaded nozzle any day any time; sprinklers residential 5-9 am, non-residential 4-9 am (Stage 1 table). Lawns: even addresses Saturday / odd Sunday (residential). Vegetable gardens can be watered at any time. The page itself does not state which stage is currently in force; the last clause about avoiding sprinkler dependence is a design inference, not a quotation."
+    },
+    "applies_when": ["region:metro_vancouver", "season:summer", "intent:low_water", "phase:irrigation_design"]
+  },
+  {
+    "id": "K-10",
+    "title": "Mass and repeat plants for legibility and unity",
+    "statement": "Within each layer, group individual plants into clusters or masses rather than scattering singletons; overlap masses of different plants, vary adjacent mass sizes, scale masses to the site (smaller in courtyards, larger on big lots), and repeat forms, colours or textures across beds so a recognisable rhythm emerges that ties the garden together.",
+    "type": "sourced_principle",
+    "topics": ["composition", "layering"],
+    "source": {
+      "title": "Landscape Design: Arranging Plants in the Landscape (ENH1188/EP449)",
+      "publisher": "UF/IFAS Extension (EDIS), University of Florida; authors Gail Hansen and Keighly Graves",
+      "url": "https://ask.ifas.ufl.edu/publication/EP449",
+      "year": "n.d. (page footer: 2024)",
+      "accessed": "2026-10-22",
+      "support_note": "\"Within the layers, the individual plants are grouped in smaller clusters or masses.\" Repetition is the basic principle of rhythm and \"Rhythm through repetition also contributes to unity\"; masses should overlap, vary in size and be scaled to the site."
+    },
+    "applies_when": ["phase:composition", "intent:legibility", "intent:colour", "scale:small_site", "scale:large_site"]
+  },
+  {
+    "id": "K-11",
+    "title": "Plant choice drives maintenance load (pruning, staking, deadheading, spreaders, replacement)",
+    "statement": "There is no maintenance-free landscape, but plant selection sets the workload: choosing the wrong plant adds pruning, watering and spraying; fast growers and plants that exceed the intended height and spread need repeated pruning or early replacement; many perennials need supports to stop flopping and annuals need frequent watering and deadheading. Plants that spread rapidly by seed, rhizomes or roots can dominate beds and demand ongoing containment, dividing and prompt deadheading, so clump-forming alternatives are preferable where low maintenance is the goal.",
+    "type": "sourced_principle",
+    "topics": ["maintenance", "site_fit"],
+    "source": {
+      "title": "Low-Maintenance Landscape Ideas (HGIC 1703)",
+      "publisher": "Clemson University Cooperative Extension, Home & Garden Information Center; authors Karen Russ and Robert F. Polomski",
+      "url": "https://hgic.clemson.edu/factsheet/low-maintenance-landscape/",
+      "year": "1999",
+      "accessed": "2026-10-22",
+      "support_note": "\"there is no such thing as a maintenance-free landscape\"; selecting the improper plant increases chores through excessive pruning, extra watering and spraying; \"Many perennials need supports to keep them from flopping\"; annuals should be deadheaded frequently; select plants that will not exceed desired height and spread. Aggressive-spreader clause supported by Iowa State University Extension, 'Aggressive Plants in the Landscape' (Steil & Naeve, reviewed July 2026) https://yardandgarden.extension.iastate.edu/how-to/aggressive-plants-landscape: aggressive plants spread rapidly by seed, stems, rhizomes or roots; deadheading reduces seed set; use barriers/containment or clump-forming alternatives."
+    },
+    "applies_when": ["intent:low_maintenance", "phase:plant_selection", "element:perennial", "element:annual"]
+  },
+  {
+    "id": "K-12",
+    "title": "Plant communities and dense ground layers: pack beds tightly to reduce weeding",
+    "statement": "Naturalistic planting design treats a bed as a plant-rich community of long-lived perennials and woody plants chosen as good neighbours, packed tightly and lightly intermingled, with seedheads left standing through winter. A dense, ground-covering layer that occupies most of the bed (without overplanting) fills the voids weeds would otherwise colonise and shades them out, reducing weeding.",
+    "type": "sourced_principle",
+    "topics": ["ecology", "layering", "maintenance", "composition"],
+    "source": {
+      "title": "Planting: A New Perspective (hardcover ISBN 9781604693706; eBook 9781604697315; 280 pp.)",
+      "publisher": "Timber Press (Hachette Book Group); authors Piet Oudolf and Noel Kingsbury",
+      "url": "https://www.hachettebookgroup.com/titles/piet-oudolf/planting/9781604693706/",
+      "year": "2013",
+      "accessed": "2026-10-22",
+      "support_note": "Publisher page: book explains plant ecology and \"which species make good neighbors\"; NYT review quoted on page praises \"packing beds tightly, interlacing species lightly\" and leaving seed heads through winter. The weed-reduction clause is supported by UF/IFAS EP523 'Improving Weed Control in Landscape Planting Beds' (Marble & Koeser) https://ask.ifas.ufl.edu/publication/EP523: \"Weeds invade by filling in voids\"; dense-growing plants can shade out weeds. Plant-community framing also in Rainer & West, Planting in a Post-Wild World, Timber Press 2015, ISBN 9781604695533 https://www.hachettebookgroup.com/titles/thomas-rainer/planting-in-a-post-wild-world/9781604695533/ (designed plantings that function like naturally occurring plant communities). The term 'matrix planting' does not appear on any fetched page and is not claimed."
+    },
+    "applies_when": ["intent:naturalistic", "intent:low_maintenance", "intent:ecology", "element:perennial", "season:winter"]
+  },
+  {
+    "id": "K-13",
+    "title": "Warm colours advance and grab attention; cool colours recede",
+    "statement": "Warm colours (reds, oranges, yellows) are among the first things a viewer notices and appear to advance toward the eye, so they suit entrances and focal points and should be kept away from service areas; cool colours (blues, greens) recede and can make a small space feel larger, and warm colours read best when balanced by nearby blues and greens.",
+    "type": "sourced_principle",
+    "topics": ["visibility", "composition"],
+    "source": {
+      "title": "Using Color in the Landscape",
+      "publisher": "Mississippi State University Extension Service; author Robert F. Brzuszek, Department of Landscape Architecture",
+      "url": "https://extension.msstate.edu/lawn-and-garden/landscape-architecture/landscape-design-and-management/landscape-and-garden-design/using-color-the-landscape",
+      "year": "n.d.",
+      "accessed": "2026-10-22",
+      "support_note": "\"warm colors tend to advance toward your eye in the landscape\"; warm colours are among the first items you notice, best at entrances and focal points; \"Since cool colors recede they offer a valuable service of making a small landscape look larger.\" NOTE: the page does not state that warm colours are visible from a greater physical distance than cool colours; that stronger claim is not asserted here."
+    },
+    "applies_when": ["intent:colour", "intent:visibility", "location:entrance", "location:focal_point", "scale:small_site"]
+  },
+  {
+    "id": "K-14",
+    "title": "Zone by maintenance intensity: manicured near the building, naturalised further out",
+    "statement": "Keep small, highly manicured areas close to the building or main viewing points and allow areas farther away to naturalise, and group plants with similar cultural needs together; this concentrates upkeep where it is most seen and lowers the total maintenance burden without giving up a cared-for appearance where it matters.",
+    "type": "sourced_principle",
+    "topics": ["trade_offs", "maintenance", "composition"],
+    "source": {
+      "title": "Low-Maintenance Landscape Ideas (HGIC 1703)",
+      "publisher": "Clemson University Cooperative Extension, Home & Garden Information Center; authors Karen Russ and Robert F. Polomski",
+      "url": "https://hgic.clemson.edu/factsheet/low-maintenance-landscape/",
+      "year": "1999",
+      "accessed": "2026-10-22",
+      "support_note": "\"Keep small areas near the home highly manicured and allow areas farther away to naturalize.\" Also: \"Group plants of similar cultural needs to save time in site preparation and care.\" The page frames this as a maintenance-versus-appearance trade-off only; it does not discuss ecological goals."
+    },
+    "applies_when": ["intent:low_maintenance", "intent:trade_off", "phase:zoning", "location:entrance", "location:periphery"]
+  },
+  {
+    "id": "K-15",
+    "title": "Reconcile ornamental, ecological and maintenance goals by zoning (working hypothesis)",
+    "statement": "Working hypothesis, not yet sourced: when ornamental, ecological (pollinator/habitat) and low-maintenance goals conflict, they can be reconciled spatially by zoning - placing high-impact ornamental and warm-colour planting at entrances and principal viewpoints, dense naturalistic/pollinator planting and low-input ground layers at edges and in less-viewed areas, and hydrozoning so that water-demanding plants are confined to small, visible areas. This extends K-14 (maintenance zoning, Clemson) and K-08 (hydrozoning, WSU) to ecological goals, but no fetched source states the three-way reconciliation explicitly.",
+    "type": "proposed_heuristic",
+    "topics": ["trade_offs", "ecology", "maintenance", "composition", "water"],
+    "source": null,
+    "applies_when": ["intent:trade_off", "intent:pollinators", "intent:colour", "intent:low_maintenance", "intent:low_water", "phase:zoning"]
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "name": "planting-intelligence",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Planting Intelligence \u2014 exploring knowledge-driven AI for planting design negotiation (UBC ARCH 540, Assignment 2)",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --port 5173",
+    "typecheck": "tsc -b",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "screenshots": "node scripts/screenshots.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "playwright-core": "^1.64.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
