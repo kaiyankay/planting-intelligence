@@ -44,6 +44,7 @@ export const RULES: Rule[] = [
   {
     kind: "pollinator_support",
     pattern: /\b(pollinators?|bees?|butterfl(?:y|ies)|hummingbirds?|birds?|wildlife|habitat|biodiversity)\b/i,
+    value: (m) => m[1].toLowerCase(),
     statement: (m) => `Wants planting that supports ${m[1].toLowerCase()}.`,
     checkability: "partial",
   },

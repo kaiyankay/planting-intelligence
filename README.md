@@ -42,40 +42,45 @@ The interface shows which mode is running in the masthead and on every generated
 ## What the prototype does
 
 ```
-Stakeholder statements ──► Intentions (LLM or rule parser; each carries its quoted evidence,
+Stakeholder statements ──► Intentions (model or rule parser; each carries its quoted evidence,
                             strength, and how far it can be checked against plant data)
                                  │
 Plant database (12 records) ────►│  Deterministic validation: light, water vs. site; colour,
 Site assumptions (synthetic) ───►│  pollinator evidence, season, nativity, lifespan, hazards
                                  ▼
-                     Relationship analysis per pair of goals:
-                     compatible · conditional · conflict · insufficient data
+                     Pairwise relations (compatible · conditional · conflict · insufficient data)
                      + season coverage + open questions
                                  │
-Design principles (15) ─────────►│  retrieval by intention tags
                                  ▼
-                     Three strategies by design approach (not by weights):
-                     A seasonal colour relay · B native framework with colour at thresholds
-                     C low-input evergreen structure (shrubs only, three species, no perennial layer)
+                     Negotiation summary: common ground · potential trade-offs · needs confirmation
+                     (sentences assembled from the computed results, grouped and de-duplicated)
+                                 │
+Design principles (15) ─────────►│  principle-gated design moves (applied only when the
+                                 ▼  principle's conditions hold for the live intentions)
+                     Three strategies by design approach:
+                     A seasonal relay of the lead quality · B native framework with the
+                     lead quality concentrated at thresholds · C low-input shrub structure
                                  │
 Reviewer feedback ──► adjustments ──► revision operators ──► re-validation ──► version n+1
+                     (or an explicit "could not interpret" notice, with no new version)
 ```
 
-### Panel 01 · Design Intentions
-Editable natural-language statements for any number of stakeholders (the three synthetic roles load by default). Synthetic site assumptions (light, irrigation, drainage) can be changed; soil, bed area and existing vegetation stay unknown on purpose.
+### One working view
+The interface is one screen: **Design intentions** (left) → **AI negotiation** summary (centre, the visual focus) → **Design strategies** (three short cards) → **Feedback** on the selected strategy. Everything else (how statements were read, every goal pair, season coverage, knowledge references, full requirement outcomes, plant records, earlier versions) is available on demand under *Details and evidence* or *Show full details*.
 
-### Panel 02 · AI Negotiation
-- **Interpreted intentions** with the quoted span they came from, hard limit vs preference, and whether the goal is checkable in the database, partly checkable, or a design judgement.
-- **Relationship analysis**, computed from the database: which plants satisfy both goals of a pair, in which seasons that is verified, and which plants could close a gap if their unknown fields were confirmed. When goals can be met together the system says so; it does not manufacture trade-offs.
-- **Season coverage** of plants meeting every checkable goal.
-- **Negotiation reasoning** (live model text or labelled template text).
-- **Planting knowledge retrieved**, each item marked *sourced* or *heuristic* with its source.
-- **Needs confirmation**: the site and plant unknowns that block decisions.
+### Negotiation summary
+Three columns answer the designer's first questions. *Common ground*: goal pairs verified together by site-fit plants, with the season in which that holds. *Potential trade-offs*: seasons in which the goals depend on plants with unknown or conditional fields, conflicts, and knowledge-base limits ("no record provides blue flowers"). *Needs confirmation*: site unknowns, design judgements the system cannot verify, and plant fields the sources do not state. If a pair can be met together the summary says so; unknown values are reported as unknown, never as failures.
 
-### Panel 03 · Design Strategies
-Three strategies with different leading intentions and spatial approaches. Each card shows composition by layer, flowering by season, the outcome for every requirement (satisfied / partially / unmet / unknown with the reason), trade-offs drawn from unmet outcomes and source cautions, evidence used, and unresolved questions. Selecting a strategy opens the evidence list, the plant records with links, a feedback box, and the version history.
+### Strategies
+Each card shows a conceptual layer diagram (labelled conceptual: no dimensions, no counts), the strategy name, a one-sentence approach, the key plants, which goals it meets and its main trade-off. The three approaches are pre-authored design moves; the plants inside them, the outcomes and the trade-offs are computed. Several moves are **gated by a principle**: the evergreen-framework rule (K-06) applies only when winter or year-round interest is wanted; the warm-colour-at-the-threshold rule (K-13) applies only to warm colours and is explicitly withheld for white or cool colours; the maintenance-load exclusions (K-11) and the establishment-watering condition (K-08) apply only when those goals are present. A strategy lists exactly the principles that changed a decision in it, each with the decision in plain words.
 
-**Tested revision example** (offline mode, default synthetic site, strategy B *Native framework, yellow at the threshold*): the feedback *"Can we reduce watering without losing too much summer colour?"* is read as `reduce_water` + `keep_summer_colour`. The engine removes *Mahonia nervosa*, *Ribes sanguineum* and *Symphoricarpos albus* (their sources describe moist soil with only occasional dryness) and keeps *Rudbeckia* 'Goldsturm' as the one explicitly conditional plant, because it is the only yellow in summer and autumn under partial shade and its source states that it becomes more drought-tolerant once established. The change, its reasons and the remaining trade-off are stored as version 2. With the plain feedback *"Please reduce watering."* the same operator removes *Rudbeckia* too, summer and autumn lose all flowering, and the engine records that *Achillea millefolium* would pass every filter if the bed proves sunnier than assumed, so confirming the actual light is the move that could close the gap.
+### Feedback
+Plain-language feedback is read into revision operators, applied to the selected strategy, and re-validated. The result pane shows *What changed* (removed and added plants with reasons), *Why it changed*, and *What trade-off remains*. Feedback that maps to no operator produces a clear notice and no new version. Earlier versions stay available.
+
+**Tested revision example** (offline mode, default synthetic site, strategy B): *"Can we reduce watering without losing too much summer colour?"* removes *Mahonia nervosa*, *Ribes sanguineum* and *Symphoricarpos albus* (moist-preferring per source) and keeps *Rudbeckia* 'Goldsturm' as the one explicitly conditional plant, because it is the only yellow in summer and autumn under partial shade and its source states it becomes more drought-tolerant once established. With plain *"Please reduce watering."* the Rudbeckia goes too, and the engine records that *Achillea millefolium* would pass every filter if the bed proves sunnier than assumed.
+
+### Does the negotiation respond to different inputs?
+Checked by running the engine on alternative statements (see `tests/engine.test.ts`): *white flowers + hummingbirds + no staking* yields white-flowering natives, a literal hummingbird check against the source text, and a different strategy set; *blue flowers + native only + no irrigation* yields a knowledge-base limit ("no record provides blue flowers"), strategy A is dropped, and the remaining strategies no longer promise a colour accent; *winter interest + habitat + no toxic plants* yields an evergreen-led relay. The approaches are fixed; their content, outcomes and naming are not.
 
 ## Knowledge base
 
@@ -126,19 +131,26 @@ Separation of concerns, as required by the brief: the model (or the offline pars
 | Item | Status |
 |---|---|
 | Multi-stakeholder natural-language input, editable, add/remove | implemented |
-| Intention extraction with evidence spans and checkability | implemented; LLM path written but not exercised live; offline parser tested |
+| Intention extraction with evidence spans and checkability | implemented; live model path written but not exercised; offline rule parser tested |
 | Deterministic validation against sourced plant fields and synthetic site | implemented, tested |
-| Pairwise relationship analysis (compatible / conditional / conflict / insufficient data) | implemented, tested |
+| Pairwise relationship analysis and negotiation summary | implemented, tested; sentences assembled from results, not pre-written |
 | Season coverage, open questions, principle retrieval | implemented |
-| Three strategies by design approach with outcomes, trade-offs, evidence, unresolved items | implemented, tested |
-| Plain-language feedback → revision operators → new version with reasons | implemented, tested (offline parser) |
-| Negotiation narrative | **simulated** in offline mode (labelled template); live mode written, not exercised |
+| Three strategies with computed outcomes, trade-offs, applied principles | implemented, tested; the three approaches are pre-authored |
+| Principle-gated design moves | implemented for K-01, K-02, K-05, K-06, K-07, K-08, K-10, K-11, K-12, K-13, K-14, K-15; hand-encoded rules, not inferred |
+| Plain-language feedback → revision → new version with reasons | implemented, tested (offline parser); unsupported feedback is refused explicitly |
+| Conceptual layer diagrams | implemented; schematic only, no dimensions |
+| Negotiation and revision narrative | **simulated** in offline mode (template, shown under details); live mode written, not exercised |
 | Server-side API key handling | implemented (`.env`, never exposed to the browser) |
-| Version history per strategy | implemented (in memory for the session; not persisted) |
 | Quantities, spacing, planting plan, 3D or CAD output | not implemented, out of scope |
 | Toxicity screening, invasive status, availability | not implemented; cautions shown only where a source states them |
-| Comparison against general-purpose ChatGPT | not done; this is the research hypothesis to test next |
-| User testing with practitioners | not done |
+| Comparison against general-purpose ChatGPT; user testing | not done; the research hypothesis to test next |
+
+### What is still missing for a real AI negotiator
+- **The design moves are authored, not generated.** The system chooses plants, checks facts and applies principles within three fixed approaches. A negotiator would propose new moves (a moist pocket, a sunnier bed, a different layer logic) from the knowledge base itself.
+- **Principles are encoded as rules by hand.** Twelve of fifteen principles change decisions, but each link was written by the developer. Retrieving a principle and deriving a design move from its text is future work.
+- **Language understanding is a rule parser offline.** Statements outside the rule vocabulary are flagged as unparsed rather than understood. The live model path (structured output) exists but is unverified.
+- **The knowledge base is small.** Twelve records and one site assumption set; many "conditional" findings are really data gaps.
+- **No evaluation yet.** Whether this is more useful than asking a general-purpose chatbot is untested.
 
 ## Research integrity notes
 - Plant records and principles were compiled by fetching the cited pages; nothing was filled from model memory. Where fetches failed the field is unknown and the README says so.

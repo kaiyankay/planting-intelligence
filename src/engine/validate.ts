@@ -85,13 +85,21 @@ export function checkIntention(plant: PlantRecord, intention: Intention): Check 
       };
     }
     case "pollinator_support": {
-      if (plant.pollinator_evidence.value === "unknown") return unknown(id, "ecological_value", plant.ecological_value.source);
+      if (plant.ecological_value.value === "unknown") return unknown(id, "ecological_value", plant.ecological_value.source);
+      const text = String(plant.ecological_value.value);
+      const term = (intention.value ?? "").toLowerCase();
+      // A specific animal group named by the stakeholder is checked literally against the source text;
+      // generic words (pollinators, wildlife, habitat, biodiversity) use the broader keyword rule.
+      const specific = /^(hummingbirds?|birds?|butterfl(y|ies)|bees?)$/.test(term);
+      const hit = specific ? new RegExp(term.replace(/s$/, "").replace(/ies$/, "y"), "i").test(text) : plant.pollinator_evidence.value === true;
       return {
         intentionId: id,
-        status: plant.pollinator_evidence.value ? "pass" : "fail",
-        reason: plant.pollinator_evidence.value
-          ? `Source states ecological value: ${truncate(String(plant.ecological_value.value), 110)}`
-          : "Source does not state pollinator or wildlife value.",
+        status: hit ? "pass" : "fail",
+        reason: hit
+          ? `Source states: ${truncate(text, 110)}`
+          : specific
+            ? `Source does not mention ${term}: ${truncate(text, 80)}`
+            : "Source does not state pollinator or wildlife value.",
         field: "ecological_value",
         source: plant.ecological_value.source,
       };

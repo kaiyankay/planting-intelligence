@@ -67,14 +67,14 @@ export function applyAdjustments(ctx: Ctx, strategy: Strategy, feedback: string,
     const keepColour = kinds.has("keep_summer_colour") || kinds.has("more_summer_colour");
     for (const id of [...current]) {
       const p = byId(id);
-      if (p.water.value === "high") remove(id, `Needs moist conditions (${p.water.wording ?? "high"}); removed to reduce watering.`);
+      if (p.water.value === "high") remove(id, `Needs moist to wet conditions per source; removed to reduce watering.`);
       else if (p.water.value === "moderate") {
         // A moist-preferring plant whose source records tolerance of dry spells may be kept as the
         // one conditional plant when it is the only source of a colour season the reviewer asked to keep.
         const onlyColourIn = SEASONS.filter((s) => flowersIn(p, s) && wantsColourFilter(p) && ![...current].some((o) => o !== id && flowersIn(byId(o), s) && wantsColourFilter(byId(o))));
         if (keepColour && p.water.dry_tolerant && onlyColourIn.length) {
           explanation.push(`Kept ${p.scientific_name} conditionally: it is the only ${colourIntent?.value ?? "colour"} source in ${onlyColourIn.join("/")}, and its source states "${p.water.dry_tolerant_evidence}". This relies on establishment watering only; it is a trade-off for the reviewer to accept or reject.`);
-        } else remove(id, `Moderate water need (${p.water.wording ?? "moderate"}); removed so that nothing depends on long-term irrigation.`);
+        } else remove(id, `Prefers moist soil per source${p.water.dry_tolerant ? " (tolerates dry spells only)" : ""}; removed so that nothing depends on irrigation.`);
       }
     }
     explanation.push("Applied: tightened the water filter (source field: water); low-water plants kept, moist-dependent plants removed.");
@@ -153,15 +153,15 @@ export function applyAdjustments(ctx: Ctx, strategy: Strategy, feedback: string,
     kept,
     explanation: [...new Set(explanation)],
   };
+  const applied = [...strategy.appliedPrinciples];
+  if (kinds.has("reduce_water") && explanation.some((e) => e.includes("conditionally"))) applied.push({ id: "K-08", decision: "Revision: a moist-preferring plant with a sourced dry-tolerance note was kept on the condition of establishment watering instead of being removed." });
+  if (kinds.has("less_maintenance")) applied.push({ id: "K-11", decision: "Revision: plants whose sources record staking, aggressive spread or short lifespan were removed." });
+  const concept = { ...strategy.concept, bands: strategy.concept.bands.map((b) => ({ ...b, plantIds: b.plantIds.filter((id) => current.has(id)).concat(added.filter((a) => placements.find((p) => p.role === b.role)?.plantIds.includes(a.plantId) && !b.plantIds.includes(a.plantId)).map((a) => a.plantId)) })) };
   const next = finish(
     ctx,
-    { id: strategy.id, name: strategy.name, approach: strategy.approach, designIntention: strategy.designIntention, placements, notes: [], topics: topicsFromPrinciples(ctx, strategy) },
+    { id: strategy.id, name: strategy.name, approach: strategy.approach, designIntention: strategy.designIntention, placements, notes: [], applied, concept },
     strategy.version + 1,
     [...strategy.revisionLog, entry],
   );
   return next;
-}
-
-function topicsFromPrinciples(ctx: Ctx, s: Strategy): string[] {
-  return [...new Set(ctx.principles.filter((p) => s.principleIds.includes(p.id)).flatMap((p) => p.topics))];
 }

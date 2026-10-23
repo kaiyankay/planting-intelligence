@@ -14,40 +14,38 @@ export default function Panel01Intentions({ stakeholders, onChange, site, onSite
   const remove = (id: string) => onChange(stakeholders.filter((s) => s.id !== id));
   const add = () => onChange([...stakeholders, { id: `party-${Date.now().toString(36)}`, role: "New stakeholder", statement: "" }]);
   const setSite = <K extends "light" | "irrigation" | "drainage">(key: K, value: string) =>
-    onSite({ ...site, [key]: { ...site[key], value: value as any, provenance: value === "unknown" ? "unknown" : "user_confirmed", note: value === "unknown" ? site[key].note : "Set in the interface by the reviewer (still a test input, not a survey)." } });
+    onSite({ ...site, [key]: { ...site[key], value: value as any, provenance: value === "unknown" ? "unknown" : "user_confirmed", note: value === "unknown" ? site[key].note : "Set in the interface by the reviewer; still a test input, not survey data." } });
+  const unknownCount = (["light", "drainage", "soil", "irrigation", "bed_area_m2", "existing_vegetation"] as const).filter((k) => site[k].value === "unknown").length;
 
   return (
     <div className="rail-inner">
-      <div className="panel-head">
-        <div>
-          <div className="num">Panel 01</div>
-          <h2>Design Intentions</h2>
-        </div>
+      <div className="sec-head" style={{ marginBottom: 6 }}>
+        <h2>Design intentions</h2>
       </div>
-      <p className="site note" style={{ marginTop: 0 }}>
-        Natural-language goals from each party. Synthetic roles for a test scenario; not consultation records.
-      </p>
+      <p className="rail-note">What each party wants from the planting, in their own words. Synthetic roles for a test scenario.</p>
       {stakeholders.map((s) => (
         <div className="stake" key={s.id}>
           <div className="stake-top">
             <input value={s.role} onChange={(e) => update(s.id, { role: e.target.value })} aria-label="Stakeholder role" />
-            <button className="x" onClick={() => remove(s.id)} title="Remove stakeholder" aria-label="Remove stakeholder">
+            <button className="x" onClick={() => remove(s.id)} title="Remove this party" aria-label="Remove this party">
               ×
             </button>
           </div>
-          <textarea value={s.statement} onChange={(e) => update(s.id, { statement: e.target.value })} placeholder="What does this party want from the planting?" />
+          <textarea value={s.statement} onChange={(e) => update(s.id, { statement: e.target.value })} placeholder="What should the planting do for you?" />
         </div>
       ))}
       <button className="ghost" onClick={add}>
-        + Add a stakeholder
+        Add a party
       </button>
-      <div style={{ height: 16 }} />
+      <div style={{ height: 12 }} />
       <button className="primary" onClick={onRun} disabled={running || stakeholders.every((s) => !s.statement.trim())}>
         {running ? "Negotiating…" : "Run negotiation"}
       </button>
 
-      <div className="site">
-        <h3>Site conditions · synthetic assumptions</h3>
+      <details className="site">
+        <summary>
+          Site conditions <span style={{ fontWeight: 500, color: "var(--ink-3)" }}>{unknownCount} unknown · rest assumed</span>
+        </summary>
         <p className="note">{site.disclaimer}</p>
         <SiteRow label="Light" tag={site.light.provenance}>
           <select value={site.light.value} onChange={(e) => setSite("light", e.target.value)}>
@@ -83,14 +81,14 @@ export default function Panel01Intentions({ stakeholders, onChange, site, onSite
           <span style={{ color: "var(--ink-3)" }}>unknown</span>
         </SiteRow>
         <p className="footer-note">{site.context_reference}</p>
-      </div>
+      </details>
     </div>
   );
 }
 
 function SiteRow({ label, tag, children }: { label: string; tag: string; children: React.ReactNode }) {
   const cls = tag === "synthetic_assumption" ? "synthetic" : tag === "user_confirmed" ? "user" : "unknown";
-  const text = tag === "synthetic_assumption" ? "synthetic" : tag === "user_confirmed" ? "set here" : "unknown";
+  const text = tag === "synthetic_assumption" ? "assumed" : tag === "user_confirmed" ? "set here" : "unknown";
   return (
     <div className="site-row">
       <span>{label}</span>

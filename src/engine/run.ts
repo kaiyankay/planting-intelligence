@@ -6,6 +6,7 @@ import { analyseRelations, commonGroundAndTensions, openQuestions, retrievePrinc
 import { generateStrategies, type Ctx } from "./strategies.ts";
 import { applyAdjustments } from "./revise.ts";
 import { groundNarrative, offlineNegotiationNarrative, offlineRevisionNarrative } from "./narrate.ts";
+import { buildSummary } from "./summary.ts";
 
 // Orchestration: decides which parts come from the LLM (language) and which
 // from code (facts), and falls back to offline mode with a visible notice.
@@ -108,7 +109,8 @@ export async function runNegotiation(stakeholders: Stakeholder[], site: SiteAssu
   const questions = openQuestions(site, intentions, evaluations, PLANTS);
   const retrieved = retrievePrinciples(PRINCIPLES, intentions).map((p) => p.id);
   const { commonGround, tensions } = commonGroundAndTensions(intentions, relations, coverage, PLANTS);
-  const partial = { intentions, evaluations, relations, seasonCoverage: coverage, openQuestions: questions, retrievedPrincipleIds: retrieved, commonGround, tensions };
+  const summary = buildSummary(intentions, relations, coverage, evaluations, PLANTS, questions);
+  const partial = { summary, intentions, evaluations, relations, seasonCoverage: coverage, openQuestions: questions, retrievedPrincipleIds: retrieved, commonGround, tensions };
   let narrative;
   if (status.available) {
     try {
@@ -141,6 +143,10 @@ export async function reviseStrategy(ctx: Ctx, strategy: Strategy, feedback: str
     }
   }
   if (!adjustments) adjustments = parseAdjustmentsOffline(feedback, plantNameIndex());
+  if (adjustments.every((a) => a.kind === "unknown")) {
+    // Honest failure: the feedback did not map to any revision operator, so no version is created.
+    return { strategy, notices: [...notices, `The feedback could not be interpreted into a revision the system supports (${status.available ? "model" : "rule parser"} found no operator). Supported: reduce watering, keep or add summer colour, more native plants, less maintenance, winter interest, avoid toxic plants, remove a named plant. Nothing was changed.`] };
+  }
   const next = applyAdjustments(ctx, strategy, feedback, adjustments);
   const entry = next.revisionLog[next.revisionLog.length - 1];
   let narrative;

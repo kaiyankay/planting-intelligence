@@ -5,8 +5,9 @@ import { PLANTS, PRINCIPLES } from "./knowledge/index.ts";
 import { fetchStatus, reviseStrategy, runNegotiation } from "./engine/run.ts";
 import type { Ctx } from "./engine/strategies.ts";
 import Panel01Intentions from "./components/Panel01Intentions.tsx";
-import Panel02Negotiation from "./components/Panel02Negotiation.tsx";
-import Panel03Strategies from "./components/Panel03Strategies.tsx";
+import NegotiationSummary from "./components/NegotiationSummary.tsx";
+import StrategyCards from "./components/StrategyCards.tsx";
+import Feedback from "./components/Feedback.tsx";
 
 export default function App() {
   const [stakeholders, setStakeholders] = useState<Stakeholder[]>(DEFAULT_STAKEHOLDERS);
@@ -19,6 +20,7 @@ export default function App() {
   const [running, setRunning] = useState(false);
   const [revising, setRevising] = useState(false);
   const [notices, setNotices] = useState<string[]>([]);
+  const [feedbackNotices, setFeedbackNotices] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -28,17 +30,14 @@ export default function App() {
   const run = async () => {
     setRunning(true);
     setError(null);
+    setFeedbackNotices([]);
     try {
-      const r = await runNegotiation(
-        stakeholders.filter((s) => s.statement.trim()),
-        site,
-        status,
-      );
+      const r = await runNegotiation(stakeholders.filter((s) => s.statement.trim()), site, status);
       setAnalysis(r.analysis);
       setStrategies(r.strategies);
       setCtx(r.ctx);
       setNotices(r.notices);
-      setSelected(r.strategies[0]?.id ?? null);
+      setSelected(null);
     } catch (e: any) {
       setError(e.message ?? String(e));
     } finally {
@@ -51,10 +50,11 @@ export default function App() {
     const s = strategies.find((x) => x.id === id);
     if (!s) return;
     setRevising(true);
+    setFeedbackNotices([]);
     try {
       const r = await reviseStrategy(ctx, s, feedback, status);
       setStrategies(strategies.map((x) => (x.id === id ? r.strategy : x)));
-      if (r.notices.length) setNotices((n) => [...n, ...r.notices]);
+      setFeedbackNotices(r.notices);
     } catch (e: any) {
       setError(e.message ?? String(e));
     } finally {
@@ -63,27 +63,32 @@ export default function App() {
   };
 
   const sourced = PRINCIPLES.filter((p) => p.type === "sourced_principle").length;
+  const stage = !analysis ? 1 : selected ? 4 : 2;
+  const selectedStrategy = strategies.find((s) => s.id === selected) ?? null;
 
   return (
     <>
       <header className="masthead">
         <div>
           <h1>Planting Intelligence</h1>
-          <div className="sub">Exploring knowledge-driven AI for planting design · a negotiation prototype</div>
+          <div className="sub">
+            Knowledge-driven AI for planting design · {PLANTS.length} sourced plant records, {sourced} sourced principles, {PRINCIPLES.length - sourced} heuristic
+          </div>
         </div>
-        <div className="right">
-          <div className="kb">
-            <span>
-              <b>{PLANTS.length}</b> sourced plant records
+        <div className="flow" aria-label="How it works">
+          {["Different intentions", "Common ground and trade-offs", "Alternative strategies", "Your feedback"].map((t, i) => (
+            <span key={t} style={{ display: "contents" }}>
+              <span className={`step ${stage >= i + 1 ? "on" : ""}`}>
+                <b>{i + 1}</b>
+                {t}
+              </span>
+              {i < 3 && <span className="sep">—</span>}
             </span>
-            <span>
-              <b>{sourced}</b> sourced principles · <b>{PRINCIPLES.length - sourced}</b> heuristic
-            </span>
-          </div>
-          <div className={`mode ${status.available ? "live" : ""}`}>
-            <span className="dot" />
-            {status.available ? `Live LLM · ${status.model}` : "Offline demonstration mode · no API key"}
-          </div>
+          ))}
+        </div>
+        <div className={`mode ${status.available ? "live" : ""}`} title={status.available ? "Statements and feedback are read by a live model; plant facts are still checked by code." : "No API key on the server: statements are read by a transparent rule parser and explanatory text is template-based. Plant facts are checked by code either way."}>
+          <span className="dot" />
+          {status.available ? `Live model · ${status.model}` : "Offline demonstration mode"}
         </div>
       </header>
       <div className="layout">
@@ -91,8 +96,9 @@ export default function App() {
           <Panel01Intentions stakeholders={stakeholders} onChange={setStakeholders} site={site} onSite={setSite} onRun={run} running={running} />
         </aside>
         <main className="main">
-          <Panel02Negotiation analysis={analysis} stakeholders={stakeholders} status={status} notices={notices} error={error} running={running} />
-          <Panel03Strategies strategies={strategies} analysis={analysis} selectedId={selected} onSelect={setSelected} onRevise={revise} revising={revising} status={status} />
+          <NegotiationSummary analysis={analysis} stakeholders={stakeholders} status={status} notices={notices} error={error} running={running} />
+          <StrategyCards strategies={strategies} analysis={analysis} selectedId={selected} onSelect={setSelected} />
+          <Feedback strategy={selectedStrategy} analysis={analysis} onRevise={revise} revising={revising} status={status} notices={feedbackNotices} />
         </main>
       </div>
     </>

@@ -138,3 +138,52 @@ test("retrieval: low-water intention retrieves the watering principles", () => {
   assert.ok(ks.includes("K-08"));
   assert.ok(ks.includes("K-09"));
 });
+
+// ---- Added with the UX revision: summary, principle gating, honest limits ----
+import { buildSummary } from "../src/engine/summary.ts";
+
+test("summary: default scenario reports common ground and conditional trade-offs, no manufactured conflict", () => {
+  const { intentions, evaluations, relations, coverage, questions } = build();
+  const s = buildSummary(intentions, relations, coverage, evaluations, PLANTS, questions);
+  assert.ok(s.commonGround.length >= 1);
+  assert.ok(s.commonGround.some((i) => /met together/.test(i.text)));
+  assert.ok(!s.tradeOffs.some((i) => i.kind === "conflict"), "no conflict should be reported for the default scenario");
+  assert.ok(s.tradeOffs.some((i) => i.kind === "conditional"));
+  assert.ok(s.needsConfirmation.some((i) => i.kind === "site_unknown"));
+});
+
+test("summary: an unsupported requirement is reported as a knowledge-base limit, not hidden", () => {
+  const intentions = parseIntentionsOffline([{ id: "r", role: "Residents", statement: "We want blue flowers." }, { id: "m", role: "Maintenance", statement: "We cannot water." }]);
+  const evaluations = evaluateAll(PLANTS, intentions, DEFAULT_SITE);
+  const relations = analyseRelations(intentions, evaluations, PLANTS, PRINCIPLES);
+  const coverage = seasonCoverage(intentions, evaluations, PLANTS);
+  const questions = openQuestions(DEFAULT_SITE, intentions, evaluations, PLANTS);
+  const s = buildSummary(intentions, relations, coverage, evaluations, PLANTS, questions);
+  assert.ok(s.tradeOffs.some((i) => i.kind === "knowledge_limit" && /blue/.test(i.text)));
+  const strategies = generateStrategies({ plants: PLANTS, evaluations, intentions, principles: PRINCIPLES, openQuestions: questions });
+  for (const st of strategies) assert.ok(!/blue at the threshold/i.test(st.name), "a strategy must not promise a colour the records cannot supply");
+});
+
+test("strategies: principles are applied as decisions and change with the intentions", () => {
+  const { ctx } = build();
+  const [a, b] = generateStrategies(ctx);
+  assert.ok(a.appliedPrinciples.some((p) => p.id === "K-06"), "evergreen framework principle applies when year-round interest is wanted");
+  assert.ok(b.appliedPrinciples.some((p) => p.id === "K-13"), "warm-colour principle applies to yellow");
+  // Without any seasonal or winter intention, K-06 must not be applied.
+  const intentions = parseIntentionsOffline([{ id: "r", role: "Residents", statement: "We want white flowers." }]);
+  const evaluations = evaluateAll(PLANTS, intentions, DEFAULT_SITE);
+  const questions = openQuestions(DEFAULT_SITE, intentions, evaluations, PLANTS);
+  const [a2, b2] = generateStrategies({ plants: PLANTS, evaluations, intentions, principles: PRINCIPLES, openQuestions: questions });
+  assert.ok(!a2.appliedPrinciples.some((p) => p.id === "K-06"));
+  assert.ok(!b2.appliedPrinciples.some((p) => p.id === "K-13"), "warm-colour principle must not be applied to white");
+  for (const st of [a, b]) assert.deepEqual(st.principleIds, [...new Set(st.appliedPrinciples.map((p) => p.id))], "cited principles are exactly the applied ones");
+});
+
+test("interpretation: a named animal group is checked literally against the source text", () => {
+  const intentions = parseIntentionsOffline([{ id: "e", role: "Ecology", statement: "Please support hummingbirds." }]);
+  const evaluations = evaluateAll(PLANTS, intentions, DEFAULT_SITE);
+  const ribes = evaluations.find((e) => e.plantId === "P-07")!;
+  assert.equal(ribes.checks[0].status, "pass");
+  const anyFail = evaluations.some((e) => e.checks[0].status === "fail");
+  assert.ok(anyFail, "plants whose source does not mention hummingbirds must not pass");
+});

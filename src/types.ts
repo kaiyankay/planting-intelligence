@@ -179,7 +179,22 @@ export interface OpenQuestion {
   blocks: string[]; // intention ids or plant ids whose evaluation depends on it
 }
 
+export interface SummaryItem {
+  text: string;
+  plantIds: string[];
+  principleIds: string[];
+  intentionIds: string[];
+  kind: "met" | "conditional" | "conflict" | "knowledge_limit" | "site_unknown" | "plant_unknown" | "judgement";
+}
+
+export interface NegotiationSummary {
+  commonGround: SummaryItem[];
+  tradeOffs: SummaryItem[];
+  needsConfirmation: SummaryItem[];
+}
+
 export interface NegotiationAnalysis {
+  summary: NegotiationSummary;
   intentions: Intention[];
   evaluations: PlantEvaluation[];
   relations: Relation[];
@@ -218,12 +233,21 @@ export interface RequirementOutcome {
   supportingPlantIds: string[];
 }
 
+export interface AppliedPrinciple {
+  id: string; // principle id
+  decision: string; // what the principle changed in this strategy, in plain words
+}
+
 export interface Strategy {
   id: string;
   version: number;
   name: string;
   approach: string; // the design idea, one or two sentences
   designIntention: string;
+  benefits: string[]; // computed from satisfied outcomes
+  mainTradeOff: string; // computed: the most important unmet/partial outcome or note
+  appliedPrinciples: AppliedPrinciple[]; // principles that changed a decision (not merely cited)
+  concept: ConceptDiagram;
   placements: Placement[];
   requirementOutcomes: RequirementOutcome[];
   tradeOffs: string[];
@@ -231,6 +255,19 @@ export interface Strategy {
   unresolved: string[];
   seasonCoverage: Record<Season, string[]>;
   revisionLog: RevisionEntry[];
+}
+
+// Conceptual spatial diagram: ordered bands from the path edge inwards. Not a planting plan.
+export interface ConceptBand {
+  role: LayerRole;
+  label: string;
+  share: number; // relative depth of the band, 1..4
+  plantIds: string[];
+  pattern: "mass" | "drift" | "accent" | "ground";
+}
+export interface ConceptDiagram {
+  bands: ConceptBand[];
+  caption: string;
 }
 
 export interface Adjustment {

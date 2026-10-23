@@ -9,33 +9,33 @@ const browser = await chromium.launch({ channel: "chrome" });
 const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
 await page.goto(base, { waitUntil: "networkidle" });
 await page.getByRole("button", { name: "Run negotiation" }).click();
-await page.getByText("Interpreted intentions").waitFor();
+await page.getByRole("heading", { name: "Common ground" }).waitFor();
 await page.waitForTimeout(600);
 await page.evaluate(() => { document.querySelector(".rail-inner")?.scrollTo(0, 0); window.scrollTo(0, 0); });
-await page.screenshot({ path: "docs/screenshots/01-intentions-and-interpretation.png" });
+// 01: inputs + negotiation summary + strategy cards in one 16:9 view
+await page.screenshot({ path: "docs/screenshots/01-core-view.png" });
 
-// Season coverage + reasoning + knowledge
-await page.evaluate(() => document.querySelector(".seasons")?.scrollIntoView({ block: "start" }));
-await page.evaluate(() => window.scrollBy(0, -120));
-await page.waitForTimeout(300);
-await page.screenshot({ path: "docs/screenshots/02-season-coverage-and-reasoning.png" });
-
-// Strategies
+// 02: strategies in full
 await page.evaluate(() => document.querySelector(".cards")?.scrollIntoView({ block: "start" }));
-await page.evaluate(() => window.scrollBy(0, -150));
+await page.evaluate(() => window.scrollBy(0, -90));
 await page.waitForTimeout(300);
-await page.screenshot({ path: "docs/screenshots/03-strategies-and-tradeoffs.png" });
+await page.screenshot({ path: "docs/screenshots/02-strategies.png" });
 
-// Revision: select strategy B (native framework), apply the brief's example feedback
+// 03: feedback on strategy B with the brief's example comment
 await page.locator(".card").nth(1).click();
 await page.getByRole("button", { name: "Can we reduce watering without losing too much summer colour?" }).click();
-await page.getByRole("button", { name: /Revise → version/ }).click();
-await page.getByText("Why the strategy changed").waitFor();
+await page.getByRole("button", { name: "Revise strategy" }).click();
+await page.getByText("What changed").waitFor();
 await page.waitForTimeout(400);
-await page.evaluate(() => document.querySelector(".detail")?.scrollIntoView({ block: "start" }));
-await page.evaluate(() => window.scrollBy(0, -40));
+await page.evaluate(() => document.querySelector(".workbench")?.scrollIntoView({ block: "start" }));
+await page.evaluate(() => window.scrollBy(0, -90));
 await page.waitForTimeout(300);
-await page.screenshot({ path: "docs/screenshots/04-revision-after-feedback.png" });
+await page.screenshot({ path: "docs/screenshots/03-feedback-revision.png" });
+
+// 04: evidence expanded
+await page.evaluate(() => { const d = document.querySelector("details.evidence"); if (d) d.open = true; d?.scrollIntoView({ block: "start" }); window.scrollBy(0, -90); });
+await page.waitForTimeout(300);
+await page.screenshot({ path: "docs/screenshots/04-evidence-details.png" });
 
 await browser.close();
 console.log("Screenshots written to docs/screenshots/");
