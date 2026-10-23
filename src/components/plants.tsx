@@ -28,8 +28,8 @@ export function thumbColour(p: PlantRecord): string | null {
   return HEX[Object.keys(HEX).find((k) => c.includes(k))!];
 }
 
-// Seasonal flowering matrix: only the seasons the sources record. Winter shows evergreen
-// foliage, not flowering. Unknown seasons are shown as unknown, not left blank.
+// Seasonal interest matrix: dots mark the flowering seasons the sources record; a square marks
+// evergreen foliage (structure, not flowers); "?" marks a value the source does not state.
 const COLS: { key: "spring" | "summer" | "autumn" | "winter"; label: string }[] = [
   { key: "spring", label: "Spr" },
   { key: "summer", label: "Sum" },
@@ -40,10 +40,10 @@ const COLS: { key: "spring" | "summer" | "autumn" | "winter"; label: string }[] 
 export function SeasonMatrix({ plantIds, highlight, extra = 0, removed }: { plantIds: string[]; highlight?: Set<string>; extra?: number; removed?: Set<string> }) {
   const plants = plantIds.map((id) => plantById(id)).filter(Boolean) as PlantRecord[];
   return (
-    <div className="matrix" role="table" aria-label="Flowering seasons recorded in sources">
+    <div className="matrix" role="table" aria-label="Seasonal interest recorded in sources">
       <div className="mrow mhead" role="row">
         <span className="mname" role="columnheader">
-          Flowering by season
+          Seasonal interest
         </span>
         {COLS.map((c) => (
           <span key={c.key} className="mcell" role="columnheader">
@@ -79,7 +79,18 @@ export function SeasonMatrix({ plantIds, highlight, extra = 0, removed }: { plan
           </div>
         );
       })}
-      {extra > 0 && <div className="mmore">{extra} more plant{extra > 1 ? "s" : ""} in details</div>}
+      <div className="mlegend" aria-hidden="true">
+        <span>
+          <i className="mark on" style={{ background: "var(--green-mid)" }} /> flowering season (recorded)
+        </span>
+        <span>
+          <i className="mark ever" /> evergreen foliage
+        </span>
+        <span>
+          <i className="mark unk">?</i> not stated
+        </span>
+        {extra > 0 && <span className="mmore">{extra} more in details</span>}
+      </div>
     </div>
   );
 }

@@ -15,11 +15,12 @@ await page.evaluate(() => { document.querySelector(".rail-inner")?.scrollTo(0, 0
 // 01: inputs + negotiation summary + strategy cards in one 16:9 view
 await page.screenshot({ path: "docs/screenshots/01-core-view.png" });
 
-// 02: strategies in full
-await page.evaluate(() => document.querySelector(".cards")?.scrollIntoView({ block: "start" }));
-await page.evaluate(() => window.scrollBy(0, -90));
+// 02: the complete strategies section (heading + three full cards), captured as a region so
+// nothing is cut by the viewport; width stays 1920.
+const strategiesSection = page.locator("section", { has: page.locator(".cards") });
+await strategiesSection.scrollIntoViewIfNeeded();
 await page.waitForTimeout(300);
-await page.screenshot({ path: "docs/screenshots/02-strategies.png" });
+await strategiesSection.screenshot({ path: "docs/screenshots/02-strategies.png" });
 
 // 03: feedback on strategy B with the brief's example comment
 await page.locator(".card").nth(1).click();
