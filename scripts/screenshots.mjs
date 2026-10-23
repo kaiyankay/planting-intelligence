@@ -37,5 +37,13 @@ await page.evaluate(() => { const d = document.querySelector("details.evidence")
 await page.waitForTimeout(300);
 await page.screenshot({ path: "docs/screenshots/04-evidence-details.png" });
 
+// 05: layout check at a 1440 x 900 laptop viewport (scrolls; not the presentation frame)
+const laptop = await browser.newPage({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 });
+await laptop.goto(base, { waitUntil: "networkidle" });
+await laptop.getByRole("button", { name: "Run negotiation" }).click();
+await laptop.getByRole("heading", { name: "Common ground" }).waitFor();
+await laptop.waitForTimeout(500);
+await laptop.screenshot({ path: "docs/screenshots/05-layout-1440x900.png" });
+
 await browser.close();
 console.log("Screenshots written to docs/screenshots/");

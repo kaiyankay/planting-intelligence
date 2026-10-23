@@ -265,7 +265,9 @@ export interface ConceptBand {
   plantIds: string[];
   pattern: "mass" | "drift" | "accent" | "ground";
 }
+export type ConceptStyle = "seasonal" | "native" | "lowinput";
 export interface ConceptDiagram {
+  style: ConceptStyle;
   bands: ConceptBand[];
   caption: string;
 }
@@ -288,6 +290,7 @@ export interface Adjustment {
 }
 
 export interface RevisionEntry {
+  before: { plantIds: string[]; concept: ConceptDiagram }; // snapshot of the previous version for comparison
   version: number;
   timestamp: string;
   feedback: string;

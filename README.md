@@ -82,6 +82,20 @@ Plain-language feedback is read into revision operators, applied to the selected
 ### Does the negotiation respond to different inputs?
 Checked by running the engine on alternative statements (see `tests/engine.test.ts`): *white flowers + hummingbirds + no staking* yields white-flowering natives, a literal hummingbird check against the source text, and a different strategy set; *blue flowers + native only + no irrigation* yields a knowledge-base limit ("no record provides blue flowers"), strategy A is dropped, and the remaining strategies no longer promise a colour accent; *winter interest + habitat + no toxic plants* yields an evergreen-led relay. The approaches are fixed; their content, outcomes and naming are not.
 
+## Visual design notes
+
+The interface is meant to read as a contemporary landscape-design workspace rather than an analytics dashboard: warm off-white paper, forest green, a restrained ochre for conditions and slate for unknowns, serif for statements and headings, Inter for interface text, and a monospace face only for record ids.
+
+Decisions and where they came from:
+- **Conceptual composition diagrams** (`src/components/ConceptDiagram.tsx`) use three drawing languages so the strategies differ at a glance: a left-to-right season relay of flower-coloured drifts in front of a continuous evergreen band (A); a body of overlapping native masses with the colour accent gathered as a cluster of dots at the threshold (B); few large, evenly spaced single-species groups, evergreen solid and deciduous dashed (C). The abstraction level follows concept-stage landscape sketches rather than planting plans: no boundary, no dimensions, no counts, and every drawing is labelled "Conceptual composition · Not to scale". Shapes, colours and labels are generated from the strategy's layers and the records' flower colour, flowering season and evergreen fields, and the diagram redraws when a revision changes the plants.
+- **Plant palette** rows (thumbnail, common name, scientific name) borrow AsterSketch's plant-palette organisation: a compact, consistent block of representative species per scheme rather than a long list. Photographs are licensed Wikimedia Commons images (see `docs/IMAGE-CREDITS.md`); a species without a licensed photo gets a labelled illustration mark, never a stand-in photo.
+- **Seasonal flowering matrix** adapts the Plant Matrix idea of reading seasonality as a grid: rows are plants, columns are the four seasons, a coloured dot marks a season the source records, a square marks evergreen foliage in winter, and "?" marks an unknown season. Nothing is interpolated into months.
+- **Card structure** follows Milanote-style visual cards and shadcn/ui's restraint: identical section order on every card (diagram, name, approach, palette, matrix, main benefit, main trade-off), subtle borders, one radius, no shadows or gradients.
+- **Negotiation summary** keeps one quiet icon per class (check, triangle, question mark; a cross for knowledge-base limits), two points per column by default, and record ids in small monospace below each sentence so evidence is present but not competing with the conclusion.
+- **Before / after comparison** in the feedback pane shows the previous and revised diagrams and matrices side by side, with removed plants struck through and added plants emphasised, all drawn from the stored revision snapshot.
+
+Chart libraries were not needed; the diagrams and matrix are plain SVG and CSS.
+
 ## Knowledge base
 
 ### Plant database: `src/knowledge/plants.verified.json`
@@ -91,6 +105,9 @@ Known data limits: *Digitalis grandiflora* and *Helianthus* 'Lemon Queen' have u
 
 ### Design knowledge: `src/knowledge/principles.json`
 15 items. 14 are **sourced principles**, each supported by a fetched page: UF/IFAS Extension (right plant right place; vertical layering; year-round colour; massing and repetition), University of Georgia Extension (spacing by mature spread), Robinson *The Planting Design Handbook* (Routledge, layered plant communities), RHS (evergreen structure), Xerces Society (pollinator diversity, overlapping bloom, native clumps), WSU Extension (hydrozoning and 1–3 years of establishment watering), Metro Vancouver (summer water restrictions, 1 May–15 October), Clemson Extension (maintenance load; zoning by maintenance intensity), Oudolf & Kingsbury *Planting: A New Perspective* with UF/IFAS (dense ground layers reduce weeding), Mississippi State Extension (warm colours advance). One item, **K-15 reconciling ornamental, ecological and maintenance goals by zoning**, is an explicit **proposed heuristic** with no source. Statements are paraphrased at the generality the fetched page supports; for example the colour principle does *not* claim that warm colours are visible from farther away, because no source for that was found.
+
+### Plant photographs
+Palette thumbnails are photographs from Wikimedia Commons under CC0, public-domain, CC BY or CC BY-SA licences, one per record, chosen because the file's description or categories name the species (cultivar photos were found for *Solidago rugosa* 'Fireworks' and *Rudbeckia* 'Goldsturm'). Metadata (file, author, licence, licence URL) is kept in `src/knowledge/plant-images.json`, read by the interface for alt text and tooltips, and listed in [docs/IMAGE-CREDITS.md](docs/IMAGE-CREDITS.md); `scripts/fetch-plant-images.mjs` downloads the 500 px renditions into `public/plants/` and regenerates the credits file. No AI-generated or substitute-species images are used; a record without a licensed photo would show a labelled illustration mark.
 
 ### Status labels used throughout
 | Label | Meaning |
@@ -154,7 +171,8 @@ Separation of concerns, as required by the brief: the model (or the offline pars
 
 ## Research integrity notes
 - Plant records and principles were compiled by fetching the cited pages; nothing was filled from model memory. Where fetches failed the field is unknown and the README says so.
-- The screenshots in `docs/screenshots/` are real captures of the running application in Offline Demonstration Mode.
+- The screenshots in `docs/screenshots/` are real captures of the running application in Offline Demonstration Mode (`01-core-view.png` is the 1920×1080 presentation frame; `03-feedback-revision.png` the before/after revision; `05-layout-1440x900.png` a laptop-viewport check).
+- The visual refinement added no data: diagrams, palettes and the season matrix are drawn from the existing plant records and strategy layers; no percentages, scores or inferred flowering months appear anywhere.
 - Stakeholder statements are the synthetic test inputs from the project brief, not East Park consultation records.
 - Whether this process is more valuable than asking a general-purpose chatbot is an open hypothesis for a later comparison study, not a finding of this prototype.
 

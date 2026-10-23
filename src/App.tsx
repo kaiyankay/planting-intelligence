@@ -72,7 +72,10 @@ export default function App() {
         <div>
           <h1>Planting Intelligence</h1>
           <div className="sub">
-            Knowledge-driven AI for planting design · {PLANTS.length} sourced plant records, {sourced} sourced principles, {PRINCIPLES.length - sourced} heuristic
+            Knowledge-driven AI for planting design · {PLANTS.length} sourced plant records, {sourced} sourced principles, {PRINCIPLES.length - sourced} heuristic ·{" "}
+            <a href="https://github.com/kaiyankay/planting-intelligence/blob/main/docs/IMAGE-CREDITS.md" target="_blank" rel="noreferrer">
+              image credits
+            </a>
           </div>
         </div>
         <div className="flow" aria-label="How it works">

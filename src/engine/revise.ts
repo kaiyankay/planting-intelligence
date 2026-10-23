@@ -144,6 +144,7 @@ export function applyAdjustments(ctx: Ctx, strategy: Strategy, feedback: string,
 
   const kept = [...current].filter((id) => !added.some((a) => a.plantId === id));
   const entry: RevisionEntry = {
+    before: { plantIds: [...new Set(strategy.placements.flatMap((p) => p.plantIds))], concept: strategy.concept },
     version: strategy.version + 1,
     timestamp: new Date().toISOString(),
     feedback,

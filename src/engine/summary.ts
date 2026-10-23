@@ -199,7 +199,7 @@ export function buildSummary(
     needsConfirmation.push({ kind: "plant_unknown", text: q.question, plantIds: q.blocks, principleIds: [], intentionIds: [q.id.replace("Q-", "")] });
   }
 
-  return { commonGround: dropSubsets(dedupe(commonGround)), tradeOffs: dropSubsets(dedupe(tradeOffs)), needsConfirmation: dedupe(needsConfirmation) };
+  return { commonGround: dropSubsets(dedupe(commonGround)), tradeOffs: mergeConditional(dropSubsets(dedupe(tradeOffs)), intentions, evaluations, plants), needsConfirmation: dedupe(needsConfirmation) };
 }
 
 function conditionKey(pid: string, intentionIds: string[], evaluations: PlantEvaluation[]): string {
@@ -217,6 +217,40 @@ function conditionSentence(key: string, pids: string[], plants: PlantRecord[], r
   if (key === "light_unknown") return relative ? `${plural ? "have" : "has"} an unknown light fit` : `the light fit of ${names.trim()} is unknown`;
   if (key.startsWith("field:")) return relative ? `${plural ? "lack" : "lacks"} a sourced value for ${key.slice(6).replace(/_/g, " ")}` : `the source for ${names.trim()} does not state ${key.slice(6).replace(/_/g, " ")}`;
   return `${names}depend${plural ? "" : "s"} on site conditions`;
+}
+
+// Conditional items that open with the same season phrase and rest on the same kind of condition
+// are merged into one sentence, so the same plants and the same caveat are not repeated.
+function mergeConditional(items: SummaryItem[], intentions: Intention[], evaluations: PlantEvaluation[], plants: PlantRecord[]): SummaryItem[] {
+  const cond = items.filter((i) => i.kind === "conditional" && /^In /.test(i.text));
+  if (cond.length < 2) return items;
+  const groups = new Map<string, SummaryItem[]>();
+  for (const it of cond) {
+    const season = it.text.match(/^In ([^,]+),/)?.[1] ?? "";
+    const key = season + "|" + [...new Set(it.plantIds.map((pid) => conditionKey(pid, it.intentionIds, evaluations)))].sort().join(",");
+    groups.set(key, [...(groups.get(key) ?? []), it]);
+  }
+  const merged: SummaryItem[] = [];
+  for (const [key, group] of groups) {
+    if (group.length === 1) {
+      merged.push(group[0]);
+      continue;
+    }
+    const season = key.split("|")[0];
+    const intentionIds = [...new Set(group.flatMap((g) => g.intentionIds))];
+    const plantIds = [...new Set(group.flatMap((g) => g.plantIds))];
+    const labels = intentionIds.map((id) => shortLabel(intentions.find((i) => i.id === id)!));
+    const condKey = conditionKey(plantIds[0], intentionIds, evaluations);
+    merged.push({
+      kind: "conditional",
+      text: `In ${season}, ${listLabels(labels)} depend on ${joinNames(plantIds, plants, 4)}, which ${conditionSentence(condKey, plantIds, plants, true)}.`,
+      plantIds,
+      principleIds: [...new Set(group.flatMap((g) => g.principleIds))],
+      intentionIds,
+    });
+  }
+  const rest = items.filter((i) => !cond.includes(i));
+  return [...merged, ...rest];
 }
 
 // An item whose intentions are a subset of another item's, with the same kind and plants, adds nothing.

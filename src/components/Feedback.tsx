@@ -3,6 +3,8 @@ import type { LlmStatus, NegotiationAnalysis, Strategy } from "../types.ts";
 import { PRINCIPLES, plantById } from "../knowledge/index.ts";
 import { shortLabel } from "../engine/summary.ts";
 import { NarrativeBlock, PlantChip, statusWord } from "./shared.tsx";
+import ConceptDiagram from "./ConceptDiagram.tsx";
+import { SeasonMatrix } from "./plants.tsx";
 
 interface Props {
   strategy: Strategy | null;
@@ -164,9 +166,21 @@ export default function Feedback({ strategy, analysis, onRevise, revising, statu
           )}
           {latest && (
             <>
-              <h3>Version {latest.version}</h3>
+              <h3>Version {latest.version - 1} → {latest.version}</h3>
               <div className="meta">
                 In response to “{latest.feedback}” · read as {latest.adjustments.map((a) => a.kind.replace(/_/g, " ")).join(", ")}
+              </div>
+              <div className="compare">
+                <div className="cmp">
+                  <h5>Previous · v{latest.version - 1}</h5>
+                  <ConceptDiagram d={latest.before.concept} id={`${s.id}-before`} />
+                  <SeasonMatrix plantIds={latest.before.plantIds} removed={new Set(latest.removed.map((r) => r.plantId))} />
+                </div>
+                <div className="cmp">
+                  <h5>Revised · v{latest.version}</h5>
+                  <ConceptDiagram d={s.concept} id={`${s.id}-after`} />
+                  <SeasonMatrix plantIds={ids} highlight={new Set(latest.added.map((a) => a.plantId))} />
+                </div>
               </div>
               <div className="change">
                 <div className="blk">

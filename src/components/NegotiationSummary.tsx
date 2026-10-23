@@ -13,7 +13,7 @@ interface Props {
   running: boolean;
 }
 
-const LIMIT = 3;
+const LIMIT = 2;
 
 export default function NegotiationSummary({ analysis, stakeholders, status, notices, error, running }: Props) {
   const [showAll, setShowAll] = useState(false);
@@ -44,7 +44,7 @@ export default function NegotiationSummary({ analysis, stakeholders, status, not
               <Column title="Needs confirmation" mark="unk" items={analysis.summary.needsConfirmation} glyph={() => "unk"} showAll={showAll} empty="Nothing blocks a judgement." />
             </div>
             <div className="summary-foot">
-              <span>Assembled from code checks of {analysis.evaluations.length} sourced plant records against the assumed site. Unknown values stay unknown; they are never treated as failures.</span>
+              <span>Assembled by code from {analysis.evaluations.length} sourced plant records and the assumed site. Unknown stays unknown.</span>
               <span style={{ display: "flex", gap: 16 }}>
                 <button className="linkish" onClick={() => setShowAll((v) => !v)}>
                   {showAll ? "Show fewer points" : "Show all points"}
@@ -146,24 +146,55 @@ export default function NegotiationSummary({ analysis, stakeholders, status, not
   );
 }
 
+function Glyph({ kind }: { kind: string }) {
+  if (kind === "met")
+    return (
+      <svg className="glyph" viewBox="0 0 16 16" aria-hidden="true">
+        <circle cx="8" cy="8" r="7" fill="var(--green-soft)" />
+        <path d="M4.5 8.2 L7 10.6 L11.6 5.6" fill="none" stroke="var(--green)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    );
+  if (kind === "limit")
+    return (
+      <svg className="glyph" viewBox="0 0 16 16" aria-hidden="true">
+        <circle cx="8" cy="8" r="7" fill="var(--red-soft)" />
+        <path d="M5 5 L11 11 M11 5 L5 11" stroke="var(--red)" strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    );
+  if (kind === "cond")
+    return (
+      <svg className="glyph" viewBox="0 0 16 16" aria-hidden="true">
+        <circle cx="8" cy="8" r="7" fill="var(--ochre-soft)" />
+        <path d="M4 10.5 L8 4.5 L12 10.5 Z" fill="none" stroke="var(--ochre)" strokeWidth="1.4" strokeLinejoin="round" />
+      </svg>
+    );
+  return (
+    <svg className="glyph" viewBox="0 0 16 16" aria-hidden="true">
+      <circle cx="8" cy="8" r="7" fill="var(--slate-soft)" />
+      <path d="M6.2 6.3 C6.2 4.9 9.8 4.9 9.8 6.4 C9.8 7.6 8 7.6 8 9" fill="none" stroke="var(--slate)" strokeWidth="1.4" strokeLinecap="round" />
+      <circle cx="8" cy="11.3" r=".9" fill="var(--slate)" />
+    </svg>
+  );
+}
+
 function Column({ title, mark, items, glyph, showAll, empty }: { title: string; mark: string; items: SummaryItem[]; glyph: (it: SummaryItem) => string; showAll: boolean; empty: string }) {
   const shown = showAll ? items : items.slice(0, LIMIT);
   return (
     <div className="col">
       <h3>
-        <span className={`mark ${mark}`} />
+        <Glyph kind={mark === "met" ? "met" : mark === "cond" ? "cond" : "unk"} />
         {title} <span className="count">{items.length}</span>
       </h3>
       {items.length === 0 && <div className="empty-col">{empty}</div>}
       {shown.map((it, i) => (
         <div className="item" key={i}>
-          <span className={`glyph ${glyph(it)}`} />
+          <Glyph kind={glyph(it)} />
           <div>
             <p>{it.text}</p>
             {(it.plantIds.length > 0 || it.principleIds.length > 0) && (
               <div className="ev" title={[...it.plantIds, ...it.principleIds].join(" ")}>
-                Evidence: {it.plantIds.slice(0, 4).join(" ")}
-                {it.plantIds.length > 4 ? ` +${it.plantIds.length - 4}` : ""} {it.principleIds.slice(0, 3).join(" ")}
+                {it.plantIds.slice(0, 3).join(" ")}
+                {it.plantIds.length > 3 ? ` +${it.plantIds.length - 3}` : ""} {it.principleIds.slice(0, 2).join(" ")}
               </div>
             )}
           </div>

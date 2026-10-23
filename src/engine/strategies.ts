@@ -139,7 +139,8 @@ export function strategySeasonalRelay(ctx: Ctx): Strategy {
     notes,
     applied,
     concept: {
-      caption: "Section from the path inwards. Not a plan: bed size and layout are unknown.",
+      style: "seasonal",
+      caption: "Seasonal drifts in front of an evergreen frame.",
       bands: [
         { role: "seasonal", label: "Seasonal drifts", share: 2, plantIds: seasonal.map((p) => p.id), pattern: "drift" },
         { role: "structural", label: wantsEvergreen ? "Evergreen shrubs" : "Shrub frame", share: 2, plantIds: structural.map((p) => p.id), pattern: "mass" },
@@ -208,7 +209,8 @@ export function strategyNativeFramework(ctx: Ctx): Strategy {
     notes,
     applied,
     concept: {
-      caption: "Entrances at the left. Not a plan: bed size and layout are unknown.",
+      style: "native",
+      caption: "Native body with the accent gathered at the threshold.",
       bands: [
         { role: "accent", label: colour && accent.length ? `${cap(colour)} accent` : "Threshold", share: 1, plantIds: accent.map((p) => p.id), pattern: "accent" },
         { role: "structural", label: "Native shrubs", share: 3, plantIds: structural.map((p) => p.id), pattern: "mass" },
@@ -273,7 +275,8 @@ export function strategyLowInput(ctx: Ctx): Strategy {
     notes,
     applied,
     concept: {
-      caption: "Large single-species groups. Not a plan: bed size and layout are unknown.",
+      style: "lowinput",
+      caption: "Few species in large single groups.",
       bands: [
         { role: "structural", label: "Evergreen mass", share: 3, plantIds: structural.map((p) => p.id), pattern: "mass" },
         { role: "structural", label: "Deciduous shrub", share: 2, plantIds: deciduous.map((p) => p.id), pattern: "mass" },

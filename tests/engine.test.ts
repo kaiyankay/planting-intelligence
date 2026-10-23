@@ -187,3 +187,27 @@ test("interpretation: a named animal group is checked literally against the sour
   const anyFail = evaluations.some((e) => e.checks[0].status === "fail");
   assert.ok(anyFail, "plants whose source does not mention hummingbirds must not pass");
 });
+
+test("diagrams: each strategy has a distinct drawing style and bands derived from its own layers", () => {
+  const { ctx } = build();
+  const strategies = generateStrategies(ctx);
+  const styles = new Set(strategies.map((s) => s.concept.style));
+  assert.equal(styles.size, strategies.length, "every strategy uses a different diagram language");
+  for (const s of strategies) {
+    const inLayers = new Set(s.placements.flatMap((p) => p.plantIds));
+    for (const b of s.concept.bands) for (const id of b.plantIds) assert.ok(inLayers.has(id), `${s.id}: diagram shows ${id} which is not in its layers`);
+    assert.ok(s.concept.caption.length > 0);
+  }
+});
+
+test("revision keeps a before snapshot so the comparison view shows real previous data", () => {
+  const { ctx } = build();
+  const s = generateStrategies(ctx)[1];
+  const feedback = "Can we reduce watering without losing too much summer colour?";
+  const adj = parseAdjustmentsOffline(feedback, PLANTS.map((p) => ({ id: p.id, names: [p.scientific_name, p.common_name] })));
+  const v2 = applyAdjustments(ctx, s, feedback, adj);
+  const entry = v2.revisionLog[0];
+  assert.deepEqual(entry.before.plantIds.slice().sort(), [...new Set(s.placements.flatMap((p) => p.plantIds))].sort());
+  assert.equal(entry.before.concept.style, s.concept.style);
+  assert.ok(entry.removed.every((r) => entry.before.plantIds.includes(r.plantId)));
+});
