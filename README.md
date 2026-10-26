@@ -25,7 +25,7 @@ npm run dev          # http://localhost:5173
 Other commands:
 
 ```bash
-npm test             # 11 engine tests (node:test, native TypeScript)
+npm test             # 17 engine tests (node:test, native TypeScript)
 npm run typecheck    # strict TypeScript
 npm run build && npm run preview
 npm run screenshots  # 1920x1080 screenshots with the system Chrome (dev server must be running)
@@ -90,17 +90,7 @@ Checked by running the engine on alternative statements (see `tests/engine.test.
 
 ## Visual design notes
 
-The interface is meant to read as a contemporary landscape-design workspace rather than an analytics dashboard: warm off-white paper, forest green, a restrained ochre for conditions and slate for unknowns, serif for statements and headings, Inter for interface text, and a monospace face only for record ids.
-
-Decisions and where they came from:
-- **Conceptual composition diagrams** (`src/components/ConceptDiagram.tsx`) use three drawing languages so the strategies differ at a glance: a left-to-right season relay of flower-coloured drifts in front of a continuous evergreen band (A); a body of overlapping native masses with the colour accent gathered as a cluster of dots at the threshold (B); few large, evenly spaced single-species groups, evergreen solid and deciduous dashed (C). The abstraction level follows concept-stage landscape sketches rather than planting plans: no boundary, no dimensions, no counts, and every drawing is labelled "Conceptual composition · Not to scale". Shapes, colours and labels are generated from the strategy's layers and the records' flower colour, flowering season and evergreen fields, and the diagram redraws when a revision changes the plants.
-- **Plant palette** rows (thumbnail, common name, scientific name) borrow AsterSketch's plant-palette organisation: a compact, consistent block of representative species per scheme rather than a long list. Photographs are licensed Wikimedia Commons images (see `docs/IMAGE-CREDITS.md`); a species without a licensed photo gets a labelled illustration mark, never a stand-in photo.
-- **Seasonal interest matrix** adapts the Plant Matrix idea of reading seasonality as a grid: rows are plants, columns are the four seasons, a coloured dot marks a flowering season the source records, a square marks evergreen foliage (structure, not flowers), and "?" marks a value the source does not state; a small legend under each matrix states this. Nothing is interpolated into months.
-- **Card structure** follows Milanote-style visual cards and shadcn/ui's restraint: identical section order on every card (diagram, name, approach, palette, matrix, main benefit, main trade-off), subtle borders, one radius, no shadows or gradients.
-- **Negotiation summary** keeps one quiet icon per class (check, triangle, question mark; a cross for knowledge-base limits), two points per column by default, and record ids in small monospace below each sentence so evidence is present but not competing with the conclusion.
-- **Before / after comparison** in the feedback pane shows the previous and revised diagrams and matrices side by side, with removed plants struck through and added plants emphasised, all drawn from the stored revision snapshot.
-
-Chart libraries were not needed; the diagrams and matrix are plain SVG and CSS.
+The interface reads as a landscape-design workspace rather than an analytics dashboard. The reasoning behind the composition diagrams, plant palettes, seasonal matrix and card structure, and the references each one borrows from, is in [docs/DESIGN-NOTES.md](docs/DESIGN-NOTES.md).
 
 ## Knowledge base
 
@@ -133,18 +123,23 @@ planting-intelligence/
   server/api.ts                     /api/status, /api/interpret, /api/adjust, /api/narrate
   server/llm.ts                     Anthropic SDK calls (structured outputs via zod; server-side key)
   src/types.ts                      domain types
-  src/knowledge/                    plants.verified.json, principles.json, normalise.ts, site.ts
+  src/knowledge/                    plants.verified.json, principles.json, plant-images.json, normalise.ts, site.ts, images.ts
   src/engine/interpret.ts           offline rule parser for intentions and feedback (all rules visible)
   src/engine/validate.ts            deterministic checks of plants against site and intentions
   src/engine/relations.ts           pairwise relationship analysis, season coverage, retrieval, open questions
+  src/engine/summary.ts             negotiation summary assembled from the computed relations
   src/engine/strategies.ts          three strategy generators + outcome/trade-off computation
   src/engine/revise.ts              revision operators + version log
   src/engine/narrate.ts             narrative grounding (citation checking) + offline templates
   src/engine/run.ts                 orchestration; LLM/offline switching with visible notices
-  src/components/                   Panel01Intentions, Panel02Negotiation, Panel03Strategies
-  tests/engine.test.ts              11 tests
+  src/components/                   Panel01Intentions, NegotiationSummary, StrategyCards, Feedback, ConceptDiagram
+  tests/engine.test.ts              17 tests
   scripts/screenshots.mjs           Playwright (system Chrome) screenshot script
+  scripts/fetch-plant-images.mjs    downloads the licensed plant photos and regenerates the credits
+  public/plants/                    plant photographs (Wikimedia Commons, see docs/IMAGE-CREDITS.md)
+  public/video.html, public/video/  mid-review video page and captions (the MP4 lives on the release)
   docs/screenshots/                 1920x1080 captures of the running prototype
+  docs/DESIGN-NOTES.md              visual design decisions and references
 ```
 
 Separation of concerns, as required by the brief: the model (or the offline parser) handles **language**; the **knowledge base** holds facts and principles with sources; the **engine** validates conditions in code and computes relations, strategies and revisions; the **narrative** layer may only cite ids that exist. Humans keep the decision: strategies are proposals, revisions produce a new version rather than replacing the old one, and nothing is marked accepted by the system.
@@ -177,7 +172,7 @@ Separation of concerns, as required by the brief: the model (or the offline pars
 
 ## Research integrity notes
 - Plant records and principles were compiled by fetching the cited pages; nothing was filled from model memory. Where fetches failed the field is unknown and the README says so.
-- The screenshots in `docs/screenshots/` are real captures of the running application in Offline Demonstration Mode (`01-core-view.png` is the 1920×1080 presentation frame; `02-strategies.png` the complete strategies section captured as a region; `03-feedback-revision.png` the before/after revision; `05-layout-1440x900.png` a laptop-viewport check).
+- The screenshots in `docs/screenshots/` are real captures of the running application in Offline Demonstration Mode (`01-core-view.png` is the 1920×1080 presentation frame; `02-strategies.png` the complete strategies section captured as a region; `03-feedback-revision.png` the before/after revision; `04-evidence-details.png` the expanded evidence; `05-layout-1440x900.png` a laptop-viewport check).
 - The visual refinement added no data: diagrams, palettes and the season matrix are drawn from the existing plant records and strategy layers; no percentages, scores or inferred flowering months appear anywhere.
 - Stakeholder statements are the synthetic test inputs from the project brief, not East Park consultation records.
 - Whether this process is more valuable than asking a general-purpose chatbot is an open hypothesis for a later comparison study, not a finding of this prototype.
