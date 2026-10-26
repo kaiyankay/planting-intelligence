@@ -8,8 +8,6 @@ A runnable web prototype that treats **planting intelligence** as the core capab
 
 ## Proposal
 
-*Mid-review proposal text, written by the author (146 words).*
-
 Planting design requires plant knowledge, site assessment, spatial composition, and decisions about how a place should work. Today, plant research, layout development, and revisions often happen across separate references and tools. General-purpose LLMs can suggest plants, but their supporting evidence and design logic are difficult to verify.
 
 Planting Intelligence proposes a public-facing AI planting design tool for community members, non-specialists, and designers. A sourced plant database and design-logic base would inform plant selection, spatial composition, and revisions. When goals conflict, the tool could compare alternatives and explain trade-offs. Users retain final choices, while unverified site conditions remain visible.
