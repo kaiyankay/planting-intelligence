@@ -6,6 +6,16 @@ A runnable web prototype that treats **planting intelligence** as the core capab
 
 > Research prototype. The three stakeholders are **synthetic roles**, not interview subjects. East Park (Southeast False Creek, Vancouver) is a **design-context reference only**; nothing here is a design for that park and no site data was taken from City of Vancouver documents. All site conditions are labelled synthetic assumptions or unknown.
 
+## Proposal
+
+*Mid-review proposal text, written by the author (146 words).*
+
+Planting design requires plant knowledge, site assessment, spatial composition, and decisions about how a place should work. Today, plant research, layout development, and revisions often happen across separate references and tools. General-purpose LLMs can suggest plants, but their supporting evidence and design logic are difficult to verify.
+
+Planting Intelligence proposes a public-facing AI planting design tool for community members, non-specialists, and designers. A sourced plant database and design-logic base would inform plant selection, spatial composition, and revisions. When goals conflict, the tool could compare alternatives and explain trade-offs. Users retain final choices, while unverified site conditions remain visible.
+
+The project will connect these knowledge sources to an LLM, check constraints with code, and compare results with and without retrieval. An initial rule-based prototype demonstrates traceable revisions using 12 plant records, 14 principles, and three predefined strategy types. The intended outcome is an editable, evidence-linked planting proposal.
+
 ## Mid-review video
 
 **[Watch the mid-review presentation](https://kaiyankay.github.io/planting-intelligence/video.html)** (9 min 35 s, English captions, 11 chapters), narrated by the author. The MP4 and an `.srt` caption file are attached to the [`mid-review-video` release](https://github.com/kaiyankay/planting-intelligence/releases/tag/mid-review-video) rather than committed, so cloning the repository stays light.
