@@ -2,6 +2,10 @@
 
 *Exploring knowledge-driven AI for planting design.* UBC ARCH 540, Assignment 2 (mid review, October 2026).
 
+**[Open the live prototype →](https://kaiyankay.github.io/planting-intelligence/)** · [Watch the mid-review video](https://kaiyankay.github.io/planting-intelligence/video.html)
+
+The live prototype runs in the browser in Offline Demonstration Mode (rule-based, no live language model); nothing needs to be installed.
+
 A runnable web prototype that treats **planting intelligence** as the core capability and **negotiation between stakeholders** as the first application. Three parties describe what they want from a public planting bed in plain language. The system interprets those intentions, checks them against a small, traceable plant database and a set of sourced planting-design principles, works out which goals can be met together and which depend on conditions, and proposes distinct design strategies. A reviewer can select a strategy, give feedback in plain language, and see a revised version with every change explained and recorded.
 
 > Research prototype. The three stakeholders are **synthetic roles**, not interview subjects. East Park (Southeast False Creek, Vancouver) is a **design-context reference only**; nothing here is a design for that park and no site data was taken from City of Vancouver documents. All site conditions are labelled synthetic assumptions or unknown.
@@ -188,4 +192,4 @@ Separation of concerns, as required by the brief: the model (or the offline pars
 
 ## Publishing
 
-The static build (`npm run build` → `dist/`) runs entirely in the browser in Offline Demonstration Mode, because there is no server to hold an API key. A GitHub Actions workflow (`.github/workflows/deploy-pages.yml`) builds and deploys it to GitHub Pages on every push to `main`; enable Pages with source "GitHub Actions" in the repository settings once. Live LLM mode needs the Vite server (`npm run dev` or `npm run preview`) with `ANTHROPIC_API_KEY` in `.env`.
+The static build (`npm run build` → `dist/`) runs entirely in the browser in Offline Demonstration Mode, because there is no server to hold an API key. A GitHub Actions workflow (`.github/workflows/deploy-pages.yml`) builds and deploys it to GitHub Pages (https://kaiyankay.github.io/planting-intelligence/) on every push to `main`; enable Pages with source "GitHub Actions" in the repository settings once. Live LLM mode needs the Vite server (`npm run dev` or `npm run preview`) with `ANTHROPIC_API_KEY` in `.env`.
