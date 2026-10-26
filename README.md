@@ -171,21 +171,22 @@ Separation of concerns, as required by the brief: the model (or the offline pars
 | Server-side API key handling | implemented (`.env`, never exposed to the browser) |
 | Quantities, spacing, planting plan, 3D or CAD output | not implemented, out of scope |
 | Toxicity screening, invasive status, availability | not implemented; cautions shown only where a source states them |
-| Comparison against general-purpose ChatGPT; user testing | not done; the research hypothesis to test next |
+| Exploratory comparison with ChatGPT and db.garden | done once for the mid review (slide 10, 23 October 2026): the same brief and the same revision request (*"Can we reduce watering without losing too much summer colour?"*) given to a fresh ChatGPT chat, to db.garden as a resubmitted brief (12 of 25 candidates retained, 13 replaced), and to this prototype in offline mode. Qualitative, one run per tool, no scoring |
+| Controlled comparison of the same LLM with and without retrieved planting knowledge; user testing | not done; the core research experiment and the user sessions come next |
 
 ### What is still missing for a real AI negotiator
 - **The design moves are authored, not generated.** The system chooses plants, checks facts and applies principles within three fixed approaches. A negotiator would propose new moves (a moist pocket, a sunnier bed, a different layer logic) from the knowledge base itself.
 - **Principles are encoded as rules by hand.** Twelve of fifteen principles change decisions, but each link was written by the developer. Retrieving a principle and deriving a design move from its text is future work.
 - **Language understanding is a rule parser offline.** Statements outside the rule vocabulary are flagged as unparsed rather than understood. The live model path (structured output) exists but is unverified.
 - **The knowledge base is small.** Twelve records and one site assumption set; many "conditional" findings are really data gaps.
-- **No evaluation yet.** Whether this is more useful than asking a general-purpose chatbot is untested.
+- **No systematic evaluation yet.** The mid-review comparison ran each tool once on one brief. Whether this is more useful than asking a general-purpose chatbot is untested.
 
 ## Research integrity notes
 - Plant records and principles were compiled by fetching the cited pages; nothing was filled from model memory. Where fetches failed the field is unknown and the README says so.
 - The screenshots in `docs/screenshots/` are real captures of the running application in Offline Demonstration Mode (`01-core-view.png` is the 1920×1080 presentation frame; `02-strategies.png` the complete strategies section captured as a region; `03-feedback-revision.png` the before/after revision; `04-evidence-details.png` the expanded evidence; `05-layout-1440x900.png` a laptop-viewport check).
 - The visual refinement added no data: diagrams, palettes and the season matrix are drawn from the existing plant records and strategy layers; no percentages, scores or inferred flowering months appear anywhere.
 - Stakeholder statements are the synthetic test inputs from the project brief, not East Park consultation records.
-- Whether this process is more valuable than asking a general-purpose chatbot is an open hypothesis for a later comparison study, not a finding of this prototype.
+- Whether this process is more valuable than asking a general-purpose chatbot is an open hypothesis for a later comparison study, not a finding of this prototype. The mid-review side-by-side with ChatGPT and db.garden is an exploratory observation from single runs.
 
 ## Publishing
 
