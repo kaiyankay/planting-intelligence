@@ -89,9 +89,12 @@ export default function App() {
             </span>
           ))}
         </div>
-        <div className={`mode ${status.available ? "live" : ""}`} title={status.available ? "Statements and feedback are read by a live model; plant facts are still checked by code." : "No API key on the server: statements are read by a transparent rule parser and explanatory text is template-based. Plant facts are checked by code either way."}>
-          <span className="dot" />
-          {status.available ? `Live model · ${status.model}` : "Offline demonstration mode"}
+        <div className="mast-end">
+          <a className="video-link" href="./video.html">Mid-review video</a>
+          <div className={`mode ${status.available ? "live" : ""}`} title={status.available ? "Statements and feedback are read by a live model; plant facts are still checked by code." : "No API key on the server: statements are read by a transparent rule parser and explanatory text is template-based. Plant facts are checked by code either way."}>
+            <span className="dot" />
+            {status.available ? `Live model · ${status.model}` : "Offline demonstration mode"}
+          </div>
         </div>
       </header>
       <div className="layout">
