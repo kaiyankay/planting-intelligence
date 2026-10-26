@@ -16,7 +16,7 @@ The project will connect these knowledge sources to an LLM, check constraints wi
 
 ## Mid-review video
 
-**[Watch the mid-review presentation](https://kaiyankay.github.io/planting-intelligence/video.html)** (9 min 35 s, English captions, 11 chapters), narrated by the author. The MP4 and an `.srt` caption file are attached to the [`mid-review-video` release](https://github.com/kaiyankay/planting-intelligence/releases/tag/mid-review-video) rather than committed, so cloning the repository stays light.
+**[Watch the mid-review presentation](https://kaiyankay.github.io/planting-intelligence/video.html)** The MP4 and an `.srt` caption file are attached to the [`mid-review-video` release](https://github.com/kaiyankay/planting-intelligence/releases/tag/mid-review-video) rather than committed, so cloning the repository stays light.
 
 Chapter 09 shows this prototype in Offline Demonstration Mode, edited from captures of the website and timed to the narration; it is not one continuous live recording.
 
