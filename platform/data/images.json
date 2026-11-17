@@ -1,0 +1,127 @@
+{
+ "about": "Presentation assets only: which photograph stands beside each species in the Plant Library, with its licence and credit. No plant fact lives here; the species identification of each photograph is the one given on its Wikimedia Commons page and has not been verified by this project.",
+ "retrieved": "2026-11-14",
+ "retrieved_from": "Wikimedia Commons (commons.wikimedia.org), resized and recompressed",
+ "images": {
+  "acer-palmatum": {
+   "file": "acer-palmatum.jpg",
+   "card": "acer-palmatum-card.jpg",
+   "width": 960,
+   "height": 720,
+   "title": "File:Un Acer Palmatum du pavillon chinois au jardin botanique de Marseille.jpg",
+   "author": "Revjoy",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Un_Acer_Palmatum_du_pavillon_chinois_au_jardin_botanique_de_Marseille.jpg",
+   "caption_at_source": "Spécimen d'Acer Palmatum au pavillon chinois du jardin Botanique de Marseille. Novembre 2020"
+  },
+  "achillea-millefolium": {
+   "file": "achillea-millefolium.jpg",
+   "card": "achillea-millefolium-card.jpg",
+   "width": 960,
+   "height": 1197,
+   "title": "File:Yarrow (Achillea millefolium).jpg",
+   "author": "Petar Milošević",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Yarrow_(Achillea_millefolium).jpg",
+   "caption_at_source": "Yarrow (Achillea millefolium) on top of Janče hill (800 m), Slovenia. Size of flower is around 3×3 cm. Stack of 9 macro photos."
+  },
+  "arctostaphylos-uva-ursi": {
+   "file": "arctostaphylos-uva-ursi.jpg",
+   "card": "arctostaphylos-uva-ursi-card.jpg",
+   "width": 960,
+   "height": 720,
+   "title": "File:Arctostaphylos uva-ursi 25924.JPG",
+   "author": "Walter Siegmund",
+   "licence": "CC BY 2.5",
+   "licence_url": "https://creativecommons.org/licenses/by/2.5",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Arctostaphylos_uva-ursi_25924.JPG",
+   "caption_at_source": "Kinnikinnick"
+  },
+  "cercidiphyllum-japonicum": {
+   "file": "cercidiphyllum-japonicum.jpg",
+   "card": "cercidiphyllum-japonicum-card.jpg",
+   "width": 960,
+   "height": 1439,
+   "title": "File:Cercidiphyllaceae Cercidiphyllum japonicum 2.jpg",
+   "author": "NasserHalaweh",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Cercidiphyllaceae_Cercidiphyllum_japonicum_2.jpg",
+   "caption_at_source": "Cercidiphyllum japonicum KATSURA. Berggarten Hannover."
+  },
+  "cornus-nuttallii": {
+   "file": "cornus-nuttallii.jpg",
+   "card": "cornus-nuttallii-card.jpg",
+   "width": 960,
+   "height": 720,
+   "title": "File:2338 PacificDogwood.jpg",
+   "author": "Paul Schultz from Kenmore, USA",
+   "licence": "CC BY 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by/2.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:2338_PacificDogwood.jpg",
+   "caption_at_source": "IMG_2338_PacificDogwood"
+  },
+  "cornus-sericea": {
+   "file": "cornus-sericea.jpg",
+   "card": "cornus-sericea-card.jpg",
+   "width": 960,
+   "height": 862,
+   "title": "File:Cornus sericea 2 RF.jpg",
+   "author": "Robert Flogaus-Faust",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Cornus_sericea_2_RF.jpg",
+   "caption_at_source": "Red-osier dogwood (Cornus sericea), Richmond, B. C., Canada"
+  },
+  "gaillardia-aristata": {
+   "file": "gaillardia-aristata.jpg",
+   "card": "gaillardia-aristata-card.jpg",
+   "width": 960,
+   "height": 720,
+   "title": "File:Gaillardia aristata (3750286063).jpg",
+   "author": "Matt Lavin from Bozeman, Montana, USA",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Gaillardia_aristata_(3750286063).jpg",
+   "caption_at_source": "Typically this species grows as a bunched perennial."
+  },
+  "gaultheria-shallon": {
+   "file": "gaultheria-shallon.jpg",
+   "card": "gaultheria-shallon-card.jpg",
+   "width": 960,
+   "height": 640,
+   "title": "File:T’áḵa7áy̓ 1649.jpg",
+   "author": "Chris Light",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:T%E2%80%99%C3%A1%E1%B8%B5a7%C3%A1y%CC%93_1649.jpg",
+   "caption_at_source": "Salal (Gaultheria shallon)."
+  },
+  "polystichum-munitum": {
+   "file": "polystichum-munitum.jpg",
+   "card": "polystichum-munitum-card.jpg",
+   "width": 960,
+   "height": 640,
+   "title": "File:Polystichum munitum 4302.jpg",
+   "author": "Chris Light",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Polystichum_munitum_4302.jpg",
+   "caption_at_source": "Sword fern (Polystichum munitum) along the Wind in the Woods Loop."
+  },
+  "vaccinium-ovatum": {
+   "file": "vaccinium-ovatum.jpg",
+   "card": "vaccinium-ovatum-card.jpg",
+   "width": 960,
+   "height": 1280,
+   "title": "File:Vaccinium ovatum kz01.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Vaccinium_ovatum_kz01.jpg",
+   "caption_at_source": "Vaccinium ovatum in Redwood National Park, California"
+  }
+ }
+}

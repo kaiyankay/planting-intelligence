@@ -1,0 +1,126 @@
+/* Planting Intelligence · Garden Studio, V4 layer (2026-11-15). Loaded last. It holds what the V4 brief changes on top of
+   journey.css / workspace.css / studio.css / platform-studio.css: the type (Bricolage Grotesque speaks, DM Sans works, DM Mono
+   records), the landing reduced to one invitation, the stepper that appears with the workflow, the docked side panel, the
+   Objective panel, the preview/version line and the three-line "why". No colour is added. */
+
+/* ------------------------------------------------------------------ type */
+#top .wordmark { font: 650 18px/1 var(--display); letter-spacing: -.035em; }
+.stage-head h2, .ws-head h2, .insp-sel > h3, .bedcard > h3, .ws-inspector .card.proposal.concept > h3, .panel-h, .canvas-empty h3, #site-location .src-head h3, .phead h3 { font-weight: 600; letter-spacing: -.03em; }
+.phead h3 i.sci, .insp-sel > h3 i.sci { font: italic 500 .92em/1.2 var(--sans); letter-spacing: -.01em; }   /* a scientific name is DM Sans italic: Bricolage has no italic */
+.pi-why h4 { font: 600 17px/1.25 var(--display); letter-spacing: -.02em; } .pi-why h4 i { font: italic 500 .95em/1.2 var(--sans); letter-spacing: 0; }
+
+/* ------------------------------------------------------------------ the bar: four destinations; the stepper only inside the workflow */
+#top { gap: 20px; }
+body[data-stage="welcome"] #stagenav, body[data-stage="welcome"] #top .right { display: none; }
+#top .right { margin-left: 4px; }   /* the stepper itself: v42.css */
+#interp { font: 12px/1 var(--mono); }
+@media (max-width: 1340px) { #top { gap: 12px; } #top .pi-nav a { padding: 0 10px; } }
+@media (max-width: 1180px) { #interp { display: none; } }
+
+/* ------------------------------------------------------------------ Imagine: one invitation */
+.hero h1 { font: 650 clamp(56px, 6.3vw, 100px)/.94 var(--display); letter-spacing: -.055em; text-wrap: balance; }
+.hero h1 em { display: block; font-style: normal; color: var(--olive-deep); }
+.hero .lede { font-size: clamp(18px, 1.4vw, 20px); margin: 24px 0 28px; }
+.hero .after { margin-top: 16px; gap: 6px; }
+
+/* ------------------------------------------------------------------ workspace: nothing floats over the plan */
+/* An on-demand panel (goals, functions, conditions, evidence, schedule…) is a docked column on the left of the canvas: the plan
+   keeps the rest and re-fits itself, so the drawing is never covered. */
+@media (min-width: 1001px) {
+  .ws-canvas { --dock: 0px; }
+  .ws-canvas:has(> .ws-panel.open) { --dock: 360px; }
+  .ws-canvas:has(> .ws-panel.open.evidence), .ws-canvas:has(> #gpanel.open) { --dock: 400px; }
+  .ws-canvas:has(> #gpanel.open.schedule), .ws-canvas:has(> #gpanel.open.versions) { --dock: 520px; }
+  .ws-panel, #cws-panel.evidence, #gpanel, #gpanel.schedule, #gpanel.versions, .ws-panel.location { left: 0; top: 0; bottom: 0; width: var(--dock); max-height: none; border: 0; border-right: 1px solid var(--line); border-radius: 0; box-shadow: none; padding: 16px 18px 28px; background: var(--paper); }
+  .ws-canvas > .canvas-home, .ws-canvas #site-canvas-body, .ws-canvas #compose-canvas-body, .ws-canvas #garden-canvas-body { left: var(--dock); }
+  #banner { left: calc(var(--dock) + (100% - var(--dock)) / 2); max-width: calc(100% - var(--dock) - 190px); }
+  .ws-say { left: calc(var(--dock) + (100% - var(--dock)) / 2); width: min(540px, calc(100% - var(--dock) - 300px)); }
+  .ws-canvas:has(> .ws-panel.open) .ws-say { width: min(380px, calc(100% - var(--dock) - 350px)); }
+  .ws-canvas:has(> .ws-panel.open) .scalebar-w { display: none; }
+}
+@media (min-width: 1001px) and (max-width: 1340px) {
+  .ws-canvas:has(> .ws-panel.open) { --dock: 320px; } .ws-canvas:has(> .ws-panel.open.evidence), .ws-canvas:has(> #gpanel.open) { --dock: 340px; } .ws-canvas:has(> #gpanel.open.schedule), .ws-canvas:has(> #gpanel.open.versions) { --dock: 400px; }
+  /* V4.1: the command bar stays when a panel is docked at this width; it gives up its hint and the note of who reads it, not itself */
+  .ws-canvas:has(> .ws-panel.open) .ws-say { left: calc(var(--dock) + 12px); transform: none; width: calc(100% - var(--dock) - 180px); min-width: 0; }
+  .ws-canvas:has(> .ws-panel.open) .ws-say textarea::placeholder { color: transparent; }
+}
+#site-goals { display: none; } #ws-panel.goals #site-goals { display: block; }
+#ws-panel.goals #site-conditions, #ws-panel.goals #site-evidence, #ws-panel.goals #site-location, #ws-panel.conditions #site-goals, #ws-panel.evidence #site-goals, #ws-panel.location #site-goals { display: none; }
+.say-by { flex: none; align-self: center; margin-right: 6px; font: 12px/1 var(--mono); white-space: nowrap; }
+@media (max-width: 1340px) { .say-by { display: none; } }
+.ws-canvas:has(> .ws-panel.open) .say-by { display: none; }
+#top #interp { display: none; }   /* how words are read is said where they are read: in each command bar */
+
+/* ------------------------------------------------------------------ what is on screen: a preview or a generated version */
+.readline { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; margin: 8px 0 0; padding: 6px 10px; font-size: 12.5px; line-height: 1.4; color: var(--ink-2); border: 1px dashed var(--caramel); border-radius: 8px; background: var(--paper); }
+.readline b { font-weight: 600; color: #8a5f1c; } .readline .mono { font: 12px/1.3 var(--mono); color: var(--ink-3); }
+.ws-canvas .canvas-hint.pv { border: 1px dashed var(--caramel); color: #8a5f1c; box-shadow: none; }
+.canvas-home[data-read="preview"] #svg .preview-plants { opacity: .86; }
+.ws-grow .ws-head .ws-model { font-weight: 500; }
+
+/* ------------------------------------------------------------------ the Objective panel */
+.objs { margin: 14px 0 4px; display: grid; gap: 12px; }
+.obj { border: 1px solid var(--line-2); border-radius: 10px; background: var(--paper); padding: 12px 14px 4px; }
+.obj.fails { border-left: 3px solid var(--rust); } .obj.uncertain, .obj.estimate { border-left: 3px solid var(--caramel); } .obj.meets { border-left: 3px solid var(--olive-deep); } .obj.recorded, .obj.none { border-style: dashed; padding-bottom: 10px; }
+.obj > header { display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px; }
+.obj > header h4 { flex: 1; min-width: 0; margin: 0; font: 600 16px/1.25 var(--display); letter-spacing: -.02em; } .obj > header h4 span { font: 400 13px/1.3 var(--sans); letter-spacing: 0; color: var(--ink-2); }
+.os { flex: none; font: 600 12.5px/1.3 var(--sans); font-style: normal; white-space: nowrap; } .os.fails { color: var(--rust); } .os.uncertain, .os.estimate { color: #8a5f1c; } .os.meets { color: var(--olive-deep); } .os.rec { color: var(--ink-3); font-weight: 500; }
+.obj dl { margin: 0; } .obj dl > div { display: grid; grid-template-columns: 86px minmax(0, 1fr); gap: 8px; padding: 7px 0 8px; border-top: 1px solid var(--line); }
+.obj [data-obj-row="value"] small { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.obj dt { padding-top: 2px; font: 600 12px/1.4 var(--sans); letter-spacing: .02em; text-transform: uppercase; color: var(--ink-3); }
+.obj dd { margin: 0; min-width: 0; font-size: 13.5px; line-height: 1.45; } .obj dd small { display: block; margin-top: 2px; font-size: 12.5px; line-height: 1.4; color: var(--ink-3); } .obj dd .lv { font-size: 12.5px; color: var(--ink-3); }
+.obj dd ul { margin: 0; padding: 0 0 0 16px; } .obj dd li { margin: 0 0 4px; font-size: 13px; color: var(--ink-2); }
+.obj .oc { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin: 0 0 10px; } .obj .oc:last-child { margin-bottom: 0; } .obj .oc small { flex-basis: 100%; margin-top: 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.obj .oc label, .obj .oc .ol { flex: none; width: 92px; font-size: 13px; font-weight: 500; } .obj .oc input.num { width: 64px; padding: 5px 8px; font-size: 13.5px; }
+.obj .oc .seg { display: inline-flex; padding: 2px; gap: 2px; background: var(--paper-2); border-radius: 8px; } .obj .oc .seg button { padding: 4px 9px; border-radius: 6px; font-size: 12.5px; color: var(--ink-2); } .obj .oc .seg button.on { background: var(--paper); color: var(--ink); box-shadow: 0 1px 3px rgba(39,36,31,.14); } .obj .oc .seg button:disabled { color: var(--ink-3); opacity: .55; cursor: default; }
+.obj .vchecks { margin: 6px 0 2px; } .obj-rec, .obj-n { margin: 0; font-size: 13px; color: var(--ink-2); line-height: 1.45; } .obj-n { margin-top: 6px; color: var(--ink-3); }
+.obj-prefs { font-size: 13px; } .obj-prefs > summary { cursor: pointer; color: var(--olive-deep); font-weight: 500; padding: 2px 0; } .obj-prefs ul { margin: 6px 0 0; padding-left: 16px; color: var(--ink-2); } .obj-prefs li { margin-bottom: 4px; } .obj-prefs li.inert { color: var(--ink-3); } .obj-prefs b { font-weight: 600; color: var(--ink); }
+.objlist .objline { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2px; width: 100%; text-align: left; padding: 8px 0; border-top: 1px solid var(--line); font-size: 13px; } .objlist .objline:hover b { text-decoration: underline; } .objlist .objline span { display: flex; justify-content: space-between; gap: 10px; color: var(--ink-2); }
+.shapeobj .obj-vals { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 8px; } .shape-objs { list-style: none; margin: 0; padding: 0; } .shape-objs li { display: grid; grid-template-columns: 88px minmax(0, 1fr); align-items: start; gap: 10px; padding: 7px 0; border-top: 1px solid var(--line); font-size: 13px; } .shape-objs li > :first-child { text-align: left; font-weight: 600; } .shape-objs small { display: block; color: var(--ink-3); font-size: 12.5px; line-height: 1.4; }
+
+/* ------------------------------------------------------------------ what changed */
+.chgnote { margin: 12px 0 4px; padding: 10px 12px; border-radius: 8px; background: var(--olive-soft); font-size: 13px; line-height: 1.45; } .chgnote.same { background: var(--paper-2); }
+.chg-h { display: flex; align-items: baseline; gap: 8px; } .chg-h b { flex: none; font-weight: 600; } .chg-h span { flex: 1; min-width: 0; color: var(--ink-2); } .chg-x { flex: none; width: 22px; height: 22px; border-radius: 6px; font-size: 16px; line-height: 1; color: var(--ink-3); } .chg-x:hover { background: rgba(39,36,31,.08); color: var(--ink); }
+.chgnote h6 { margin: 8px 0 2px; font: 600 12.5px/1.3 var(--sans); } .chgnote ul { margin: 0; padding-left: 16px; } .chgnote li { margin: 2px 0; } .chgnote p { margin: 6px 0 0; } .chg-unk { color: #8a5f1c; } .chg-n { font-size: 12px; color: var(--ink-3); }
+
+/* ------------------------------------------------------------------ Grow: a compact plant card; the garden summary waits behind it */
+/* V4.2: the plant card sits inside the overview (see v42.css); the overview is no longer hidden while a plant is selected */
+.grow-side #plantcard { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+#plantcard .whybox { margin-top: 12px; } #plantcard .pi-why-3 > div, #cws-evidence .pi-why-3 > div { grid-template-columns: 98px minmax(0, 1fr); }
+#plantcard .insp-actions { margin-top: 12px; } #plantcard .insp-tip { margin-top: 12px; font-size: 12.5px; color: var(--ink-3); }
+.fit.uncertain { white-space: nowrap; }
+.obj .oc .seg { flex: none; } .obj .oc .seg button { white-space: nowrap; }
+@media (min-width: 1001px) and (max-width: 1340px) { .obj dl > div { grid-template-columns: minmax(0, 1fr); gap: 2px; } .obj .oc .seg button { padding: 4px 7px; font-size: 12px; } }
+
+/* ------------------------------------------------------------------ V4.1 · objective: result → controls → what changed → details on demand */
+.obj { padding: 12px 14px 6px; }
+.obj > header { margin-bottom: 4px; }
+.obj .obj-top > div { display: block; padding: 6px 0 8px; border-top: 0; }
+.obj .obj-top > [data-obj-row="metric"] { padding-top: 0; }
+.obj .obj-top > [data-obj-row="metric"] dt { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.obj .obj-top > [data-obj-row="metric"] dd { font-size: 14px; line-height: 1.4; }
+.obj .obj-top > [data-obj-row="metric"] dd b { font-weight: 600; }
+.obj .obj-top > [data-obj-row="parameters"] { border-top: 1px solid var(--line); padding-top: 9px; }
+.obj .obj-top > [data-obj-row="parameters"] dt { margin-bottom: 6px; padding: 0; }
+.obj .oc { margin-bottom: 8px; } .obj .oc small { -webkit-line-clamp: 2; }
+.obj-more { border-top: 1px solid var(--line); margin: 2px 0 0; }
+.obj-more > summary { cursor: pointer; padding: 7px 0; font-size: 12.5px; color: var(--ink-2); list-style: none; display: flex; align-items: baseline; gap: 4px; }
+.obj-more > summary::-webkit-details-marker { display: none; }
+.obj-more > summary::after { content: '+'; margin-left: auto; font: 500 14px/1 var(--mono); color: var(--ink-3); } .obj-more[open] > summary::after { content: '–'; }
+.obj-more > summary b { font-weight: 600; color: #8a5f1c; }
+.obj-more > summary:focus-visible { outline: 2px solid var(--olive-deep); outline-offset: 2px; border-radius: 4px; }
+.obj-more dl > div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+.obj-more .readline { margin: 6px 0 2px; }
+.obj-rules { list-style: none; margin: 0 0 4px; padding: 0 !important; } .obj-rules li { margin: 0 0 5px; } .obj-rules .src { font: 11.5px/1 var(--mono); font-style: normal; color: var(--ink-3); border: 1px solid var(--line-2); border-radius: 4px; padding: 1px 4px; }
+.obj .mono { font: 12px/1.3 var(--mono); color: var(--ink-3); }
+.chgnote { margin: 10px 0 4px; }
+
+.obj .vchecks { display: flex; flex-wrap: wrap; gap: 4px 5px; margin: 6px 0 4px; } .obj .ck { font-size: 12px; line-height: 1.5; padding: 0 6px; border-radius: 4px; background: var(--paper-2); color: var(--ink-2); white-space: nowrap; } .obj .ck b { font-weight: 600; color: var(--ink); } .obj .ck.fails b { color: var(--rust); } .obj .ck.uncertain b { color: #8a5f1c; }
+/* V4.1 · Shape: choose a layout, then edit its beds — two modes, one header that says which */
+.shape-mode { display: flex; align-items: center; gap: 7px; margin: 0 0 10px; font-size: 13.5px; } .shape-mode b { font-weight: 600; }
+.shape-mode .sm-n { flex: none; display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--olive-deep); color: var(--paper); font: 500 12px/1 var(--sans); } .shape-mode .sm-n.done { background: var(--olive-soft); color: var(--olive-deep); }
+.shape-mode .sm-next, .shape-mode .sm-prev { font-size: 12.5px; color: var(--ink-3); } .shape-mode .sm-next { margin-left: auto; } .shape-mode .sm-prev { margin-right: 6px; }
+.layout-diff { list-style: none; margin: 0 0 10px; padding: 0; font-size: 12.5px; color: var(--ink-2); } .layout-diff li { padding: 3px 0; border-top: 1px solid var(--line); }
+.proposal[data-shape-mode="choose"] .insp-actions { align-items: center; }
+/* V4.1 · Grow: one sentence first, the rest on a click */
+.why-rest { display: inline; } .why-rest > summary { display: inline; cursor: pointer; font-size: 12.5px; font-weight: 500; color: var(--olive-deep); list-style: none; text-decoration: underline; text-underline-offset: 2px; } .why-rest > summary::-webkit-details-marker { display: none; } .why-rest[open] > summary { display: none; } .why-rest > summary:focus-visible { outline: 2px solid var(--olive-deep); outline-offset: 2px; border-radius: 3px; }

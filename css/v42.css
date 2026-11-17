@@ -1,0 +1,110 @@
+/* Planting Intelligence · Garden Studio, V4.2 layer (2026-11-16). Loaded last.
+   It holds: the stepper (the ONE place its layout is written), Grow's label scope and legend, Grow's quieter inspector and its action menu.
+   No colour is added; tokens are those of journey.css. */
+
+/* ------------------------------------------------------------------ the stepper: one contract
+   A step is one <button> with two flex items that never overlap and never shrink: a numbered dot and a whole label.
+     dot    22 × 22, the step number as real text (no counter, no pseudo-element, never positioned over the label)
+     label  the stage name, one line, shown whole or not at all
+   States (class, aria and fill say the same thing):
+     current  .on + aria-current="step"   filled dot, ink label, a pill around the step
+     done     .done                       soft-filled dot, ink-2 label; a click goes back there
+     future   :disabled                   dashed dot, ink-3 label (still legible: 4.6 : 1 on the bar)
+   Modes:
+     full     > 1240 px   four dots and four labels
+     compact  ≤ 1240 px   four dots, the label of the current step only; the other names stay in aria-label and title
+   The stepper itself never shrinks (flex: none) and nothing clips it: when the bar runs out of room the platform links tighten first,
+   then the compact mode starts. It is absent on Imagine. */
+#top #stagenav { display: flex; flex: none; align-items: center; gap: 0; list-style: none; margin: 0 0 0 auto; padding: 0; background: none; border-radius: 0; min-width: max-content; }
+body[data-stage="welcome"] #top #stagenav { display: none; }
+#top #stagenav li { display: flex; flex: none; align-items: center; margin: 0; padding: 0; }
+#top #stagenav li + li::before { content: ""; flex: none; width: 14px; height: 1px; margin: 0 4px; background: var(--line-2); }
+#top #stagenav button { position: static; display: inline-flex; flex: none; align-items: center; justify-content: flex-start; gap: 7px; box-sizing: border-box; height: 32px; min-width: max-content; padding: 0 12px 0 4px; border: 1px solid transparent; border-radius: 999px; background: none; box-shadow: none; font: 500 13px/1 var(--sans); letter-spacing: 0; color: var(--ink-2); white-space: nowrap; overflow: visible; cursor: pointer; transition: background .15s var(--ease), color .15s var(--ease); }
+#top #stagenav .dot { position: static; display: inline-flex; flex: none; align-items: center; justify-content: center; box-sizing: border-box; width: 22px; height: 22px; margin: 0; border: 1px solid var(--line-2); border-radius: 50%; background: none; font: 600 12px/1 var(--sans); color: var(--ink-3); }
+#top #stagenav .label { position: static; display: inline-block; flex: none; margin: 0; white-space: nowrap; }
+/* done */
+#top #stagenav button.done .dot { border-color: transparent; background: var(--olive-soft); color: var(--olive-deep); }
+#top #stagenav button.done:hover { background: var(--paper-2); color: var(--ink); }
+/* current */
+#top #stagenav button.on { border-color: var(--line); background: var(--paper); box-shadow: var(--shadow-soft); color: var(--ink); font-weight: 600; cursor: default; }
+#top #stagenav button.on .dot { border-color: var(--olive-deep); background: var(--olive-deep); color: #fff; }
+/* future */
+#top #stagenav button:disabled { color: var(--ink-3); cursor: default; }
+#top #stagenav button:disabled .dot { border-style: dashed; }
+#top #stagenav button:focus-visible { outline: 2px solid var(--olive-deep); outline-offset: 2px; }
+/* New project keeps its own footprint beside the stepper */
+#top .right { flex: none; }
+#top #newproj { white-space: nowrap; }
+@media (max-width: 1240px) {   /* compact: whole labels of the other steps are not drawn */
+  #top #stagenav button:not(.on) .label { display: none; }
+  #top #stagenav button:not(.on) { padding: 0 4px; }
+  #top #stagenav li + li::before { width: 10px; margin: 0 3px; }
+}
+@media (max-width: 1040px) { #top { gap: 10px; } #top .pi-nav a { padding: 0 6px; } }
+@media (max-width: 760px) {   /* phone: the platform links take their own row (platform-studio.css); the stepper stays compact on the first */
+  #top #stagenav li + li::before { width: 6px; margin: 0 2px; }
+  #top #stagenav button { height: 30px; } #top #stagenav button.on { padding-right: 10px; }
+}
+
+/* ------------------------------------------------------------------ Grow · label scope (the 3D view never draws a name per plant)
+   One control, five scopes: Off · Hover · Selected · Bed · Species. A scope draws at most one callout and one legend. */
+.labscope { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 4px 0 11px; border: 1px solid var(--line-2); border-radius: 999px; font-size: 12.5px; color: var(--ink-2); white-space: nowrap; }
+.labscope select { height: 26px; padding: 0 4px; border: 0; border-radius: 999px; background: none; font: 500 12.5px/1 var(--sans); color: var(--ink); cursor: pointer; }
+.labscope select:focus-visible { outline: 2px solid var(--olive-deep); outline-offset: 1px; }
+#garden-canvas-body { position: relative; }
+/* the one callout: the selected plant, placed from its projected position by the 3D view */
+.g3-callout { position: absolute; left: 0; top: 0; z-index: 3; max-width: 260px; padding: 6px 10px 7px; border: 1px solid var(--line-2); border-radius: 8px; background: var(--paper); box-shadow: var(--shadow-soft); font-size: 12.5px; line-height: 1.3; color: var(--ink); pointer-events: none; will-change: transform; }
+.g3-callout b { display: block; font-weight: 600; } .g3-callout b i { font: italic 500 1em/1.2 var(--sans); } .g3-callout span { color: var(--ink-3); font-size: 12px; }
+.g3-callout::after { content: ""; position: absolute; left: 14px; bottom: -6px; width: 10px; height: 10px; border-right: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2); background: var(--paper); transform: rotate(45deg); }
+.g3-callout[hidden] { display: none; }
+/* the one legend: what the Bed or Species scope is emphasising */
+.g3-legend { position: absolute; left: 14px; top: 14px; z-index: 3; display: flex; align-items: center; gap: 8px; max-width: min(420px, calc(100% - 28px)); padding: 7px 12px; border: 1px solid var(--line-2); border-radius: 8px; background: var(--paper); box-shadow: var(--shadow-soft); font-size: 12.5px; line-height: 1.35; color: var(--ink-2); }
+.g3-legend b { font-weight: 600; color: var(--ink); } .g3-legend i.sci { font: italic 500 1em/1.2 var(--sans); color: var(--ink); } .g3-legend .sw { flex: none; width: 12px; height: 12px; border-radius: 50%; box-shadow: inset 0 0 0 1.5px var(--ink); }
+.g3-legend[hidden] { display: none; }
+#tip .m { font-family: var(--sans); }
+
+/* ------------------------------------------------------------------ Grow · the inspector: summary, the evaluations that matter, actions; the rest on a click */
+#gtop .vlabel { display: none; }   /* the counts are said once, in the inspector */
+.grow-sum .insp-meta { margin-top: 2px; }
+.gbeds { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 0; }
+.gbeds button { height: 30px; padding: 0 11px; border: 1px solid var(--line-2); border-radius: 999px; font-size: 12.5px; color: var(--ink-2); white-space: nowrap; }
+.gbeds button:hover { background: var(--paper-2); color: var(--ink); } .gbeds button.on { border-color: var(--olive-deep); background: var(--olive-soft); color: var(--olive-deep); font-weight: 600; }
+.gbeds button:focus-visible, .gact button:focus-visible, .gmenu button:focus-visible { outline: 2px solid var(--olive-deep); outline-offset: 2px; }
+.grow-eval h4 { margin-bottom: 0; } .grow-eval .reqs { margin-top: 8px; } .grow-eval .garr { margin: 8px 0 0; font-size: 12.5px; color: var(--ink-2); }
+.grow-eval .insp-tip { margin-top: 8px; }
+/* the action menu */
+.gact { position: relative; display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; }
+.grow-side #grow-overview #plantcard { margin: 0 0 4px; padding: 14px 0 12px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.grow-side #grow-overview #plantcard[hidden] { display: none; }
+.gmenu { position: absolute; left: 0; top: calc(100% + 6px); z-index: 6; width: min(300px, 100%); margin: 0; padding: 6px; list-style: none; border: 1px solid var(--line-2); border-radius: 10px; background: var(--paper); box-shadow: 0 10px 28px rgb(40 50 40 / .14); }
+.gmenu li { margin: 0; padding: 0; }
+.gmenu button { display: block; width: 100%; min-height: 44px; padding: 7px 10px; border-radius: 7px; text-align: left; font-size: 13.5px; font-weight: 500; color: var(--ink); }
+.gmenu button small { display: block; margin-top: 2px; font-size: 12px; font-weight: 400; color: var(--ink-3); }
+.gmenu button:hover, .gmenu button:focus-visible { background: var(--paper-2); }
+.gconfirm { margin: 10px 0 0; padding: 12px; border: 1px solid var(--line-2); border-radius: 10px; background: var(--paper); font-size: 13px; line-height: 1.45; color: var(--ink-2); }
+.gconfirm b { color: var(--ink); font-weight: 600; } .gconfirm .insp-actions { margin-top: 10px; }
+/* what is reachable but not in the way */
+.gmore { margin: 14px 0 0; border-top: 1px solid var(--line); }
+.gmore > summary { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 40px; cursor: pointer; list-style: none; font: 600 13px/1.2 var(--sans); color: var(--ink); }
+.gmore > summary::-webkit-details-marker { display: none; }
+.gmore > summary::after { content: "+"; font-weight: 400; font-size: 16px; color: var(--ink-3); } .gmore[open] > summary::after { content: "–"; }
+.gmore > summary small { margin-left: auto; font: 12px/1 var(--sans); color: var(--ink-3); }
+.gmore > summary:focus-visible { outline: 2px solid var(--olive-deep); outline-offset: 2px; }
+.gmore .insp-ai { margin-top: 0; padding-top: 0; border-top: 0; } .gmore .insp-ai > h4 { display: none; }
+.gmore + .gmore { margin-top: 0; }
+.gmore-b { padding: 0 0 12px; font-size: 12.5px; line-height: 1.5; color: var(--ink-2); } .gmore-b p { margin: 0 0 8px; }
+
+/* ------------------------------------------------------------------ Compose · the status bar says the function plan once, without a second verdict */
+#compose-foot .ws-state .vtag { display: none; }
+
+/* ------------------------------------------------------------------ ids are for the trace and the details, not for the first reading */
+.pi-why-n .id { display: none; }
+
+/* ------------------------------------------------------------------ the workspace from 1001 px (V4.2: a 1024-wide window is a workspace, not a stacked page).
+   Between 1001 and 1160 px the canvas is narrow: the command bar gives the zoom control its room, and the zoom control drops its percentage. */
+@media (min-width: 1001px) and (max-width: 1160px) {
+  .ws-say, .ws-grow .ws-say { width: min(540px, calc(100% - var(--dock, 0px) - 370px)); }
+  .ws-zoom .zv { display: none; }
+  .canvas-hint { max-width: calc(100% - 200px); white-space: normal; overflow: visible; text-overflow: clip; text-align: center; line-height: 1.35; }
+}
+.readline .mono { display: none; }   /* the preview's fingerprint stays in the title, the details and the trace */

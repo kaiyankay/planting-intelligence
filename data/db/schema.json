@@ -1,0 +1,1062 @@
+{
+  "$schema_version": "0.4.3",
+  "name": "Planting Intelligence — Local Planting Knowledge Database",
+  "scope": "City of Vancouver / Metro Vancouver, BC (Canadian hardiness zone 8a–8b)",
+  "updated": "2026-11-02",
+  "design_basis": {
+    "field_tiers": "ARCH 540 user survey c1 (must-pass vs compared) and c2 (could not find / did not trust), n=6, 2026-10-30; re-assessed on n=14 (11 answering c1), 2026-11-02 — see reports/survey-integration-2026-11-02.md",
+    "practitioner_metadata": "survey f1 (details needed before trusting someone's note)",
+    "source_priority": "survey f2 (what makes an AI suggestion credible)",
+    "conflict_rule": "survey c3 (what people do when sources disagree)",
+    "controlled_vocabularies": "KPU Plant Database search facets (plantdatabase.kpu.ca)"
+  },
+  "entity": {
+    "description": "One record per plant. Identity only — no attribute values here; attributes live in claims.",
+    "fields": {
+      "id": {
+        "type": "string",
+        "note": "slug of accepted scientific name, e.g. acer-palmatum"
+      },
+      "scientific_name": {
+        "type": "string",
+        "required": true
+      },
+      "synonyms_scientific": {
+        "type": "string[]"
+      },
+      "common_names": {
+        "type": "object",
+        "shape": {
+          "en": "string[]",
+          "zh": "string[]"
+        }
+      },
+      "family": {
+        "type": "string"
+      },
+      "kpu_plant_type": {
+        "type": "enum",
+        "vocab": "kpu_plant_type"
+      },
+      "respondent_roles": {
+        "type": "string[]",
+        "note": "roles as typed by survey respondents, kept raw; never overwrites kpu_plant_type"
+      },
+      "origin_status": {
+        "type": "enum",
+        "values": [
+          "native_bc_west_of_cascades",
+          "native_north_america",
+          "non_native",
+          "invasive_bc"
+        ],
+        "note": "origin fact is entity-level; invasive *risk assessment* is a gate claim"
+      },
+      "external_refs": {
+        "type": "object",
+        "shape": {
+          "kpu": "url",
+          "mobot": "url",
+          "gpp": "url",
+          "eflora": "url",
+          "osu": "url",
+          "rhs": "url",
+          "usda": "url",
+          "inat": "url"
+        },
+        "note": "links to the source page for this plant; kpu is link-only (never imported)"
+      },
+      "in_vancouver_street_tree_list": {
+        "type": "boolean|null"
+      },
+      "survey_respondents": {
+        "type": "string[]",
+        "note": "0.4.2: anonymous respondent ids (survey-rNN) whose d1 lists or d2 notes name this plant; the idempotence key of tools/survey_to_claims.py. Parallel to raw_names / respondent_roles"
+      },
+      "survey_mentions": {
+        "type": "integer",
+        "note": "number of survey d1 lists naming the plant (any raw name); maintained by tools/survey_to_claims.py"
+      },
+      "identity_review": {
+        "type": "object",
+        "shape": {
+          "taxonomic_identity": "{status: confirmed|disputed|to_confirm, note}",
+          "geographic_origin": "{status, note}",
+          "botanical_growth_form": "{status, note}",
+          "design_function": "{status, note}"
+        },
+        "note": "0.4.3 (M45): the four identity questions kept apart — what the plant is, where it is from, how it grows, what designers use it for; written by tools/identity_audit.py from the sources on file; disputed = sources disagree, left for human judgement"
+      }
+    }
+  },
+  "field_tiers": {
+    "gate": {
+      "description": "Filter first. Survey c1: ≥3 of 5 respondents marked these must-pass. A plant failing a gate is excluded before ranking.",
+      "fields": {
+        "hardiness_zone": {
+          "type": "enum",
+          "vocab": "kpu_hardiness",
+          "value_kinds": [
+            "categorical",
+            "quantitative"
+          ],
+          "survey": "c1 must_pass 4/5",
+          "fill_from": [
+            "kpu",
+            "gpp",
+            "mobot"
+          ]
+        },
+        "invasive_status": {
+          "type": "enum",
+          "value_kinds": [
+            "categorical"
+          ],
+          "values": [
+            "not_listed",
+            "watch",
+            "regulated_bc",
+            "prohibited_bc"
+          ],
+          "survey": "c1 must_pass 4/5",
+          "fill_from": [
+            "iscbc",
+            "kpu"
+          ]
+        },
+        "water_drainage": {
+          "type": "enum",
+          "value_kinds": [
+            "categorical"
+          ],
+          "values": [
+            "dry",
+            "average",
+            "moist",
+            "wet",
+            "wide_range"
+          ],
+          "survey": "c1 must_pass 3/5",
+          "fill_from": [
+            "kpu",
+            "gpp",
+            "mobot",
+            "growgreen"
+          ]
+        },
+        "mature_height": {
+          "type": "enum|range",
+          "vocab": "kpu_height_bins",
+          "value_kinds": [
+            "categorical",
+            "quantitative"
+          ],
+          "unit": "m",
+          "survey": "c1 must_pass 3/5; c2 'real mature size under local conditions' 3/6",
+          "fill_from": [
+            "kpu",
+            "gpp",
+            "mobot",
+            "osu"
+          ]
+        },
+        "mature_spread": {
+          "type": "enum|range",
+          "vocab": "kpu_spread_bins",
+          "value_kinds": [
+            "categorical",
+            "quantitative"
+          ],
+          "unit": "m",
+          "survey": "c1 must_pass 3/5",
+          "fill_from": [
+            "kpu",
+            "gpp",
+            "mobot",
+            "osu"
+          ]
+        },
+        "maintenance_level": {
+          "type": "enum",
+          "value_kinds": [
+            "categorical"
+          ],
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "survey": "c1 must_pass 3/5; e1/e2 'low maintenance' is a top intent word",
+          "fill_from": [
+            "gpp",
+            "growgreen",
+            "practitioner"
+          ]
+        },
+        "ecological_value": {
+          "type": "enum[]",
+          "value_kinds": [
+            "categorical"
+          ],
+          "values": [
+            "native",
+            "pollinator",
+            "bird_food",
+            "wildlife_cover",
+            "nitrogen_fixer",
+            "erosion_control",
+            "habitat_structure"
+          ],
+          "survey": "c1 must_pass 3/5; e1 'pollinator friendly', 'high ecological function'",
+          "fill_from": [
+            "eflora",
+            "pojar",
+            "growgreen",
+            "practitioner"
+          ]
+        }
+      }
+    },
+    "compare": {
+      "description": "Rank after gating. Survey c1: mostly 'compared', not must-pass.",
+      "fields": {
+        "exposure": {
+          "type": "enum[]",
+          "vocab": "kpu_exposure",
+          "value_kinds": [
+            "categorical"
+          ],
+          "survey": "c1 compared 3/5"
+        },
+        "seasonal_interest": {
+          "type": "object",
+          "value_kinds": [
+            "categorical",
+            "quantitative",
+            "qualitative"
+          ],
+          "shape": {
+            "flowering_months": "int[]",
+            "flower_colour": "kpu_colour[]",
+            "foliage_colour": "kpu_colour[]|string",
+            "fall_colour": "bool|string",
+            "fruit": "string",
+            "winter_interest": "bool|string",
+            "evergreen": "bool"
+          },
+          "shape_note": "foliage_colour = leaf colour through the growing season (e.g. red-purple cultivars); fall_colour = autumn change only",
+          "survey": "c1 must_pass 2 / compared 2; d1 'seasonal interest', 'fall color' are the most common selection reasons"
+        },
+        "texture": {
+          "type": "enum",
+          "vocab": "kpu_texture",
+          "value_kinds": [
+            "categorical"
+          ]
+        },
+        "form": {
+          "type": "enum",
+          "vocab": "kpu_form",
+          "value_kinds": [
+            "categorical"
+          ]
+        },
+        "habit": {
+          "type": "enum",
+          "vocab": "kpu_habit",
+          "value_kinds": [
+            "categorical"
+          ]
+        },
+        "soil_type": {
+          "type": "enum[]",
+          "vocab": "kpu_soil",
+          "value_kinds": [
+            "categorical"
+          ]
+        },
+        "growth_rate": {
+          "type": "enum",
+          "value_kinds": [
+            "categorical"
+          ],
+          "values": [
+            "slow",
+            "moderate",
+            "fast"
+          ]
+        },
+        "landscape_use": {
+          "type": "enum[]",
+          "vocab": "kpu_landscape_use",
+          "value_kinds": [
+            "categorical"
+          ]
+        },
+        "pest_susceptibility": {
+          "type": "enum[]",
+          "vocab": "kpu_pest",
+          "value_kinds": [
+            "categorical"
+          ],
+          "note": "susceptibilities only (schema 0.3.0, D7). KPU pseudo-values like (Drought tolerant) are NOT stored here — they map to resistances"
+        },
+        "resistances": {
+          "type": "enum[]",
+          "vocab": "resistances",
+          "value_kinds": [
+            "categorical"
+          ],
+          "note": "positive tolerances and resistances a source states (leaf scorch, drought, deer…). Added 0.3.0 so a resistance is never recorded as a negated susceptibility",
+          "fill_from": [
+            "gpp",
+            "mobot",
+            "kpu",
+            "practitioner"
+          ]
+        }
+      }
+    },
+    "extended": {
+      "description": "What existing databases lack. Survey c2/c4. Mostly free text with optional structured value; practitioner sources expected to dominate here.",
+      "fields": {
+        "time_to_intended_size": {
+          "type": "text|range",
+          "unit": "years",
+          "value_kinds": [
+            "quantitative",
+            "qualitative"
+          ],
+          "survey": "c1: 0/5 must_pass, 3/5 not_considered — but c2 'real mature size' 3/6 could not find. Not in workflow because no data exists."
+        },
+        "local_mature_size": {
+          "type": "text|range",
+          "unit": "m",
+          "value_kinds": [
+            "quantitative",
+            "qualitative"
+          ],
+          "survey": "c2 3/6",
+          "note": "size actually observed in Vancouver conditions, distinct from literature mature_height"
+        },
+        "long_term_performance": {
+          "type": "text",
+          "value_kinds": [
+            "qualitative"
+          ],
+          "survey": "c2 2/6"
+        },
+        "appearance_by_age_season": {
+          "type": "text",
+          "value_kinds": [
+            "qualitative"
+          ],
+          "survey": "c2 1/6"
+        },
+        "behaviour_with_others": {
+          "type": "text",
+          "value_kinds": [
+            "qualitative"
+          ],
+          "survey": "c2 3/6",
+          "note": "summary pointer; detailed pairwise facts live in relations.json"
+        },
+        "toxicity": {
+          "type": "object",
+          "value_kinds": [
+            "categorical",
+            "qualitative"
+          ],
+          "shape": {
+            "pets": "enum[none, mild, moderate, severe, unknown]",
+            "humans": "enum",
+            "parts": "string",
+            "usda_rating": "enum[none, slight, moderate, severe]"
+          },
+          "survey": "c4 'toxic to pets' — explicitly asked, could not find",
+          "fill_from": [
+            "aspca"
+          ],
+          "shape_note": "usda_rating = USDA PLANTS 'Toxicity' characteristic (livestock/conservation rating), added 2026-10-30 (M17); pets / humans are separate judgements and stay unknown unless a source addresses them"
+        },
+        "photoperiod": {
+          "type": "enum",
+          "value_kinds": [
+            "categorical"
+          ],
+          "values": [
+            "long_day",
+            "short_day",
+            "day_neutral",
+            "unknown"
+          ],
+          "survey": "c4"
+        },
+        "local_availability": {
+          "type": "object",
+          "value_kinds": [
+            "qualitative"
+          ],
+          "shape": {
+            "nurseries": "string[]",
+            "sizes": "string[]",
+            "approx_cost": "string"
+          },
+          "survey": "c2 3/6",
+          "fill_from": [
+            "nats"
+          ],
+          "note": "not a prototype priority; keep the slot"
+        },
+        "vancouver_context": {
+          "type": "text",
+          "value_kinds": [
+            "qualitative",
+            "quantitative"
+          ],
+          "note": "any claim whose context is explicitly Vancouver / Lower Mainland (clay soils, winter wet, summer drought, street tree record)"
+        },
+        "in_vancouver_street_tree_list": {
+          "type": "boolean",
+          "value_kinds": [
+            "categorical"
+          ],
+          "fill_from": [
+            "cov_trees"
+          ],
+          "note": "claim-level evidence (count, snapshot date) behind the entity flag of the same name; merge_claims copies a verified claim's value onto the entity"
+        }
+      }
+    },
+    "custom": {
+      "description": "User-extensible. Open key–value tags, not validated against schema. Analogous to KPU's 'Plants by Course' slicing.",
+      "shape": {
+        "key": "string",
+        "value": "string",
+        "added_by": "string",
+        "added_at": "date"
+      }
+    }
+  },
+  "claim": {
+    "description": "The atomic unit of knowledge AND the retrieval unit. Every attribute value is a claim. A field may hold many claims; they are never merged or averaged.",
+    "required": [
+      "id",
+      "plant",
+      "field",
+      "value",
+      "value_kind",
+      "text",
+      "source_id",
+      "source_type",
+      "context",
+      "confidence",
+      "recorded_at"
+    ],
+    "fields": {
+      "id": {
+        "type": "string",
+        "format": "<plant-id>:<field>:<nn>"
+      },
+      "plant": {
+        "type": "string",
+        "ref": "entity.id"
+      },
+      "field": {
+        "type": "string",
+        "ref": "field_tiers.*.fields"
+      },
+      "value": {
+        "type": "any",
+        "note": "typed per field definition; ranges as {min, max, unit}. From 0.4.0 categorical list / scalar values are ontology ids (ontology.json); the original label stays in value_label. Object-shaped values keep their shape and expose concepts in `concepts`."
+      },
+      "value_kind": {
+        "type": "enum",
+        "values": [
+          "quantitative",
+          "categorical",
+          "qualitative"
+        ],
+        "note": "how the value is matched at retrieval. quantitative = numbers / ranges / counts ({min,max,unit} or {n, median, ...}): range filter + numeric display. categorical = enum values from vocab, or booleans: exact match. qualitative = free text or loosely structured notes: semantic match only. Must be one of the field's value_kinds.",
+        "derivation": "qualitative -> categorical is allowed when the new claim carries derived_from pointing at the qualitative claim (same source). categorical -> qualitative is not: a controlled value must not be paraphrased into prose and re-stored as new evidence."
+      },
+      "text": {
+        "type": "string",
+        "note": "one natural-language sentence; embedding is built on this. Auto-generated from value+source+context, or the practitioner's own words verbatim."
+      },
+      "source_id": {
+        "type": "string",
+        "ref": "sources.json"
+      },
+      "source_type": {
+        "type": "enum",
+        "values": [
+          "practitioner",
+          "database",
+          "literature",
+          "municipal",
+          "model"
+        ],
+        "priority_order": [
+          "practitioner",
+          "database",
+          "literature",
+          "municipal",
+          "model"
+        ],
+        "basis": "survey f2: first-hand experience 4/6 > shows sources 3/6 > local project 2/6 > explains reasoning 1/6"
+      },
+      "context": {
+        "type": "string",
+        "examples": [
+          "general",
+          "PNW",
+          "Vancouver clay soil",
+          "container, rooftop",
+          "cultivar: 'Bloodgood'"
+        ]
+      },
+      "confidence": {
+        "type": "number",
+        "range": [
+          0,
+          1
+        ],
+        "caps": {
+          "model": 0.5
+        }
+      },
+      "status": {
+        "type": "enum",
+        "values": [
+          "verified",
+          "unverified",
+          "disputed",
+          "retired"
+        ],
+        "default": "unverified"
+      },
+      "recorded_at": {
+        "type": "date"
+      },
+      "recorded_by": {
+        "type": "string"
+      },
+      "claim_kind": {
+        "type": "enum",
+        "values": [
+          "attribute",
+          "selection_reason",
+          "observation",
+          "warning"
+        ],
+        "note": "selection_reason = survey d1 'why'; observation/warning = survey d2 notes"
+      },
+      "practitioner_meta": {
+        "type": "object",
+        "ref": "practitioner_meta",
+        "required_if": "source_type == practitioner"
+      },
+      "derived_from": {
+        "type": "string",
+        "ref": "claim.id",
+        "note": "claim this one was read off, same source; see value_kind.derivation"
+      },
+      "verify_against": {
+        "type": "string[]",
+        "ref": "sources.json",
+        "note": "model claims only: sources expected to replace this placeholder"
+      },
+      "retired_by": {
+        "type": "string",
+        "ref": "claim.id",
+        "note": "set by merge_claims when a verified non-model claim lands on a field that only had model placeholders"
+      },
+      "value_label": {
+        "type": "any",
+        "note": "0.4.0: the original categorical label(s) before mapping to ontology ids; display uses this"
+      },
+      "concepts": {
+        "type": "string[]",
+        "ref": "ontology.json nodes[].id",
+        "note": "0.4.0: every concept this claim links the plant to — the categorical ids, the ordinal classes a range spans (quantitative claims keep their numbers; classes are graph hooks), colours / evergreen / fruit read from object values"
+      },
+      "conditions": {
+        "type": "object[]",
+        "shape": {
+          "facet": "string",
+          "concept_id": "ontology id"
+        },
+        "note": "0.4.0: growing conditions stated in `context` (exposure, soil); the original context string is kept"
+      },
+      "place": {
+        "type": "string",
+        "ref": "ontology.json place:*",
+        "note": "0.4.0: from the claim's own context when more specific, else the source's geo_specificity"
+      },
+      "time": {
+        "type": "string[]",
+        "ref": "ontology.json month:* season:* age:*",
+        "note": "0.4.0: phenology months, age bands, season observed"
+      },
+      "cultivar": {
+        "type": "string|null",
+        "note": "0.4.0: lifted from context `cultivar:'…'`; `(unrecorded)` for inventory records without a label"
+      },
+      "media": {
+        "type": "object[]",
+        "optional": true,
+        "shape": {
+          "kind": "enum[image, photo, gis, plan, section, observation, document]",
+          "url": "string (link or repo path; never a copy of licensed media)",
+          "caption": "string",
+          "licence": "string",
+          "credit": "string",
+          "place": "ontology place id",
+          "time": "ontology time id or ISO date",
+          "recorded_at": "date"
+        },
+        "note": "0.4.1 (2026-11-02): optional media attached to a claim — images, GIS layers, planting plans, site observations. A medium is evidence for the claim it hangs on; it never creates a claim by itself. Empty today."
+      },
+      "verification_scope": {
+        "type": "enum",
+        "values": [
+          "statement",
+          "content"
+        ],
+        "optional": true,
+        "note": "0.4.3 (M44): what `status: verified` certifies. `statement` = the record of what a person said is accurate (survey claims: the respondent's words are recorded verbatim; the botanical content is NOT independently verified). `content` = the value itself was checked against its source or is open data stored as published (City of Vancouver). Absent on unverified claims; set by the review apply step."
+      },
+      "review_events": {
+        "type": "string[]",
+        "optional": true,
+        "note": "0.4.3: ids of the human review events (review/events/review_events.jsonl, private) that changed this claim; the events hold the reasons and the AI assessment they answered"
+      },
+      "corrects": {
+        "type": "string",
+        "ref": "claim.id",
+        "optional": true,
+        "note": "0.4.3: this claim replaces an earlier one after a human 'propose correction' decision; the original stays with status retired and retired_reason"
+      }
+    }
+  },
+  "practitioner_meta": {
+    "description": "Metadata a first-hand note must carry. Field list is survey f1 verbatim.",
+    "fields": {
+      "basis": {
+        "type": "enum",
+        "values": [
+          "read",
+          "observed",
+          "project",
+          "mixed"
+        ],
+        "survey": "d2 basis field",
+        "required": true,
+        "note": "0.4.2 (2026-11-02, M36): 'mixed' = survey d2_basis 'A combination of these' (read + observed + project); counts as a basis for completeness (L1+) like the others"
+      },
+      "location": {
+        "type": "string",
+        "survey": "f1 3/6"
+      },
+      "maintenance_received": {
+        "type": "string",
+        "survey": "f1 3/6"
+      },
+      "observer_background": {
+        "type": "string",
+        "survey": "f1 'who wrote it and their experience' 3/6",
+        "note": "copied from sources.json practitioner record: roles + experience, anonymous"
+      },
+      "site_conditions": {
+        "type": "string",
+        "survey": "f1 2/6"
+      },
+      "season_observed": {
+        "type": "string",
+        "survey": "f1 2/6"
+      },
+      "plant_age_years": {
+        "type": "number",
+        "survey": "f1 1/6"
+      }
+    },
+    "completeness_levels": {
+      "L0": {
+        "has": [],
+        "citable": false,
+        "note": "no basis — store only"
+      },
+      "L1": {
+        "has": [
+          "basis"
+        ],
+        "citable": true,
+        "caveat": "location not recorded"
+      },
+      "L2": {
+        "has": [
+          "basis",
+          "location"
+        ],
+        "citable": true
+      },
+      "L3": {
+        "has": [
+          "basis",
+          "location",
+          "+2 of site_conditions/maintenance_received/season_observed/plant_age_years"
+        ],
+        "citable": true,
+        "rank_boost": 0.1
+      }
+    }
+  },
+  "relation": {
+    "description": "Pairwise facts between plants. Stored in relations.json, not inside either plant.",
+    "fields": {
+      "id": "string",
+      "plant_a": "entity.id",
+      "plant_b": "entity.id",
+      "relation_type": {
+        "type": "enum",
+        "values": [
+          "companion",
+          "co_listed",
+          "competes",
+          "shades",
+          "suppresses",
+          "supports_habitat",
+          "layered_under",
+          "avoid_with",
+          "co_occurs_with"
+        ],
+        "note": "0.4.3 (M43): `co_occurs_with` = a source states that the two plants grow together (e.g. E-Flora 'associated species', a flora's community description); never derived from shared attributes. Shared habitat / trait is an indirect connection through concept nodes and is not a relation."
+      },
+      "direction": {
+        "type": "enum",
+        "values": [
+          "a_to_b",
+          "b_to_a",
+          "mutual"
+        ]
+      },
+      "text": "string",
+      "source_id": "string",
+      "source_type": "enum",
+      "context": "string",
+      "confidence": "number",
+      "status": "enum",
+      "recorded_at": "date",
+      "practitioner_meta": "object (if practitioner)"
+    }
+  },
+  "rules": [
+    {
+      "id": "R1",
+      "rule": "A field may hold multiple claims. Never merge, average or pick a 'safe' value. Return all, with context.",
+      "basis": "survey c3: trusted-source / local-example / keep-both each 2/6; cautious 0/6; authoritative 0/6"
+    },
+    {
+      "id": "R2",
+      "rule": "A practitioner claim without `basis` is L0: stored, never cited. L1 may be cited with the caveat 'location not recorded'.",
+      "basis": "survey f1"
+    },
+    {
+      "id": "R3",
+      "rule": "No claim without a source_id. Values inferred by the model carry source_type=model, confidence ≤ 0.5, status=unverified.",
+      "basis": "survey f2: 'shows its sources' 3/6"
+    },
+    {
+      "id": "R4",
+      "rule": "Every claim has a `text` rendering. Practitioner notes keep the original wording.",
+      "basis": "retrieval: embeddings are built on text, not on structured values"
+    },
+    {
+      "id": "R5",
+      "rule": "Ranking of retrieved claims: source_type priority → geographic specificity of source (Vancouver > BC > PNW > global) → completeness level → confidence. Vector similarity decides recall, not order.",
+      "basis": "survey f2 + f1"
+    },
+    {
+      "id": "R6",
+      "rule": "When answering, attribute to the person or source, not to the reasoning: 'a designer with professional project experience observed…' rather than 'because it is an understory plant, I infer…'.",
+      "basis": "survey f2: first-hand 4/6 vs reasoning 1/6"
+    },
+    {
+      "id": "R7",
+      "rule": "Gate fields are hard filters applied before semantic retrieval; compare and extended fields are ranked semantically.",
+      "basis": "survey c1"
+    },
+    {
+      "id": "R8",
+      "rule": "Respondent-typed roles and names are kept raw in respondent_roles / raw_names; normalisation goes in synonyms.json and kpu_plant_type.",
+      "basis": "survey d1 role mismatches (fern typed as shrub; forbs typed as perennial_grass)"
+    },
+    {
+      "id": "R9",
+      "rule": "Every claim declares value_kind. A qualitative claim may be read into a categorical one (with derived_from); a categorical claim is never expanded back into a qualitative one.",
+      "basis": "retrieval routes (principles §6): structured filter needs exact values, semantic search needs text; the direction keeps provenance one-way"
+    },
+    {
+      "id": "R10",
+      "rule": "Model placeholders are retired, not deleted, as soon as any claim with source_type ≠ model lands on their field, verified or not (status=retired, retired_by=<claim id>). History stays visible.",
+      "basis": "HANDOFF T2; decision D6 2026-10-29 (methods M10)"
+    }
+  ],
+  "vocab": {
+    "kpu_plant_type": [
+      "Annual (true)",
+      "Annual (grown as)",
+      "Aquatic plant",
+      "Bamboo",
+      "Biennial",
+      "Broadleaf evergreen",
+      "Conifer",
+      "Fern",
+      "Ground cover",
+      "Herbaceous perennial",
+      "Invasive plant",
+      "Poales (grass-like)",
+      "Semi-evergreen",
+      "Shrub - deciduous",
+      "Succulent or Cacti",
+      "Tree - deciduous",
+      "Vine - deciduous",
+      "Vine or climber",
+      "Weed (horticultural)"
+    ],
+    "kpu_hardiness": [
+      "Zone 1",
+      "Zone 2",
+      "Zone 3",
+      "Zone 4",
+      "Zone 5",
+      "Zone 6",
+      "Zone 7",
+      "Zone 8a",
+      "Zone 8b",
+      "Zone 9",
+      "Zone 10",
+      "Zone 11"
+    ],
+    "kpu_hardiness_note": "Canadian zones (planthardiness.gc.ca). Vancouver ≈ 8a–8b. Record USDA zones from US sources as a range with unit 'USDA' — do not convert silently.",
+    "kpu_height_bins": [
+      "< 0.1m",
+      "0.1 - 0.2m",
+      "0.2 - 0.4m",
+      "0.4 - 0.7m",
+      "0.7 - 1.3m",
+      "1.3 - 2.0m",
+      "2 - 3m",
+      "3 - 5m",
+      "5 - 7m",
+      "7 - 10m",
+      "10 - 15m",
+      "15 - 22m",
+      "22 - 30m",
+      "> 30m"
+    ],
+    "kpu_spread_bins": [
+      "< 0.1m",
+      "0.1 - 0.3m",
+      "0.3 - 0.6m",
+      "0.6 - 1.0m",
+      "1.0 - 1.5m",
+      "1.5 - 2.0m",
+      "2 - 3m",
+      "3 - 4m",
+      "4 - 5m",
+      "5 - 7m",
+      "7 - 10m",
+      "10 - 15m",
+      "15 - 25m",
+      "> 25m"
+    ],
+    "kpu_exposure": [
+      "Full sun",
+      "Full sun only if soil kept moist",
+      "Part sun/part shade",
+      "Filtered shade",
+      "Deep shade",
+      "Sheltered"
+    ],
+    "kpu_soil": [
+      "Acidic",
+      "Alkaline",
+      "Bog",
+      "Humus rich",
+      "Rocky or gravelly or dry",
+      "Well-drained"
+    ],
+    "kpu_texture": [
+      "Fine",
+      "Medium - fine",
+      "Medium",
+      "Medium - coarse",
+      "Coarse",
+      "Very coarse"
+    ],
+    "kpu_form": [
+      "Climbing",
+      "Columnar",
+      "Creeping / Mat-like",
+      "Irregular",
+      "Mounded",
+      "Oval - horizontal",
+      "Oval - vertical",
+      "Pyramidal - narrowly",
+      "Pyramidal - widely",
+      "Round",
+      "Vase",
+      "Weeping"
+    ],
+    "kpu_habit": [
+      "Arching",
+      "Dense",
+      "Epiphytic",
+      "Fastigiate",
+      "Horizontal",
+      "Irregular",
+      "Open",
+      "Pendulous",
+      "Spreading",
+      "Stiffly upright",
+      "Twiggy",
+      "Upright"
+    ],
+    "kpu_colour": [
+      "White",
+      "Orange",
+      "Yellow",
+      "Green-yellow",
+      "Green",
+      "Blue",
+      "Violet",
+      "Purple",
+      "Pink",
+      "Magenta",
+      "Red",
+      "Dark-red",
+      "Brown",
+      "Bronze",
+      "Silver",
+      "Black"
+    ],
+    "kpu_landscape_use": [
+      "Accent plant",
+      "Alpine",
+      "Aquatic - ponds",
+      "Arbors or trellis",
+      "Attract beneficial insects",
+      "Attract birds",
+      "Attract butterflies",
+      "Bedding plant",
+      "Container planting",
+      "Cut flower or foliage",
+      "Dried flower or fruit",
+      "Erosion control",
+      "Espalier",
+      "Fall interest",
+      "Filler",
+      "Floristry",
+      "Forestry",
+      "Fragrance",
+      "Golf green",
+      "Green roof technology",
+      "Green walls",
+      "Ground cover",
+      "Group or mass planting",
+      "Hanging basket",
+      "Hedge row",
+      "Herb",
+      "Indoor plant",
+      "Lawn - sports field",
+      "Medicinal plant",
+      "Mixed shrub border",
+      "Native planting",
+      "Perennial border",
+      "Reclamation",
+      "Rock garden",
+      "Screening",
+      "Security/barrier",
+      "Shade tree",
+      "Sheared hedge",
+      "Small garden/space",
+      "Specimen plant",
+      "Spring interest",
+      "Street (boulevard tree)",
+      "Summer interest",
+      "Tall background",
+      "Topiary",
+      "Urban agriculture",
+      "Waterside planting",
+      "Wetland - bogs",
+      "Wild flower garden",
+      "Wildlife food",
+      "Wind break",
+      "Winter interest",
+      "Woodland margin"
+    ],
+    "resistances": [
+      "leaf scorch",
+      "drought",
+      "deer",
+      "rabbit",
+      "pest",
+      "disease",
+      "salt",
+      "wind",
+      "winter wet",
+      "urban pollution"
+    ],
+    "resistances_note": "Open-ended starter list, confirmed by Kay 2026-10-30 (methods M11). Values outside the list are allowed and reported by the validator as notes, not errors (e.g. 'black walnut' from MOBOT). KPU pseudo-values map: (Drought tolerant)→drought, (Deer resistant)→deer, (Rabbit resistant)→rabbit, (Pest resistant)→pest, (Disease resistant)→disease",
+    "kpu_pest": [
+      "(Drought tolerant)",
+      "(Pest resistant)",
+      "(Disease resistant)",
+      "(Deer resistant)",
+      "(Rabbit resistant)",
+      "Abiotic disorder",
+      "Adelgids",
+      "Anthracnose",
+      "Aphids",
+      "Bacterial leaf spot",
+      "Beetles or weevils",
+      "Blight or needle cast",
+      "Canker or sap rot",
+      "Caterpillar or cutworm",
+      "Crown rot",
+      "Dieback",
+      "Fungal leaf spot",
+      "Galls",
+      "Leaf miner insect",
+      "Leaf scorch",
+      "Mealybugs",
+      "Mildew",
+      "Mites",
+      "Mold",
+      "Nematodes",
+      "Root rot",
+      "Rust",
+      "Scale insects",
+      "Slugs or snails",
+      "Thrips",
+      "Virus",
+      "Whitefly",
+      "Wilt"
+    ],
+    "resistances_open": true
+  },
+  "ontology": {
+    "file": "ontology.json",
+    "version": "0.2.0",
+    "note": "concept nodes; claims are the edges that connect a plant to a concept with provenance (brief 2026-10-31). 0.2.0: XYZ architecture (axis / category / facet nodes), design concepts (Z) with literature sources and typed concept relations (brief 2026-11-02, M31). brain/data/kg.json (tools/build_kg.py) is the semantic graph built from claims + ontology relations (M32)."
+  },
+  "verification_layers": {
+    "note": "brief 2026-11-02 'Verification Workbench' §03C. Four statements about a claim that never substitute for one another; expressed by independent records, not by one status field.",
+    "statement_recorded": "the claim records what a source or person stated (every claim with a source_id; survey claims with verification_scope statement)",
+    "evidence_checked": "an AI or human reviewer found the original source and compared the claim with it (review/ai/assessments, review events of kind evidence_check) — an assessment, never a verification",
+    "claim_verified": "a human applied the verification workflow (tools/review_apply.py → status verified, verification_scope content, review_events)",
+    "locally_applicable": "the evidence supports use under stated Vancouver / site conditions (a claim with place at the Vancouver scale or a human review decision with locally_applicable: true); not derived from a global source alone"
+  }
+}

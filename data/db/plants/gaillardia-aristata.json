@@ -1,0 +1,1881 @@
+{
+  "entity": {
+    "id": "gaillardia-aristata",
+    "scientific_name": "Gaillardia aristata",
+    "synonyms_scientific": [],
+    "common_names": {
+      "en": [
+        "Blanketflower",
+        "Blanket flower",
+        "Great blanketflower",
+        "common gaillardia",
+        "brown-eyed Susan",
+        "common blanketflower"
+      ],
+      "zh": [
+        "天人菊"
+      ]
+    },
+    "family": "Asteraceae",
+    "kpu_plant_type": "Herbaceous perennial",
+    "respondent_roles": [
+      "perennial_grass"
+    ],
+    "raw_names": [
+      "Gaillardia aristata"
+    ],
+    "survey_respondents": [
+      "survey-r03"
+    ],
+    "origin_status": "native_north_america",
+    "external_refs": {
+      "kpu": "https://plantdatabase.kpu.ca/Plant/gagr",
+      "mobot": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277193",
+      "gpp": null,
+      "osu": null,
+      "eflora": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Gaillardia%20aristata",
+      "rhs": "https://www.rhs.org.uk/plants/67388/gaillardia-aristata-pursh/details",
+      "usda": "https://plants.usda.gov/plant-profile/GAAR",
+      "inat": "https://www.inaturalist.org/taxa/77183",
+      "mobot_served_url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=277193",
+      "usda_plants": "https://plants.usda.gov/plant-profile/GAAR",
+      "usda_plants_api": "https://plantsservices.sc.egov.usda.gov/api/PlantProfile?symbol=GAAR",
+      "usda_plants_characteristics_api": "https://plantsservices.sc.egov.usda.gov/api/PlantCharacteristics/35770",
+      "usda_plant_guide": "https://plants.usda.gov/DocumentLibrary/plantguide/pdf/pg_gaar.pdf",
+      "iscbc": "https://bcinvasives.ca/take-action/identify/",
+      "kpu_note": "KPU entry is 'Gaillardia cvs.' (cultivar group), not the species"
+    },
+    "in_vancouver_street_tree_list": false,
+    "prototype_role": "herbaceous perennial native to western North America (BC interior grasslands); 1 survey mention for long bloom — tests a dry-site native used outside its native range on the coast; origin_status provisional (E-Flora claim decides)",
+    "survey_mentions": 1,
+    "added": "2026-11-02",
+    "added_by": "10-plant expansion (brief 2026-11-02); entity facts from the T5 extraction and the survey, see claims for evidence",
+    "usda_symbol": "GAAR",
+    "notes": [
+      "origin_status native_north_america kept (2026-11-02): E-Flora BC — native (Yellow, S5) but common only in south-central / south-east BC and INTRODUCED in the lower Fraser Valley; no CWH or CDF stations. A Vancouver planting uses it outside its native range."
+    ],
+    "identity_review": {
+      "audited": "2026-11-02",
+      "method": "tools/identity_audit.py (M45): sources on file + entity notes; disputed = left for human judgement",
+      "taxonomic_identity": {
+        "status": "confirmed",
+        "note": "Gaillardia aristata Pursh; the garden hybrid G. × grandiflora is a different taxon and was not used"
+      },
+      "geographic_origin": {
+        "status": "disputed",
+        "note": "native to BC's interior (E-Flora Yellow S5; IDF / PP / BG stations, none in CWH or CDF) and INTRODUCED in the lower Fraser Valley (E-Flora); USDA / MOBOT 'native' at continental scale. origin_status native_north_america kept; 'native' as a Vancouver selection reason is not supported by the BC source",
+        "origin_status_on_entity": "native_north_america"
+      },
+      "botanical_growth_form": {
+        "status": "confirmed",
+        "note": "read as herbaceous_perennial from kpu (entity.kpu_plant_type), eflora (supported; M29a)",
+        "kpu_plant_type": "Herbaceous perennial"
+      },
+      "design_function": {
+        "status": "confirmed",
+        "note": "perennial border / wildflower garden (RHS, MOBOT); respondent 'long blooming flower'",
+        "respondent_roles_as_typed": [
+          "perennial_grass"
+        ]
+      },
+      "synonyms_raw": null
+    }
+  },
+  "custom": [],
+  "fill_plan": {
+    "gate": {
+      "hardiness_zone": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "invasive_status": [
+        "iscbc"
+      ],
+      "water_drainage": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "mature_height": [
+        "kpu",
+        "gpp",
+        "pojar",
+        "osu"
+      ],
+      "mature_spread": [
+        "kpu",
+        "gpp"
+      ],
+      "maintenance_level": [
+        "gpp",
+        "growgreen"
+      ],
+      "ecological_value": [
+        "eflora",
+        "pojar",
+        "growgreen"
+      ]
+    },
+    "compare": {
+      "exposure": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "seasonal_interest": [
+        "kpu",
+        "gpp",
+        "pojar"
+      ],
+      "texture": [
+        "kpu"
+      ],
+      "form": [
+        "kpu",
+        "osu"
+      ],
+      "habit": [
+        "kpu"
+      ],
+      "soil_type": [
+        "kpu",
+        "mobot"
+      ],
+      "growth_rate": [
+        "gpp"
+      ],
+      "landscape_use": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "pest_susceptibility": [
+        "kpu"
+      ]
+    },
+    "extended": {
+      "time_to_intended_size": [
+        "gpp",
+        "practitioner"
+      ],
+      "local_mature_size": [
+        "practitioner",
+        "inat"
+      ],
+      "long_term_performance": [
+        "practitioner"
+      ],
+      "behaviour_with_others": [
+        "pojar",
+        "relations.json",
+        "practitioner"
+      ],
+      "toxicity": [
+        "aspca"
+      ],
+      "local_availability": [
+        "nats"
+      ],
+      "vancouver_context": [
+        "growgreen",
+        "eflora",
+        "inat"
+      ]
+    },
+    "not_available": {
+      "gpp": "no Great Plant Picks entry: the full GPP list (1,129 plants, alphabetical, pages 1–3) has no Gaillardia between Fatsia and Galanthus; name search 'Gaillardia' returned the unfiltered list (checked 2026-11-02)",
+      "osu": "no Oregon State University Landscape Plants entry: the site is 'mostly woody' and its G genus index (Garrya … Gymnocladus) has no Gaillardia; /plants/gaillardia-aristata and /plants/gaillardia-x-grandiflora both return 404 (checked 2026-11-02)",
+      "pojar": "awaiting Pojar pages",
+      "mobot_cultivars": "MOBOT also lists Gaillardia aristata 'Bijou' (taxonid 249992) and BARBICAN YELLOW RED RING (445827), plus G. × grandiflora (263710) and cultivars; not extracted — species page only",
+      "rhs_cultivars": "RHS also has G. aristata 'Maxima Aurea' (152412), 'Lucky Wheeler' (333428), 'Gaiz0005' (357631) and many G. × grandiflora pages; only the species page (67388) extracted",
+      "usda_plant_guide": "USDA NRCS Plant Guide pg_gaar.pdf exists (public domain) but was not read — the brief limits USDA extraction to the PLANTS API profile and characteristics",
+      "kpu": "KPU plant database lists only 'Gaillardia cvs.' (/Plant/gagr), no species page; tier C, link only"
+    },
+    "t5_extractions": [
+      "inputs/t5/gaillardia-aristata-2026-11-02.json"
+    ]
+  },
+  "claims": [
+    {
+      "id": "gaillardia-aristata:vancouver_context:inat01",
+      "plant": "gaillardia-aristata",
+      "field": "vancouver_context",
+      "value": {
+        "licensed_verifiable_observations": 249,
+        "research_grade": 77,
+        "all_licences": 313,
+        "years": [
+          2013,
+          2026
+        ]
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist holds 249 openly licensed verifiable observations of this plant in Greater Vancouver (77 research grade), recorded 2013–2026.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=77183&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "presence evidence; observation counts reflect observer effort as much as abundance",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:vancouver_context:inat02",
+      "plant": "gaillardia-aristata",
+      "field": "vancouver_context",
+      "value": {
+        "observations_by_month": {
+          "1": 5,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 23,
+          "6": 42,
+          "7": 48,
+          "8": 27,
+          "9": 41,
+          "10": 33,
+          "11": 17,
+          "12": 11
+        },
+        "n": 249,
+        "unit": "observations"
+      },
+      "value_kind": "quantitative",
+      "text": "Monthly spread of 249 Greater Vancouver observations: most in 7, 6, 9 (month numbers).",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03",
+      "confidence": 0.55,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=77183&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "observer effort, not plant activity — the plant is evergreen/visible year-round; use for 'when people notice it', not phenology",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:seasonal_interest:inat03",
+      "plant": "gaillardia-aristata",
+      "field": "seasonal_interest",
+      "value": {
+        "flowering_months": [
+          11,
+          12
+        ],
+        "annotated_n": 46,
+        "share_threshold": 0.1
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist phenology annotations in Greater Vancouver (n=46) put flowering mainly in months 11, 12.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03; community Plant Phenology annotations",
+      "confidence": 0.5,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=77183&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "month included when >= 10% of annotated observations; annotations are volunteer-made",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [
+        "month:11",
+        "month:12"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:seasonal_interest:inat04",
+      "plant": "gaillardia-aristata",
+      "field": "seasonal_interest",
+      "value": {
+        "fruiting_months": [
+          11,
+          12
+        ],
+        "annotated_n": 21,
+        "share_threshold": 0.1
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist phenology annotations in Greater Vancouver (n=21) put fruiting mainly in months 11, 12.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03; community Plant Phenology annotations",
+      "confidence": 0.5,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=77183&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "month included when >= 10% of annotated observations; annotations are volunteer-made",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [
+        "month:11",
+        "month:12"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:seasonal_interest:sv01",
+      "plant": "gaillardia-aristata",
+      "field": "seasonal_interest",
+      "value_kind": "qualitative",
+      "value": {
+        "note": "long blooming"
+      },
+      "text": "Gaillardia aristata — Long blooming flower.",
+      "source_id": "survey-r03",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student and practising landscape designer; studio, professional and personal-garden experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false,
+        "note": "d1 'why' answers carry no basis — stored as selection reasons, never cited as observations (R2)"
+      },
+      "survey_question": "d1",
+      "respondent_role_as_typed": "Perennial or grass",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "gaillardia-aristata:mature_height:rhs01",
+      "plant": "gaillardia-aristata",
+      "field": "mature_height",
+      "value": {
+        "min": 0.5,
+        "max": 1,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Gaillardia aristata an ultimate height of 0.5–1 m (profile text: clumps to about 75 cm).",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/67388/gaillardia-aristata-pursh/details",
+      "concepts": [
+        "height_class:0.4-0.7m",
+        "height_class:0.7-1.3m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:mature_spread:rhs01",
+      "plant": "gaillardia-aristata",
+      "field": "mature_spread",
+      "value": {
+        "min": 0.5,
+        "max": 1,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Gaillardia aristata an ultimate spread of 0.5–1 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/67388/gaillardia-aristata-pursh/details",
+      "concepts": [
+        "spread_class:0.3-0.6m",
+        "spread_class:0.6-1.0m",
+        "spread_class:1.0-1.5m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:time_to_intended_size:rhs01",
+      "plant": "gaillardia-aristata",
+      "field": "time_to_intended_size",
+      "value": {
+        "min": 2,
+        "max": 5,
+        "unit": "years",
+        "measure": "time to ultimate height"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Gaillardia aristata 2–5 years to reach its ultimate height.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/67388/gaillardia-aristata-pursh/details",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:hardiness_zone:rhs01",
+      "plant": "gaillardia-aristata",
+      "field": "hardiness_zone",
+      "value": {
+        "rating": "H4",
+        "unit": "RHS",
+        "approx_min_c": -10,
+        "approx_max_c": -5
+      },
+      "value_kind": "quantitative",
+      "text": "RHS rates Gaillardia aristata hardiness H4 (hardy through most of the UK, about -10 to -5 °C).",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/67388/gaillardia-aristata-pursh/details",
+      "concepts": [
+        "hardiness_rhs:H4"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:exposure:rhs01",
+      "plant": "gaillardia-aristata",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:sheltered"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: full sun; south- or west-facing; exposed or sheltered sites.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/67388/gaillardia-aristata-pursh/details",
+      "note": "KPU has no 'Exposed' value; 'exposed or sheltered' → Sheltered kept only as the available label",
+      "value_label": [
+        "Full sun",
+        "Sheltered"
+      ],
+      "concepts": [
+        "exposure:sheltered",
+        "exposure:full_sun"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:soil_type:rhs01",
+      "plant": "gaillardia-aristata",
+      "field": "soil_type",
+      "value": [
+        "soil:well_drained"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: well-drained chalk, loam or sand; acid, neutral or alkaline; moderately fertile.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/67388/gaillardia-aristata-pursh/details",
+      "note": "chalk/loam/sand have no KPU class; pH any, so neither Acidic nor Alkaline is mapped",
+      "value_label": [
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:water_drainage:rhs01",
+      "plant": "gaillardia-aristata",
+      "field": "water_drainage",
+      "value": "water:dry",
+      "value_kind": "categorical",
+      "text": "RHS: well-drained soil; drought resistant.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/67388/gaillardia-aristata-pursh/details",
+      "note": "RHS gives drainage ('well-drained'), not a water regime; with 'drought resistance: yes' mapped to dry — loose; 'average' would also fit",
+      "value_label": "dry",
+      "concepts": [
+        "water:dry"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:resistances:rhs01",
+      "plant": "gaillardia-aristata",
+      "field": "resistances",
+      "value": [
+        "stress:drought"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS lists Gaillardia aristata as drought resistant.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/67388/gaillardia-aristata-pursh/details",
+      "value_label": [
+        "drought"
+      ],
+      "concepts": [
+        "stress:drought"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:seasonal_interest:rhs01",
+      "plant": "gaillardia-aristata",
+      "field": "seasonal_interest",
+      "value": {
+        "flowering_months": [
+          7,
+          8,
+          9
+        ],
+        "flower_colour": [
+          "Orange",
+          "Red",
+          "Yellow"
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "RHS: deciduous herbaceous perennial; large daisy-like orange-red and yellow flower heads from mid-summer to early autumn; greyish-green lance-shaped leaves.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/67388/gaillardia-aristata-pursh/details",
+      "note": "'mid-summer to early autumn' → months 7–9; 'orangey-red and yellow' → Orange, Red, Yellow; 'greyish-green' → Green (no grey-green in kpu_colour)",
+      "concepts": [
+        "colour:green",
+        "colour:orange",
+        "colour:red",
+        "colour:yellow",
+        "evergreen:no"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [
+        "month:7",
+        "month:8",
+        "month:9"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:habit:rhs01",
+      "plant": "gaillardia-aristata",
+      "field": "habit",
+      "value": "habit:dense",
+      "value_kind": "categorical",
+      "text": "RHS: bushy, clump-forming habit.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/67388/gaillardia-aristata-pursh/details",
+      "note": "'bushy, clump forming' → Dense — loose; KPU has no 'Clumping' value",
+      "value_label": "Dense",
+      "concepts": [
+        "habit:dense"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:pest_susceptibility:rhs01",
+      "plant": "gaillardia-aristata",
+      "field": "pest_susceptibility",
+      "value": [
+        "pest:slugs_or_snails",
+        "pest:mildew"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: may be susceptible to slugs and snails and to downy mildews.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/67388/gaillardia-aristata-pursh/details",
+      "note": "'downy mildews' → Mildew",
+      "value_label": [
+        "Slugs or snails",
+        "Mildew"
+      ],
+      "concepts": [
+        "pest:mildew",
+        "pest:slugs_or_snails"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:landscape_use:rhs01",
+      "plant": "gaillardia-aristata",
+      "field": "landscape_use",
+      "value": [
+        "use:perennial_border",
+        "use:cut_flower_or_foliage",
+        "use:small_garden_space"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS suggests flower borders and beds, cut flowers, city and courtyard gardens, cottage and informal gardens and coastal gardens.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/67388/gaillardia-aristata-pursh/details",
+      "note": "'flower borders and beds' → Perennial border; 'city and courtyard' → Small garden/space; 'coastal' and 'cottage and informal' have no KPU class",
+      "value_label": [
+        "Perennial border",
+        "Cut flower or foliage",
+        "Small garden/space"
+      ],
+      "concepts": [
+        "use:cut_flower_or_foliage",
+        "use:perennial_border",
+        "use:small_garden_space"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:maintenance_level:rhs01",
+      "plant": "gaillardia-aristata",
+      "field": "maintenance_level",
+      "value": "maintenance:medium",
+      "value_kind": "categorical",
+      "text": "RHS: deadhead regularly and cut back after flowering; may need staking.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.65,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/67388/gaillardia-aristata-pursh/details",
+      "note": "inferred from the pruning/cultivation advice (deadheading, cutting back, possible staking) → medium — loose; no explicit RHS rating",
+      "value_label": "medium",
+      "concepts": [
+        "maintenance:medium"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:hardiness_zone:mobot01",
+      "plant": "gaillardia-aristata",
+      "field": "hardiness_zone",
+      "value": {
+        "min": 3,
+        "max": 8,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden lists Gaillardia aristata for USDA zones 3 to 8.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277193",
+      "concepts": [
+        "hardiness_usda:z3",
+        "hardiness_usda:z4",
+        "hardiness_usda:z5",
+        "hardiness_usda:z6",
+        "hardiness_usda:z7",
+        "hardiness_usda:z8"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:mature_height:mobot01",
+      "plant": "gaillardia-aristata",
+      "field": "mature_height",
+      "value": {
+        "min": 0.3,
+        "max": 0.91,
+        "unit": "m",
+        "raw": "1.00 to 3.00 feet"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden gives Gaillardia aristata a height of 1–3 ft (0.3–0.9 m).",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277193",
+      "concepts": [
+        "height_class:0.2-0.4m",
+        "height_class:0.4-0.7m",
+        "height_class:0.7-1.3m"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:mature_spread:mobot01",
+      "plant": "gaillardia-aristata",
+      "field": "mature_spread",
+      "value": {
+        "min": 0.3,
+        "max": 0.61,
+        "unit": "m",
+        "raw": "1.00 to 2.00 feet"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden gives Gaillardia aristata a spread of 1–2 ft (0.3–0.6 m).",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277193",
+      "concepts": [
+        "spread_class:0.3-0.6m",
+        "spread_class:0.6-1.0m"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:exposure:mobot01",
+      "plant": "gaillardia-aristata",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: full sun.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277193",
+      "value_label": [
+        "Full sun"
+      ],
+      "concepts": [
+        "exposure:full_sun"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:water_drainage:mobot01",
+      "plant": "gaillardia-aristata",
+      "field": "water_drainage",
+      "value": "water:dry",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden rates water needs dry to medium.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277193",
+      "note": "'dry to medium' → dry; 'average' would also fit",
+      "value_label": "dry",
+      "concepts": [
+        "water:dry"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:soil_type:mobot01",
+      "plant": "gaillardia-aristata",
+      "field": "soil_type",
+      "value": [
+        "soil:well_drained"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: average, dry to medium, well-drained soil; prefers organically rich soil that drains well; tolerates dry soil; poor in overly moist heavy clay.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277193",
+      "note": "'organically rich' not mapped to Humus rich because the plant tolerates poor dry soil equally",
+      "value_label": [
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:maintenance_level:mobot01",
+      "plant": "gaillardia-aristata",
+      "field": "maintenance_level",
+      "value": "maintenance:low",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden rates maintenance low; deadheading optional, cutting back in summer may renew bloom.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277193",
+      "value_label": "low",
+      "concepts": [
+        "maintenance:low"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:seasonal_interest:mobot01",
+      "plant": "gaillardia-aristata",
+      "field": "seasonal_interest",
+      "value": {
+        "flowering_months": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "flower_colour": [
+          "Yellow"
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: showy daisy-type flower heads May to October with yellow ray florets (sometimes purple-based) around a brownish-purple disk; grey-green lance-shaped leaves; herbaceous.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277193",
+      "note": "'May to October' → months 5–10; disk colour (brownish-purple) not added to flower_colour because the ray colour dominates; 'gray-green' → Green",
+      "concepts": [
+        "colour:green",
+        "colour:yellow",
+        "evergreen:no"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [
+        "month:5",
+        "month:6",
+        "month:7",
+        "month:8",
+        "month:9",
+        "month:10"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:resistances:mobot01",
+      "plant": "gaillardia-aristata",
+      "field": "resistances",
+      "value": [
+        "stress:drought",
+        "stress:drought"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden lists Gaillardia aristata as tolerating drought and dry soil.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277193",
+      "note": "'dry soil' is outside the starter resistances list (open list, M11)",
+      "value_label": [
+        "drought",
+        "dry soil"
+      ],
+      "concepts": [
+        "stress:drought"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:pest_susceptibility:mobot01",
+      "plant": "gaillardia-aristata",
+      "field": "pest_susceptibility",
+      "value": [
+        "pest:root_rot",
+        "pest:mildew",
+        "pest:fungal_leaf_spot"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: root rot in poorly drained soil, especially with prolonged heavy summer rain; species plants generally susceptible to powdery mildew, aster yellows and fungal leaf spots.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277193",
+      "note": "'powdery mildew' → Mildew; aster yellows (a phytoplasma disease) has no KPU class and is not mapped",
+      "value_label": [
+        "Root rot",
+        "Mildew",
+        "Fungal leaf spot"
+      ],
+      "concepts": [
+        "pest:fungal_leaf_spot",
+        "pest:mildew",
+        "pest:root_rot"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:long_term_performance:mobot01",
+      "plant": "gaillardia-aristata",
+      "field": "long_term_performance",
+      "value": {
+        "drainage": "root rot in poorly drained soil, particularly during long periods of heavy summer rain",
+        "heavy_clay": "performs poorly in overly moist, heavy clay soil"
+      },
+      "value_kind": "qualitative",
+      "text": "Missouri Botanical Garden warns of root rot in poorly drained soil under prolonged heavy rain and poor performance in wet heavy clay.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "warning",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277193",
+      "note": "relevant to Vancouver clay soils and winter wet; MOBOT does not call the species itself short-lived (it says that of the G. × grandiflora hybrids)",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:landscape_use:mobot01",
+      "plant": "gaillardia-aristata",
+      "field": "landscape_use",
+      "value": [
+        "use:perennial_border",
+        "use:rock_garden",
+        "use:cut_flower_or_foliage",
+        "use:container_planting",
+        "use:wild_flower_garden",
+        "use:attract_butterflies",
+        "use:attract_birds"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: perennial border fronts, rock gardens, cottage gardens, cutting gardens and containers; suggested use naturalize; attracts butterflies and birds.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277193",
+      "note": "'Naturalize' → Wild flower garden; 'cottage gardens' has no KPU class; 'Good Cut' → Cut flower or foliage",
+      "value_label": [
+        "Perennial border",
+        "Rock garden",
+        "Cut flower or foliage",
+        "Container planting",
+        "Wild flower garden",
+        "Attract butterflies",
+        "Attract birds"
+      ],
+      "concepts": [
+        "use:attract_birds",
+        "use:attract_butterflies",
+        "use:container_planting",
+        "use:cut_flower_or_foliage",
+        "use:perennial_border",
+        "use:rock_garden",
+        "use:wild_flower_garden"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:ecological_value:mobot01",
+      "plant": "gaillardia-aristata",
+      "field": "ecological_value",
+      "value": [
+        "origin:native",
+        "ecology:pollinator",
+        "ecology:bird_food"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: native to western North America (North Dakota to Colorado, west to California and British Columbia), mainly dry meadows, prairies, grasslands and foothills; flowers attract butterflies and other insect pollinators; seed heads attract birds.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=277193",
+      "value_label": [
+        "native",
+        "pollinator",
+        "bird_food"
+      ],
+      "concepts": [
+        "origin:native",
+        "ecology:bird_food",
+        "ecology:pollinator"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:ecological_value:eflora01",
+      "plant": "gaillardia-aristata",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "E-Flora BC lists Gaillardia aristata as native to BC (provincial list Yellow, rank S5 (2019)); common in south-central and south-eastern BC but introduced in south-western BC (lower Fraser Valley).",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Gaillardia%20aristata",
+      "note": "native status is province-wide; for the Vancouver region E-Flora treats the species as introduced — see vancouver_context eflora01",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:vancouver_context:eflora01",
+      "plant": "gaillardia-aristata",
+      "field": "vancouver_context",
+      "value": {
+        "habitat": [
+          "dry grassland",
+          "dry shrubland",
+          "lowland",
+          "steppe",
+          "lower montane",
+          "moist sand bars"
+        ],
+        "bgc_zones": [
+          "BG",
+          "ESSF",
+          "ICH",
+          "IDF",
+          "MS",
+          "PP",
+          "SBS"
+        ],
+        "modal_zone": "IDF",
+        "stations_by_zone": {
+          "BG": 84,
+          "ESSF": 12,
+          "ICH": 4,
+          "IDF": 180,
+          "MS": 6,
+          "PP": 154,
+          "SBS": 1
+        },
+        "cwh_stations": 0,
+        "cdf_stations": 0,
+        "elevation_m": {
+          "min": 250,
+          "mean": 812,
+          "max": 1968
+        },
+        "bc_distribution": "common in SC and SE BC; introduced in SW BC (lower Fraser Valley); range east to Manitoba, south to Colorado, Utah and northern Oregon",
+        "coastal_native_status": "not native on the coast: no CWH or CDF stations; SW BC occurrences are introductions"
+      },
+      "value_kind": "qualitative",
+      "text": "E-Flora BC: an interior dry-grassland and shrubland species of the lowland, steppe and lower montane zones (modal zone IDF, also BG and PP), 250–1968 m; common in south-central and south-eastern BC; in the lower Fraser Valley it is introduced, not native.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Gaillardia%20aristata",
+      "note": "BEC zone list from the atlas station records; no CWH or CDF stations, so the species is interior-only as a native and Vancouver plantings are outside its native range — relevant to any 'native planting' use",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "bgc_zone:bg",
+        "bgc_zone:essf",
+        "bgc_zone:ich",
+        "bgc_zone:idf",
+        "bgc_zone:ms",
+        "bgc_zone:pp",
+        "bgc_zone:sbs",
+        "habitat:grassland"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:mature_height:eflora01",
+      "plant": "gaillardia-aristata",
+      "field": "mature_height",
+      "value": {
+        "min": 0.2,
+        "max": 0.7,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "E-Flora BC: perennial from a slender taproot, stems 20–70 cm tall.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Gaillardia%20aristata",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "height_class:0.2-0.4m",
+        "height_class:0.4-0.7m",
+        "height_class:0.7-1.3m"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:exposure:eflora01",
+      "plant": "gaillardia-aristata",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun"
+      ],
+      "value_kind": "categorical",
+      "text": "E-Flora BC habitat records are dry grasslands and shrublands, open steppe and sand bars.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page; inferred from habitat classes, not a cultivation rating",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Gaillardia%20aristata",
+      "note": "exposure read off habitat classes",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": [
+        "Full sun"
+      ],
+      "concepts": [
+        "exposure:full_sun"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:seasonal_interest:eflora01",
+      "plant": "gaillardia-aristata",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "Yellow"
+        ],
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "E-Flora BC: heads with 6–16 (commonly 13) yellow ray flowers around brownish-purple disk flowers; herbaceous perennial.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Gaillardia%20aristata",
+      "note": "no flowering months given by E-Flora itself (the 'Spring' bloom period shown is the USDA characteristic)",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "colour:yellow",
+        "evergreen:no"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:ecological_value:usdaplants01",
+      "plant": "gaillardia-aristata",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: native in Canada and the lower 48 states.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/GAAR",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:mature_height:usdaplants01",
+      "plant": "gaillardia-aristata",
+      "field": "mature_height",
+      "value": {
+        "height_m": 0.61,
+        "unit": "m",
+        "raw": "2.0 ft mature"
+      },
+      "value_kind": "quantitative",
+      "text": "USDA PLANTS gives a mature height of 2 ft (0.6 m).",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/GAAR",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "height_class:0.4-0.7m"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:growth_rate:usdaplants01",
+      "plant": "gaillardia-aristata",
+      "field": "growth_rate",
+      "value": "growth_rate:moderate",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates growth rate moderate.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/GAAR",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "moderate",
+      "concepts": [
+        "growth_rate:moderate"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:exposure:usdaplants01",
+      "plant": "gaillardia-aristata",
+      "field": "exposure",
+      "value": [
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates shade tolerance high.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.55,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/GAAR",
+      "note": "'Shade Tolerance: High' → tolerates part to filtered shade — loose; contradicts RHS and MOBOT (full sun) and the open dry-grassland habitat in E-Flora; kept side by side (R1)",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "Part sun/part shade",
+        "Filtered shade"
+      ],
+      "concepts": [
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:water_drainage:usdaplants01",
+      "plant": "gaillardia-aristata",
+      "field": "water_drainage",
+      "value": "water:average",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates moisture use medium and drought tolerance medium; no anaerobic (waterlogging) tolerance.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.65,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/GAAR",
+      "note": "'Moisture Use: Medium' → average — loose",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "average",
+      "concepts": [
+        "water:average"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:resistances:usdaplants01",
+      "plant": "gaillardia-aristata",
+      "field": "resistances",
+      "value": [
+        "stress:drought"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates drought tolerance medium.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/GAAR",
+      "note": "'Drought Tolerance: Medium' — borderline; recorded at low confidence",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "drought"
+      ],
+      "concepts": [
+        "stress:drought"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:soil_type:usdaplants01",
+      "plant": "gaillardia-aristata",
+      "field": "soil_type",
+      "value": [
+        "soil:well_drained"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: adapted to coarse and medium textured soils, not fine; pH 5.5–7.9; low fertility requirement; no anaerobic tolerance.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.65,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/GAAR",
+      "note": "coarse/medium soils with no waterlogging tolerance → Well-drained (loose); pH spans acid to mildly alkaline so neither Acidic nor Alkaline is mapped",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:hardiness_zone:usdaplants01",
+      "plant": "gaillardia-aristata",
+      "field": "hardiness_zone",
+      "value": {
+        "min_temperature_f": -33,
+        "min_temperature_c": -36,
+        "unit": "minimum temperature (°F), USDA characteristic"
+      },
+      "value_kind": "quantitative",
+      "text": "USDA PLANTS gives a minimum temperature of -33 °F (about -36 °C) and at least 100 frost-free days.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/GAAR",
+      "note": "a temperature characteristic, not a zone rating; not converted to any zone scale",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:seasonal_interest:usdaplants01",
+      "plant": "gaillardia-aristata",
+      "field": "seasonal_interest",
+      "value": {
+        "flowering_months": [
+          4,
+          5
+        ],
+        "flower_colour": [
+          "Yellow"
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fall_colour": false,
+        "fruit": "brown, summer to fall, not conspicuous",
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: conspicuous yellow flowers in spring, green foliage, inconspicuous brown seed summer to fall, no fall colour, leaves not retained.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/GAAR",
+      "note": "'Bloom Period: Spring' → months 4–5 (approximate); earlier and shorter than RHS (Jul–Sep) and MOBOT (May–Oct)",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "colour:green",
+        "colour:yellow",
+        "evergreen:no",
+        "fruit:showy"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [
+        "month:4",
+        "month:5"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:toxicity:usdaplants01",
+      "plant": "gaillardia-aristata",
+      "field": "toxicity",
+      "value": {
+        "usda_rating": "none",
+        "humans": "unknown",
+        "pets": "unknown"
+      },
+      "value_kind": "categorical",
+      "text": "USDA PLANTS lists toxicity as none.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/GAAR",
+      "note": "M17: USDA 'Toxicity' is a livestock / conservation-planting rating; humans and pets stay unknown",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "toxicity:unknown"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:texture:usdaplants01",
+      "plant": "gaillardia-aristata",
+      "field": "texture",
+      "value": "texture:coarse",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates foliage texture coarse.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.65,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/GAAR",
+      "note": "recorded as given",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "Coarse",
+      "concepts": [
+        "texture:coarse"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:habit:usdaplants01",
+      "plant": "gaillardia-aristata",
+      "field": "habit",
+      "value": "habit:upright",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: shape and orientation erect; growth form bunch.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/GAAR",
+      "note": "'Erect' → Upright; 'Bunch' (clumping) has no KPU habit value",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "Upright",
+      "concepts": [
+        "habit:upright"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:behaviour_with_others:usdaplants01",
+      "plant": "gaillardia-aristata",
+      "field": "behaviour_with_others",
+      "value": {
+        "growth_form": "bunch",
+        "vegetative_spread_rate": "none",
+        "seed_spread_rate": "slow",
+        "seedling_vigor": "medium",
+        "resprout": false,
+        "known_allelopath": false,
+        "lifespan": "moderate",
+        "fire_tolerance": "low"
+      },
+      "value_kind": "qualitative",
+      "text": "USDA PLANTS: bunch-forming with no vegetative spread and a slow seed spread rate; moderate lifespan; not allelopathic.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/GAAR",
+      "note": "'Lifespan: Moderate' bears on the common claim that blanketflowers are short-lived; MOBOT applies 'short lived' only to the G. × grandiflora hybrids",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaillardia-aristata:invasive_status:iscbc01",
+      "plant": "gaillardia-aristata",
+      "field": "invasive_status",
+      "value": "invasive:not_listed",
+      "value_kind": "categorical",
+      "text": "Gaillardia aristata is not among the 114 species profiles on the Invasive Species Council of BC 'Find an Invasive Species' list (checked 2026-11-02); it is a BC native.",
+      "source_id": "iscbc",
+      "source_type": "municipal",
+      "context": "BC; ISCBC online species profiles",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://bcinvasives.ca/take-action/identify/",
+      "value_label": "not_listed",
+      "concepts": [
+        "invasive:not_listed"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    }
+  ]
+}

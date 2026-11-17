@@ -1,0 +1,29 @@
+/* Planting Intelligence · V4.1 brand-type trial page (platform/about/type-trial/). Layout only; the trial rules are in type-trial.css. */
+.tt.ab { max-width: min(1320px, 100% - 48px); }
+.tt .ab-mast h1 { font-family: var(--pi-brand); font-weight: 500; letter-spacing: -.015em; font-synthesis: none; }
+.tt-controls { display: flex; flex-wrap: wrap; gap: 10px 16px; }
+.tt-seg { display: inline-flex; flex-wrap: wrap; padding: 3px; border: 1px solid var(--pi-line-2); border-radius: 999px; background: var(--pi-paper); }
+.tt-seg button { padding: 7px 13px; border: 0; border-radius: 999px; background: none; font: 500 13px/1 var(--pi-sans); color: var(--pi-ink-2); cursor: pointer; white-space: nowrap; }
+.tt-seg button:hover { color: var(--pi-ink); } .tt-seg button[aria-pressed="true"] { background: var(--pi-olive-deep); color: #fff; }
+.tt-seg button:focus-visible { outline: 2px solid var(--pi-olive-deep); outline-offset: 2px; }
+.tt-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.tt-frame { margin: 0; min-width: 0; }
+.tt-frame figcaption { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin-bottom: 8px; font-size: var(--pi-t-small); color: var(--pi-ink-3); }
+.tt-frame figcaption b { font: 600 var(--pi-t-ui)/1.3 var(--pi-sans); color: var(--pi-ink); } .tt-frame figcaption a { margin-left: auto; font-weight: 500; }
+.tt-port { position: relative; overflow: hidden; border: 1px solid var(--pi-line-2); border-radius: 10px; background: var(--pi-paper); aspect-ratio: var(--w) / var(--h); }
+.tt-port iframe { position: absolute; left: 0; top: 0; border: 0; transform-origin: 0 0; }
+.tt-spec { border-top: 1px solid var(--pi-line); }
+.tt-row { display: grid; grid-template-columns: 180px minmax(0, 1fr) minmax(0, 1fr); gap: 16px 32px; padding: 24px 0; border-bottom: 1px solid var(--pi-line); align-items: start; }
+.tt-row > div > * + * { margin-top: 10px; } .tt-row p { max-width: none; }
+.tt-k { font: 600 12px/1.6 var(--pi-sans); letter-spacing: .05em; text-transform: uppercase; color: var(--pi-ink-3); }
+.tt .tt-wm, .tt .tt-t, .tt .tt-abc p { font-family: var(--pi-brand); font-weight: 500; font-synthesis: none; font-kerning: normal; color: var(--pi-ink); line-height: 1.08; }
+.tt .tt-wm { letter-spacing: .005em; } .tt .tt-t { font-size: 34px; letter-spacing: -.015em; text-wrap: balance; } .tt .tt-abc p { font-size: 30px; letter-spacing: 0; overflow-wrap: anywhere; }
+.tt .tt-wm0, .tt .tt-t0 { font-family: var(--pi-display); font-weight: 650; color: var(--pi-ink); line-height: 1.08; } .tt .tt-wm0 { letter-spacing: -.035em; } .tt .tt-t0 { font-size: 34px; font-weight: 600; letter-spacing: -.045em; text-wrap: balance; }
+.tt .tt-in { font-size: 1.15em; line-height: 1; }
+.tt-v4 { padding-left: 32px; border-left: 1px solid var(--pi-line); min-height: 100%; }
+.tt-facts { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 0; margin: 0; border-top: 1px solid var(--pi-line); }
+.tt-facts dt, .tt-facts dd { margin: 0; padding: 12px 0; border-bottom: 1px solid var(--pi-line); font-size: var(--pi-t-ui); line-height: 1.5; }
+.tt-facts dt { color: var(--pi-ink-3); } .tt-facts dd { max-width: 78ch; }
+.tt-status[data-ok="true"]::before { content: "● "; color: var(--pi-olive-deep); } .tt-status[data-ok="false"] { color: var(--pi-rust); font-weight: 500; }
+.tt-read p { max-width: 78ch; }
+@media (max-width: 900px) { .tt-pair { grid-template-columns: 1fr; } .tt-row { grid-template-columns: 1fr; } .tt-v4 { padding-left: 0; border-left: 0; padding-top: 12px; border-top: 1px dashed var(--pi-line-2); } .tt-facts { grid-template-columns: 1fr; } .tt-facts dt { border-bottom: 0; padding-bottom: 0; } }

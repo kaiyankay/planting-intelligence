@@ -1,0 +1,2625 @@
+{
+  "entity": {
+    "id": "arctostaphylos-uva-ursi",
+    "scientific_name": "Arctostaphylos uva-ursi",
+    "synonyms_scientific": [
+      "Arbutus uva-ursi",
+      "Arctostaphylos officinalis",
+      "Arctostaphylos adenotricha",
+      "Arctostaphylos uva-ursi var. adenotricha",
+      "Arctostaphylos uva-ursi var. coactilis",
+      "Arctostaphylos uva-ursi subsp. uva-ursi"
+    ],
+    "common_names": {
+      "en": [
+        "Kinnikinnick",
+        "Bearberry",
+        "Common bearberry",
+        "kinnikinnik",
+        "red bearberry",
+        "mealberry",
+        "sandberry",
+        "uva-ursi",
+        "hog cranberry",
+        "mountain cranberry"
+      ],
+      "zh": [
+        "熊果"
+      ]
+    },
+    "family": "Ericaceae",
+    "kpu_plant_type": "Broadleaf evergreen",
+    "respondent_roles": [
+      "groundcover",
+      "groundcover"
+    ],
+    "raw_names": [
+      "Kinnikinnicks",
+      "Kinnikinnick"
+    ],
+    "survey_respondents": [
+      "survey-r06",
+      "survey-r07"
+    ],
+    "origin_status": "native_bc_west_of_cascades",
+    "external_refs": {
+      "kpu": "https://plantdatabase.kpu.ca/plant/plantDetail/161",
+      "mobot": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "gpp": null,
+      "osu": "https://landscapeplants.oregonstate.edu/plants/arctostaphylos-uva-ursi",
+      "eflora": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Arctostaphylos%20uva-ursi",
+      "rhs": "https://www.rhs.org.uk/plants/1491/arctostaphylos-uva-ursi/details",
+      "usda": "https://plants.usda.gov/plant-profile/ARUV",
+      "inat": "https://www.inaturalist.org/taxa/68049",
+      "rhs_vancouver_jade": "https://www.rhs.org.uk/plants/99909/arctostaphylos-uva-ursi-vancouver-jade/details",
+      "mobot_served_url": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?taxonid=279933",
+      "usda_plants": "https://plants.usda.gov/plant-profile/ARUV",
+      "usda_plants_api": "https://plantsservices.sc.egov.usda.gov/api/PlantProfile?symbol=ARUV",
+      "usda_fact_sheet": "https://plants.usda.gov/DocumentLibrary/factsheet/pdf/fs_aruv.pdf",
+      "iscbc": "https://bcinvasives.ca/take-action/identify/"
+    },
+    "in_vancouver_street_tree_list": false,
+    "prototype_role": "BC-native prostrate evergreen shrub typed 'groundcover' by both respondents — the test case for separating botanical growth form (shrub) from design role (ground cover)",
+    "survey_mentions": 2,
+    "added": "2026-11-02",
+    "added_by": "10-plant expansion (brief 2026-11-02); entity facts from the T5 extraction and the survey, see claims for evidence",
+    "usda_symbol": "ARUV",
+    "identity_review": {
+      "audited": "2026-11-02",
+      "method": "tools/identity_audit.py (M45): sources on file + entity notes; disputed = left for human judgement",
+      "taxonomic_identity": {
+        "status": "confirmed",
+        "note": "Arctostaphylos uva-ursi (L.) Spreng.; infraspecific names (var. adenotricha, var. coactilis) and Arctous / Uva-ursi combinations are synonyms; 'Vancouver Jade' claims carry the cultivar"
+      },
+      "geographic_origin": {
+        "status": "to_confirm",
+        "note": "native throughout BC (E-Flora Yellow S5) but modal zone IDF with 92 of 5,666 BEC plots in CWH; native at the coast on bluffs and dry sites — origin_status native_bc_west_of_cascades kept, coastal frequency to confirm",
+        "origin_status_on_entity": "native_bc_west_of_cascades"
+      },
+      "botanical_growth_form": {
+        "status": "confirmed",
+        "note": "read as shrub from rhs, mobot, eflora, usda_plants (supported; M29a)",
+        "kpu_plant_type": "Broadleaf evergreen"
+      },
+      "design_function": {
+        "status": "confirmed",
+        "note": "ground cover is the DESIGN role (both respondents typed 'groundcover'; KPU use 'Ground cover' from MOBOT, OSU, RHS); the botanical form is a prostrate evergreen shrub — the two are kept apart (kpu_plant_type Broadleaf evergreen; 'Ground cover' as a KPU plant type is a role label and is not used)",
+        "respondent_roles_as_typed": [
+          "groundcover",
+          "groundcover"
+        ]
+      },
+      "synonyms_raw": [
+        "Arbutus uva-ursi",
+        "Uva-ursi uva-ursi",
+        "Arctostaphylos officinalis",
+        "Arctostaphylos adenotricha (Fernald & J.F. Macbr.) Á. Löve & D. Löve & Kapoor",
+        "Arctostaphylos uva-ursi var. adenotricha Fernald & J.F. Macbr.",
+        "Arctostaphylos uva-ursi var. coactilis Fernald & J.F. Macbr.",
+        "Arctostaphylos uva-ursi subsp. uva-ursi",
+        "Uva-Ursi uva-ursi (L.) Britton"
+      ]
+    }
+  },
+  "custom": [],
+  "fill_plan": {
+    "gate": {
+      "hardiness_zone": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "invasive_status": [
+        "iscbc"
+      ],
+      "water_drainage": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "mature_height": [
+        "kpu",
+        "gpp",
+        "pojar",
+        "osu"
+      ],
+      "mature_spread": [
+        "kpu",
+        "gpp"
+      ],
+      "maintenance_level": [
+        "gpp",
+        "growgreen"
+      ],
+      "ecological_value": [
+        "eflora",
+        "pojar",
+        "growgreen"
+      ]
+    },
+    "compare": {
+      "exposure": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "seasonal_interest": [
+        "kpu",
+        "gpp",
+        "pojar"
+      ],
+      "texture": [
+        "kpu"
+      ],
+      "form": [
+        "kpu",
+        "osu"
+      ],
+      "habit": [
+        "kpu"
+      ],
+      "soil_type": [
+        "kpu",
+        "mobot"
+      ],
+      "growth_rate": [
+        "gpp"
+      ],
+      "landscape_use": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "pest_susceptibility": [
+        "kpu"
+      ]
+    },
+    "extended": {
+      "time_to_intended_size": [
+        "gpp",
+        "practitioner"
+      ],
+      "local_mature_size": [
+        "practitioner",
+        "inat"
+      ],
+      "long_term_performance": [
+        "practitioner"
+      ],
+      "behaviour_with_others": [
+        "pojar",
+        "relations.json",
+        "practitioner"
+      ],
+      "toxicity": [
+        "aspca"
+      ],
+      "local_availability": [
+        "nats"
+      ],
+      "vancouver_context": [
+        "growgreen",
+        "eflora",
+        "inat"
+      ]
+    },
+    "not_available": {
+      "gpp": "no Great Plant Picks entry: the full GPP list (1,129 plants, alphabetical) has no Arctostaphylos entry between Arbutus and Arisaema; name search 'Arctostaphylos' returned nothing (checked 2026-11-02)",
+      "pojar": "awaiting Pojar pages",
+      "mobot_cultivars": "MOBOT also lists 'Big Bear' (taxonid 242868), 'Massachusetts' (241853) and 'Wood's Red' (295540); not extracted — species page only",
+      "rhs_cultivars": "RHS also has 'Massachusetts' (47410), 'Point Reyes' (89812), 'Snowcap' (52446), 'Clyde Robin' (73065), 'Dart's Coverwonder' (291601) and var. coactilis (160389); only the species and 'Vancouver Jade' extracted"
+    },
+    "t5_extractions": [
+      "inputs/t5/arctostaphylos-uva-ursi-2026-11-02.json"
+    ]
+  },
+  "claims": [
+    {
+      "id": "arctostaphylos-uva-ursi:vancouver_context:inat01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "vancouver_context",
+      "value": {
+        "licensed_verifiable_observations": 495,
+        "research_grade": 432,
+        "all_licences": 613,
+        "years": [
+          2015,
+          2026
+        ]
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist holds 495 openly licensed verifiable observations of this plant in Greater Vancouver (432 research grade), recorded 2015–2026.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=68049&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "presence evidence; observation counts reflect observer effort as much as abundance",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:vancouver_context:inat02",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "vancouver_context",
+      "value": {
+        "observations_by_month": {
+          "1": 42,
+          "2": 23,
+          "3": 49,
+          "4": 99,
+          "5": 33,
+          "6": 45,
+          "7": 32,
+          "8": 38,
+          "9": 49,
+          "10": 56,
+          "11": 14,
+          "12": 15
+        },
+        "n": 495,
+        "unit": "observations"
+      },
+      "value_kind": "quantitative",
+      "text": "Monthly spread of 495 Greater Vancouver observations: most in 4, 10, 3 (month numbers).",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03",
+      "confidence": 0.55,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=68049&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "observer effort, not plant activity — the plant is evergreen/visible year-round; use for 'when people notice it', not phenology",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:seasonal_interest:inat03",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "seasonal_interest",
+      "value": {
+        "flowering_months": [
+          4,
+          5,
+          6
+        ],
+        "annotated_n": 33,
+        "share_threshold": 0.1
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist phenology annotations in Greater Vancouver (n=33) put flowering mainly in months 4, 5, 6.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03; community Plant Phenology annotations",
+      "confidence": 0.5,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=68049&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "month included when >= 10% of annotated observations; annotations are volunteer-made",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [
+        "month:4",
+        "month:5",
+        "month:6"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:seasonal_interest:inat04",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "seasonal_interest",
+      "value": {
+        "fruiting_months": [
+          8,
+          9,
+          10
+        ],
+        "annotated_n": 36,
+        "share_threshold": 0.1
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist phenology annotations in Greater Vancouver (n=36) put fruiting mainly in months 8, 9, 10.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03; community Plant Phenology annotations",
+      "confidence": 0.5,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=68049&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "month included when >= 10% of annotated observations; annotations are volunteer-made",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [
+        "month:8",
+        "month:9",
+        "month:10"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:ecological_value:sv01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "ecological_value",
+      "value_kind": "categorical",
+      "value": [
+        "origin:native"
+      ],
+      "text": "Kinnikinnick — Good native species, common to use.",
+      "source_id": "survey-r07",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "practising landscape designer; personal-garden, professional and studio planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false,
+        "note": "d1 'why' answers carry no basis — stored as selection reasons, never cited as observations (R2)"
+      },
+      "survey_question": "d1",
+      "respondent_role_as_typed": "Groundcover",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:mature_height:rhs01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "mature_height",
+      "value": {
+        "min": 0.1,
+        "max": 0.5,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Arctostaphylos uva-ursi an ultimate height of 0.1–0.5 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/1491/arctostaphylos-uva-ursi/details",
+      "concepts": [
+        "height_class:0.1-0.2m",
+        "height_class:0.2-0.4m",
+        "height_class:0.4-0.7m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "mature_spread",
+      "value": {
+        "min": 0.1,
+        "max": 0.5,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Arctostaphylos uva-ursi an ultimate spread of 0.1–0.5 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/1491/arctostaphylos-uva-ursi/details",
+      "note": "RHS size band is per plant; much narrower than MOBOT (3–6 ft) and E-Flora (mats several metres wide) — RHS bands are coarse",
+      "concepts": [
+        "spread_class:0.1-0.3m",
+        "spread_class:0.3-0.6m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:time_to_intended_size:rhs01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "time_to_intended_size",
+      "value": {
+        "min": 2,
+        "max": 5,
+        "unit": "years",
+        "measure": "time to ultimate height"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Arctostaphylos uva-ursi 2–5 years to reach its ultimate height.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/1491/arctostaphylos-uva-ursi/details",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:hardiness_zone:rhs01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "hardiness_zone",
+      "value": {
+        "rating": "H7",
+        "unit": "RHS",
+        "approx_max_c": -20
+      },
+      "value_kind": "quantitative",
+      "text": "RHS rates Arctostaphylos uva-ursi hardiness H7 (very hardy, below -20 °C).",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/1491/arctostaphylos-uva-ursi/details",
+      "concepts": [
+        "hardiness_rhs:H7"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:exposure:rhs01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade",
+        "exposure:sheltered"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: full sun or partial shade; exposed or sheltered sites; south-, east- or west-facing.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/1491/arctostaphylos-uva-ursi/details",
+      "note": "KPU has no 'Exposed' value",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade",
+        "Sheltered"
+      ],
+      "concepts": [
+        "exposure:sheltered",
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:soil_type:rhs01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "soil_type",
+      "value": [
+        "soil:well_drained"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: well-drained clay, loam or sand; acid or neutral; cultivation summary asks for lime-free soil.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/1491/arctostaphylos-uva-ursi/details",
+      "note": "clay/loam/sand have no KPU class; 'acid or neutral' not mapped to Acidic (template convention), although the cultivation note says lime-free",
+      "value_label": [
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:water_drainage:rhs01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "water_drainage",
+      "value": "water:average",
+      "value_kind": "categorical",
+      "text": "RHS: moist but well-drained to well-drained.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/1491/arctostaphylos-uva-ursi/details",
+      "note": "→ average",
+      "value_label": "average",
+      "concepts": [
+        "water:average"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:seasonal_interest:rhs01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "Pink"
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fruit": "bright scarlet, autumn (ornamental, not for eating)",
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "RHS: evergreen; pale pink bell-shaped flowers in summer; bright scarlet fruit in autumn; oval mid-green leaves.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/1491/arctostaphylos-uva-ursi/details",
+      "note": "'pale pink' → Pink; 'mid-green' → Green; summer flowering not mapped to months",
+      "concepts": [
+        "colour:green",
+        "colour:pink",
+        "evergreen:yes",
+        "fruit:showy"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:pest_susceptibility:rhs01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "pest_susceptibility",
+      "value": [
+        "pest:fungal_leaf_spot"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: generally pest-free; may be susceptible to leaf spot.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/1491/arctostaphylos-uva-ursi/details",
+      "note": "'leaf spot' (pathogen unspecified) → Fungal leaf spot",
+      "value_label": [
+        "Fungal leaf spot"
+      ],
+      "concepts": [
+        "pest:fungal_leaf_spot"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:resistances:rhs01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "resistances",
+      "value": [
+        "stress:drought"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS flags the plant as drought resistant.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/1491/arctostaphylos-uva-ursi/details",
+      "value_label": [
+        "drought"
+      ],
+      "concepts": [
+        "stress:drought"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:landscape_use:rhs01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "landscape_use",
+      "value": [
+        "use:ground_cover",
+        "use:rock_garden"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS suggests ground cover, gravel gardens and Mediterranean-climate plantings.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/1491/arctostaphylos-uva-ursi/details",
+      "note": "'gravel garden' → Rock garden (loose); 'Mediterranean climate plants' has no KPU value",
+      "value_label": [
+        "Ground cover",
+        "Rock garden"
+      ],
+      "concepts": [
+        "use:ground_cover",
+        "use:rock_garden"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:maintenance_level:rhs01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "maintenance_level",
+      "value": "maintenance:low",
+      "value_kind": "categorical",
+      "text": "RHS: pruning group 1 (no routine pruning); generally pest-free.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/1491/arctostaphylos-uva-ursi/details",
+      "note": "'pruning group 1' → low",
+      "value_label": "low",
+      "concepts": [
+        "maintenance:low"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:mature_height:rhs02",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "mature_height",
+      "value": {
+        "min": 0.1,
+        "max": 0.5,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Arctostaphylos uva-ursi 'Vancouver Jade' an ultimate height of 0.1–0.5 m, described as a low arching shrub to about 15 cm.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "cultivar: 'Vancouver Jade'; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/99909/arctostaphylos-uva-ursi-vancouver-jade/details",
+      "note": "RHS size band (0.1–0.5 m) is coarser than the description's 15 cm",
+      "concepts": [
+        "height_class:0.1-0.2m",
+        "height_class:0.2-0.4m",
+        "height_class:0.4-0.7m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": "Vancouver Jade"
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:time_to_intended_size:rhs02",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "time_to_intended_size",
+      "value": {
+        "min": 2,
+        "max": 5,
+        "unit": "years",
+        "measure": "time to ultimate height"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives 'Vancouver Jade' 2–5 years to reach its ultimate height.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "cultivar: 'Vancouver Jade'; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/99909/arctostaphylos-uva-ursi-vancouver-jade/details",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": "Vancouver Jade"
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:landscape_use:rhs02",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "landscape_use",
+      "value": [
+        "use:container_planting",
+        "use:ground_cover"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS suggests 'Vancouver Jade' for patio containers, cottage and informal gardens, banks and slopes, ground cover and underplanting of roses and shrubs.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "cultivar: 'Vancouver Jade'; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/99909/arctostaphylos-uva-ursi-vancouver-jade/details",
+      "note": "'banks and slopes', 'cottage and informal garden' and 'underplanting' have no exact KPU value",
+      "value_label": [
+        "Container planting",
+        "Ground cover"
+      ],
+      "concepts": [
+        "use:container_planting",
+        "use:ground_cover"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": "Vancouver Jade"
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:seasonal_interest:rhs02",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "Pink"
+        ],
+        "foliage_colour": [
+          "Green",
+          "Red"
+        ],
+        "fruit": "red berries, autumn",
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "RHS: 'Vancouver Jade' is evergreen with red-flushed new shoots, small pink flowers in summer and red berries in autumn.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "cultivar: 'Vancouver Jade'; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/99909/arctostaphylos-uva-ursi-vancouver-jade/details",
+      "note": "red-flushed new growth → Red added to foliage_colour; summer flowering not mapped to months",
+      "concepts": [
+        "colour:green",
+        "colour:pink",
+        "colour:red",
+        "evergreen:yes",
+        "fruit:showy"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": "Vancouver Jade"
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:soil_type:rhs02",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "soil_type",
+      "value": [
+        "soil:acidic",
+        "soil:well_drained"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: 'Vancouver Jade' in acid, moist but well-drained clay, loam or sand.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "cultivar: 'Vancouver Jade'; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/99909/arctostaphylos-uva-ursi-vancouver-jade/details",
+      "note": "pH 'Acid' → Acidic; clay/loam/sand have no KPU class",
+      "value_label": [
+        "Acidic",
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:acidic",
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": "Vancouver Jade"
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:water_drainage:rhs02",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "water_drainage",
+      "value": "water:moist",
+      "value_kind": "categorical",
+      "text": "RHS: 'Vancouver Jade' in moist but well-drained soil.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "cultivar: 'Vancouver Jade'; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/99909/arctostaphylos-uva-ursi-vancouver-jade/details",
+      "note": "'moist but well-drained' → moist (M8 discount)",
+      "value_label": "moist",
+      "concepts": [
+        "water:moist"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": "Vancouver Jade"
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:hardiness_zone:mobot01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "hardiness_zone",
+      "value": {
+        "min": 2,
+        "max": 7,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden lists Arctostaphylos uva-ursi for USDA zones 2 to 7, best in 2–6 (7).",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "concepts": [
+        "hardiness_usda:z2",
+        "hardiness_usda:z3",
+        "hardiness_usda:z4",
+        "hardiness_usda:z5",
+        "hardiness_usda:z6",
+        "hardiness_usda:z7"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:mature_height:mobot01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "mature_height",
+      "value": {
+        "min": 0.15,
+        "max": 0.3,
+        "unit": "m",
+        "raw": "0.50 to 1.00 feet"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden gives Arctostaphylos uva-ursi a height of 0.5–1 ft (0.15–0.3 m).",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "concepts": [
+        "height_class:0.1-0.2m",
+        "height_class:0.2-0.4m"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:mature_spread:mobot01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "mature_spread",
+      "value": {
+        "min": 0.91,
+        "max": 1.83,
+        "unit": "m",
+        "raw": "3.00 to 6.00 feet, or more over time"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden gives Arctostaphylos uva-ursi a spread of 3–6 ft (0.9–1.8 m) or more over time.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "concepts": [
+        "spread_class:0.6-1.0m",
+        "spread_class:1.0-1.5m",
+        "spread_class:1.5-2.0m"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:exposure:mobot01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: full sun to part shade; tolerates light shade; likes exposed open sites.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "note": "KPU has no 'Exposed' value",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:water_drainage:mobot01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "water_drainage",
+      "value": "water:dry",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden rates water needs dry to medium.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "note": "'dry to medium' → dry; 'average' would also fit",
+      "value_label": "dry",
+      "concepts": [
+        "water:dry"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:maintenance_level:mobot01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "maintenance_level",
+      "value": "maintenance:low",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden rates maintenance low; plants should not be fertilised.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "value_label": "low",
+      "concepts": [
+        "maintenance:low"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:soil_type:mobot01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "soil_type",
+      "value": [
+        "soil:acidic",
+        "soil:well_drained",
+        "soil:rocky_or_gravelly_or_dry"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: acidic, dry to medium, well-drained sandy or gritty soils; grows well in poor infertile soils.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "note": "'sandy or gritty, poor infertile' → Rocky or gravelly or dry",
+      "value_label": [
+        "Acidic",
+        "Well-drained",
+        "Rocky or gravelly or dry"
+      ],
+      "concepts": [
+        "soil:acidic",
+        "soil:rocky_or_gravelly_or_dry",
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:seasonal_interest:mobot01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "seasonal_interest",
+      "value": {
+        "flowering_months": [
+          4,
+          5
+        ],
+        "flower_colour": [
+          "White",
+          "Pink"
+        ],
+        "foliage_colour": [
+          "Green",
+          "Bronze"
+        ],
+        "fruit": "red drupes ripening August–September, may persist through winter",
+        "winter_interest": true,
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: white flowers with a pink tinge in April–May; dark green evergreen leaves turning bronze in winter; red fruit from late summer, often held through winter; year-round interest.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "note": "'white with a pink tinge' → White, Pink; winter bronze foliage recorded under foliage_colour and winter_interest",
+      "concepts": [
+        "colour:bronze",
+        "colour:green",
+        "colour:pink",
+        "colour:white",
+        "evergreen:yes",
+        "fruit:showy",
+        "interest:winter_interest"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [
+        "month:4",
+        "month:5"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:landscape_use:mobot01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "landscape_use",
+      "value": [
+        "use:ground_cover",
+        "use:group_or_mass_planting",
+        "use:erosion_control",
+        "use:attract_birds",
+        "use:native_planting",
+        "use:rock_garden",
+        "use:herb",
+        "use:winter_interest"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: moderate- to large-scale ground cover with year-round interest; erosion control on slopes; around shrubs, sunny border margins, naturalised areas, native plant gardens, herb gardens, draped over walls, rock gardens; attracts birds.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "note": "'moderate to large scale ground cover' → Ground cover + Group or mass planting; 'naturalized areas' and 'drape over a wall' have no exact KPU value",
+      "value_label": [
+        "Ground cover",
+        "Group or mass planting",
+        "Erosion control",
+        "Attract birds",
+        "Native planting",
+        "Rock garden",
+        "Herb",
+        "Winter interest"
+      ],
+      "concepts": [
+        "use:attract_birds",
+        "use:erosion_control",
+        "use:ground_cover",
+        "use:group_or_mass_planting",
+        "use:herb",
+        "use:native_planting",
+        "use:rock_garden",
+        "use:winter_interest"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:resistances:mobot01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "resistances",
+      "value": [
+        "stress:drought"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: drought tolerant once established.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions; once established",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "value_label": [
+        "drought"
+      ],
+      "concepts": [
+        "stress:drought"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [
+        "age:established"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:resistances:mobot02",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "resistances",
+      "value": [
+        "stress:erosion"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden lists Arctostaphylos uva-ursi as tolerating erosion.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "note": "from the 'Tolerate' line of the profile; 'erosion' is outside the resistances starter list (open list)",
+      "value_label": [
+        "erosion"
+      ],
+      "concepts": [
+        "stress:erosion"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:pest_susceptibility:mobot01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "pest_susceptibility",
+      "value": [
+        "pest:root_rot",
+        "pest:mildew",
+        "pest:galls",
+        "pest:fungal_leaf_spot",
+        "pest:rust"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: no serious insect or disease problems; on poorly drained sites or in hotter climates than preferred it becomes more susceptible to root rot, black mildew, leaf gall, leaf spot and rust.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions; poorly drained sites or climates hotter than preferred",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "note": "conditional susceptibilities only; 'black mildew' → Mildew, 'leaf gall' → Galls",
+      "value_label": [
+        "Root rot",
+        "Mildew",
+        "Galls",
+        "Fungal leaf spot",
+        "Rust"
+      ],
+      "concepts": [
+        "pest:fungal_leaf_spot",
+        "pest:galls",
+        "pest:mildew",
+        "pest:root_rot",
+        "pest:rust"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:growth_rate:mobot01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "growth_rate",
+      "value": "growth_rate:slow",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden describes the plant as slow-growing.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "value_label": "slow",
+      "concepts": [
+        "growth_rate:slow"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:form:mobot01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "form",
+      "value": "form:creeping_mat_like",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: creeping, prostrate, woody evergreen shrub.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "value_label": "Creeping / Mat-like",
+      "concepts": [
+        "form:creeping_mat_like"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:behaviour_with_others:mobot01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "behaviour_with_others",
+      "value": {
+        "spread": "spreads over time by flexible branches rooting at the nodes, to 3–6 ft wide or more",
+        "transplanting": "difficult; established plants resent root disturbance and division"
+      },
+      "value_kind": "qualitative",
+      "text": "Missouri Botanical Garden: spreads by branches rooting at the nodes to 3–6 ft or more; established plants do not tolerate root disturbance and are hard to divide or transplant.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:ecological_value:mobot01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "ecological_value",
+      "value": [
+        "origin:native",
+        "ecology:bird_food",
+        "ecology:erosion_control"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: native throughout northern North America (Alaska to Newfoundland, south through Canada); fruit eaten by bears, birds and small mammals; helps control soil erosion on slopes.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279933",
+      "value_label": [
+        "native",
+        "bird_food",
+        "erosion_control"
+      ],
+      "concepts": [
+        "origin:native",
+        "ecology:bird_food",
+        "ecology:erosion_control"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:mature_height:osu01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "mature_height",
+      "value": {
+        "min": 0.15,
+        "max": 0.3,
+        "unit": "m",
+        "raw": "6-12+ inches (15-30 cm)"
+      },
+      "value_kind": "quantitative",
+      "text": "Oregon State University gives Arctostaphylos uva-ursi a height of 6–12+ in (15–30 cm).",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/arctostaphylos-uva-ursi",
+      "concepts": [
+        "height_class:0.1-0.2m",
+        "height_class:0.2-0.4m"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:hardiness_zone:osu01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "hardiness_zone",
+      "value": {
+        "usda_min": 2,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Oregon State University: hardy to USDA zone 2 (varies).",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/arctostaphylos-uva-ursi",
+      "note": "OSU adds '(varies)'",
+      "concepts": [
+        "hardiness_usda:z2",
+        "hardiness_usda:z3",
+        "hardiness_usda:z4",
+        "hardiness_usda:z5",
+        "hardiness_usda:z6",
+        "hardiness_usda:z7",
+        "hardiness_usda:z8",
+        "hardiness_usda:z9",
+        "hardiness_usda:z10",
+        "hardiness_usda:z11"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:exposure:osu01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: sun or partial shade.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/arctostaphylos-uva-ursi",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:soil_type:osu01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "soil_type",
+      "value": [
+        "soil:acidic",
+        "soil:rocky_or_gravelly_or_dry"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: prefers poor, sandy, infertile, acidic soils; reported to grow well on limestone rock.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/arctostaphylos-uva-ursi",
+      "note": "'poor, sandy, infertile' → Rocky or gravelly or dry (loose); limestone tolerance not mapped to Alkaline",
+      "value_label": [
+        "Acidic",
+        "Rocky or gravelly or dry"
+      ],
+      "concepts": [
+        "soil:acidic",
+        "soil:rocky_or_gravelly_or_dry"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:resistances:osu01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "resistances",
+      "value": [
+        "stress:salt"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: good salt tolerance.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/arctostaphylos-uva-ursi",
+      "value_label": [
+        "salt"
+      ],
+      "concepts": [
+        "stress:salt"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:form:osu01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "form",
+      "value": "form:creeping_mat_like",
+      "value_kind": "categorical",
+      "text": "Oregon State University: mat-forming evergreen ground cover whose branches root where they touch the soil.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/arctostaphylos-uva-ursi",
+      "value_label": "Creeping / Mat-like",
+      "concepts": [
+        "form:creeping_mat_like"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:behaviour_with_others:osu01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "behaviour_with_others",
+      "value": {
+        "spread": "mat-forming; branches root where they touch the soil",
+        "transplanting": "difficult"
+      },
+      "value_kind": "qualitative",
+      "text": "Oregon State University: mat-forming, rooting along the branches; difficult to transplant.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/arctostaphylos-uva-ursi",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:seasonal_interest:osu01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "White",
+          "Pink"
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fruit": "bright red fleshy drupe about 6 mm; plants may not set fruit",
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "Oregon State University: evergreen lustrous dark green leaves; white, pink-tinged urn-shaped flowers in nodding terminal clusters; bright red drupes about 6 mm, not always produced.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/arctostaphylos-uva-ursi",
+      "note": "'white-tinged pink' → White, Pink; bloom timing not stated",
+      "concepts": [
+        "colour:green",
+        "colour:pink",
+        "colour:white",
+        "evergreen:yes",
+        "fruit:showy"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:ecological_value:osu01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: native to Oregon; circumboreal, south to northern California and Virginia.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/arctostaphylos-uva-ursi",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:landscape_use:osu01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "landscape_use",
+      "value": [
+        "use:ground_cover"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University lists the plant as an evergreen ground cover.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/arctostaphylos-uva-ursi",
+      "value_label": [
+        "Ground cover"
+      ],
+      "concepts": [
+        "use:ground_cover"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "mature_height",
+      "value": {
+        "max": 0.15,
+        "unit": "m",
+        "raw": "up to 15 cm"
+      },
+      "value_kind": "quantitative",
+      "text": "Oregon State University gives 'Vancouver Jade' a height of up to 15 cm, less widely spreading than 'Massachusetts'.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "cultivar: 'Vancouver Jade'; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/arctostaphylos-uva-ursi",
+      "concepts": [
+        "height_class:lt_0.1m",
+        "height_class:0.1-0.2m"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": "Vancouver Jade"
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:seasonal_interest:osu02",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "seasonal_interest",
+      "value": {
+        "foliage_colour": [
+          "Green",
+          "Bronze"
+        ],
+        "winter_interest": true,
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "Oregon State University: 'Vancouver Jade' has glossy green leaves that turn red-bronze in winter.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "cultivar: 'Vancouver Jade'; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/arctostaphylos-uva-ursi",
+      "note": "'red-bronze' → Bronze",
+      "concepts": [
+        "colour:bronze",
+        "colour:green",
+        "evergreen:yes",
+        "interest:winter_interest"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": "Vancouver Jade"
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:ecological_value:eflora01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "E-Flora BC lists Arctostaphylos uva-ursi as native to BC (provincial list Yellow, rank S5 secure, 2019).",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Arctostaphylos%20uva-ursi",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:vancouver_context:eflora01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "vancouver_context",
+      "value": {
+        "habitat": [
+          "dry forest",
+          "exposed sites",
+          "rocky",
+          "shallow soils",
+          "rock outcrops",
+          "open-canopy lodgepole pine forest",
+          "lowland",
+          "lower alpine"
+        ],
+        "bgc_zones": [
+          "IDF",
+          "MS",
+          "SBS",
+          "ESSF",
+          "ICH",
+          "SBPS",
+          "BWBS",
+          "PP",
+          "CWH",
+          "SWB",
+          "AT",
+          "BAFA",
+          "BG",
+          "IMA",
+          "MH",
+          "CDF",
+          "CMA"
+        ],
+        "modal_zone": "IDF",
+        "cwh_stations": 92,
+        "total_stations": 5666,
+        "elevation_m": {
+          "min": 6,
+          "max": 2854,
+          "mean": 1129
+        },
+        "soil_moisture_regime": {
+          "min": 0,
+          "mean": 2,
+          "max": 8,
+          "scale": "0 very xeric – 8 hydric"
+        },
+        "modal_nutrient_regime": "C",
+        "bc_distribution": "common throughout BC"
+      },
+      "value_kind": "qualitative",
+      "text": "E-Flora BC: common throughout BC in dry forests and exposed, often rocky sites from lowland to lower alpine; modal zone is Interior Douglas-fir (dry interior), with only 92 of 5,666 plots in the Coastal Western Hemlock zone that Vancouver sits in; mean soil moisture regime 2 (subxeric).",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Arctostaphylos%20uva-ursi",
+      "note": "BEC zone list from the atlas station records; the plant is primarily an interior / dry-site species in BC, so Vancouver fit rests on free-draining, open sites rather than typical CWH forest",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "bgc_zone:bafa",
+        "bgc_zone:bg",
+        "bgc_zone:bwbs",
+        "bgc_zone:cdf",
+        "bgc_zone:cma",
+        "bgc_zone:cwh",
+        "bgc_zone:essf",
+        "bgc_zone:ich",
+        "bgc_zone:idf",
+        "bgc_zone:ima",
+        "bgc_zone:mh",
+        "bgc_zone:ms",
+        "bgc_zone:pp",
+        "bgc_zone:sbps",
+        "bgc_zone:sbs",
+        "bgc_zone:swb",
+        "habitat:forest",
+        "habitat:rocky"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:mature_height:eflora01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "mature_height",
+      "value": {
+        "min": 0.05,
+        "max": 0.15,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "E-Flora BC: prostrate shrub whose stems ascend at the tips to 5–15 cm.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Arctostaphylos%20uva-ursi",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "height_class:lt_0.1m",
+        "height_class:0.1-0.2m"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:form:eflora01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "form",
+      "value": "form:creeping_mat_like",
+      "value_kind": "categorical",
+      "text": "E-Flora BC: evergreen prostrate shrub with trailing, rooting stems, sometimes forming mats several metres wide.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Arctostaphylos%20uva-ursi",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": "Creeping / Mat-like",
+      "concepts": [
+        "form:creeping_mat_like"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:behaviour_with_others:eflora01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "behaviour_with_others",
+      "value": {
+        "spread": "trailing stems root along their length; mats sometimes several metres wide",
+        "roots": "reported to 181 cm deep on dry sites (Crane 1991, cited by E-Flora)"
+      },
+      "value_kind": "qualitative",
+      "text": "E-Flora BC: trailing, rooting stems form mats to several metres across; deep-rooting on dry sites.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Arctostaphylos%20uva-ursi",
+      "note": "mat width is qualitative, so it is kept here rather than in mature_spread",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:exposure:eflora01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "E-Flora BC habitat records are exposed, often rocky sites and dry, open-canopy forest.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page; inferred from habitat classes, not a cultivation rating",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Arctostaphylos%20uva-ursi",
+      "note": "exposure read off habitat classes",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:ecological_value:usdaplants01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: native in Alaska, Canada, the lower 48 states, Greenland and St Pierre & Miquelon.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ARUV",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:ecological_value:usdaplants02",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "ecological_value",
+      "value": [
+        "ecology:bird_food",
+        "ecology:wildlife_cover"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS wildlife table: food value moderate for large mammals and low–moderate for terrestrial birds; cover value moderate for small mammals and terrestrial birds.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ARUV",
+      "note": "compiled from Martin et al. 1951 and Quinlan & Cuccarese 2004 (Alaska) as cited by USDA; ratings are low–moderate, not high",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "bird_food",
+        "wildlife_cover"
+      ],
+      "concepts": [
+        "ecology:bird_food",
+        "ecology:wildlife_cover"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:mature_height:usdaplants01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "mature_height",
+      "value": {
+        "height_m": 0.15,
+        "unit": "m",
+        "raw": "0.5 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "USDA PLANTS gives a mature height of 0.5 ft (0.15 m).",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ARUV",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "height_class:0.1-0.2m"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:growth_rate:usdaplants01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "growth_rate",
+      "value": "growth_rate:moderate",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates growth rate moderate.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ARUV",
+      "note": "MOBOT says slow-growing; both kept (R1)",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "moderate",
+      "concepts": [
+        "growth_rate:moderate"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:exposure:usdaplants01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates shade tolerance medium.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.65,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ARUV",
+      "note": "'Shade Tolerance: Medium' → sun to part shade, loose",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:resistances:usdaplants01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "resistances",
+      "value": [
+        "stress:drought"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates drought tolerance high and moisture use low.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ARUV",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "drought"
+      ],
+      "concepts": [
+        "stress:drought"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:resistances:usdaplants02",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "resistances",
+      "value": [
+        "stress:salt"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates salinity tolerance medium.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ARUV",
+      "note": "'Salinity Tolerance: Medium' — borderline; recorded at low confidence; OSU says good salt tolerance",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "salt"
+      ],
+      "concepts": [
+        "stress:salt"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:water_drainage:usdaplants01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "water_drainage",
+      "value": "water:dry",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: moisture use low, drought tolerance high, no anaerobic (waterlogging) tolerance.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ARUV",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "dry",
+      "concepts": [
+        "water:dry"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:soil_type:usdaplants01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "soil_type",
+      "value": [
+        "soil:well_drained"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: pH 5.5–8.0; adapted to coarse and medium but not fine-textured soils; no anaerobic tolerance; low fertility requirement; medium CaCO3 tolerance.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.65,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ARUV",
+      "note": "pH range spans acid to mildly alkaline so neither Acidic nor Alkaline is mapped; coarse/medium soils with no waterlogging tolerance → Well-drained (loose). Contrasts with RHS 'lime-free' and OSU/MOBOT 'acidic'",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:seasonal_interest:usdaplants01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "Purple"
+        ],
+        "flowering_months": [
+          5,
+          6
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fall_colour": true,
+        "fruit": "red, summer to fall, conspicuous, persistent",
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: conspicuous purple flowers in late spring, dark green leaves retained, conspicuous fall colour, red fruit summer to fall that persists.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ARUV",
+      "note": "'Late Spring' → months 5–6; 'Dark Green' → Green; USDA 'Purple' flower colour contradicts RHS/OSU/E-Flora/MOBOT (pink-white)",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "colour:green",
+        "colour:purple",
+        "evergreen:yes",
+        "fruit:showy",
+        "interest:fall_colour"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [
+        "month:5",
+        "month:6"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:toxicity:usdaplants01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "toxicity",
+      "value": {
+        "usda_rating": "none",
+        "humans": "unknown",
+        "pets": "unknown"
+      },
+      "value_kind": "categorical",
+      "text": "USDA PLANTS lists toxicity as none.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ARUV",
+      "note": "M17: USDA 'Toxicity' is a livestock / conservation-planting rating; humans and pets stay unknown. RHS carries a separate 'potentially harmful, fruit not to be eaten' warning (tier B, not stored as a value)",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "toxicity:unknown"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:form:usdaplants01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "form",
+      "value": "form:creeping_mat_like",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: shape and orientation prostrate; growth habit shrub / subshrub.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ARUV",
+      "note": "'Prostrate' → Creeping / Mat-like",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "Creeping / Mat-like",
+      "concepts": [
+        "form:creeping_mat_like"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:texture:usdaplants01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "texture",
+      "value": "texture:coarse",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates foliage texture coarse.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.65,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ARUV",
+      "note": "recorded as given; the leaves are small (1–3 cm), so Kay may wish to check against KPU's rating",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "Coarse",
+      "concepts": [
+        "texture:coarse"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:behaviour_with_others:usdaplants01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "behaviour_with_others",
+      "value": {
+        "growth_form": "multiple stem",
+        "vegetative_spread_rate": "moderate",
+        "seed_spread_rate": "slow",
+        "seedling_vigor": "low",
+        "resprout": false,
+        "coppice": false,
+        "fire_tolerance": "low",
+        "known_allelopath": true,
+        "lifespan": "long"
+      },
+      "value_kind": "qualitative",
+      "text": "USDA PLANTS: multi-stemmed, moderate vegetative spread but slow seed spread and low seedling vigour; does not resprout or coppice, low fire tolerance; flagged as a known allelopath; long-lived.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ARUV",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "arctostaphylos-uva-ursi:invasive_status:iscbc01",
+      "plant": "arctostaphylos-uva-ursi",
+      "field": "invasive_status",
+      "value": "invasive:not_listed",
+      "value_kind": "categorical",
+      "text": "Arctostaphylos uva-ursi is not among the species profiles on the Invasive Species Council of BC site (checked 2026-11-02; the site search returns only an unrelated classroom-craft post); it is a BC native.",
+      "source_id": "iscbc",
+      "source_type": "municipal",
+      "context": "BC; ISCBC online species profiles",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://bcinvasives.ca/take-action/identify/",
+      "value_label": "not_listed",
+      "concepts": [
+        "invasive:not_listed"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    }
+  ]
+}

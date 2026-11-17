@@ -1,0 +1,2565 @@
+{
+  "entity": {
+    "id": "cornus-sericea",
+    "scientific_name": "Cornus sericea",
+    "synonyms_scientific": [
+      "Cornus stolonifera",
+      "Cornus alba subsp. stolonifera",
+      "Swida sericea",
+      "Cornus alba var. californica",
+      "Cornus alba var. occidentalis",
+      "Cornus occidentalis",
+      "Cornus sericea subsp. sericea",
+      "Cornus sericea subsp. stolonifera",
+      "Cornus stolonifera var. californica",
+      "Cornus stolonifera var. occidentalis",
+      "Cornus baileyi",
+      "Cornus interior",
+      "Swida stolonifera"
+    ],
+    "common_names": {
+      "en": [
+        "Red osier dogwood",
+        "Red-osier dogwood",
+        "Red twig dogwood",
+        "redosier dogwood",
+        "red-twig dogwood",
+        "American dogwood"
+      ],
+      "zh": [
+        "美洲红瑞木"
+      ]
+    },
+    "family": "Cornaceae",
+    "kpu_plant_type": "Shrub - deciduous",
+    "respondent_roles": [
+      "shrub"
+    ],
+    "raw_names": [
+      "Cornus sericea"
+    ],
+    "survey_respondents": [
+      "survey-r10"
+    ],
+    "origin_status": "native_bc_west_of_cascades",
+    "external_refs": {
+      "kpu": null,
+      "mobot": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279363",
+      "gpp": "https://www.greatplantpicks.org/plantlists/view/423",
+      "osu": "https://landscapeplants.oregonstate.edu/plants/cornus-sericea",
+      "eflora": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cornus%20sericea",
+      "rhs": "https://www.rhs.org.uk/plants/4411/cornus-sericea/details",
+      "usda": "https://plants.usda.gov/plant-profile/COSE16",
+      "inat": "https://www.inaturalist.org/taxa/53387",
+      "usda_plants": "https://plants.usda.gov/plant-profile/COSE16",
+      "usda_plants_subspecies": "https://plants.usda.gov/plant-profile/COSES",
+      "usda_api_profile": "https://plantsservices.sc.egov.usda.gov/api/PlantProfile?symbol=COSE16",
+      "usda_api_characteristics": "https://plantsservices.sc.egov.usda.gov/api/PlantCharacteristics/75214",
+      "iscbc": "https://bcinvasives.ca/take-action/identify/"
+    },
+    "in_vancouver_street_tree_list": false,
+    "prototype_role": "BC-native deciduous shrub chosen for winter stem colour; 1 survey mention; not a street tree — tests the winter-interest and wet-site knowledge and the shrub layer",
+    "survey_mentions": 1,
+    "added": "2026-11-02",
+    "added_by": "10-plant expansion (brief 2026-11-02); entity facts from the T5 extraction and the survey, see claims for evidence",
+    "usda_symbol": "COSE16",
+    "identity_review": {
+      "audited": "2026-11-02",
+      "method": "tools/identity_audit.py (M45): sources on file + entity notes; disputed = left for human judgement",
+      "taxonomic_identity": {
+        "status": "confirmed",
+        "note": "Cornus sericea L. accepted; C. stolonifera Michx. and Swida sericea are synonyms (USDA, E-Flora, RHS); subspecies sericea / stolonifera recognised by USDA — species-level claims only, except the 'Baileyi' GPP claims (cultivar in context)"
+      },
+      "geographic_origin": {
+        "status": "confirmed",
+        "note": "native throughout BC incl. CWH / CDF at sea level (E-Flora Yellow S5)",
+        "origin_status_on_entity": "native_bc_west_of_cascades"
+      },
+      "botanical_growth_form": {
+        "status": "confirmed",
+        "note": "read as shrub from kpu (entity.kpu_plant_type), rhs, mobot, survey (entity.respondent_roles) (supported; M29a)",
+        "kpu_plant_type": "Shrub - deciduous"
+      },
+      "design_function": {
+        "status": "confirmed",
+        "note": "winter-stem shrub for mass planting, screens and wet ground (RHS, MOBOT); respondent 'colorful bark'",
+        "respondent_roles_as_typed": [
+          "shrub"
+        ]
+      },
+      "synonyms_raw": [
+        "Cornus stolonifera",
+        "Cornus alba subsp. stolonifera",
+        "Swida sericea",
+        "Cornus stolonifera Michx.",
+        "Cornus alba subsp. stolonifera (Michx.) Wangerin",
+        "Cornus alba var. californica (C.A. Mey.) B. Boivin",
+        "Cornus alba var. occidentalis (Torr. & A. Gray) B. Boivin",
+        "Cornus occidentalis (Torr. & A. Gray) Coville",
+        "Cornus ×californica C.A. Mey.",
+        "Cornus sericea subsp. sericea",
+        "Cornus sericea subsp. stolonifera (Michx.) Fosberg",
+        "Cornus stolonifera var. californica (C.A. Mey.) McMinn",
+        "Cornus stolonifera var. occidentalis (Torr. & A. Gray) C.L. Hitchc.",
+        "Cornus baileyi J.M. Coult. & Evans",
+        "Cornus interior (Rydb.) N. Petersen",
+        "Swida sericea (L.) Holub",
+        "Swida stolonifera (Michx.) Rydb.",
+        "Cornus alba misapplied"
+      ]
+    }
+  },
+  "custom": [],
+  "fill_plan": {
+    "gate": {
+      "hardiness_zone": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "invasive_status": [
+        "iscbc"
+      ],
+      "water_drainage": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "mature_height": [
+        "kpu",
+        "gpp",
+        "pojar",
+        "osu"
+      ],
+      "mature_spread": [
+        "kpu",
+        "gpp"
+      ],
+      "maintenance_level": [
+        "gpp",
+        "growgreen"
+      ],
+      "ecological_value": [
+        "eflora",
+        "pojar",
+        "growgreen"
+      ]
+    },
+    "compare": {
+      "exposure": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "seasonal_interest": [
+        "kpu",
+        "gpp",
+        "pojar"
+      ],
+      "texture": [
+        "kpu"
+      ],
+      "form": [
+        "kpu",
+        "osu"
+      ],
+      "habit": [
+        "kpu"
+      ],
+      "soil_type": [
+        "kpu",
+        "mobot"
+      ],
+      "growth_rate": [
+        "gpp"
+      ],
+      "landscape_use": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "pest_susceptibility": [
+        "kpu"
+      ]
+    },
+    "extended": {
+      "time_to_intended_size": [
+        "gpp",
+        "practitioner"
+      ],
+      "local_mature_size": [
+        "practitioner",
+        "inat"
+      ],
+      "long_term_performance": [
+        "practitioner"
+      ],
+      "behaviour_with_others": [
+        "pojar",
+        "relations.json",
+        "practitioner"
+      ],
+      "toxicity": [
+        "aspca"
+      ],
+      "local_availability": [
+        "nats"
+      ],
+      "vancouver_context": [
+        "growgreen",
+        "eflora",
+        "inat"
+      ]
+    },
+    "not_available": {
+      "gpp_species": "no species-level Great Plant Picks entry; only the cultivar 'Baileyi' page (plantlists/view/423) — recorded as cultivar claims",
+      "usda_characteristics_species": "the COSE16 species profile has no characteristics (HasCharacteristics=false); characteristics taken from the subspecies profile COSES (Id 75214), cultivar 'Ruby' rows ignored",
+      "usda_wildlife": "species profile has no wildlife data; COSES carries only 'Low' food/cover ratings for terrestrial birds (Quinlan & Cuccarese 2004, Alaska) — not strong enough for bird_food",
+      "kpu": "not used (tier C)",
+      "aspca": "not used (tier B-restrictive, Kay decides)",
+      "pojar": "awaiting Pojar pages"
+    },
+    "t5_extractions": [
+      "inputs/t5/cornus-sericea-2026-11-02.json"
+    ]
+  },
+  "claims": [
+    {
+      "id": "cornus-sericea:vancouver_context:inat01",
+      "plant": "cornus-sericea",
+      "field": "vancouver_context",
+      "value": {
+        "licensed_verifiable_observations": 2100,
+        "research_grade": 1388,
+        "all_licences": 2768,
+        "years": [
+          2007,
+          2026
+        ]
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist holds 2100 openly licensed verifiable observations of this plant in Greater Vancouver (1388 research grade), recorded 2007–2026.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=53387&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "presence evidence; observation counts reflect observer effort as much as abundance",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:vancouver_context:inat02",
+      "plant": "cornus-sericea",
+      "field": "vancouver_context",
+      "value": {
+        "observations_by_month": {
+          "1": 39,
+          "2": 50,
+          "3": 63,
+          "4": 326,
+          "5": 409,
+          "6": 199,
+          "7": 226,
+          "8": 202,
+          "9": 254,
+          "10": 229,
+          "11": 65,
+          "12": 38
+        },
+        "n": 2100,
+        "unit": "observations"
+      },
+      "value_kind": "quantitative",
+      "text": "Monthly spread of 2100 Greater Vancouver observations: most in 5, 4, 9 (month numbers).",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03",
+      "confidence": 0.55,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=53387&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "observer effort, not plant activity — the plant is evergreen/visible year-round; use for 'when people notice it', not phenology",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:seasonal_interest:inat03",
+      "plant": "cornus-sericea",
+      "field": "seasonal_interest",
+      "value": {
+        "flowering_months": [
+          5,
+          7,
+          8
+        ],
+        "annotated_n": 39,
+        "share_threshold": 0.1
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist phenology annotations in Greater Vancouver (n=39) put flowering mainly in months 5, 7, 8.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03; community Plant Phenology annotations",
+      "confidence": 0.5,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=53387&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "month included when >= 10% of annotated observations; annotations are volunteer-made",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [
+        "month:5",
+        "month:7",
+        "month:8"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:seasonal_interest:inat04",
+      "plant": "cornus-sericea",
+      "field": "seasonal_interest",
+      "value": {
+        "fruiting_months": [
+          7,
+          8,
+          9
+        ],
+        "annotated_n": 68,
+        "share_threshold": 0.1
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist phenology annotations in Greater Vancouver (n=68) put fruiting mainly in months 7, 8, 9.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03; community Plant Phenology annotations",
+      "confidence": 0.5,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=53387&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "month included when >= 10% of annotated observations; annotations are volunteer-made",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [
+        "month:7",
+        "month:8",
+        "month:9"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:ecological_value:sv01",
+      "plant": "cornus-sericea",
+      "field": "ecological_value",
+      "value_kind": "categorical",
+      "value": [
+        "origin:native"
+      ],
+      "text": "Cornus sericea — Beautiful native with colorful bark.",
+      "source_id": "survey-r10",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student; former professional gardener; studio, personal-garden and professional planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false,
+        "note": "d1 'why' answers carry no basis — stored as selection reasons, never cited as observations (R2)"
+      },
+      "survey_question": "d1",
+      "respondent_role_as_typed": "Shrub",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "cornus-sericea:seasonal_interest:sv02",
+      "plant": "cornus-sericea",
+      "field": "seasonal_interest",
+      "value_kind": "categorical",
+      "value": {
+        "winter_interest": "colourful bark"
+      },
+      "text": "Cornus sericea — Beautiful native with colorful bark.",
+      "source_id": "survey-r10",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student; former professional gardener; studio, personal-garden and professional planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false,
+        "note": "d1 'why' answers carry no basis — stored as selection reasons, never cited as observations (R2)"
+      },
+      "survey_question": "d1",
+      "respondent_role_as_typed": "Shrub",
+      "note": "'colorful bark' read as winter interest (stem colour shows after leaf fall)",
+      "concepts": [
+        "interest:winter_interest"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "cornus-sericea:mature_height:rhs01",
+      "plant": "cornus-sericea",
+      "field": "mature_height",
+      "value": {
+        "min": 1.5,
+        "max": 2.5,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Cornus sericea an ultimate height of 1.5–2.5 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4411/cornus-sericea/details",
+      "concepts": [
+        "height_class:1.3-2.0m",
+        "height_class:2-3m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:mature_spread:rhs01",
+      "plant": "cornus-sericea",
+      "field": "mature_spread",
+      "value": {
+        "min": 2.5,
+        "max": 4,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Cornus sericea an ultimate spread of 2.5–4 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4411/cornus-sericea/details",
+      "note": "per plant; the species suckers into colonies (see behaviour_with_others)",
+      "concepts": [
+        "spread_class:2-3m",
+        "spread_class:3-4m",
+        "spread_class:4-5m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:time_to_intended_size:rhs01",
+      "plant": "cornus-sericea",
+      "field": "time_to_intended_size",
+      "value": {
+        "min": 5,
+        "max": 10,
+        "unit": "years",
+        "measure": "time to ultimate height"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Cornus sericea 5–10 years to reach its ultimate height.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4411/cornus-sericea/details",
+      "note": "the one source with an explicit time-to-size figure (survey c2 gap)",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:hardiness_zone:rhs01",
+      "plant": "cornus-sericea",
+      "field": "hardiness_zone",
+      "value": {
+        "rating": "H7",
+        "unit": "RHS",
+        "approx_max_c": -20
+      },
+      "value_kind": "quantitative",
+      "text": "RHS rates Cornus sericea hardiness H7 (very hardy, below about -20 °C).",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4411/cornus-sericea/details",
+      "note": "RHS H-scale; H7 is the top of the scale (< -20 °C); not converted to Canadian or USDA zones",
+      "concepts": [
+        "hardiness_rhs:H7"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:exposure:rhs01",
+      "plant": "cornus-sericea",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade",
+        "exposure:sheltered"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: full sun or partial shade; exposed or sheltered sites; any aspect.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4411/cornus-sericea/details",
+      "note": "KPU has no 'Exposed' value",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade",
+        "Sheltered"
+      ],
+      "concepts": [
+        "exposure:sheltered",
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:soil_type:rhs01",
+      "plant": "cornus-sericea",
+      "field": "soil_type",
+      "value": [
+        "soil:acidic",
+        "soil:alkaline"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: chalk, clay, loam or sand; acid, alkaline or neutral pH.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4411/cornus-sericea/details",
+      "note": "chalk/clay/loam/sand have no KPU class; 'acid or alkaline or neutral' recorded as both Acidic and Alkaline (tolerates either) — loose",
+      "value_label": [
+        "Acidic",
+        "Alkaline"
+      ],
+      "concepts": [
+        "soil:acidic",
+        "soil:alkaline"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:water_drainage:rhs01",
+      "plant": "cornus-sericea",
+      "field": "water_drainage",
+      "value": "water:moist",
+      "value_kind": "categorical",
+      "text": "RHS: moist but well-drained or poorly-drained.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4411/cornus-sericea/details",
+      "note": "'moist but well-drained or poorly-drained' → moist; the poorly-drained tolerance is also recorded under resistances",
+      "value_label": "moist",
+      "concepts": [
+        "water:moist"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:resistances:rhs01",
+      "plant": "cornus-sericea",
+      "field": "resistances",
+      "value": [
+        "stress:winter_wet"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS lists poorly-drained soil among the moisture conditions the species accepts.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4411/cornus-sericea/details",
+      "note": "'poorly-drained' → winter wet (loose)",
+      "value_label": [
+        "winter wet"
+      ],
+      "concepts": [
+        "stress:winter_wet"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:seasonal_interest:rhs01",
+      "plant": "cornus-sericea",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "White"
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fall_colour": "red",
+        "fruit": "white, rounded hard berries",
+        "winter_interest": "deep to bright red stems",
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "RHS: deciduous; mid-green leaves with grey undersides turning red in autumn; creamy-white flowers in corymbs; white berries; deep to bright red winter stems.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4411/cornus-sericea/details",
+      "note": "'creamy white' → White; flower and fruit seasons not stated on the page, so no flowering_months",
+      "concepts": [
+        "colour:green",
+        "colour:white",
+        "evergreen:no",
+        "fruit:showy",
+        "interest:fall_colour",
+        "interest:winter_interest"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:habit:rhs01",
+      "plant": "cornus-sericea",
+      "field": "habit",
+      "value": "habit:spreading",
+      "value_kind": "categorical",
+      "text": "RHS: suckering habit.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4411/cornus-sericea/details",
+      "note": "'Suckering' → Spreading",
+      "value_label": "Spreading",
+      "concepts": [
+        "habit:spreading"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:pest_susceptibility:rhs01",
+      "plant": "cornus-sericea",
+      "field": "pest_susceptibility",
+      "value": [
+        "pest:scale_insects",
+        "pest:anthracnose",
+        "pest:root_rot"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: generally pest-free but may be susceptible to horse chestnut scale; diseases: cornus anthracnose and honey fungus.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4411/cornus-sericea/details",
+      "note": "honey fungus (Armillaria) mapped to Root rot — loose; 'generally pest-free' not stored as a resistance because specific susceptibilities are listed",
+      "value_label": [
+        "Scale insects",
+        "Anthracnose",
+        "Root rot"
+      ],
+      "concepts": [
+        "pest:anthracnose",
+        "pest:root_rot",
+        "pest:scale_insects"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:landscape_use:rhs01",
+      "plant": "cornus-sericea",
+      "field": "landscape_use",
+      "value": [
+        "use:erosion_control",
+        "use:mixed_shrub_border",
+        "use:winter_interest"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS suggests cottage and informal gardens, banks and slopes, and flower borders and beds; winter stem colour is the main feature.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4411/cornus-sericea/details",
+      "note": "'banks and slopes' → Erosion control; 'flower borders and beds' → Mixed shrub border; 'cottage and informal garden' has no KPU value; Winter interest from the stated red winter stems",
+      "value_label": [
+        "Erosion control",
+        "Mixed shrub border",
+        "Winter interest"
+      ],
+      "concepts": [
+        "use:erosion_control",
+        "use:mixed_shrub_border",
+        "use:winter_interest"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:ecological_value:rhs01",
+      "plant": "cornus-sericea",
+      "field": "ecological_value",
+      "value": [
+        "ecology:pollinator"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS lists Cornus sericea under Plants for Pollinators.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4411/cornus-sericea/details",
+      "note": "RHS Plants for Pollinators designation → pollinator",
+      "value_label": [
+        "pollinator"
+      ],
+      "concepts": [
+        "ecology:pollinator"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:behaviour_with_others:rhs01",
+      "plant": "cornus-sericea",
+      "field": "behaviour_with_others",
+      "value": {
+        "spread": "suckering; spreads into colonies"
+      },
+      "value_kind": "qualitative",
+      "text": "RHS records a suckering habit: the shrub spreads outward by suckers, and annual pruning (group 7) is used to keep it compact.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4411/cornus-sericea/details",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:hardiness_zone:mobot01",
+      "plant": "cornus-sericea",
+      "field": "hardiness_zone",
+      "value": {
+        "min": 3,
+        "max": 7,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden lists Cornus sericea for USDA zones 3 to 7.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279363",
+      "concepts": [
+        "hardiness_usda:z3",
+        "hardiness_usda:z4",
+        "hardiness_usda:z5",
+        "hardiness_usda:z6",
+        "hardiness_usda:z7"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:mature_height:mobot01",
+      "plant": "cornus-sericea",
+      "field": "mature_height",
+      "value": {
+        "min": 1.8,
+        "max": 2.7,
+        "unit": "m",
+        "raw": "6–9 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden gives Cornus sericea a height of 6–9 ft (1.8–2.7 m).",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279363",
+      "concepts": [
+        "height_class:1.3-2.0m",
+        "height_class:2-3m"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:mature_spread:mobot01",
+      "plant": "cornus-sericea",
+      "field": "mature_spread",
+      "value": {
+        "min": 2.1,
+        "max": 3,
+        "unit": "m",
+        "raw": "7–10 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden gives Cornus sericea a spread of 7–10 ft (2.1–3 m), slightly larger than its height.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279363",
+      "note": "per plant; suckers into thickets if not controlled (see behaviour_with_others)",
+      "concepts": [
+        "spread_class:2-3m",
+        "spread_class:3-4m"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:exposure:mobot01",
+      "plant": "cornus-sericea",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: full sun to part shade.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279363",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:water_drainage:mobot01",
+      "plant": "cornus-sericea",
+      "field": "water_drainage",
+      "value": "water:moist",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: water medium to wet; best in consistently moist soil; tolerates swampy or boggy conditions.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279363",
+      "note": "'medium to wet' → moist; wet/boggy tolerance recorded under resistances",
+      "value_label": "moist",
+      "concepts": [
+        "water:moist"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:maintenance_level:mobot01",
+      "plant": "cornus-sericea",
+      "field": "maintenance_level",
+      "value": "maintenance:medium",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden rates maintenance medium (optional annual removal of 20–25 % of the oldest stems, or coppicing every 2–3 years, for stem colour; sucker removal if spread is unwanted).",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279363",
+      "value_label": "medium",
+      "concepts": [
+        "maintenance:medium"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:seasonal_interest:mobot01",
+      "plant": "cornus-sericea",
+      "field": "seasonal_interest",
+      "value": {
+        "flowering_months": [
+          5,
+          6
+        ],
+        "flower_colour": [
+          "White"
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fall_colour": "red to orange, fading to purple",
+        "fruit": "white, sometimes blue-tinged drupes, summer; attractive to birds",
+        "winter_interest": "bright red stems",
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: showy white flowers May–June, white (sometimes bluish) drupes in summer, good red-to-orange fall colour, bright red winter stems.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279363",
+      "note": "'May to June' → months 5–6",
+      "concepts": [
+        "colour:green",
+        "colour:white",
+        "evergreen:no",
+        "fruit:showy",
+        "interest:fall_colour",
+        "interest:winter_interest"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [
+        "month:5",
+        "month:6"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:landscape_use:mobot01",
+      "plant": "cornus-sericea",
+      "field": "landscape_use",
+      "value": [
+        "use:hedge_row",
+        "use:waterside_planting",
+        "use:group_or_mass_planting",
+        "use:specimen_plant",
+        "use:mixed_shrub_border",
+        "use:screening",
+        "use:erosion_control",
+        "use:attract_birds",
+        "use:attract_butterflies",
+        "use:winter_interest",
+        "use:fall_interest"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden suggests hedge and rain-garden use; massed or as a specimen, in shrub borders, naturalistic moist plantings, wet low spots and stream or pond edges for erosion control, and as a property-line screen; attracts birds and butterflies; winter interest and good fall colour.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279363",
+      "note": "'Rain Garden' → Waterside planting (loose); 'property line screen' → Screening; 'Hedge' → Hedge row",
+      "value_label": [
+        "Hedge row",
+        "Waterside planting",
+        "Group or mass planting",
+        "Specimen plant",
+        "Mixed shrub border",
+        "Screening",
+        "Erosion control",
+        "Attract birds",
+        "Attract butterflies",
+        "Winter interest",
+        "Fall interest"
+      ],
+      "concepts": [
+        "use:attract_birds",
+        "use:attract_butterflies",
+        "use:erosion_control",
+        "use:fall_interest",
+        "use:group_or_mass_planting",
+        "use:hedge_row",
+        "use:mixed_shrub_border",
+        "use:screening",
+        "use:specimen_plant",
+        "use:waterside_planting",
+        "use:winter_interest"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:resistances:mobot01",
+      "plant": "cornus-sericea",
+      "field": "resistances",
+      "value": [
+        "browsing:deer",
+        "stress:erosion",
+        "stress:clay_soil",
+        "stress:wet_soil"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden 'Tolerate' line: deer, erosion, clay soil, wet soil.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279363",
+      "note": "'erosion', 'clay soil' and 'wet soil' are outside the starter resistances list (open list, M11); note the USDA browse-palatability rating that disagrees with deer tolerance",
+      "value_label": [
+        "deer",
+        "erosion",
+        "clay soil",
+        "wet soil"
+      ],
+      "concepts": [
+        "browsing:deer",
+        "stress:clay_soil",
+        "stress:erosion",
+        "stress:wet_soil"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:pest_susceptibility:mobot01",
+      "plant": "cornus-sericea",
+      "field": "pest_susceptibility",
+      "value": [
+        "pest:blight_or_needle_cast",
+        "pest:canker_or_sap_rot",
+        "pest:fungal_leaf_spot",
+        "pest:scale_insects",
+        "pest:leaf_miner_insect",
+        "pest:caterpillar_or_cutworm"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: susceptible to leaf and twig blights, canker and leaf spots; scale, leaf miners and bagworms are occasional insect pests.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279363",
+      "note": "'leaf spots' → Fungal leaf spot (assumed fungal); bagworms → Caterpillar or cutworm (loose); canker stress is flagged for hot humid climates south of USDA zone 7, not Vancouver",
+      "value_label": [
+        "Blight or needle cast",
+        "Canker or sap rot",
+        "Fungal leaf spot",
+        "Scale insects",
+        "Leaf miner insect",
+        "Caterpillar or cutworm"
+      ],
+      "concepts": [
+        "pest:blight_or_needle_cast",
+        "pest:canker_or_sap_rot",
+        "pest:caterpillar_or_cutworm",
+        "pest:fungal_leaf_spot",
+        "pest:leaf_miner_insect",
+        "pest:scale_insects"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:behaviour_with_others:mobot01",
+      "plant": "cornus-sericea",
+      "field": "behaviour_with_others",
+      "value": {
+        "spread": "upright-spreading, suckering; forms thickets in naturalistic plantings",
+        "control": "trim roots with a spade and remove root suckers if colonial spread is unwanted",
+        "combination": "pairs with evergreens or contrasting-stem dogwoods for winter contrast"
+      },
+      "value_kind": "qualitative",
+      "text": "Missouri Botanical Garden: an upright-spreading suckering shrub that forms thickets where allowed; root suckers are removed where colonial spread is unwanted; recommended in combination with evergreens or contrasting-stem dogwoods.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279363",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:ecological_value:mobot01",
+      "plant": "cornus-sericea",
+      "field": "ecological_value",
+      "value": [
+        "origin:native",
+        "ecology:bird_food",
+        "ecology:pollinator",
+        "ecology:erosion_control"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: native to much of North America (wet swampy areas, wetland margins, lakes and rivers); fruit attractive to birds; flowers attract butterflies; spreading roots help combat soil erosion.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279363",
+      "note": "'attracts butterflies' → pollinator",
+      "value_label": [
+        "native",
+        "bird_food",
+        "pollinator",
+        "erosion_control"
+      ],
+      "concepts": [
+        "origin:native",
+        "ecology:bird_food",
+        "ecology:erosion_control",
+        "ecology:pollinator"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:mature_height:gpp01",
+      "plant": "cornus-sericea",
+      "field": "mature_height",
+      "value": {
+        "height_m": 4.27,
+        "unit": "m",
+        "raw": "14 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Great Plant Picks gives Cornus sericea 'Baileyi' a mature height of 14 ft (4.3 m).",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "cultivar:'Baileyi'; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/423",
+      "note": "GPP has no species-level entry for Cornus sericea; this is the cultivar 'Baileyi' page (sizes are for the cultivar)",
+      "concepts": [
+        "height_class:3-5m"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": "Baileyi"
+    },
+    {
+      "id": "cornus-sericea:mature_spread:gpp01",
+      "plant": "cornus-sericea",
+      "field": "mature_spread",
+      "value": {
+        "spread_m": 4.88,
+        "unit": "m",
+        "raw": "16 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Great Plant Picks gives Cornus sericea 'Baileyi' a mature spread of 16 ft (4.9 m).",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "cultivar:'Baileyi'; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/423",
+      "note": "GPP has no species-level entry for Cornus sericea; this is the cultivar 'Baileyi' page (sizes are for the cultivar)",
+      "concepts": [
+        "spread_class:4-5m"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": "Baileyi"
+    },
+    {
+      "id": "cornus-sericea:time_to_intended_size:gpp01",
+      "plant": "cornus-sericea",
+      "field": "time_to_intended_size",
+      "value": {
+        "years": 10,
+        "height_m": 3.05,
+        "spread_m": 3.05,
+        "unit": "m at 10 years"
+      },
+      "value_kind": "quantitative",
+      "text": "Great Plant Picks gives Cornus sericea 'Baileyi' a 10-year size of 10 ft tall by 10 ft wide (3.05 × 3.05 m).",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "cultivar:'Baileyi'; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/423",
+      "note": "GPP has no species-level entry for Cornus sericea; this is the cultivar 'Baileyi' page (sizes are for the cultivar)",
+      "concepts": [
+        "age:establishing"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": "Baileyi"
+    },
+    {
+      "id": "cornus-sericea:hardiness_zone:gpp01",
+      "plant": "cornus-sericea",
+      "field": "hardiness_zone",
+      "value": {
+        "min": 3,
+        "max": 8,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Great Plant Picks lists Cornus sericea 'Baileyi' for USDA zones 3 to 8.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "cultivar:'Baileyi'; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/423",
+      "note": "GPP has no species-level entry for Cornus sericea; this is the cultivar 'Baileyi' page (sizes are for the cultivar)",
+      "concepts": [
+        "hardiness_usda:z3",
+        "hardiness_usda:z4",
+        "hardiness_usda:z5",
+        "hardiness_usda:z6",
+        "hardiness_usda:z7",
+        "hardiness_usda:z8"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": "Baileyi"
+    },
+    {
+      "id": "cornus-sericea:exposure:gpp01",
+      "plant": "cornus-sericea",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: full sun or light to dappled shade; a sunnier site gives brighter winter stems.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "cultivar:'Baileyi'; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/423",
+      "note": "'light to dappled shade' → Part sun/part shade + Filtered shade; GPP has no species-level entry for Cornus sericea; this is the cultivar 'Baileyi' page (sizes are for the cultivar)",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade",
+        "Filtered shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": "Baileyi"
+    },
+    {
+      "id": "cornus-sericea:water_drainage:gpp01",
+      "plant": "cornus-sericea",
+      "field": "water_drainage",
+      "value": "water:wide_range",
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: regular watering in well-drained, clay or sandy soils; tolerates damp or dry soils and winter-wet / summer-dry sites.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "cultivar:'Baileyi'; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/423",
+      "note": "'damp or dry' and 'well-drained to wet locations' → wide_range; GPP has no species-level entry for Cornus sericea; this is the cultivar 'Baileyi' page (sizes are for the cultivar)",
+      "value_label": "wide_range",
+      "concepts": [
+        "water:wide_range"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": "Baileyi"
+    },
+    {
+      "id": "cornus-sericea:resistances:gpp01",
+      "plant": "cornus-sericea",
+      "field": "resistances",
+      "value": [
+        "stress:winter_wet",
+        "stress:drought"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: tolerates damp or dry soils and the winter-wet, summer-dry combination.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "cultivar:'Baileyi'; Great Plant Picks, maritime Pacific Northwest; regular summer watering advised on sites that are not wet",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/423",
+      "note": "'dry soils' → drought (loose; GPP still advises summer watering on non-wet sites); GPP has no species-level entry for Cornus sericea; this is the cultivar 'Baileyi' page (sizes are for the cultivar)",
+      "value_label": [
+        "winter wet",
+        "drought"
+      ],
+      "concepts": [
+        "stress:drought",
+        "stress:winter_wet"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": "Baileyi"
+    },
+    {
+      "id": "cornus-sericea:seasonal_interest:gpp01",
+      "plant": "cornus-sericea",
+      "field": "seasonal_interest",
+      "value": {
+        "flowering_months": [
+          5,
+          6
+        ],
+        "flower_colour": [
+          "White"
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fall_colour": true,
+        "fruit": "white berries, late summer to early fall; attractive to birds",
+        "winter_interest": "brilliant bright-red stems",
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: deciduous; white flower clusters in late spring; white berries late summer to early fall; autumn foliage colour; bright red winter stems.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "cultivar:'Baileyi'; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/423",
+      "note": "'late spring' → months 5–6; GPP has no species-level entry for Cornus sericea; this is the cultivar 'Baileyi' page (sizes are for the cultivar)",
+      "concepts": [
+        "colour:green",
+        "colour:white",
+        "evergreen:no",
+        "fruit:showy",
+        "interest:fall_colour",
+        "interest:winter_interest"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [
+        "month:5",
+        "month:6"
+      ],
+      "cultivar": "Baileyi"
+    },
+    {
+      "id": "cornus-sericea:ecological_value:gpp01",
+      "plant": "cornus-sericea",
+      "field": "ecological_value",
+      "value": [
+        "ecology:bird_food",
+        "ecology:pollinator"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: fruit attractive to birds; wildlife associations bees and butterflies.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "cultivar:'Baileyi'; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/423",
+      "note": "'bees, butterflies' → pollinator; GPP has no species-level entry for Cornus sericea; this is the cultivar 'Baileyi' page (sizes are for the cultivar)",
+      "value_label": [
+        "bird_food",
+        "pollinator"
+      ],
+      "concepts": [
+        "ecology:bird_food",
+        "ecology:pollinator"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": "Baileyi"
+    },
+    {
+      "id": "cornus-sericea:mature_height:osu01",
+      "plant": "cornus-sericea",
+      "field": "mature_height",
+      "value": {
+        "min": 2,
+        "max": 3,
+        "unit": "m",
+        "raw": "7–10 ft or more"
+      },
+      "value_kind": "quantitative",
+      "text": "Oregon State University gives Cornus sericea a height of 7–10 ft (2–3 m) or more.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cornus-sericea",
+      "concepts": [
+        "height_class:2-3m",
+        "height_class:3-5m"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:hardiness_zone:osu01",
+      "plant": "cornus-sericea",
+      "field": "hardiness_zone",
+      "value": {
+        "usda_min": 2,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Oregon State University: hardy to USDA zone 2.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cornus-sericea",
+      "concepts": [
+        "hardiness_usda:z2",
+        "hardiness_usda:z3",
+        "hardiness_usda:z4",
+        "hardiness_usda:z5",
+        "hardiness_usda:z6",
+        "hardiness_usda:z7",
+        "hardiness_usda:z8",
+        "hardiness_usda:z9",
+        "hardiness_usda:z10",
+        "hardiness_usda:z11"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:exposure:osu01",
+      "plant": "cornus-sericea",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: sun to part shade.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cornus-sericea",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:water_drainage:osu01",
+      "plant": "cornus-sericea",
+      "field": "water_drainage",
+      "value": "water:moist",
+      "value_kind": "categorical",
+      "text": "Oregon State University: best in moist, well-drained soil; adapts to many soil types.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cornus-sericea",
+      "note": "'moist, well-drained' → moist",
+      "value_label": "moist",
+      "concepts": [
+        "water:moist"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:seasonal_interest:osu01",
+      "plant": "cornus-sericea",
+      "field": "seasonal_interest",
+      "value": {
+        "flowering_months": [
+          5,
+          6
+        ],
+        "flower_colour": [
+          "White"
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fall_colour": "reddish to purplish",
+        "fruit": "white, globose",
+        "winter_interest": "bright red to dark red stems",
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "Oregon State University: deciduous; small dull-white flowers in flat clusters late spring to early summer; white globose fruit; leaves reddish to purplish in fall; bright to dark red stems, most attractive in winter.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cornus-sericea",
+      "note": "'late spring to early summer' → months 5–6; 'dull white' → White",
+      "concepts": [
+        "colour:green",
+        "colour:white",
+        "evergreen:no",
+        "fruit:showy",
+        "interest:fall_colour",
+        "interest:winter_interest"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [
+        "month:5",
+        "month:6"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:habit:osu01",
+      "plant": "cornus-sericea",
+      "field": "habit",
+      "value": "habit:spreading",
+      "value_kind": "categorical",
+      "text": "Oregon State University: spreading habit with upright, slender stems; multi-stemmed.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cornus-sericea",
+      "note": "'spreading habit with upright stems' → Spreading",
+      "value_label": "Spreading",
+      "concepts": [
+        "habit:spreading"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:ecological_value:osu01",
+      "plant": "cornus-sericea",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: native to Oregon and to northern North America south to Virginia, southern California and Chihuahua.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cornus-sericea",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:ecological_value:eflora01",
+      "plant": "cornus-sericea",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "E-Flora BC lists Cornus sericea as native to BC (provincial list Yellow, rank S5 2019, secure; COSEWIC not listed).",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cornus%20sericea",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:vancouver_context:eflora01",
+      "plant": "cornus-sericea",
+      "field": "vancouver_context",
+      "value": {
+        "habitat": [
+          "streamside",
+          "lakeside",
+          "swamp",
+          "forest",
+          "wet to mesic",
+          "lowland",
+          "steppe",
+          "montane",
+          "alluvial floodplain forest",
+          "clearings",
+          "nitrogen-rich soils"
+        ],
+        "bgc_zones": [
+          "BG",
+          "BWBS",
+          "CDF",
+          "CWH",
+          "ESSF",
+          "ICH",
+          "IDF",
+          "MH",
+          "MS",
+          "PP",
+          "SBPS",
+          "SBS"
+        ],
+        "modal_zone": "SBS",
+        "bgc_plots": {
+          "CWH": 465,
+          "CDF": 64,
+          "total": 4688
+        },
+        "elevation_m": {
+          "min": 0,
+          "max": 2500,
+          "mean": 759
+        },
+        "soil_moisture_regime": {
+          "min": 0,
+          "mean": 4,
+          "max": 8,
+          "scale": "0 very xeric – 8 hydric"
+        },
+        "modal_nutrient_regime": "D",
+        "bc_distribution": "common throughout BC",
+        "ecology": "tolerates fluctuating groundwater tables; characteristic of alluvial floodplain forests; regenerates abundantly in clearings"
+      },
+      "value_kind": "qualitative",
+      "text": "E-Flora BC: common throughout BC on wet to mesic streamsides, lakesides, swamps and forests from lowland to montane; recorded in all major BGC zones including the Coastal Western Hemlock (465 plots) and Coastal Douglas-fir zones that cover Vancouver; modal zone SBS; tolerates fluctuating water tables and typifies alluvial floodplain forest.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cornus%20sericea",
+      "note": "BGC zone list and site statistics from the atlas station records; ecological indicator values apply to coastal locations",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "bgc_zone:bg",
+        "bgc_zone:bwbs",
+        "bgc_zone:cdf",
+        "bgc_zone:cwh",
+        "bgc_zone:essf",
+        "bgc_zone:ich",
+        "bgc_zone:idf",
+        "bgc_zone:mh",
+        "bgc_zone:ms",
+        "bgc_zone:pp",
+        "bgc_zone:sbps",
+        "bgc_zone:sbs",
+        "habitat:forest",
+        "habitat:grassland",
+        "habitat:streamside",
+        "habitat:swamp"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:mature_height:eflora01",
+      "plant": "cornus-sericea",
+      "field": "mature_height",
+      "value": {
+        "min": 1,
+        "max": 6,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "E-Flora BC gives Cornus sericea a height of 1–6 m.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cornus%20sericea",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "height_class:0.7-1.3m",
+        "height_class:1.3-2.0m",
+        "height_class:2-3m",
+        "height_class:3-5m",
+        "height_class:5-7m"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:exposure:eflora01",
+      "plant": "cornus-sericea",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "E-Flora BC habitat records span open streamsides, swamps and clearings as well as forest; the ecology note calls it shade-tolerant to shade-intolerant.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page; inferred from habitat classes, not a cultivation rating",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cornus%20sericea",
+      "note": "exposure read off habitat classes and the 'shade-tolerant/intolerant' ecology wording",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade",
+        "Filtered shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:water_drainage:eflora01",
+      "plant": "cornus-sericea",
+      "field": "water_drainage",
+      "value": "water:wet",
+      "value_kind": "categorical",
+      "text": "E-Flora BC: wet to mesic streamsides, lakesides and swamps on very moist to wet soils; tolerates fluctuating groundwater tables.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page; habitat moisture, not a cultivation rating",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cornus%20sericea",
+      "note": "'wet to mesic' → wet; station soil-moisture regime spans 0–8 with mean 4 (mesic), so mesic sites are also occupied",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": "wet",
+      "concepts": [
+        "water:wet"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:behaviour_with_others:eflora01",
+      "plant": "cornus-sericea",
+      "field": "behaviour_with_others",
+      "value": {
+        "spread": "layering of prostrate stems that act like stolons",
+        "regeneration": "regenerates abundantly in clearings; may hinder regeneration of shade-intolerant conifers"
+      },
+      "value_kind": "qualitative",
+      "text": "E-Flora BC: spreads by layering of prostrate stems and regenerates abundantly in clearings, where it can hinder regeneration of shade-intolerant conifers.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cornus%20sericea",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:seasonal_interest:eflora01",
+      "plant": "cornus-sericea",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "White"
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fall_colour": "reddish",
+        "fruit": "white, sometimes blue-tinged drupes, 7–9 mm",
+        "winter_interest": "bright reddish to reddish-purple young branches",
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "E-Flora BC: deciduous; white to greenish-white flowers in flat-topped clusters 2–4 cm wide; white (sometimes blue-tinged) drupes; leaves turn reddish in autumn; young branches bright reddish to reddish-purple.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cornus%20sericea",
+      "note": "'white to greenish-white' → White; no flowering season given",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "colour:green",
+        "colour:white",
+        "evergreen:no",
+        "fruit:showy",
+        "interest:fall_colour",
+        "interest:winter_interest"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:ecological_value:usdaplants01",
+      "plant": "cornus-sericea",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: native in Alaska, Canada, the lower 48 states and St Pierre and Miquelon.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/COSE16",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:mature_height:usdaplants01",
+      "plant": "cornus-sericea",
+      "field": "mature_height",
+      "value": {
+        "height_m": 3.7,
+        "unit": "m",
+        "raw": "12 ft mature; 12 ft maximum at 20 years"
+      },
+      "value_kind": "quantitative",
+      "text": "USDA PLANTS gives a mature height of 12 ft (3.7 m), reached within 20 years.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data; characteristics are recorded under Cornus sericea ssp. sericea (COSES) — the species-level profile COSE16 carries none",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/COSES",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "height_class:3-5m"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:time_to_intended_size:usdaplants01",
+      "plant": "cornus-sericea",
+      "field": "time_to_intended_size",
+      "value": {
+        "years": 20,
+        "height_m": 3.7,
+        "unit": "m at 20 years"
+      },
+      "value_kind": "quantitative",
+      "text": "USDA PLANTS: maximum height at 20 years 12 ft (3.7 m).",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data; characteristics are recorded under Cornus sericea ssp. sericea (COSES) — the species-level profile COSE16 carries none",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/COSES",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "age:established"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:growth_rate:usdaplants01",
+      "plant": "cornus-sericea",
+      "field": "growth_rate",
+      "value": "growth_rate:moderate",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates growth rate moderate.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data; characteristics are recorded under Cornus sericea ssp. sericea (COSES) — the species-level profile COSE16 carries none",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/COSES",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "moderate",
+      "concepts": [
+        "growth_rate:moderate"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:exposure:usdaplants01",
+      "plant": "cornus-sericea",
+      "field": "exposure",
+      "value": [
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates shade tolerance high.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data; characteristics are recorded under Cornus sericea ssp. sericea (COSES) — the species-level profile COSE16 carries none",
+      "confidence": 0.65,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/COSES",
+      "note": "'Shade Tolerance: High' mapped to part and filtered shade — loose; other sources give sun to part shade",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "Part sun/part shade",
+        "Filtered shade"
+      ],
+      "concepts": [
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:water_drainage:usdaplants01",
+      "plant": "cornus-sericea",
+      "field": "water_drainage",
+      "value": "water:moist",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: moisture use high, drought tolerance low, anaerobic tolerance high.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data; characteristics are recorded under Cornus sericea ssp. sericea (COSES) — the species-level profile COSE16 carries none",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/COSES",
+      "note": "high anaerobic tolerance (saturated soils) noted; recorded as moist rather than wet",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "moist",
+      "concepts": [
+        "water:moist"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:seasonal_interest:usdaplants01",
+      "plant": "cornus-sericea",
+      "field": "seasonal_interest",
+      "value": {
+        "flowering_months": [
+          4,
+          5
+        ],
+        "flower_colour": [
+          "White"
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fall_colour": true,
+        "fruit": "white, summer, low abundance, not persistent",
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: conspicuous white flowers in spring, conspicuous white fruit in summer, conspicuous fall colour, leaves not retained.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data; characteristics are recorded under Cornus sericea ssp. sericea (COSES) — the species-level profile COSE16 carries none",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/COSES",
+      "note": "'Spring' → months 4–5 (loose)",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "colour:green",
+        "colour:white",
+        "evergreen:no",
+        "fruit:showy",
+        "interest:fall_colour"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [
+        "month:4",
+        "month:5"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:soil_type:usdaplants01",
+      "plant": "cornus-sericea",
+      "field": "soil_type",
+      "value": [
+        "soil:acidic"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: pH 4.8–7.5, adapted to coarse, medium and fine soils, no CaCO3 tolerance.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data; characteristics are recorded under Cornus sericea ssp. sericea (COSES) — the species-level profile COSE16 carries none",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/COSES",
+      "note": "pH floor 4.8 → Acidic; 'CaCO3 Tolerance: None' so not Alkaline",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "Acidic"
+      ],
+      "concepts": [
+        "soil:acidic"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:texture:usdaplants01",
+      "plant": "cornus-sericea",
+      "field": "texture",
+      "value": "texture:coarse",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates foliage texture coarse.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data; characteristics are recorded under Cornus sericea ssp. sericea (COSES) — the species-level profile COSE16 carries none",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/COSES",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "Coarse",
+      "concepts": [
+        "texture:coarse"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:toxicity:usdaplants01",
+      "plant": "cornus-sericea",
+      "field": "toxicity",
+      "value": {
+        "usda_rating": "none",
+        "humans": "unknown",
+        "pets": "unknown"
+      },
+      "value_kind": "categorical",
+      "text": "USDA PLANTS gives a toxicity rating of 'None'; the rating is a US conservation-planting characteristic and says nothing specific about pets or people.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data; characteristics are recorded under Cornus sericea ssp. sericea (COSES) — the species-level profile COSE16 carries none",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/COSES",
+      "note": "M17 shape: usda_rating only; humans and pets stay unknown until a tier-B toxicology source is recorded",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "toxicity:unknown"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:behaviour_with_others:usdaplants01",
+      "plant": "cornus-sericea",
+      "field": "behaviour_with_others",
+      "value": {
+        "growth_form": "multiple stem",
+        "resprout": true,
+        "coppice_potential": false,
+        "vegetative_spread_rate": "moderate",
+        "seed_spread_rate": "slow",
+        "fire_tolerance": "low",
+        "browse_palatability": "high"
+      },
+      "value_kind": "qualitative",
+      "text": "USDA PLANTS: multiple-stemmed, resprouts after cutting but is not rated for coppice, moderate vegetative spread, slow seed spread, low fire tolerance, high palatability to browsing animals.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data; characteristics are recorded under Cornus sericea ssp. sericea (COSES) — the species-level profile COSE16 carries none",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/COSES",
+      "note": "'Palatable Browse Animal: High' disagrees with the Missouri Botanical Garden 'Tolerate: Deer' line — kept side by side (R1)",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-sericea:invasive_status:iscbc01",
+      "plant": "cornus-sericea",
+      "field": "invasive_status",
+      "value": "invasive:not_listed",
+      "value_kind": "categorical",
+      "text": "Cornus sericea is not among the plant profiles on the Invasive Species Council of BC list (checked 2026-11-02); it is a BC native.",
+      "source_id": "iscbc",
+      "source_type": "municipal",
+      "context": "BC; ISCBC online species profiles only",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://bcinvasives.ca/take-action/identify/",
+      "value_label": "not_listed",
+      "concepts": [
+        "invasive:not_listed"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    }
+  ]
+}

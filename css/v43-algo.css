@@ -1,0 +1,66 @@
+/* V4.3 · Grow · the Algorithm view. The drawing carries its own fills and strokes (design/js/algoview.js, so it can be placed on
+   another page unchanged); this sheet holds the type of its annotations, the interaction states and the two controls around it. */
+
+/* ---- the layer switch: one layer at a time, beside the view switch */
+.algoseg { display: inline-flex; padding: 2px; gap: 1px; border: 1px solid var(--line-2); border-radius: 999px; }
+.algoseg button { padding: 4px 11px; border-radius: 999px; font-size: 12.5px; color: var(--ink-2); white-space: nowrap; }
+.algoseg button:hover { color: var(--ink); background: var(--paper-2); }
+.algoseg button.on { background: var(--ink); color: var(--paper); font-weight: 500; }
+.algoseg button:focus-visible, .algo-legend button:focus-visible { outline: 2px solid var(--olive-deep); outline-offset: 2px; }
+@media (max-width: 1340px) { .algoseg button { padding: 4px 8px; } }
+
+/* ---- the drawing */
+#svg.algo { background: var(--paper); }
+#svg.algo text { font-family: var(--mono, ui-monospace, monospace); font-size: 10px; fill: var(--ink-2); pointer-events: none; }
+#svg.algo .av-note { fill: var(--ink-2); paint-order: stroke; stroke: #fff; stroke-width: 3px; stroke-linejoin: round; }
+#svg.algo .av-bedname { font-family: var(--sans); font-size: 11px; font-weight: 600; fill: var(--ink); paint-order: stroke; stroke: #fff; stroke-width: 3px; stroke-linejoin: round; }
+#svg.algo .av-num { font-size: 11.5px; font-weight: 500; fill: var(--ink); }
+#svg.algo .av-gaplabel { font-size: 10.5px; font-weight: 500; paint-order: stroke; stroke: var(--paper); stroke-width: 3px; stroke-linejoin: round; }
+#svg.algo .av-tick { fill: var(--ink-3); }
+#svg.algo .av-bed { cursor: pointer; transition: fill-opacity .12s; }
+#svg.algo .av-bed:hover { fill-opacity: .07; }
+#svg.algo .av-bed:focus { outline: none; } #svg.algo .av-bed:focus-visible { stroke: var(--olive-deep); stroke-width: 3; }
+#svg.algo .av-covered, #svg.algo .av-gap-mark, #svg.algo .av-edge, #svg.algo .av-cover { cursor: pointer; }
+#svg.algo .av-plant { cursor: pointer; transition: opacity .15s; } #svg.algo .av-plant:focus { outline: none; }
+#svg.algo .av-plant:hover .crown, #svg.algo .av-plant:focus-visible .crown { stroke: var(--ink); stroke-opacity: 1; stroke-width: 1.6; }
+#svg.algo .av-plant:focus-visible .hit { stroke: var(--olive-deep); stroke-width: 2; stroke-dasharray: 3 2; }
+#svg.algo .av-plant.dim { opacity: .14; }
+#svg.algo .av-drift { pointer-events: none; } #svg.algo .av-patch, #svg.algo .av-band, #svg.algo .av-row, #svg.algo .av-stagger { pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { #svg.algo .av-plant, #svg.algo .av-bed { transition: none; } }
+
+/* ---- the legend: species of this version, or the keys and figures of an estimate layer */
+.algo-legend { position: absolute; left: 14px; top: 14px; z-index: 3; width: min(236px, calc(100% - 28px)); max-height: calc(100% - 96px); overflow: auto; padding: 10px 12px 11px; border: 1px solid var(--line-2); border-radius: 8px; background: color-mix(in srgb, var(--paper) 94%, transparent); font-size: 12.5px; line-height: 1.35; color: var(--ink-2); }
+.algo-legend[hidden] { display: none; }
+.algo-legend ul { list-style: none; margin: 0; padding: 0; }
+.algo-legend .avl-species button { display: grid; grid-template-columns: 14px 1fr auto; align-items: center; gap: 8px; width: 100%; padding: 3px 4px; border-radius: 6px; text-align: left; color: var(--ink); font-size: 12.5px; }
+.algo-legend .avl-species button:hover { background: var(--paper-2); } .algo-legend .avl-species button.on { background: var(--ivory-2); font-weight: 600; }
+.algo-legend .sw { display: block; width: 12px; height: 12px; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(39,36,31,.55); }
+.algo-legend .ct { font: 11.5px/1 var(--mono, ui-monospace, monospace); color: var(--ink-2); }
+.algo-legend .avl-keys li { display: grid; grid-template-columns: 22px 1fr; align-items: center; gap: 8px; padding: 2px 4px; color: var(--ink); }
+.algo-legend .avl-keys .sw { width: 22px; height: 10px; border-radius: 2px; background: var(--c); box-shadow: inset 0 0 0 1px rgba(39,36,31,.25); }
+.algo-legend .avl-keys .sw.hatch { background: repeating-linear-gradient(45deg, var(--c) 0 3px, #e3a35f 3px 4.5px); }
+.algo-legend .avl-keys .sw.line { height: 5px; box-shadow: none; }
+.algo-legend .avl-keys .sw.line.dash { height: 4px; border-radius: 0; background: repeating-linear-gradient(90deg, var(--c) 0 3px, transparent 3px 7px); }
+.algo-legend .avl-figs { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+.algo-legend .avl-figs button { display: block; width: 100%; padding: 4px; border-radius: 6px; text-align: left; font-size: 12.5px; line-height: 1.35; color: var(--ink); }
+.algo-legend .avl-figs button:hover { background: var(--paper-2); }
+.algo-legend .st { display: inline-block; margin-left: 6px; padding: 0 5px; border: 1px solid var(--line-2); border-radius: 4px; font: 10.5px/1.5 var(--mono, ui-monospace, monospace); color: var(--ink-2); }
+.algo-legend .st-met { border-color: var(--olive-deep); color: var(--olive-deep); } .algo-legend .st-uncertain, .algo-legend .st-estimate { border-style: dashed; border-color: var(--caramel); color: var(--caramel-ink, #8a5f1c); }
+.algo-legend .st:empty { display: none; }
+.algo-legend .avl-cap { margin: 8px 0 0; padding: 8px 4px 0; border-top: 1px solid var(--line); font-size: 11.5px; line-height: 1.4; color: var(--ink-2); }
+@media (max-width: 1000px) { .algo-legend { position: static; width: auto; max-height: none; margin: 8px; } }
+
+.algo-legend .st-not { border-color: var(--rust); color: var(--rust); }
+
+/* ---- the layer switch and Guides stand on the canvas, top right: the bar above stays the same in all four views */
+.algo-bar { position: absolute; right: 14px; top: 12px; z-index: 3; display: flex; align-items: center; gap: 6px; padding: 3px; border-radius: 999px; background: color-mix(in srgb, var(--paper) 94%, transparent); }
+.algo-bar[hidden] { display: none; }
+.algo-bar .tgl { padding: 4px 11px; }
+/* a narrow canvas: the legend is a strip above the drawing */
+.algo-legend.strip { left: 14px; right: 14px; top: 56px; width: auto; max-height: none; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 4px 18px; padding: 8px 12px; }
+.algo-legend.strip ul { display: flex; flex-wrap: wrap; gap: 2px 14px; }
+.algo-legend.strip .avl-species button { display: inline-flex; width: auto; gap: 6px; }
+.algo-legend.strip .avl-keys li { display: inline-flex; }
+.algo-legend.strip .avl-figs { margin: 0; padding: 0; border: 0; } .algo-legend.strip .avl-figs button { display: inline; width: auto; }
+.algo-legend.strip .avl-cap { flex-basis: 100%; margin: 4px 0 0; padding: 4px 4px 0; }
+@media (max-width: 1000px) { .algo-bar { position: static; margin: 8px; flex-wrap: wrap; } }

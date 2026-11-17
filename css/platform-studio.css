@@ -1,0 +1,58 @@
+/* The Garden Studio as one module of the platform (2026-11-14): how the platform bar's navigation sits in the Studio's own top
+   bar, the "From the Plant Library" block in Compose, the compact plant card in the evidence panels, and where the compact
+   Decision Trace ("Why this plant here?", platform/js/trace.js, styled by .pi-why in platform.css) sits in Compose and Grow.
+   Loaded after platform.css; changes nothing of the Imagine hero or the workspace layout. */
+
+/* ---- top bar: wordmark · Design Plants Explore Contribute · the four stages · state */
+#top .pi-nav { height: 34px; align-self: center; margin-left: -4px; flex: none; }
+#top .pi-nav a { font-size: 14px; } #top .pi-nav a::after { bottom: 2px; }
+#top a.wordmark { flex: none; }
+@media (min-width: 1001px) {
+  body:is([data-stage="site"], [data-stage="intent"], [data-stage="garden"]) #top .pi-nav { height: 52px; align-self: stretch; }
+  body:is([data-stage="site"], [data-stage="intent"], [data-stage="garden"]) #top .pi-nav a::after { bottom: 0; }
+}
+@media (max-width: 1340px) { #top { gap: 14px; } #top .pi-nav a { padding: 0 9px; } #top #interp { display: none; } }
+@media (max-width: 1180px) { #top .wordmark small { display: none; } #top .pi-nav a { padding: 0 7px; font-size: 13.5px; } }
+@media (max-width: 760px) { #top .pi-nav { order: 3; flex-basis: 100%; height: 30px; margin: 2px 0 0; overflow-x: auto; } #top { flex-wrap: wrap; overflow: visible; } }
+footer.site-foot a { color: var(--ink-2); }
+
+/* ---- Compose · step 2: species the user asked for in the Plant Library, each with this bed's own check */
+.cons { margin: 4px 0 14px; padding: 0 0 2px; border-bottom: 1px solid var(--line-2); scroll-margin-top: 8px; }
+.cons + .picks::before { content: "The engine's selection"; display: block; font: 600 12.5px/1.3 var(--sans); color: var(--ink); margin-bottom: 4px; }
+.cons h5 { margin: 0; font: 600 12.5px/1.3 var(--sans); color: var(--ink); } .cons h5 small { font: 12px var(--mono); color: var(--ink-3); margin-left: 6px; font-weight: 400; }
+.cons .step-note { margin: 3px 0 6px; }
+.cons-row { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 10px; padding: 9px 0; border-top: 1px solid var(--line); align-items: start; }
+.cons-s { font: 12px/1.35 var(--mono); padding: 2px 4px; border-radius: 4px; text-align: center; border: 1px solid var(--line-2); color: var(--ink-2); }
+.cons-row.meets .cons-s { background: var(--olive-soft); border-color: transparent; color: var(--olive-deep); }
+.cons-row.uncertain .cons-s { border-style: dashed; border-color: var(--caramel); color: #8a5f1c; }
+.cons-row.fails .cons-s { background: var(--rust-soft); border-color: transparent; color: var(--rust); }
+.cons-b i.sci { font-size: 14px; font-weight: 500; } .cons-b .pc { font-size: 12px; color: var(--ink-3); }
+.cons-t { display: block; margin-top: 3px; font-size: 12.5px; line-height: 1.45; color: var(--ink-2); overflow-wrap: anywhere; }
+.cons-row.fails i.sci { color: var(--ink-2); }
+.cons-row[data-outcomes$="=unknown"] .cons-s, .cons-row.none .cons-s { background: none; border: 1px dotted var(--ink-3); color: var(--ink-2); }   /* evidence unknown is not a failed check */
+.cons-t b { font-weight: 600; color: var(--ink); } .cons-t .pi-out { font-size: 12.5px; }
+.cons-a { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin-top: 6px; font-size: 12.5px; }
+.cons-a a { color: var(--olive-deep); text-decoration: underline; text-decoration-color: rgba(59,85,56,.35); text-underline-offset: 3px; } .cons-a a:hover { text-decoration-color: currentColor; }
+.cons-x { font-size: 12.5px; color: var(--ink-3); text-decoration: underline; text-decoration-color: var(--line-2); text-underline-offset: 3px; } .cons-x:hover { color: var(--rust); }
+
+/* ---- the compact plant card inside the Studio's evidence panels and the Grow plant card */
+#cws-evidence .pi-mini, #evidence .pi-mini { margin: 8px 0 12px; }
+a.btn { text-decoration: none; }
+
+/* ---- "Why here?" / "Why not here?" (Compose) and "Why this plant here?" (Grow): the compact Decision Trace in the inspector */
+.whyq { font-size: 12.5px; color: var(--olive-deep); text-decoration: underline; text-decoration-color: rgba(59,85,56,.35); text-underline-offset: 3px; white-space: nowrap; } .whyq:hover { text-decoration-color: currentColor; }
+.pick > .whyq { grid-column: 2 / -1; justify-self: start; margin-top: 6px; } .cand-row .whyq { display: inline-block; margin-top: 3px; }
+.mixopt { display: inline-flex; align-items: baseline; gap: 6px; margin-right: 6px; }
+.whybox { position: relative; margin: 10px 0 12px; } .whybox .pi-why + .pi-why { margin-top: 16px; }
+#cws-evidence .whybox { margin: 4px 0 16px; padding-bottom: 14px; border-bottom: 1px solid var(--line-2); }
+#plantcard .whybox { padding-top: 10px; border-top: 1px solid var(--line-2); } #plantcard .whybox .pi-why h4 { padding-right: 30px; }
+.whyx { position: absolute; right: -4px; top: 6px; width: 28px; height: 28px; border-radius: 6px; font-size: 18px; line-height: 1; color: var(--ink-3); } .whyx:hover { background: var(--paper-2); color: var(--ink); }
+.whybox .pi-why-go { font-size: 13px; }
+#plantcard .pi-why dl > div, #cws-evidence .pi-why dl > div { grid-template-columns: 98px minmax(0, 1fr); }   /* the inspector's own measure: the longest label is "Arrangement" */
+
+/* ---- one mark per meaning, as on the platform (DESIGN.md Tags): verified is a filled tag, unverified its caramel twin; a failed fit is
+   rust, never the dotted grey that means unknown; a fit word never touches its own border */
+.tag.verified { background: var(--pi-olive-soft); border-color: transparent; color: var(--pi-olive-deep); } .tag.unverified { background: var(--pi-caramel-soft); border-color: transparent; color: var(--pi-caramel-ink); }
+.fit.fails { border-style: solid; border-color: var(--pi-rust); color: var(--pi-rust); background: none; } .pick .pn2 .fit { padding: 1px 7px; flex: none; }
+/* Compose status bar: below 1500 px the legend gives its room to the state of the plan, which is never cut */
+@media (max-width: 1500px) { .ws-compose .ws-status .canvas-foot .lg { display: none; } }

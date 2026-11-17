@@ -1,0 +1,68 @@
+{
+ "about": "Presentation assets only: one editorial illustration per species for the Plant Library and the compact plant card. The illustrations are AI-generated (pack botanical-artwork-v2, received 2026-11-14); they are not botanical plates, not identification aids and not evidence. No plant fact lives here and none is read from an image: names, attributes, functions and sources come from the knowledge snapshot.",
+ "version": "botanical-artwork-v2",
+ "received": "2026-11-14",
+ "kind": "AI-generated editorial illustration",
+ "images": {
+  "achillea-millefolium": {
+   "file": "achillea-millefolium.webp",
+   "width": 640,
+   "height": 691,
+   "lettering": false
+  },
+  "acer-palmatum": {
+   "file": "acer-palmatum.webp",
+   "width": 640,
+   "height": 691,
+   "lettering": false
+  },
+  "arctostaphylos-uva-ursi": {
+   "file": "arctostaphylos-uva-ursi.webp",
+   "width": 640,
+   "height": 691,
+   "lettering": false
+  },
+  "cercidiphyllum-japonicum": {
+   "file": "cercidiphyllum-japonicum.webp",
+   "width": 640,
+   "height": 691,
+   "lettering": false
+  },
+  "cornus-nuttallii": {
+   "file": "cornus-nuttallii.webp",
+   "width": 640,
+   "height": 691,
+   "lettering": false
+  },
+  "cornus-sericea": {
+   "file": "cornus-sericea.webp",
+   "width": 640,
+   "height": 691,
+   "lettering": false
+  },
+  "gaillardia-aristata": {
+   "file": "gaillardia-aristata.webp",
+   "width": 640,
+   "height": 691,
+   "lettering": false
+  },
+  "gaultheria-shallon": {
+   "file": "gaultheria-shallon.webp",
+   "width": 640,
+   "height": 691,
+   "lettering": false
+  },
+  "polystichum-munitum": {
+   "file": "polystichum-munitum.webp",
+   "width": 640,
+   "height": 691,
+   "lettering": false
+  },
+  "vaccinium-ovatum": {
+   "file": "vaccinium-ovatum.webp",
+   "width": 640,
+   "height": 691,
+   "lettering": false
+  }
+ }
+}

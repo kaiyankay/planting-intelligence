@@ -1,0 +1,1805 @@
+{
+  "entity": {
+    "id": "vaccinium-ovatum",
+    "scientific_name": "Vaccinium ovatum",
+    "synonyms_scientific": [
+      "Vaccinium ovatum var. saporosum"
+    ],
+    "common_names": {
+      "en": [
+        "Evergreen huckleberry",
+        "California huckleberry",
+        "Box huckleberry",
+        "Shot huckleberry",
+        "Californian huckleberry"
+      ],
+      "zh": [
+        "常绿越橘"
+      ]
+    },
+    "family": "Ericaceae",
+    "kpu_plant_type": "Broadleaf evergreen",
+    "respondent_roles": [
+      "shrub"
+    ],
+    "raw_names": [
+      "Vaccinium ovatum"
+    ],
+    "origin_status": "native_bc_west_of_cascades",
+    "external_refs": {
+      "kpu": "https://plantdatabase.kpu.ca/Plant/vaov",
+      "mobot": null,
+      "gpp": "https://www.greatplantpicks.org/plantlists/view/1611",
+      "osu": "https://landscapeplants.oregonstate.edu/plants/vaccinium-ovatum",
+      "eflora": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Vaccinium%20ovatum",
+      "rhs": "https://www.rhs.org.uk/plants/18707/i-vaccinium-ovatum-i-(f)/details",
+      "usda": "https://plants.usda.gov/plant-profile/VAOV2",
+      "inat": "https://www.inaturalist.org/taxa/48349"
+    },
+    "in_vancouver_street_tree_list": false,
+    "prototype_role": "native evergreen shrub; carries the only project-level practitioner note in the survey — tests practitioner and literature claims side by side",
+    "survey_mentions": 1,
+    "external_refs_note": "kpu: only a 'Thunderbird' cultivar page exists (no species page); link only",
+    "survey_respondents": [
+      "survey-r03"
+    ],
+    "identity_review": {
+      "audited": "2026-11-02",
+      "method": "tools/identity_audit.py (M45): sources on file + entity notes; disputed = left for human judgement",
+      "taxonomic_identity": {
+        "status": "confirmed",
+        "note": "Vaccinium ovatum Pursh; var. saporosum recognised"
+      },
+      "geographic_origin": {
+        "status": "confirmed",
+        "note": "native to coastal BC (E-Flora Yellow S5; USDA native)",
+        "origin_status_on_entity": "native_bc_west_of_cascades"
+      },
+      "botanical_growth_form": {
+        "status": "to_confirm",
+        "note": "read as shrub from rhs, survey (entity.respondent_roles) (to confirm; M29a) — only RHS's 'mixed shrub border' use (weak) and the survey role say shrub; GPP / OSU pages describe a shrub but their claims on file carry no form word; a reviewer can confirm from the source",
+        "kpu_plant_type": "Broadleaf evergreen"
+      },
+      "design_function": {
+        "status": "confirmed",
+        "note": "evergreen hedge / screen / boxwood substitute (GPP; respondent's project note)",
+        "respondent_roles_as_typed": [
+          "shrub"
+        ]
+      },
+      "synonyms_raw": null
+    }
+  },
+  "claims": [
+    {
+      "id": "vaccinium-ovatum:landscape_use:01",
+      "plant": "vaccinium-ovatum",
+      "field": "landscape_use",
+      "value_kind": "categorical",
+      "value": [
+        "use:hedge_row"
+      ],
+      "text": "Vaccinium ovatum — evergreen plant for a hedge.",
+      "source_id": "survey-r03",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.7,
+      "status": "verified",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "survey-export",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student and practising landscape designer; studio, professional and personal-garden experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false
+      },
+      "value_label": [
+        "Hedge row"
+      ],
+      "concepts": [
+        "use:hedge_row"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "vaccinium-ovatum:seasonal_interest:01",
+      "plant": "vaccinium-ovatum",
+      "field": "seasonal_interest",
+      "value_kind": "categorical",
+      "value": {
+        "evergreen": true
+      },
+      "text": "Vaccinium ovatum is evergreen.",
+      "source_id": "survey-r03",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver (survey d1 'why')",
+      "confidence": 0.7,
+      "status": "verified",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "survey-export",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "MLA student and practising landscape designer; studio, professional and personal-garden experience"
+      },
+      "concepts": [
+        "evergreen:yes"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "vaccinium-ovatum:behaviour_with_others:01",
+      "plant": "vaccinium-ovatum",
+      "field": "behaviour_with_others",
+      "value_kind": "qualitative",
+      "value": {
+        "substitute_for": "Buxus sempervirens (English boxwood)",
+        "advantage": "takes shade better"
+      },
+      "text": "Good native substitute for English boxwood that takes shade better.",
+      "source_id": "survey-r03",
+      "source_type": "practitioner",
+      "context": "designer's own project (survey d2); location not recorded",
+      "confidence": 0.75,
+      "status": "verified",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "survey-export",
+      "claim_kind": "observation",
+      "practitioner_meta": {
+        "basis": "project",
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student and practising landscape designer; studio, professional and personal-garden experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L1",
+        "citable": true,
+        "caveat": "location not recorded",
+        "raw_export_text": "GoodNativesubstituteforEnglishboxwoodthattakesshadebetter",
+        "note": "spaces restored manually from the 2026-10-30 export (export bug). Also implies an exposure claim (shade tolerant) and a landscape_use claim (sheared hedge / boxwood role) — derived claims below point back here."
+      },
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "vaccinium-ovatum:exposure:01",
+      "plant": "vaccinium-ovatum",
+      "field": "exposure",
+      "value_kind": "categorical",
+      "value": [
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade"
+      ],
+      "text": "Vaccinium ovatum tolerates shade better than English boxwood, per a designer's project experience.",
+      "source_id": "survey-r03",
+      "source_type": "practitioner",
+      "context": "designer's own project (survey d2); derived from behaviour_with_others:01",
+      "confidence": 0.7,
+      "status": "verified",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "claude (derived, same source)",
+      "claim_kind": "observation",
+      "derived_from": "vaccinium-ovatum:behaviour_with_others:01",
+      "practitioner_meta": {
+        "basis": "project",
+        "location": null,
+        "completeness": "L1",
+        "citable": true,
+        "caveat": "location not recorded",
+        "observer_background": "MLA student and practising landscape designer; studio, professional and personal-garden experience"
+      },
+      "value_label": [
+        "Part sun/part shade",
+        "Filtered shade"
+      ],
+      "concepts": [
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "vaccinium-ovatum:mature_height:m1",
+      "plant": "vaccinium-ovatum",
+      "field": "mature_height",
+      "value_kind": "quantitative",
+      "value": {
+        "min": 1,
+        "max": 3,
+        "unit": "m"
+      },
+      "text": "Vaccinium ovatum is usually given as 1–3 m tall, taller in shade and in coastal forest than in open sun (model placeholder, unverified).",
+      "source_id": "model",
+      "source_type": "model",
+      "context": "general; sun vs shade difference noted",
+      "confidence": 0.4,
+      "status": "retired",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "claude",
+      "claim_kind": "attribute",
+      "verify_against": [
+        "kpu",
+        "gpp",
+        "pojar",
+        "osu"
+      ],
+      "note": "height is strongly site-dependent for this species — a good test case for local_mature_size vs literature mature_height",
+      "retired_by": "vaccinium-ovatum:mature_height:rhs01",
+      "retired_at": "2026-10-29",
+      "concepts": [
+        "height_class:0.7-1.3m",
+        "height_class:1.3-2.0m",
+        "height_class:2-3m",
+        "height_class:3-5m"
+      ],
+      "conditions": [],
+      "place": "place:global",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:ecological_value:m1",
+      "plant": "vaccinium-ovatum",
+      "field": "ecological_value",
+      "value_kind": "categorical",
+      "value": [
+        "origin:native",
+        "ecology:pollinator",
+        "ecology:bird_food",
+        "ecology:wildlife_cover"
+      ],
+      "text": "Vaccinium ovatum is native to coastal BC, flowers for pollinators and bears edible berries taken by birds (model placeholder, unverified).",
+      "source_id": "model",
+      "source_type": "model",
+      "context": "general",
+      "confidence": 0.45,
+      "status": "retired",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "claude",
+      "claim_kind": "attribute",
+      "verify_against": [
+        "eflora",
+        "pojar",
+        "growgreen"
+      ],
+      "retired_by": "vaccinium-ovatum:ecological_value:eflora01",
+      "retired_at": "2026-10-29",
+      "value_label": [
+        "native",
+        "pollinator",
+        "bird_food",
+        "wildlife_cover"
+      ],
+      "concepts": [
+        "origin:native",
+        "ecology:bird_food",
+        "ecology:pollinator",
+        "ecology:wildlife_cover"
+      ],
+      "conditions": [],
+      "place": "place:global",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:soil_type:m1",
+      "plant": "vaccinium-ovatum",
+      "field": "soil_type",
+      "value_kind": "categorical",
+      "value": [
+        "soil:acidic",
+        "soil:humus_rich",
+        "soil:well_drained"
+      ],
+      "text": "Like other Ericaceae, Vaccinium ovatum prefers acidic, humus-rich, well-drained soil (model placeholder, unverified).",
+      "source_id": "model",
+      "source_type": "model",
+      "context": "general",
+      "confidence": 0.45,
+      "status": "retired",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "claude",
+      "claim_kind": "attribute",
+      "verify_against": [
+        "kpu",
+        "mobot",
+        "gpp"
+      ],
+      "retired_by": "vaccinium-ovatum:soil_type:rhs01",
+      "retired_at": "2026-10-29",
+      "value_label": [
+        "Acidic",
+        "Humus rich",
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:acidic",
+        "soil:humus_rich",
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:global",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:mature_height:rhs01",
+      "plant": "vaccinium-ovatum",
+      "field": "mature_height",
+      "value": {
+        "min": 1,
+        "max": 1.5,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Vaccinium ovatum an ultimate height of 1–1.5 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/18707/i-vaccinium-ovatum-i-(f)/details",
+      "concepts": [
+        "height_class:0.7-1.3m",
+        "height_class:1.3-2.0m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:mature_spread:rhs01",
+      "plant": "vaccinium-ovatum",
+      "field": "mature_spread",
+      "value": {
+        "min": 1,
+        "max": 1.5,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Vaccinium ovatum an ultimate spread of 1–1.5 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/18707/i-vaccinium-ovatum-i-(f)/details",
+      "concepts": [
+        "spread_class:1.0-1.5m",
+        "spread_class:1.5-2.0m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:time_to_intended_size:rhs01",
+      "plant": "vaccinium-ovatum",
+      "field": "time_to_intended_size",
+      "value": {
+        "min": 10,
+        "max": 20,
+        "unit": "years",
+        "measure": "time to ultimate height"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Vaccinium ovatum 10–20 years to reach its ultimate height.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/18707/i-vaccinium-ovatum-i-(f)/details",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:hardiness_zone:rhs01",
+      "plant": "vaccinium-ovatum",
+      "field": "hardiness_zone",
+      "value": {
+        "rating": "H4",
+        "unit": "RHS",
+        "approx_min_c": -10,
+        "approx_max_c": -5
+      },
+      "value_kind": "quantitative",
+      "text": "RHS rates Vaccinium ovatum hardiness H4 (average UK winter, about -10 to -5 °C).",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/18707/i-vaccinium-ovatum-i-(f)/details",
+      "note": "RHS H-scale; °C band is the RHS definition of H4",
+      "concepts": [
+        "hardiness_rhs:H4"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:exposure:rhs01",
+      "plant": "vaccinium-ovatum",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade",
+        "exposure:sheltered"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: full sun or partial shade, sheltered.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/18707/i-vaccinium-ovatum-i-(f)/details",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade",
+        "Sheltered"
+      ],
+      "concepts": [
+        "exposure:sheltered",
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:soil_type:rhs01",
+      "plant": "vaccinium-ovatum",
+      "field": "soil_type",
+      "value": [
+        "soil:acidic",
+        "soil:well_drained"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: acid, moist but well-drained loam or sand.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/18707/i-vaccinium-ovatum-i-(f)/details",
+      "note": "loam/sand have no KPU class",
+      "value_label": [
+        "Acidic",
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:acidic",
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:water_drainage:rhs01",
+      "plant": "vaccinium-ovatum",
+      "field": "water_drainage",
+      "value": "water:moist",
+      "value_kind": "categorical",
+      "text": "RHS: moist but well-drained.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/18707/i-vaccinium-ovatum-i-(f)/details",
+      "note": "'moist but well-drained' → moist",
+      "value_label": "moist",
+      "concepts": [
+        "water:moist"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:seasonal_interest:rhs01",
+      "plant": "vaccinium-ovatum",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "Pink"
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fall_colour": false,
+        "fruit": "red, turning blue-black",
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "RHS: evergreen; pale pink urn-shaped flowers in spring; fruit red turning blue-black.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/18707/i-vaccinium-ovatum-i-(f)/details",
+      "note": "'pale pink' → Pink; spring not mapped to months",
+      "concepts": [
+        "colour:green",
+        "colour:pink",
+        "evergreen:yes",
+        "fruit:showy"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:pest_susceptibility:rhs01",
+      "plant": "vaccinium-ovatum",
+      "field": "pest_susceptibility",
+      "value": [
+        "pest:beetles_or_weevils",
+        "pest:mildew",
+        "pest:root_rot",
+        "pest:abiotic_disorder"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS lists vine weevil larvae and birds as pests; honey fungus (rare), powdery mildew, root rot and chlorosis as problems.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/18707/i-vaccinium-ovatum-i-(f)/details",
+      "note": "birds, honey fungus have no KPU value; chlorosis → Abiotic disorder",
+      "value_label": [
+        "Beetles or weevils",
+        "Mildew",
+        "Root rot",
+        "Abiotic disorder"
+      ],
+      "concepts": [
+        "pest:abiotic_disorder",
+        "pest:beetles_or_weevils",
+        "pest:mildew",
+        "pest:root_rot"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:landscape_use:rhs01",
+      "plant": "vaccinium-ovatum",
+      "field": "landscape_use",
+      "value": [
+        "use:container_planting",
+        "use:small_garden_space",
+        "use:mixed_shrub_border",
+        "use:urban_agriculture"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS suggests city and courtyard gardens, cottage gardens, patio containers, shrub borders and edible fruit.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/18707/i-vaccinium-ovatum-i-(f)/details",
+      "note": "RHS garden types mapped to KPU uses; 'edible fruit' → Urban agriculture",
+      "value_label": [
+        "Container planting",
+        "Small garden/space",
+        "Mixed shrub border",
+        "Urban agriculture"
+      ],
+      "concepts": [
+        "use:container_planting",
+        "use:mixed_shrub_border",
+        "use:small_garden_space",
+        "use:urban_agriculture"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:mature_height:osu01",
+      "plant": "vaccinium-ovatum",
+      "field": "mature_height",
+      "value": {
+        "min": 0.9,
+        "max": 1.5,
+        "unit": "m",
+        "raw": "3–5 (8) ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Oregon State University gives Vaccinium ovatum a height of 3–5 ft (0.9–1.5 m), occasionally 8 ft (2.4 m).",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/vaccinium-ovatum",
+      "concepts": [
+        "height_class:0.7-1.3m",
+        "height_class:1.3-2.0m"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:hardiness_zone:osu01",
+      "plant": "vaccinium-ovatum",
+      "field": "hardiness_zone",
+      "value": {
+        "usda_min": 7,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Oregon State University: hardy to USDA zone 7.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/vaccinium-ovatum",
+      "concepts": [
+        "hardiness_usda:z7",
+        "hardiness_usda:z8",
+        "hardiness_usda:z9",
+        "hardiness_usda:z10",
+        "hardiness_usda:z11"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:exposure:osu01",
+      "plant": "vaccinium-ovatum",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: sun to part shade.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/vaccinium-ovatum",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:seasonal_interest:osu01",
+      "plant": "vaccinium-ovatum",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "Pink"
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fruit": "red at first, blue-black in late summer, edible",
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "Oregon State University: evergreen glossy dark green leaves on reddish stems; pale pink urn-shaped flowers in spring; edible fruit red then blue-black by late summer.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/vaccinium-ovatum",
+      "concepts": [
+        "colour:green",
+        "colour:pink",
+        "evergreen:yes",
+        "fruit:edible"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:habit:osu01",
+      "plant": "vaccinium-ovatum",
+      "field": "habit",
+      "value": "habit:upright",
+      "value_kind": "categorical",
+      "text": "Oregon State University: neat, erect, generally compact habit, sometimes with long erratic shoots.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/vaccinium-ovatum",
+      "note": "'erect, compact' → Upright",
+      "value_label": "Upright",
+      "concepts": [
+        "habit:upright"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:landscape_use:osu01",
+      "plant": "vaccinium-ovatum",
+      "field": "landscape_use",
+      "value": [
+        "use:cut_flower_or_foliage"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University notes use of the foliage in the florist industry.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/vaccinium-ovatum",
+      "value_label": [
+        "Cut flower or foliage"
+      ],
+      "concepts": [
+        "use:cut_flower_or_foliage"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:mature_height:gpp01",
+      "plant": "vaccinium-ovatum",
+      "field": "mature_height",
+      "value": {
+        "height_m": 2.44,
+        "unit": "m",
+        "raw": "8 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Great Plant Picks gives Vaccinium ovatum a mature height of 8 ft (2.4 m).",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/1611",
+      "concepts": [
+        "height_class:2-3m"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:mature_spread:gpp01",
+      "plant": "vaccinium-ovatum",
+      "field": "mature_spread",
+      "value": {
+        "spread_m": 1.83,
+        "unit": "m",
+        "raw": "6 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Great Plant Picks gives Vaccinium ovatum a mature spread of 6 ft (1.8 m).",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/1611",
+      "concepts": [
+        "spread_class:1.5-2.0m"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:time_to_intended_size:gpp01",
+      "plant": "vaccinium-ovatum",
+      "field": "time_to_intended_size",
+      "value": {
+        "years": 10,
+        "height_m": 1.83,
+        "spread_m": 1.22,
+        "unit": "m at 10 years"
+      },
+      "value_kind": "quantitative",
+      "text": "Great Plant Picks gives Vaccinium ovatum a 10-year size of 6 ft tall by 4 ft wide (1.8 × 1.2 m).",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/1611",
+      "concepts": [
+        "age:establishing"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:hardiness_zone:gpp01",
+      "plant": "vaccinium-ovatum",
+      "field": "hardiness_zone",
+      "value": {
+        "min": 7,
+        "max": 9,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Great Plant Picks lists Vaccinium ovatum for USDA zones 7 to 9.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/1611",
+      "concepts": [
+        "hardiness_usda:z7",
+        "hardiness_usda:z8",
+        "hardiness_usda:z9"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:exposure:gpp01",
+      "plant": "vaccinium-ovatum",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade",
+        "exposure:deep_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: full sun to deep shade; flowering and fruiting may stop in deep shade.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/1611",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade",
+        "Filtered shade",
+        "Deep shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade",
+        "exposure:deep_shade"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:water_drainage:gpp01",
+      "plant": "vaccinium-ovatum",
+      "field": "water_drainage",
+      "value": "water:average",
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: regular watering to drought tolerant; occasional dry-weather watering improves flowering and fruit.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/1611",
+      "note": "'regular watering to drought tolerant' → average; drought tolerance recorded under resistances",
+      "value_label": "average",
+      "concepts": [
+        "water:average"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:resistances:gpp01",
+      "plant": "vaccinium-ovatum",
+      "field": "resistances",
+      "value": [
+        "stress:drought"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: drought tolerant once established.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest; once established",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/1611",
+      "value_label": [
+        "drought"
+      ],
+      "concepts": [
+        "stress:drought"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [
+        "age:established"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:soil_type:gpp01",
+      "plant": "vaccinium-ovatum",
+      "field": "soil_type",
+      "value": [
+        "soil:well_drained"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: well-drained or sandy soil; tolerates clay if drainage is adequate.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/1611",
+      "value_label": [
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:seasonal_interest:gpp01",
+      "plant": "vaccinium-ovatum",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "White"
+        ],
+        "foliage_colour": [
+          "Bronze",
+          "Green"
+        ],
+        "fruit": "blue-black berries, late summer, edible",
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: copper-bronze spring foliage maturing dark green; small white urn flowers in spring; blue-black berries by late summer.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/1611",
+      "concepts": [
+        "colour:bronze",
+        "colour:green",
+        "colour:white",
+        "evergreen:yes",
+        "fruit:edible"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:texture:gpp01",
+      "plant": "vaccinium-ovatum",
+      "field": "texture",
+      "value": "texture:fine",
+      "value_kind": "categorical",
+      "text": "Great Plant Picks describes the small leaves as giving a fine texture.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/1611",
+      "value_label": "Fine",
+      "concepts": [
+        "texture:fine"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:landscape_use:gpp01",
+      "plant": "vaccinium-ovatum",
+      "field": "landscape_use",
+      "value": [
+        "use:group_or_mass_planting",
+        "use:screening",
+        "use:sheared_hedge",
+        "use:native_planting"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: informal groupings, natural low screen, shears into a dense formal hedge; a Pacific Northwest native.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/1611",
+      "value_label": [
+        "Group or mass planting",
+        "Screening",
+        "Sheared hedge",
+        "Native planting"
+      ],
+      "concepts": [
+        "use:group_or_mass_planting",
+        "use:native_planting",
+        "use:screening",
+        "use:sheared_hedge"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:maintenance_level:gpp01",
+      "plant": "vaccinium-ovatum",
+      "field": "maintenance_level",
+      "value": "maintenance:low",
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: little pruning needed.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/1611",
+      "note": "'little pruning needed' → low",
+      "value_label": "low",
+      "concepts": [
+        "maintenance:low"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:ecological_value:eflora01",
+      "plant": "vaccinium-ovatum",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "E-Flora BC lists Vaccinium ovatum as native to BC (provincial list Yellow, rank S5, secure).",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Vaccinium%20ovatum",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-10-29]",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:vancouver_context:eflora01",
+      "plant": "vaccinium-ovatum",
+      "field": "vancouver_context",
+      "value": {
+        "habitat": [
+          "open forest",
+          "lowland",
+          "montane",
+          "dry to moist",
+          "coastal"
+        ],
+        "bgc_zones": [
+          "CDF",
+          "CWH",
+          "ESSF",
+          "ICH",
+          "MH",
+          "SBS"
+        ],
+        "modal_zone": "CWH",
+        "elevation_m": {
+          "min": 2,
+          "max": 1650,
+          "mean": 185
+        },
+        "bc_distribution": "frequent in SW BC"
+      },
+      "value_kind": "qualitative",
+      "text": "E-Flora BC: frequent in south-west BC in dry to moist open forest at low to montane elevations, mostly in the Coastal Western Hemlock zone — the zone Vancouver sits in.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Vaccinium%20ovatum",
+      "note": "BGC zone list from the atlas station records",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-10-29]",
+      "concepts": [
+        "bgc_zone:cdf",
+        "bgc_zone:cwh",
+        "bgc_zone:essf",
+        "bgc_zone:ich",
+        "bgc_zone:mh",
+        "bgc_zone:sbs",
+        "habitat:coastal",
+        "habitat:forest"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:mature_height:eflora01",
+      "plant": "vaccinium-ovatum",
+      "field": "mature_height",
+      "value": {
+        "min": 0.5,
+        "max": 3,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "E-Flora BC gives Vaccinium ovatum a height of 0.5–3 m.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Vaccinium%20ovatum",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-10-29]",
+      "concepts": [
+        "height_class:0.4-0.7m",
+        "height_class:0.7-1.3m",
+        "height_class:1.3-2.0m",
+        "height_class:2-3m",
+        "height_class:3-5m"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:ecological_value:usdaplants01",
+      "plant": "vaccinium-ovatum",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: native in Canada and the lower 48 states.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/VAOV2",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:mature_height:usdaplants01",
+      "plant": "vaccinium-ovatum",
+      "field": "mature_height",
+      "value": {
+        "height_m": 2.4,
+        "unit": "m",
+        "raw": "8 ft mature; 8 ft maximum at 20 years"
+      },
+      "value_kind": "quantitative",
+      "text": "USDA PLANTS gives a mature height of 8 ft (2.4 m), reached within 20 years.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/VAOV2",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "height_class:2-3m"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:time_to_intended_size:usdaplants01",
+      "plant": "vaccinium-ovatum",
+      "field": "time_to_intended_size",
+      "value": {
+        "years": 20,
+        "height_m": 2.4,
+        "unit": "m at 20 years"
+      },
+      "value_kind": "quantitative",
+      "text": "USDA PLANTS: maximum height at 20 years 8 ft (2.4 m).",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/VAOV2",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "age:established"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:growth_rate:usdaplants01",
+      "plant": "vaccinium-ovatum",
+      "field": "growth_rate",
+      "value": "growth_rate:slow",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates growth rate slow.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/VAOV2",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "slow",
+      "concepts": [
+        "growth_rate:slow"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:exposure:usdaplants01",
+      "plant": "vaccinium-ovatum",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates shade tolerance low.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/VAOV2",
+      "note": "'Shade Tolerance: Low' mapped to Full sun; disagrees with GPP (deep shade) and the designer's note — kept side by side (R1)",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "Full sun"
+      ],
+      "concepts": [
+        "exposure:full_sun"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:seasonal_interest:usdaplants01",
+      "plant": "vaccinium-ovatum",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "White"
+        ],
+        "flowering_months": [
+          5,
+          6
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fruit": "purple, summer",
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: white flowers in late spring, conspicuous purple fruit in summer, leaves retained.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/VAOV2",
+      "note": "'Late Spring' → months 5–6",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "colour:green",
+        "colour:white",
+        "evergreen:yes",
+        "fruit:showy"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [
+        "month:5",
+        "month:6"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:toxicity:usdaplants01",
+      "plant": "vaccinium-ovatum",
+      "field": "toxicity",
+      "value": {
+        "usda_rating": "none",
+        "humans": "unknown",
+        "pets": "unknown"
+      },
+      "value_kind": "categorical",
+      "text": "USDA PLANTS gives a toxicity rating of 'None' for this species; the rating is a US conservation-planting characteristic and says nothing specific about pets or people.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/VAOV2",
+      "note": "Track B 2026-10-30: value restructured from {humans: none} to {usda_rating: none, humans: unknown, pets: unknown}. The USDA 'Toxicity' characteristic is a single rating (None / Slight / Moderate / Severe) aimed at livestock and conservation plantings; it is not a human- or pet-specific assessment, so both stay unknown until a tier-B toxicology source is recorded (D1, M12, M17).",
+      "attribution": "U.S. Department of Agriculture",
+      "edited": "2026-10-30 (Track B item 2, value shape; status unchanged)",
+      "concepts": [
+        "toxicity:unknown"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:resistances:usdaplants01",
+      "plant": "vaccinium-ovatum",
+      "field": "resistances",
+      "value": [
+        "stress:drought"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates drought tolerance medium and moisture use low.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/VAOV2",
+      "note": "'Drought Tolerance: Medium' — borderline; recorded at low confidence",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "drought"
+      ],
+      "concepts": [
+        "stress:drought"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:invasive_status:iscbc01",
+      "plant": "vaccinium-ovatum",
+      "field": "invasive_status",
+      "value": "invasive:not_listed",
+      "value_kind": "categorical",
+      "text": "Vaccinium ovatum is not among the plant profiles on the Invasive Species Council of BC list (checked 2026-10-29); it is a BC native.",
+      "source_id": "iscbc",
+      "source_type": "municipal",
+      "context": "BC; ISCBC online species profiles",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://bcinvasives.ca/take-action/identify/",
+      "value_label": "not_listed",
+      "concepts": [
+        "invasive:not_listed"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "vaccinium-ovatum:vancouver_context:inat01",
+      "plant": "vaccinium-ovatum",
+      "field": "vancouver_context",
+      "value": {
+        "licensed_verifiable_observations": 29,
+        "research_grade": 24,
+        "all_licences": 33,
+        "years": [
+          2017,
+          2026
+        ]
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist holds 29 openly licensed verifiable observations of this plant in Greater Vancouver (24 research grade), recorded 2017–2026.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-10-30",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-30",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=48349&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "presence evidence; observation counts reflect observer effort as much as abundance",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    }
+  ],
+  "custom": [],
+  "fill_plan": {
+    "gate": {
+      "hardiness_zone": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "invasive_status": [
+        "iscbc"
+      ],
+      "water_drainage": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "mature_height": [
+        "kpu",
+        "gpp",
+        "pojar",
+        "osu"
+      ],
+      "mature_spread": [
+        "kpu",
+        "gpp",
+        "osu"
+      ],
+      "maintenance_level": [
+        "gpp",
+        "growgreen"
+      ],
+      "ecological_value": [
+        "eflora",
+        "pojar",
+        "growgreen"
+      ]
+    },
+    "compare": {
+      "exposure": [
+        "kpu",
+        "gpp"
+      ],
+      "seasonal_interest": [
+        "kpu",
+        "gpp",
+        "pojar"
+      ],
+      "texture": [
+        "kpu"
+      ],
+      "form": [
+        "kpu",
+        "osu"
+      ],
+      "habit": [
+        "kpu"
+      ],
+      "soil_type": [
+        "kpu",
+        "mobot"
+      ],
+      "growth_rate": [
+        "gpp"
+      ],
+      "landscape_use": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "pest_susceptibility": [
+        "kpu"
+      ]
+    },
+    "extended": {
+      "time_to_intended_size": [
+        "gpp",
+        "practitioner"
+      ],
+      "local_mature_size": [
+        "practitioner",
+        "inat"
+      ],
+      "long_term_performance": [
+        "practitioner"
+      ],
+      "behaviour_with_others": [
+        "pojar",
+        "relations.json"
+      ],
+      "toxicity": [
+        "aspca"
+      ],
+      "local_availability": [
+        "nats"
+      ],
+      "vancouver_context": [
+        "growgreen",
+        "eflora",
+        "inat"
+      ]
+    },
+    "open_questions": [
+      "Ask survey-r03 (if a follow-up is possible) for the project's location and the hedge's age — would lift the boxwood note from L1 to L2/L3.",
+      "Literature often says slow-growing: that would create a useful tension with the hedge-substitute note (time_to_intended_size)."
+    ],
+    "not_available": {
+      "mobot": "no Plant Finder entry for the species (checked 2026-10-29)",
+      "pojar": "awaiting Pojar pages"
+    }
+  }
+}

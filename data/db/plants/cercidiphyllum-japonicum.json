@@ -1,0 +1,2278 @@
+{
+  "entity": {
+    "id": "cercidiphyllum-japonicum",
+    "scientific_name": "Cercidiphyllum japonicum",
+    "synonyms_scientific": [],
+    "common_names": {
+      "en": [
+        "Katsura",
+        "Katsura tree",
+        "katsuratree"
+      ],
+      "zh": [
+        "连香树"
+      ]
+    },
+    "family": "Cercidiphyllaceae",
+    "kpu_plant_type": "Tree - deciduous",
+    "respondent_roles": [
+      "tree",
+      "tree",
+      "tree"
+    ],
+    "raw_names": [
+      "Katsura",
+      "Katsura",
+      "Cercidiphyllum japonicum"
+    ],
+    "survey_respondents": [
+      "survey-r06",
+      "survey-r07",
+      "survey-r15"
+    ],
+    "origin_status": "non_native",
+    "external_refs": {
+      "kpu": "https://plantdatabase.kpu.ca/Plant/ceja",
+      "mobot": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710",
+      "gpp": "https://www.greatplantpicks.org/plantlists/view/331",
+      "osu": "https://landscapeplants.oregonstate.edu/plants/cercidiphyllum-japonicum",
+      "eflora": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cercidiphyllum%20japonicum",
+      "rhs": "https://www.rhs.org.uk/plants/3415/cercidiphyllum-japonicum/details",
+      "usda": null,
+      "inat": "https://www.inaturalist.org/taxa/133356",
+      "mobot_resolved": "https://plantfinder.mobot.org/PlantFinderDetails.aspx?kempercode=j710",
+      "usda_plants": "https://plants.usda.gov/plant-profile/CEJA2",
+      "usda_plants_api": "https://plantsservices.sc.egov.usda.gov/api/PlantProfile?symbol=CEJA2",
+      "iscbc": "https://bcinvasives.ca/take-action/identify/"
+    },
+    "in_vancouver_street_tree_list": true,
+    "prototype_role": "non-native deciduous tree; 2 survey mentions (one observed note: backyard, sweet leaf scent); large City of Vancouver street-tree record (2,647 public trees) — tests a tree whose local record is richer than its literature",
+    "survey_mentions": 3,
+    "added": "2026-11-02",
+    "added_by": "10-plant expansion (brief 2026-11-02); entity facts from the T5 extraction and the survey, see claims for evidence",
+    "usda_symbol": "CEJA2",
+    "identity_review": {
+      "audited": "2026-11-02",
+      "method": "tools/identity_audit.py (M45): sources on file + entity notes; disputed = left for human judgement",
+      "taxonomic_identity": {
+        "status": "confirmed",
+        "note": "Cercidiphyllum japonicum Siebold & Zucc.; USDA symbol CEJA2 (CEJA is Centaurea jacea — caught during extraction)"
+      },
+      "geographic_origin": {
+        "status": "confirmed",
+        "note": "non-native (Japan, China); USDA 'introduced' for the lower 48",
+        "origin_status_on_entity": "non_native"
+      },
+      "botanical_growth_form": {
+        "status": "confirmed",
+        "note": "read as tree from kpu (entity.kpu_plant_type), cov_trees, rhs, mobot, gpp, osu, survey (entity.respondent_roles) (supported; M29a)",
+        "kpu_plant_type": "Tree - deciduous"
+      },
+      "design_function": {
+        "status": "confirmed",
+        "note": "shade / specimen tree, street tree (2,647 in the Vancouver inventory)",
+        "respondent_roles_as_typed": [
+          "tree",
+          "tree"
+        ]
+      },
+      "synonyms_raw": null
+    }
+  },
+  "custom": [],
+  "fill_plan": {
+    "gate": {
+      "hardiness_zone": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "invasive_status": [
+        "iscbc"
+      ],
+      "water_drainage": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "mature_height": [
+        "kpu",
+        "gpp",
+        "pojar",
+        "osu"
+      ],
+      "mature_spread": [
+        "kpu",
+        "gpp"
+      ],
+      "maintenance_level": [
+        "gpp",
+        "growgreen"
+      ],
+      "ecological_value": [
+        "eflora",
+        "pojar",
+        "growgreen"
+      ]
+    },
+    "compare": {
+      "exposure": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "seasonal_interest": [
+        "kpu",
+        "gpp",
+        "pojar"
+      ],
+      "texture": [
+        "kpu"
+      ],
+      "form": [
+        "kpu",
+        "osu"
+      ],
+      "habit": [
+        "kpu"
+      ],
+      "soil_type": [
+        "kpu",
+        "mobot"
+      ],
+      "growth_rate": [
+        "gpp"
+      ],
+      "landscape_use": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "pest_susceptibility": [
+        "kpu"
+      ]
+    },
+    "extended": {
+      "time_to_intended_size": [
+        "gpp",
+        "practitioner"
+      ],
+      "local_mature_size": [
+        "practitioner",
+        "inat"
+      ],
+      "long_term_performance": [
+        "practitioner"
+      ],
+      "behaviour_with_others": [
+        "pojar",
+        "relations.json",
+        "practitioner"
+      ],
+      "toxicity": [
+        "aspca"
+      ],
+      "local_availability": [
+        "nats"
+      ],
+      "vancouver_context": [
+        "growgreen",
+        "eflora",
+        "inat"
+      ]
+    },
+    "not_available": {
+      "eflora": "no Atlas page for Cercidiphyllum japonicum ('an Atlas page is not available' message, checked 2026-11-02); non-native, not part of the BC flora",
+      "usda_plants": "profile CEJA2 exists (Id 70538) but NativeStatuses gives only L48 'Introduced' and PlantCharacteristics/70538 is empty — no tier-field values, so no claims; facts recorded in entity_facts (M14: no ecological_value claim for an introduced species)",
+      "gpp_cultivar_morioka_weeping": "greatplantpicks.org/plantlists/view/330 ('Morioka Weeping') redirected to the advanced-search form on 2026-11-02; species page view/331 used instead"
+    },
+    "t5_extractions": [
+      "inputs/t5/cercidiphyllum-japonicum-2026-11-02.json"
+    ]
+  },
+  "claims": [
+    {
+      "id": "cercidiphyllum-japonicum:in_vancouver_street_tree_list:cov01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "in_vancouver_street_tree_list",
+      "value": true,
+      "value_kind": "categorical",
+      "text": "Cercidiphyllum japonicum is in the City of Vancouver public tree inventory (2647 trees, snapshot 2026-11-02).",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "City of Vancouver public tree inventory, data snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded",
+      "confidence": 0.95,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "content"
+    },
+    {
+      "id": "cercidiphyllum-japonicum:vancouver_context:cov01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "vancouver_context",
+      "value": {
+        "public_trees_count": 2647,
+        "cultivar_labels_recorded": 3,
+        "unlabelled": 2611
+      },
+      "value_kind": "quantitative",
+      "text": "The City of Vancouver inventory lists 2647 public Cercidiphyllum japonicum trees; 2611 carry no cultivar label and the rest are spread over 3 cultivar names.",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "City of Vancouver public tree inventory, data snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded",
+      "confidence": 0.9,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "content"
+    },
+    {
+      "id": "cercidiphyllum-japonicum:vancouver_context:cov02",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "vancouver_context",
+      "value": {
+        "cultivar_counts": {
+          "RED FOX": 30,
+          "PENDULA": 5,
+          "MORIOKA WEEPING": 1
+        },
+        "cultivar_group_threshold_n": 50
+      },
+      "value_kind": "quantitative",
+      "text": "Most frequent cultivar labels for public Cercidiphyllum japonicum in Vancouver: 'Red Fox' (30); 'Pendula' (5); 'Morioka Weeping' (1).",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "City of Vancouver public tree inventory, data snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded",
+      "confidence": 0.85,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "note": "labels as recorded by Parks staff; 'NONE' means not recorded, not the straight species. Labels with n >= 50 have their own size claims (context cultivar:'Name'): .",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "content"
+    },
+    {
+      "id": "cercidiphyllum-japonicum:vancouver_context:cov03",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "vancouver_context",
+      "value": {
+        "local_area_counts": {
+          "Hastings-Sunrise": 306,
+          "Oakridge": 221,
+          "Renfrew-Collingwood": 198,
+          "Kerrisdale": 191,
+          "Dunbar-Southlands": 168,
+          "Downtown": 162,
+          "Kensington-Cedar Cottage": 135,
+          "Kitsilano": 133,
+          "Killarney": 131,
+          "Arbutus Ridge": 126,
+          "Shaughnessy": 111,
+          "Sunset": 101,
+          "Mount Pleasant": 95,
+          "West Point Grey": 94,
+          "Victoria-Fraserview": 86,
+          "Marpole": 80,
+          "Grandview-Woodland": 79,
+          "Strathcona": 54,
+          "Riley Park": 50,
+          "South Cambie": 34,
+          "Fairview": 34,
+          "West End": 30
+        },
+        "areas_present": 22
+      },
+      "value_kind": "quantitative",
+      "text": "Public Cercidiphyllum japonicum occur in 22 of Vancouver's local areas; most in Hastings-Sunrise (306), Oakridge (221), Renfrew-Collingwood (198), Kerrisdale (191), Dunbar-Southlands (168).",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "City of Vancouver public tree inventory, data snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded",
+      "confidence": 0.9,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "content"
+    },
+    {
+      "id": "cercidiphyllum-japonicum:local_mature_size:cov01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "local_mature_size",
+      "value": {
+        "n": 2647,
+        "p10": 4.6,
+        "median": 7.6,
+        "p90": 13.7,
+        "max": 29.0,
+        "unit": "m",
+        "measure": "height class midpoint",
+        "classes_ft": [
+          15,
+          25,
+          35,
+          45,
+          55
+        ]
+      },
+      "value_kind": "quantitative",
+      "text": "Height class midpoints of 2647 public Cercidiphyllum japonicum in Vancouver (15/25/35 ft classes, all ages mixed): median class 7.6 m, 10th–90th percentile classes 4.6–13.7 m, highest class 29.0 m.",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "City of Vancouver public tree inventory, data snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded; height_m is a banded class (15/25/35/45/55 ft midpoints), not a measurement",
+      "confidence": 0.7,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "note": "97% of records sit on the class grid; treat as a class, not a figure. No planting dates in this snapshot, so ages are unknown. max is a single record and may be mis-keyed. Cultivar labels below the n >= 50 threshold are included here and not reported separately: 'Red Fox' (30), 'Pendula' (5), 'Morioka Weeping' (1).",
+      "concepts": [
+        "height_class:3-5m",
+        "height_class:5-7m",
+        "height_class:7-10m",
+        "height_class:10-15m"
+      ],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "content"
+    },
+    {
+      "id": "cercidiphyllum-japonicum:local_mature_size:cov02",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "local_mature_size",
+      "value": {
+        "n": 1103,
+        "median": 10.7,
+        "p90": 13.7,
+        "max": 29.0,
+        "unit": "m",
+        "subset": "established (DBH >= 20 cm, proxy)",
+        "threshold_dbh_cm": 20,
+        "measure": "height class midpoint"
+      },
+      "value_kind": "quantitative",
+      "text": "Among the 1103 public Cercidiphyllum japonicum in Vancouver counted as established (DBH >= 20 cm, proxy), the median height class midpoint is 10.7 m and the 90th percentile class 13.7 m.",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "City of Vancouver public tree inventory, data snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded; established (DBH >= 20 cm, proxy) — trees without a planting date, see methods.md M2",
+      "confidence": 0.6,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "note": "proxy, not a measurement of age: confidence below age-cohort claims. Closest this source gets to 'real mature size under local conditions' (survey c2). Cultivar labels below the n >= 50 threshold are included here and not reported separately: 'Red Fox' (30), 'Pendula' (5), 'Morioka Weeping' (1).",
+      "concepts": [
+        "height_class:10-15m"
+      ],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [
+        "age:established"
+      ],
+      "cultivar": null,
+      "verification_scope": "content"
+    },
+    {
+      "id": "cercidiphyllum-japonicum:local_mature_size:cov03",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "local_mature_size",
+      "value": {
+        "n": 2645,
+        "median": 15.2,
+        "p90": 40.6,
+        "max": 480.1,
+        "unit": "cm DBH"
+      },
+      "value_kind": "quantitative",
+      "text": "Trunk diameters (DBH) of 2645 public Cercidiphyllum japonicum in Vancouver: median 15.2 cm, 90th percentile 40.6 cm, largest 480.1 cm.",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "City of Vancouver public tree inventory, data snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "note": "max is a single record and may be mis-keyed. Cultivar labels below the n >= 50 threshold are included here and not reported separately: 'Red Fox' (30), 'Pendula' (5), 'Morioka Weeping' (1).",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "content"
+    },
+    {
+      "id": "cercidiphyllum-japonicum:local_mature_size:cov04",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "local_mature_size",
+      "value": {
+        "n": 2611,
+        "p10": 4.6,
+        "median": 7.6,
+        "p90": 13.7,
+        "max": 29.0,
+        "unit": "m",
+        "measure": "height class midpoint",
+        "classes_ft": [
+          15,
+          25,
+          35,
+          45,
+          55
+        ]
+      },
+      "value_kind": "quantitative",
+      "text": "Height class midpoints of 2611 public Cercidiphyllum japonicum (cultivar unrecorded) in Vancouver (15/25/35 ft classes, all ages mixed): median class 7.6 m, 10th–90th percentile classes 4.6–13.7 m, highest class 29.0 m.",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "cultivar:(unrecorded); CoV public trees, snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded; height_m is a banded class (15/25/35/45/55 ft midpoints), not a measurement",
+      "confidence": 0.7,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "note": "97% of records sit on the class grid; treat as a class, not a figure. No planting dates in this snapshot, so ages are unknown. max is a single record and may be mis-keyed. 'Unrecorded' means no label in the inventory, not the straight species; never merged into a cultivar group. interpretation (not data): the unrecorded class is larger and thicker than the labelled groups, consistent with older plantings that pre-date cultivar labelling; its 10.7 m established-class median is high for this species and may include mislabelled maples.",
+      "concepts": [
+        "height_class:3-5m",
+        "height_class:5-7m",
+        "height_class:7-10m",
+        "height_class:10-15m"
+      ],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [],
+      "cultivar": "(unrecorded)",
+      "verification_scope": "content"
+    },
+    {
+      "id": "cercidiphyllum-japonicum:local_mature_size:cov05",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "local_mature_size",
+      "value": {
+        "n": 1096,
+        "median": 10.7,
+        "p90": 13.7,
+        "max": 29.0,
+        "unit": "m",
+        "subset": "established (DBH >= 20 cm, proxy)",
+        "threshold_dbh_cm": 20,
+        "measure": "height class midpoint"
+      },
+      "value_kind": "quantitative",
+      "text": "Among the 1096 public Cercidiphyllum japonicum (cultivar unrecorded) in Vancouver counted as established (DBH >= 20 cm, proxy), the median height class midpoint is 10.7 m and the 90th percentile class 13.7 m.",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "cultivar:(unrecorded); CoV public trees, snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded; established (DBH >= 20 cm, proxy) — trees without a planting date, see methods.md M2",
+      "confidence": 0.6,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "note": "proxy, not a measurement of age: confidence below age-cohort claims. Closest this source gets to 'real mature size under local conditions' (survey c2). 'Unrecorded' means no label in the inventory, not the straight species; never merged into a cultivar group. interpretation (not data): the unrecorded class is larger and thicker than the labelled groups, consistent with older plantings that pre-date cultivar labelling; its 10.7 m established-class median is high for this species and may include mislabelled maples.",
+      "concepts": [
+        "height_class:10-15m"
+      ],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [
+        "age:established"
+      ],
+      "cultivar": "(unrecorded)",
+      "verification_scope": "content"
+    },
+    {
+      "id": "cercidiphyllum-japonicum:local_mature_size:cov06",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "local_mature_size",
+      "value": {
+        "n": 2609,
+        "median": 15.2,
+        "p90": 40.6,
+        "max": 480.1,
+        "unit": "cm DBH"
+      },
+      "value_kind": "quantitative",
+      "text": "Trunk diameters (DBH) of 2609 public Cercidiphyllum japonicum (cultivar unrecorded) in Vancouver: median 15.2 cm, 90th percentile 40.6 cm, largest 480.1 cm.",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "cultivar:(unrecorded); CoV public trees, snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "note": "max is a single record and may be mis-keyed. 'Unrecorded' means no label in the inventory, not the straight species; never merged into a cultivar group. interpretation (not data): the unrecorded class is larger and thicker than the labelled groups, consistent with older plantings that pre-date cultivar labelling; its 10.7 m established-class median is high for this species and may include mislabelled maples.",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [],
+      "cultivar": "(unrecorded)",
+      "verification_scope": "content"
+    },
+    {
+      "id": "cercidiphyllum-japonicum:vancouver_context:inat01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "vancouver_context",
+      "value": {
+        "licensed_verifiable_observations": 8,
+        "research_grade": 2,
+        "all_licences": 9,
+        "years": [
+          2021,
+          2026
+        ]
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist holds 8 openly licensed verifiable observations of this plant in Greater Vancouver (2 research grade), recorded 2021–2026.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=133356&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "presence evidence; observation counts reflect observer effort as much as abundance",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:vancouver_context:sv01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "vancouver_context",
+      "value_kind": "qualitative",
+      "value": {
+        "growing_in": "respondent's backyard",
+        "observation": "leaf has a sweet smell"
+      },
+      "text": "It grows in my backyard and it’s leaf has a sweet smell",
+      "source_id": "survey-r06",
+      "source_type": "practitioner",
+      "context": "survey d2 note (observed); respondent's own backyard (municipality not given)",
+      "confidence": 0.85,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "observation",
+      "practitioner_meta": {
+        "basis": "observed",
+        "location": "respondent's own backyard (municipality not given)",
+        "maintenance_received": null,
+        "observer_background": "MLA student and practising landscape designer; studio and professional experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L2",
+        "citable": true,
+        "raw_export_text": "Itgrowsinmybackyardandit’sleafhasasweetsmell",
+        "note": "spaces restored by hand from the export (form bug, M21)"
+      },
+      "survey_question": "d2",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "cercidiphyllum-japonicum:landscape_use:sv02",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "landscape_use",
+      "value_kind": "categorical",
+      "value": [
+        "use:fragrance"
+      ],
+      "text": "Katsura: It grows in my backyard and it’s leaf has a sweet smell",
+      "source_id": "survey-r06",
+      "source_type": "practitioner",
+      "context": "survey d2 note (observed); respondent's own backyard (municipality not given); derived from cercidiphyllum-japonicum:vancouver_context:sv01",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (derived, same source)",
+      "claim_kind": "observation",
+      "derived_from": "cercidiphyllum-japonicum:vancouver_context:sv01",
+      "practitioner_meta": {
+        "basis": "observed",
+        "location": "respondent's own backyard (municipality not given)",
+        "maintenance_received": null,
+        "observer_background": "MLA student and practising landscape designer; studio and professional experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L2",
+        "citable": true
+      },
+      "survey_question": "d2",
+      "value_label": [
+        "Fragrance"
+      ],
+      "note": "scented foliage → KPU use Fragrance",
+      "concepts": [
+        "use:fragrance"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "cercidiphyllum-japonicum:vancouver_context:sv02",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "vancouver_context",
+      "value_kind": "qualitative",
+      "value": {
+        "note": "commonly planted, proved to be suitable, also having its own feature"
+      },
+      "text": "Katsura — Commonly planted, proved to be suitable,also having its own feature.",
+      "source_id": "survey-r07",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "practising landscape designer; personal-garden, professional and studio planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false,
+        "note": "d1 'why' answers carry no basis — stored as selection reasons, never cited as observations (R2)"
+      },
+      "survey_question": "d1",
+      "respondent_role_as_typed": "Tree",
+      "note": "a designer's local-suitability judgement, not a measurement",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "cercidiphyllum-japonicum:mature_height:rhs01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "mature_height",
+      "value": {
+        "min": 12,
+        "unit": "m",
+        "raw": "higher than 12 metres"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Cercidiphyllum japonicum an ultimate height of more than 12 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/3415/cercidiphyllum-japonicum/details",
+      "note": "RHS top size band is open-ended ('higher than 12 metres'); no upper figure given",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:mature_spread:rhs01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "mature_spread",
+      "value": {
+        "min": 8,
+        "unit": "m",
+        "raw": "wider than 8 metres"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Cercidiphyllum japonicum an ultimate spread of more than 8 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/3415/cercidiphyllum-japonicum/details",
+      "note": "RHS top spread band is open-ended ('wider than 8 metres'); no upper figure given",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:time_to_intended_size:rhs01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "time_to_intended_size",
+      "value": {
+        "min": 20,
+        "max": 50,
+        "unit": "years",
+        "measure": "time to ultimate height"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives 20–50 years to reach ultimate height.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/3415/cercidiphyllum-japonicum/details",
+      "note": "the one source with an explicit time-to-size figure (survey c2 gap)",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:hardiness_zone:rhs01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "hardiness_zone",
+      "value": {
+        "rating": "H5",
+        "unit": "RHS",
+        "approx_min_c": -15,
+        "approx_max_c": -10
+      },
+      "value_kind": "quantitative",
+      "text": "RHS rates Cercidiphyllum japonicum hardiness H5 (hardy in most of the UK even in severe winters, about -15 to -10 °C).",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/3415/cercidiphyllum-japonicum/details",
+      "note": "RHS H-scale, not a Canadian or USDA zone; °C band is the RHS definition of H5, not from the plant page",
+      "concepts": [
+        "hardiness_rhs:H5"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:exposure:rhs01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade",
+        "exposure:sheltered"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: full sun or partial shade, any aspect, sheltered position.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/3415/cercidiphyllum-japonicum/details",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade",
+        "Sheltered"
+      ],
+      "concepts": [
+        "exposure:sheltered",
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:soil_type:rhs01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "soil_type",
+      "value": [
+        "soil:well_drained"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: clay, sand or loam; moist but well-drained or well-drained; acid or neutral pH.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/3415/cercidiphyllum-japonicum/details",
+      "note": "RHS soil classes (clay/sand/loam) have no KPU equivalent — only 'Well-drained' mapped; pH 'acid or neutral' not mapped to 'Acidic' because neutral is included",
+      "value_label": [
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:water_drainage:rhs01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "water_drainage",
+      "value": "water:moist",
+      "value_kind": "categorical",
+      "text": "RHS: moist but well-drained or well-drained.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/3415/cercidiphyllum-japonicum/details",
+      "note": "mapping 'moist but well-drained or well-drained' → moist; 'average' would also be defensible",
+      "value_label": "moist",
+      "concepts": [
+        "water:moist"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:seasonal_interest:rhs01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "seasonal_interest",
+      "value": {
+        "foliage_colour": [
+          "Bronze"
+        ],
+        "fall_colour": "yellow, orange and pink",
+        "fruit": "inconspicuous",
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "RHS: leaves bronze-tinted when young, turning yellow, orange and pink in autumn and smelling of burnt sugar; flowers and fruit inconspicuous; deciduous.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/3415/cercidiphyllum-japonicum/details",
+      "note": "foliage_colour records only the young-leaf tint RHS gives (bronze); mature summer colour not stated by RHS. Flower colour not given, so no flower_colour / flowering_months. Autumn leaf scent has no key in the value shape, kept in text",
+      "concepts": [
+        "colour:bronze",
+        "evergreen:no",
+        "fruit:showy",
+        "interest:fall_colour"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:resistances:rhs01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "resistances",
+      "value": [
+        "pest:pest"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS lists Cercidiphyllum japonicum as generally pest-free.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/3415/cercidiphyllum-japonicum/details",
+      "note": "'generally pest-free' recorded positively as a pest resistance (D7); honey fungus susceptibility is a separate claim",
+      "value_label": [
+        "pest"
+      ],
+      "concepts": [
+        "pest:pest"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:pest_susceptibility:rhs01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "pest_susceptibility",
+      "value": [
+        "pest:abiotic_disorder"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: may be susceptible to honey fungus; young leaves may be damaged by late frosts.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/3415/cercidiphyllum-japonicum/details",
+      "note": "late-frost leaf damage → 'Abiotic disorder' (loose); honey fungus has no KPU pseudo-value and is not mapped (same treatment as acer-palmatum:pest_susceptibility:rhs01)",
+      "value_label": [
+        "Abiotic disorder"
+      ],
+      "concepts": [
+        "pest:abiotic_disorder"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:maintenance_level:rhs01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "maintenance_level",
+      "value": "maintenance:low",
+      "value_kind": "categorical",
+      "text": "RHS places the species in pruning group 1 (minimal pruning).",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/3415/cercidiphyllum-japonicum/details",
+      "note": "pruning group 1 → low maintenance is a loose mapping; RHS gives no explicit maintenance rating",
+      "value_label": "low",
+      "concepts": [
+        "maintenance:low"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:landscape_use:rhs01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "landscape_use",
+      "value": [
+        "use:specimen_plant",
+        "use:woodland_margin"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS suggests an architectural planting role and notes the tree is best grown in a woodland setting.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/3415/cercidiphyllum-japonicum/details",
+      "note": "'Architectural' → Specimen plant and 'woodland setting' → Woodland margin are both loose mappings into the KPU list",
+      "value_label": [
+        "Specimen plant",
+        "Woodland margin"
+      ],
+      "concepts": [
+        "use:specimen_plant",
+        "use:woodland_margin"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:hardiness_zone:mobot01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "hardiness_zone",
+      "value": {
+        "min": 4,
+        "max": 8,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden lists Cercidiphyllum japonicum for USDA zones 4 to 8.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710",
+      "citation": "Cercidiphyllum japonicum, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710, Accessed November 2, 2026",
+      "concepts": [
+        "hardiness_usda:z4",
+        "hardiness_usda:z5",
+        "hardiness_usda:z6",
+        "hardiness_usda:z7",
+        "hardiness_usda:z8"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:mature_height:mobot01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "mature_height",
+      "value": {
+        "min": 12.2,
+        "max": 18.3,
+        "unit": "m",
+        "raw": "40–60 ft in cultivation; 100 ft or more in the wild"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden gives a height of 40–60 ft (12.2–18.3 m) in cultivation, 100 ft or more in the wild.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710",
+      "citation": "Cercidiphyllum japonicum, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710, Accessed November 2, 2026",
+      "concepts": [
+        "height_class:10-15m",
+        "height_class:15-22m"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:mature_spread:mobot01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "mature_spread",
+      "value": {
+        "min": 7.6,
+        "max": 18.3,
+        "unit": "m",
+        "raw": "25–60 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden gives a spread of 25–60 ft (7.6–18.3 m).",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710",
+      "citation": "Cercidiphyllum japonicum, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710, Accessed November 2, 2026",
+      "concepts": [
+        "spread_class:7-10m",
+        "spread_class:10-15m",
+        "spread_class:15-25m"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:exposure:mobot01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade",
+        "exposure:sheltered"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: full sun to part shade; best sited with protection from strong winds and hot afternoon sun.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710",
+      "note": "'protected from strong winds and hot afternoon sun' → Sheltered",
+      "citation": "Cercidiphyllum japonicum, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710, Accessed November 2, 2026",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade",
+        "Sheltered"
+      ],
+      "concepts": [
+        "exposure:sheltered",
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:water_drainage:mobot01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "water_drainage",
+      "value": "water:average",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden rates water needs as medium; little drought tolerance, particularly when young.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710",
+      "citation": "Cercidiphyllum japonicum, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710, Accessed November 2, 2026",
+      "value_label": "average",
+      "concepts": [
+        "water:average"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:maintenance_level:mobot01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "maintenance_level",
+      "value": "maintenance:low",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden rates maintenance as low.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710",
+      "citation": "Cercidiphyllum japonicum, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710, Accessed November 2, 2026",
+      "value_label": "low",
+      "concepts": [
+        "maintenance:low"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:soil_type:mobot01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "soil_type",
+      "value": [
+        "soil:humus_rich",
+        "soil:well_drained"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: best in rich, moist, well-drained soils.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710",
+      "note": "'rich' → Humus rich",
+      "citation": "Cercidiphyllum japonicum, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710, Accessed November 2, 2026",
+      "value_label": [
+        "Humus rich",
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:humus_rich",
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:seasonal_interest:mobot01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "seasonal_interest",
+      "value": {
+        "flowering_months": [
+          3,
+          4
+        ],
+        "flower_colour": [
+          "Green",
+          "Red"
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fall_colour": "gold, orange and red",
+        "fruit": "clusters of greenish pods to 2 cm on female trees",
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: insignificant flowers March–April before the leaves, red on male and green on female trees; leaves emerge reddish purple, medium green with a bluish tinge in summer, gold, orange and red in autumn; fallen leaves scented; greenish pods on females.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710",
+      "note": "'March to April' → months 3–4; bloom 'green to reddish-green' → Green, Red (red = male trees, green = female trees); spring flush reddish purple not put in foliage_colour (summer colour used)",
+      "citation": "Cercidiphyllum japonicum, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710, Accessed November 2, 2026",
+      "concepts": [
+        "colour:green",
+        "colour:red",
+        "evergreen:no",
+        "fruit:showy",
+        "interest:fall_colour"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [
+        "month:3",
+        "month:4"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:landscape_use:mobot01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "landscape_use",
+      "value": [
+        "use:shade_tree",
+        "use:specimen_plant",
+        "use:street_boulevard_tree"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: shade tree; small specimen shade tree or street tree.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710",
+      "citation": "Cercidiphyllum japonicum, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710, Accessed November 2, 2026",
+      "value_label": [
+        "Shade tree",
+        "Specimen plant",
+        "Street (boulevard tree)"
+      ],
+      "concepts": [
+        "use:shade_tree",
+        "use:specimen_plant",
+        "use:street_boulevard_tree"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:pest_susceptibility:mobot01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "pest_susceptibility",
+      "value": [
+        "pest:leaf_scorch"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: no serious insect or disease problems; foliage may scorch in hot, dry or windy conditions.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710",
+      "citation": "Cercidiphyllum japonicum, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710, Accessed November 2, 2026",
+      "value_label": [
+        "Leaf scorch"
+      ],
+      "concepts": [
+        "pest:leaf_scorch"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:resistances:mobot01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "resistances",
+      "value": [
+        "stress:clay_soil"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden 'Tolerate' line: clay soil.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710",
+      "note": "'clay soil' is outside the starter resistances list (open list, reported as a note by the validator)",
+      "citation": "Cercidiphyllum japonicum, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710, Accessed November 2, 2026",
+      "value_label": [
+        "clay soil"
+      ],
+      "concepts": [
+        "stress:clay_soil"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:form:mobot01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "form",
+      "value": "form:round",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden describes a dense, rounded habit, single- or multi-trunked.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710",
+      "note": "'rounded habit' in prose → Round; not a structured field on the Plant Finder page",
+      "citation": "Cercidiphyllum japonicum, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710, Accessed November 2, 2026",
+      "value_label": "Round",
+      "concepts": [
+        "form:round"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:habit:mobot01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "habit",
+      "value": "habit:dense",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden describes a dense, rounded habit.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710",
+      "note": "'dense' in prose → Dense; not a structured field on the Plant Finder page",
+      "citation": "Cercidiphyllum japonicum, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710, Accessed November 2, 2026",
+      "value_label": "Dense",
+      "concepts": [
+        "habit:dense"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:long_term_performance:mobot01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "long_term_performance",
+      "value": {
+        "observation": "little drought tolerance, particularly when young; foliage scorches in hot, dry or windy sites; understory tree in the wild"
+      },
+      "value_kind": "qualitative",
+      "text": "Missouri Botanical Garden: little drought tolerance especially when young, leaf scorch in hot, dry or windy sites; an understory tree in the wild.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710",
+      "note": "relevant to Vancouver summer drought and exposed sites",
+      "citation": "Cercidiphyllum japonicum, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=j710, Accessed November 2, 2026",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:mature_height:gpp01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "mature_height",
+      "value": {
+        "height_m": 18.29,
+        "unit": "m",
+        "raw": "60 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Great Plant Picks gives a mature height of 60 ft (18.3 m).",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/331",
+      "concepts": [
+        "height_class:15-22m"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:mature_spread:gpp01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "mature_spread",
+      "value": {
+        "spread_m": 15.24,
+        "unit": "m",
+        "raw": "50 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Great Plant Picks gives a mature width of 50 ft (15.2 m).",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/331",
+      "concepts": [
+        "spread_class:15-25m"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:time_to_intended_size:gpp01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "time_to_intended_size",
+      "value": {
+        "years": 10,
+        "height_m": 7.62,
+        "spread_m": 4.57,
+        "unit": "m at 10 years"
+      },
+      "value_kind": "quantitative",
+      "text": "Great Plant Picks gives a 10-year size of 25 ft tall by 15 ft wide (7.6 × 4.6 m).",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/331",
+      "note": "10-year size is a direct answer to survey c2 'time to reach intended size'",
+      "concepts": [
+        "age:establishing"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:hardiness_zone:gpp01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "hardiness_zone",
+      "value": {
+        "min": 4,
+        "max": 8,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Great Plant Picks lists Cercidiphyllum japonicum for USDA zones 4 to 8.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/331",
+      "concepts": [
+        "hardiness_usda:z4",
+        "hardiness_usda:z5",
+        "hardiness_usda:z6",
+        "hardiness_usda:z7",
+        "hardiness_usda:z8"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:exposure:gpp01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: full sun or light to open shade; protection from hot afternoon sun where summers are hot.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/331",
+      "note": "GPP 'light shade' (4–6 h sun) → Part sun/part shade; 'open shade' (bright, no direct sun) → Filtered shade, loose",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade",
+        "Filtered shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:water_drainage:gpp01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "water_drainage",
+      "value": "water:average",
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: regular watering; appreciates summer watering in dry spells, especially in full sun or poor soils.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/331",
+      "note": "'regular watering' mapped to average",
+      "value_label": "average",
+      "concepts": [
+        "water:average"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:soil_type:gpp01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "soil_type",
+      "value": [
+        "soil:humus_rich",
+        "soil:well_drained"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: grows best in rich, well-drained soil.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/331",
+      "note": "'rich' → Humus rich",
+      "value_label": [
+        "Humus rich",
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:humus_rich",
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:seasonal_interest:gpp01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "seasonal_interest",
+      "value": {
+        "foliage_colour": [
+          "Green"
+        ],
+        "fall_colour": "bright butter-yellow with orange and apricot tones",
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: new leaves reddish-purple, blue-green through summer, butter-yellow with orange and apricot in autumn; fallen leaves scented of strawberries and cotton candy; seasonal interest listed as autumn foliage colour.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/331",
+      "note": "'blue-green' → Green; spring flush reddish-purple kept in text only; autumn leaf scent has no key in the value shape",
+      "concepts": [
+        "colour:green",
+        "evergreen:no",
+        "interest:fall_colour"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:resistances:gpp01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "resistances",
+      "value": [
+        "browsing:deer"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks lists the species as resistant to deer.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/331",
+      "value_label": [
+        "deer"
+      ],
+      "concepts": [
+        "browsing:deer"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:landscape_use:gpp01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "landscape_use",
+      "value": [
+        "use:fall_interest"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks lists seasonal interest as autumn foliage colour and describes it as an easy tree to garden under.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/331",
+      "note": "GPP has no explicit uses line; 'autumn foliage color' → Fall interest",
+      "value_label": [
+        "Fall interest"
+      ],
+      "concepts": [
+        "use:fall_interest"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:behaviour_with_others:gpp01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "behaviour_with_others",
+      "value": {
+        "root_behaviour": "not aggressive",
+        "underplanting": "easy to garden under"
+      },
+      "value_kind": "qualitative",
+      "text": "Great Plant Picks: roots are not aggressive and the tree is easy to garden under.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/331",
+      "note": "no companion species named; pointer for the relations layer (underplanting-friendly canopy)",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:long_term_performance:gpp01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "long_term_performance",
+      "value": {
+        "observation": "needs regular summer watering during dry spells, especially in full sun or less than ideal soils; fall colour and growth best in full sun or light shade"
+      },
+      "value_kind": "qualitative",
+      "text": "Great Plant Picks: regular summer watering in dry spells is needed, more so in full sun or poor soils; best colour and growth in full sun to light shade.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/331",
+      "note": "PNW source; directly relevant to Vancouver summer drought",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:mature_height:osu01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "mature_height",
+      "value": {
+        "min": 12,
+        "max": 18,
+        "occasional_max_m": 30,
+        "unit": "m",
+        "raw": "40-60(100) ft [12-18(30) m]"
+      },
+      "value_kind": "quantitative",
+      "text": "Oregon State University gives a height of 40–60 ft (12–18 m), occasionally 100 ft (30 m).",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cercidiphyllum-japonicum",
+      "concepts": [
+        "height_class:10-15m",
+        "height_class:15-22m"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:hardiness_zone:osu01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "hardiness_zone",
+      "value": {
+        "usda_min": 4,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Oregon State University: hardy to USDA zone 4.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cercidiphyllum-japonicum",
+      "concepts": [
+        "hardiness_usda:z4",
+        "hardiness_usda:z5",
+        "hardiness_usda:z6",
+        "hardiness_usda:z7",
+        "hardiness_usda:z8",
+        "hardiness_usda:z9",
+        "hardiness_usda:z10",
+        "hardiness_usda:z11"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:form:osu01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "form",
+      "value": "form:pyramidal_widely",
+      "value_kind": "categorical",
+      "text": "Oregon State University describes the tree as pyramidal when young.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species, young trees; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cercidiphyllum-japonicum",
+      "note": "OSU says only 'pyramidal when young'; narrow vs. wide not stated — 'Pyramidal - widely' chosen as the looser fit, 'Pyramidal - narrowly' equally possible; mature form not given by OSU (MOBOT says rounded)",
+      "value_label": "Pyramidal - widely",
+      "concepts": [
+        "form:pyramidal_widely"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:habit:osu01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "habit",
+      "value": "habit:arching",
+      "value_kind": "categorical",
+      "text": "Oregon State University: leaves neatly paired along arching branches.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cercidiphyllum-japonicum",
+      "note": "'arching branches' → Arching; habit read from the leaf description, not a structured field",
+      "value_label": "Arching",
+      "concepts": [
+        "habit:arching"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:exposure:osu01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: sun, but probably best in light shade.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cercidiphyllum-japonicum",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:soil_type:osu01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "soil_type",
+      "value": [
+        "soil:well_drained"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: moist, well-drained soil, pH adaptable, supposedly better fall colour on acid soils.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cercidiphyllum-japonicum",
+      "note": "'pH adaptable' so 'Acidic' not mapped even though acid soils are said to improve fall colour",
+      "value_label": [
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:water_drainage:osu01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "water_drainage",
+      "value": "water:moist",
+      "value_kind": "categorical",
+      "text": "Oregon State University: grows best in moist, well-drained soil and needs supplemental watering.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cercidiphyllum-japonicum",
+      "note": "'moist well-drained' + 'needs supplemental watering' → moist; 'average' also defensible",
+      "value_label": "moist",
+      "concepts": [
+        "water:moist"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:seasonal_interest:osu01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "seasonal_interest",
+      "value": {
+        "foliage_colour": [
+          "Green"
+        ],
+        "fall_colour": "soft apricot-orange, not spectacular in Corvallis",
+        "fruit": "small narrow pod 2.5 cm",
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "Oregon State University: leaves purplish tan when unfolding then bluish-green; apricot-orange fall colour that is not spectacular in Corvallis; male flowers in spring before the leaves, female flowers as leaves expand, neither showy; small narrow pods.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cercidiphyllum-japonicum",
+      "note": "'bluish-green' → Green; flower colour and months not given, so no flower_colour / flowering_months; spring flush purplish tan kept in text",
+      "concepts": [
+        "colour:green",
+        "evergreen:no",
+        "fruit:showy",
+        "interest:fall_colour"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:pest_susceptibility:osu01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "pest_susceptibility",
+      "value": [
+        "pest:abiotic_disorder"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: bark splitting and sun scald may occur; deformed young leaves in spring attributed to night frosts.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cercidiphyllum-japonicum",
+      "note": "bark splitting, sun scald and frost-deformed leaves → 'Abiotic disorder' (loose); no insect or disease listed",
+      "value_label": [
+        "Abiotic disorder"
+      ],
+      "concepts": [
+        "pest:abiotic_disorder"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:long_term_performance:osu01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "long_term_performance",
+      "value": {
+        "observation": "fall colour not spectacular in Corvallis; deformed young leaves for a period each spring, night frosts suspected; bark splitting and sun scald may occur"
+      },
+      "value_kind": "qualitative",
+      "text": "Oregon State University, Corvallis observations: fall colour underwhelming, young leaves deformed by spring frosts, bark splitting and sun scald possible.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cercidiphyllum-japonicum",
+      "note": "campus observation in a PNW climate close to Vancouver's; contrasts with the 'brilliant' fall colour claimed by GPP and MOBOT",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:invasive_status:iscbc01",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "invasive_status",
+      "value": "invasive:not_listed",
+      "value_kind": "categorical",
+      "text": "Cercidiphyllum japonicum is not among the plant profiles on the Invasive Species Council of BC list (checked 2026-11-02); site searches for 'katsura' and 'Cercidiphyllum' return nothing.",
+      "source_id": "iscbc",
+      "source_type": "municipal",
+      "context": "BC; ISCBC online species profiles only",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://bcinvasives.ca/take-action/identify/",
+      "note": "BC Weed Control Act schedules and the Field Guide to Noxious Weeds were not checked page by page",
+      "value_label": "not_listed",
+      "concepts": [
+        "invasive:not_listed"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cercidiphyllum-japonicum:vancouver_context:sv03",
+      "plant": "cercidiphyllum-japonicum",
+      "field": "vancouver_context",
+      "value_kind": "qualitative",
+      "value": {
+        "selection_reason": "leaf appearance — how the heart-shaped leaves are held on the stem",
+        "nature": "personal aesthetic preference"
+      },
+      "text": "Cercidiphyllum japonicum — The heart-shaped leaves are held on the stem in the most graceful way I've ever seen.",
+      "source_id": "survey-r15",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-13",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-14.csv)",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "practising landscape designer; professional, personal-garden and studio planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false,
+        "note": "d1 'why' answers carry no basis — stored as selection reasons, never cited as observations (R2)"
+      },
+      "survey_question": "d1",
+      "respondent_role_as_typed": "Tree",
+      "verification_scope": "statement",
+      "note": "a designer's personal aesthetic reason for choosing the plant (follows the survey-r07 precedent for aesthetic reasons). NOT a verified leaf trait, NOT a form/habit value, and NOT evidence for any spatial function (Screen, opacity). Stored as selection_reason, L0, not citable.",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    }
+  ]
+}

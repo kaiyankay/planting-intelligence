@@ -1,0 +1,1162 @@
+{
+  "updated": "2026-11-02",
+  "note": "Pairwise facts live here, not inside plant files. Same claim rules apply (source, context, confidence, status). Model placeholders are retired when a sourced relation covers the same pair and type (R10/M10); the rest keep verify_against and list the sourced claims that bear on them (supporting_claims). co_listed relations are written by tools/survey_to_claims.py from survey d1 lists (direct relation, co-mention only).",
+  "relations": [
+    {
+      "id": "rel:vaccinium-ovatum:gaultheria-shallon:01",
+      "plant_a": "vaccinium-ovatum",
+      "plant_b": "gaultheria-shallon",
+      "relation_type": "co_listed",
+      "direction": "mutual",
+      "text": "A practising designer listed Vaccinium ovatum and Gaultheria shallon together in a five-plant list for Metro Vancouver, both as evergreen natives.",
+      "source_id": "survey-r03",
+      "source_type": "practitioner",
+      "context": "survey d1, same respondent list (with Gaillardia aristata, Eriophyllum lanatum, Campanula rotundifolia)",
+      "confidence": 0.5,
+      "status": "verified",
+      "recorded_at": "2026-10-30",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "MLA student and practising landscape designer; studio, professional and personal-garden experience"
+      },
+      "note": "co-listing is weak evidence of compatibility — it records that a designer thinks of them together, nothing more",
+      "verification_scope": "statement"
+    },
+    {
+      "id": "rel:vaccinium-ovatum:gaultheria-shallon:m1",
+      "plant_a": "vaccinium-ovatum",
+      "plant_b": "gaultheria-shallon",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "Vaccinium ovatum and Gaultheria shallon co-occur naturally in coastal PNW conifer understory and are commonly planted together as an evergreen native shrub layer (model placeholder, unverified).",
+      "source_id": "model",
+      "source_type": "model",
+      "context": "PNW coastal forest understory",
+      "confidence": 0.45,
+      "status": "retired",
+      "recorded_at": "2026-10-30",
+      "verify_against": [
+        "pojar",
+        "gpp",
+        "growgreen"
+      ],
+      "retired_by": "rel:vaccinium-ovatum:gaultheria-shallon:02",
+      "retired_at": "2026-10-29"
+    },
+    {
+      "id": "rel:vaccinium-ovatum:gaultheria-shallon:02",
+      "plant_a": "vaccinium-ovatum",
+      "plant_b": "gaultheria-shallon",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC places both Vaccinium ovatum and Gaultheria shallon in coastal lowland to montane forest of the Coastal Western Hemlock zone — the same habitat classes, so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: overlapping habitat classes on the two atlas pages (forest, lowland, montane, coastal; modal zone CWH); the source does not state the association itself",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5, derived)",
+      "derived_from": [
+        "vaccinium-ovatum:vancouver_context:eflora01",
+        "gaultheria-shallon:vancouver_context:eflora01"
+      ],
+      "source_url": [
+        "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Vaccinium%20ovatum",
+        "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Gaultheria%20shallon"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-10-29]",
+      "accessed": "2026-10-29",
+      "note": "habitat co-occurrence, not a planting-design recommendation; the model placeholder m1 says the same from general knowledge and is retired by this claim",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:gaultheria-shallon:vaccinium-ovatum:m2",
+      "plant_a": "gaultheria-shallon",
+      "plant_b": "vaccinium-ovatum",
+      "relation_type": "competes",
+      "direction": "a_to_b",
+      "text": "Once established, Gaultheria shallon can spread into and under Vaccinium ovatum; the huckleberry usually holds its own because it is taller, but smaller plantings can be overrun (model placeholder, unverified).",
+      "source_id": "model",
+      "source_type": "model",
+      "context": "designed plantings, shade",
+      "confidence": 0.35,
+      "status": "unverified",
+      "recorded_at": "2026-10-30",
+      "verify_against": [
+        "practitioner",
+        "pojar"
+      ],
+      "note": "most valuable relation to confirm with a practitioner. Sourced claims now establish the mechanism (suckering/rhizomatous, forms thickets — RHS, OSU, USDA) but no source states the effect on huckleberry specifically.",
+      "supporting_claims": [
+        "gaultheria-shallon:behaviour_with_others:rhs01",
+        "gaultheria-shallon:behaviour_with_others:osu01",
+        "gaultheria-shallon:behaviour_with_others:usda01",
+        "gaultheria-shallon:growth_rate:usdaplants01"
+      ]
+    },
+    {
+      "id": "rel:acer-palmatum:gaultheria-shallon:m1",
+      "plant_a": "acer-palmatum",
+      "plant_b": "gaultheria-shallon",
+      "relation_type": "layered_under",
+      "direction": "b_to_a",
+      "text": "Gaultheria shallon is often used as an evergreen groundcover beneath Acer palmatum; both accept filtered shade and acidic soil (model placeholder, unverified).",
+      "source_id": "model",
+      "source_type": "model",
+      "context": "designed gardens, PNW",
+      "confidence": 0.4,
+      "status": "unverified",
+      "recorded_at": "2026-10-30",
+      "verify_against": [
+        "gpp",
+        "practitioner"
+      ],
+      "supporting_claims": [
+        "acer-palmatum:landscape_use:mobot01",
+        "gaultheria-shallon:exposure:rhs01",
+        "gaultheria-shallon:exposure:eflora01",
+        "acer-palmatum:soil_type:mobot01",
+        "gaultheria-shallon:soil_type:osu01"
+      ],
+      "note": "mechanism supported piecewise (MOBOT: maple as sun-dappled understory/woodland-margin tree; RHS/E-Flora: salal in shade; both on acidic soil) but no source describes the pairing — stays a placeholder"
+    },
+    {
+      "id": "rel:acer-palmatum:vaccinium-ovatum:m1",
+      "plant_a": "acer-palmatum",
+      "plant_b": "vaccinium-ovatum",
+      "relation_type": "layered_under",
+      "direction": "b_to_a",
+      "text": "Vaccinium ovatum can form the shrub layer under a small Acer palmatum canopy; the maple's shallow roots and the huckleberry's slow establishment both argue for planting the shrub first (model placeholder, unverified).",
+      "source_id": "model",
+      "source_type": "model",
+      "context": "designed gardens, PNW",
+      "confidence": 0.35,
+      "status": "unverified",
+      "recorded_at": "2026-10-30",
+      "verify_against": [
+        "gpp",
+        "practitioner"
+      ],
+      "supporting_claims": [
+        "acer-palmatum:landscape_use:mobot01",
+        "vaccinium-ovatum:exposure:gpp01",
+        "vaccinium-ovatum:growth_rate:usdaplants01",
+        "vaccinium-ovatum:time_to_intended_size:rhs01"
+      ],
+      "note": "huckleberry's slow establishment now sourced (USDA slow; RHS 10–20 yr); shade tolerance sourced (GPP); the pairing itself is not — stays a placeholder"
+    },
+    {
+      "id": "rel:acer-palmatum:cornus-nuttallii:01",
+      "plant_a": "acer-palmatum",
+      "plant_b": "cornus-nuttallii",
+      "relation_type": "co_listed",
+      "direction": "mutual",
+      "text": "A landscape designer listed Acer palmatum and Cornus nuttallii together in a 5-plant list for Metro Vancouver.",
+      "source_id": "survey-r01",
+      "source_type": "practitioner",
+      "context": "survey d1, same respondent list (with Salmon berry, 拉布拉多tee, Nootka rose)",
+      "confidence": 0.5,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "landscape designer; studio/academic planting experience"
+      },
+      "note": "co-listing is weak evidence of compatibility — it records that a designer thinks of them together, nothing more (brief 2026-11-02 §02)",
+      "verification_scope": "statement"
+    },
+    {
+      "id": "rel:gaillardia-aristata:gaultheria-shallon:01",
+      "plant_a": "gaillardia-aristata",
+      "plant_b": "gaultheria-shallon",
+      "relation_type": "co_listed",
+      "direction": "mutual",
+      "text": "A MLA student and practising landscape designer listed Gaillardia aristata and Gaultheria shallon together in a 5-plant list for Metro Vancouver.",
+      "source_id": "survey-r03",
+      "source_type": "practitioner",
+      "context": "survey d1, same respondent list (with Vaccinium ovatum, Eriophyllum lanatum, Campanula rotundifolia)",
+      "confidence": 0.5,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "MLA student and practising landscape designer; studio, professional and personal-garden experience"
+      },
+      "note": "co-listing is weak evidence of compatibility — it records that a designer thinks of them together, nothing more (brief 2026-11-02 §02)",
+      "verification_scope": "statement"
+    },
+    {
+      "id": "rel:gaillardia-aristata:vaccinium-ovatum:01",
+      "plant_a": "gaillardia-aristata",
+      "plant_b": "vaccinium-ovatum",
+      "relation_type": "co_listed",
+      "direction": "mutual",
+      "text": "A MLA student and practising landscape designer listed Gaillardia aristata and Vaccinium ovatum together in a 5-plant list for Metro Vancouver.",
+      "source_id": "survey-r03",
+      "source_type": "practitioner",
+      "context": "survey d1, same respondent list (with Gaultheria shallon, Eriophyllum lanatum, Campanula rotundifolia)",
+      "confidence": 0.5,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "MLA student and practising landscape designer; studio, professional and personal-garden experience"
+      },
+      "note": "co-listing is weak evidence of compatibility — it records that a designer thinks of them together, nothing more (brief 2026-11-02 §02)",
+      "verification_scope": "statement"
+    },
+    {
+      "id": "rel:cercidiphyllum-japonicum:polystichum-munitum:01",
+      "plant_a": "cercidiphyllum-japonicum",
+      "plant_b": "polystichum-munitum",
+      "relation_type": "co_listed",
+      "direction": "mutual",
+      "text": "A MLA student and practising landscape designer listed Cercidiphyllum japonicum and Polystichum munitum together in a 3-plant list for Metro Vancouver.",
+      "source_id": "survey-r06",
+      "source_type": "practitioner",
+      "context": "survey d1, same respondent list (with Kinnikinnicks)",
+      "confidence": 0.5,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "MLA student and practising landscape designer; studio and professional experience"
+      },
+      "note": "co-listing is weak evidence of compatibility — it records that a designer thinks of them together, nothing more (brief 2026-11-02 §02)",
+      "verification_scope": "statement"
+    },
+    {
+      "id": "rel:arctostaphylos-uva-ursi:polystichum-munitum:01",
+      "plant_a": "arctostaphylos-uva-ursi",
+      "plant_b": "polystichum-munitum",
+      "relation_type": "co_listed",
+      "direction": "mutual",
+      "text": "A MLA student and practising landscape designer listed Arctostaphylos uva-ursi and Polystichum munitum together in a 3-plant list for Metro Vancouver.",
+      "source_id": "survey-r06",
+      "source_type": "practitioner",
+      "context": "survey d1, same respondent list (with Katsura)",
+      "confidence": 0.5,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "MLA student and practising landscape designer; studio and professional experience"
+      },
+      "note": "co-listing is weak evidence of compatibility — it records that a designer thinks of them together, nothing more (brief 2026-11-02 §02)",
+      "verification_scope": "statement"
+    },
+    {
+      "id": "rel:arctostaphylos-uva-ursi:cercidiphyllum-japonicum:01",
+      "plant_a": "arctostaphylos-uva-ursi",
+      "plant_b": "cercidiphyllum-japonicum",
+      "relation_type": "co_listed",
+      "direction": "mutual",
+      "text": "A MLA student and practising landscape designer listed Arctostaphylos uva-ursi and Cercidiphyllum japonicum together in a 3-plant list for Metro Vancouver.",
+      "source_id": "survey-r06",
+      "source_type": "practitioner",
+      "context": "survey d1, same respondent list (with Western Sword Fern)",
+      "confidence": 0.5,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "MLA student and practising landscape designer; studio and professional experience"
+      },
+      "note": "co-listing is weak evidence of compatibility — it records that a designer thinks of them together, nothing more (brief 2026-11-02 §02)",
+      "verification_scope": "statement"
+    },
+    {
+      "id": "rel:cercidiphyllum-japonicum:cornus-nuttallii:01",
+      "plant_a": "cercidiphyllum-japonicum",
+      "plant_b": "cornus-nuttallii",
+      "relation_type": "co_listed",
+      "direction": "mutual",
+      "text": "A practising landscape designer listed Cercidiphyllum japonicum and Cornus nuttallii together in a 5-plant list for Metro Vancouver.",
+      "source_id": "survey-r07",
+      "source_type": "practitioner",
+      "context": "survey d1, same respondent list (with Douglas fir, Salal, Kinnikinnick)",
+      "confidence": 0.5,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "practising landscape designer; personal-garden, professional and studio planting experience"
+      },
+      "note": "co-listing is weak evidence of compatibility — it records that a designer thinks of them together, nothing more (brief 2026-11-02 §02)",
+      "verification_scope": "statement"
+    },
+    {
+      "id": "rel:cercidiphyllum-japonicum:gaultheria-shallon:01",
+      "plant_a": "cercidiphyllum-japonicum",
+      "plant_b": "gaultheria-shallon",
+      "relation_type": "co_listed",
+      "direction": "mutual",
+      "text": "A practising landscape designer listed Cercidiphyllum japonicum and Gaultheria shallon together in a 5-plant list for Metro Vancouver.",
+      "source_id": "survey-r07",
+      "source_type": "practitioner",
+      "context": "survey d1, same respondent list (with Douglas fir, Pacific Dogwood, Kinnikinnick)",
+      "confidence": 0.5,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "practising landscape designer; personal-garden, professional and studio planting experience"
+      },
+      "note": "co-listing is weak evidence of compatibility — it records that a designer thinks of them together, nothing more (brief 2026-11-02 §02)",
+      "verification_scope": "statement"
+    },
+    {
+      "id": "rel:arctostaphylos-uva-ursi:cercidiphyllum-japonicum:02",
+      "plant_a": "arctostaphylos-uva-ursi",
+      "plant_b": "cercidiphyllum-japonicum",
+      "relation_type": "co_listed",
+      "direction": "mutual",
+      "text": "A practising landscape designer listed Arctostaphylos uva-ursi and Cercidiphyllum japonicum together in a 5-plant list for Metro Vancouver.",
+      "source_id": "survey-r07",
+      "source_type": "practitioner",
+      "context": "survey d1, same respondent list (with Douglas fir, Pacific Dogwood, Salal)",
+      "confidence": 0.5,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "practising landscape designer; personal-garden, professional and studio planting experience"
+      },
+      "note": "co-listing is weak evidence of compatibility — it records that a designer thinks of them together, nothing more (brief 2026-11-02 §02)",
+      "verification_scope": "statement"
+    },
+    {
+      "id": "rel:cornus-nuttallii:gaultheria-shallon:01",
+      "plant_a": "cornus-nuttallii",
+      "plant_b": "gaultheria-shallon",
+      "relation_type": "co_listed",
+      "direction": "mutual",
+      "text": "A practising landscape designer listed Cornus nuttallii and Gaultheria shallon together in a 5-plant list for Metro Vancouver.",
+      "source_id": "survey-r07",
+      "source_type": "practitioner",
+      "context": "survey d1, same respondent list (with Katsura, Douglas fir, Kinnikinnick)",
+      "confidence": 0.5,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "practising landscape designer; personal-garden, professional and studio planting experience"
+      },
+      "note": "co-listing is weak evidence of compatibility — it records that a designer thinks of them together, nothing more (brief 2026-11-02 §02)",
+      "verification_scope": "statement"
+    },
+    {
+      "id": "rel:arctostaphylos-uva-ursi:cornus-nuttallii:01",
+      "plant_a": "arctostaphylos-uva-ursi",
+      "plant_b": "cornus-nuttallii",
+      "relation_type": "co_listed",
+      "direction": "mutual",
+      "text": "A practising landscape designer listed Arctostaphylos uva-ursi and Cornus nuttallii together in a 5-plant list for Metro Vancouver.",
+      "source_id": "survey-r07",
+      "source_type": "practitioner",
+      "context": "survey d1, same respondent list (with Katsura, Douglas fir, Salal)",
+      "confidence": 0.5,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "practising landscape designer; personal-garden, professional and studio planting experience"
+      },
+      "note": "co-listing is weak evidence of compatibility — it records that a designer thinks of them together, nothing more (brief 2026-11-02 §02)",
+      "verification_scope": "statement"
+    },
+    {
+      "id": "rel:arctostaphylos-uva-ursi:gaultheria-shallon:01",
+      "plant_a": "arctostaphylos-uva-ursi",
+      "plant_b": "gaultheria-shallon",
+      "relation_type": "co_listed",
+      "direction": "mutual",
+      "text": "A practising landscape designer listed Arctostaphylos uva-ursi and Gaultheria shallon together in a 5-plant list for Metro Vancouver.",
+      "source_id": "survey-r07",
+      "source_type": "practitioner",
+      "context": "survey d1, same respondent list (with Katsura, Douglas fir, Pacific Dogwood)",
+      "confidence": 0.5,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "practising landscape designer; personal-garden, professional and studio planting experience"
+      },
+      "note": "co-listing is weak evidence of compatibility — it records that a designer thinks of them together, nothing more (brief 2026-11-02 §02)",
+      "verification_scope": "statement"
+    },
+    {
+      "id": "rel:achillea-millefolium:polystichum-munitum:01",
+      "plant_a": "achillea-millefolium",
+      "plant_b": "polystichum-munitum",
+      "relation_type": "co_listed",
+      "direction": "mutual",
+      "text": "A MLA student listed Achillea millefolium and Polystichum munitum together in a 5-plant list for Metro Vancouver.",
+      "source_id": "survey-r08",
+      "source_type": "practitioner",
+      "context": "survey d1, same respondent list (with Cherry blossom, Mountain ash, Helleborus)",
+      "confidence": 0.5,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "MLA student; studio and personal-garden planting experience"
+      },
+      "note": "co-listing is weak evidence of compatibility — it records that a designer thinks of them together, nothing more (brief 2026-11-02 §02)",
+      "verification_scope": "statement"
+    },
+    {
+      "id": "rel:cornus-sericea:polystichum-munitum:01",
+      "plant_a": "cornus-sericea",
+      "plant_b": "polystichum-munitum",
+      "relation_type": "co_listed",
+      "direction": "mutual",
+      "text": "A MLA student listed Cornus sericea and Polystichum munitum together in a 5-plant list for Metro Vancouver.",
+      "source_id": "survey-r10",
+      "source_type": "practitioner",
+      "context": "survey d1, same respondent list (with Metasequoia glyptostroibodes, Deer fern, Stewart’s pseudocamelia)",
+      "confidence": 0.5,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "MLA student; former professional gardener; studio, personal-garden and professional planting experience"
+      },
+      "note": "co-listing is weak evidence of compatibility — it records that a designer thinks of them together, nothing more (brief 2026-11-02 §02)",
+      "verification_scope": "statement"
+    },
+    {
+      "id": "rel:polystichum-munitum:vaccinium-ovatum:01",
+      "plant_a": "polystichum-munitum",
+      "plant_b": "vaccinium-ovatum",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "gpp names Vaccinium ovatum as a companion / partner plant for Polystichum munitum.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "Great Plant Combinations",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/merge_t5.py (companions_named)",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "note": "a source naming two plants together is a design suggestion by that source, not an observed interaction"
+    },
+    {
+      "id": "rel:arctostaphylos-uva-ursi:cornus-nuttallii:02",
+      "plant_a": "arctostaphylos-uva-ursi",
+      "plant_b": "cornus-nuttallii",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Arctostaphylos uva-ursi and Cornus nuttallii in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest) and the CWH zone on the two atlas pages (minimum elevations 6 m and 0 m, province-wide means 1129 m and 194 m; modal zones IDF / CWH — a modal zone other than CWH/CDF means the plant is marginal in the coastal zone); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "arctostaphylos-uva-ursi:vancouver_context:eflora01",
+        "cornus-nuttallii:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:arctostaphylos-uva-ursi:cornus-sericea:01",
+      "plant_a": "arctostaphylos-uva-ursi",
+      "plant_b": "cornus-sericea",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Arctostaphylos uva-ursi and Cornus sericea in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest) and the CWH zone on the two atlas pages (minimum elevations 6 m and 0 m, province-wide means 1129 m and 759 m; modal zones IDF / SBS — a modal zone other than CWH/CDF means the plant is marginal in the coastal zone); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "arctostaphylos-uva-ursi:vancouver_context:eflora01",
+        "cornus-sericea:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:arctostaphylos-uva-ursi:gaultheria-shallon:02",
+      "plant_a": "arctostaphylos-uva-ursi",
+      "plant_b": "gaultheria-shallon",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Arctostaphylos uva-ursi and Gaultheria shallon in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest) and the CWH zone on the two atlas pages (minimum elevations 6 m and 0 m, province-wide means 1129 m and 219 m; modal zones IDF / CWH — a modal zone other than CWH/CDF means the plant is marginal in the coastal zone); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "arctostaphylos-uva-ursi:vancouver_context:eflora01",
+        "gaultheria-shallon:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:arctostaphylos-uva-ursi:polystichum-munitum:02",
+      "plant_a": "arctostaphylos-uva-ursi",
+      "plant_b": "polystichum-munitum",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Arctostaphylos uva-ursi and Polystichum munitum in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest) and the CWH zone on the two atlas pages (minimum elevations 6 m and 0 m, province-wide means 1129 m and 229 m; modal zones IDF / CWH — a modal zone other than CWH/CDF means the plant is marginal in the coastal zone); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "arctostaphylos-uva-ursi:vancouver_context:eflora01",
+        "polystichum-munitum:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:arctostaphylos-uva-ursi:vaccinium-ovatum:01",
+      "plant_a": "arctostaphylos-uva-ursi",
+      "plant_b": "vaccinium-ovatum",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Arctostaphylos uva-ursi and Vaccinium ovatum in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest) and the CWH zone on the two atlas pages (minimum elevations 6 m and 2 m, province-wide means 1129 m and 185 m; modal zones IDF / CWH — a modal zone other than CWH/CDF means the plant is marginal in the coastal zone); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "arctostaphylos-uva-ursi:vancouver_context:eflora01",
+        "vaccinium-ovatum:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:cornus-nuttallii:cornus-sericea:01",
+      "plant_a": "cornus-nuttallii",
+      "plant_b": "cornus-sericea",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Cornus nuttallii and Cornus sericea in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest) and the CWH zone on the two atlas pages (minimum elevations 0 m and 0 m, province-wide means 194 m and 759 m; modal zones CWH / SBS — a modal zone other than CWH/CDF means the plant is marginal in the coastal zone); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "cornus-nuttallii:vancouver_context:eflora01",
+        "cornus-sericea:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:cornus-nuttallii:gaultheria-shallon:02",
+      "plant_a": "cornus-nuttallii",
+      "plant_b": "gaultheria-shallon",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Cornus nuttallii and Gaultheria shallon in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest) and the CWH zone on the two atlas pages (minimum elevations 0 m and 0 m, province-wide means 194 m and 219 m; modal zones CWH / CWH); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "cornus-nuttallii:vancouver_context:eflora01",
+        "gaultheria-shallon:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:cornus-nuttallii:polystichum-munitum:01",
+      "plant_a": "cornus-nuttallii",
+      "plant_b": "polystichum-munitum",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Cornus nuttallii and Polystichum munitum in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest) and the CWH zone on the two atlas pages (minimum elevations 0 m and 0 m, province-wide means 194 m and 229 m; modal zones CWH / CWH); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "cornus-nuttallii:vancouver_context:eflora01",
+        "polystichum-munitum:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:cornus-nuttallii:vaccinium-ovatum:01",
+      "plant_a": "cornus-nuttallii",
+      "plant_b": "vaccinium-ovatum",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Cornus nuttallii and Vaccinium ovatum in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest) and the CWH zone on the two atlas pages (minimum elevations 0 m and 2 m, province-wide means 194 m and 185 m; modal zones CWH / CWH); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "cornus-nuttallii:vancouver_context:eflora01",
+        "vaccinium-ovatum:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:cornus-sericea:gaultheria-shallon:01",
+      "plant_a": "cornus-sericea",
+      "plant_b": "gaultheria-shallon",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Cornus sericea and Gaultheria shallon in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest) and the CWH zone on the two atlas pages (minimum elevations 0 m and 0 m, province-wide means 759 m and 219 m; modal zones SBS / CWH — a modal zone other than CWH/CDF means the plant is marginal in the coastal zone); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "cornus-sericea:vancouver_context:eflora01",
+        "gaultheria-shallon:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:cornus-sericea:polystichum-munitum:02",
+      "plant_a": "cornus-sericea",
+      "plant_b": "polystichum-munitum",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Cornus sericea and Polystichum munitum in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest) and the CWH zone on the two atlas pages (minimum elevations 0 m and 0 m, province-wide means 759 m and 229 m; modal zones SBS / CWH — a modal zone other than CWH/CDF means the plant is marginal in the coastal zone); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "cornus-sericea:vancouver_context:eflora01",
+        "polystichum-munitum:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:cornus-sericea:vaccinium-ovatum:01",
+      "plant_a": "cornus-sericea",
+      "plant_b": "vaccinium-ovatum",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Cornus sericea and Vaccinium ovatum in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest) and the CWH zone on the two atlas pages (minimum elevations 0 m and 2 m, province-wide means 759 m and 185 m; modal zones SBS / CWH — a modal zone other than CWH/CDF means the plant is marginal in the coastal zone); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "cornus-sericea:vancouver_context:eflora01",
+        "vaccinium-ovatum:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:gaultheria-shallon:polystichum-munitum:01",
+      "plant_a": "gaultheria-shallon",
+      "plant_b": "polystichum-munitum",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Gaultheria shallon and Polystichum munitum in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest) and the CWH zone on the two atlas pages (minimum elevations 0 m and 0 m, province-wide means 219 m and 229 m; modal zones CWH / CWH); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "gaultheria-shallon:vancouver_context:eflora01",
+        "polystichum-munitum:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-10-29]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:polystichum-munitum:vaccinium-ovatum:02",
+      "plant_a": "polystichum-munitum",
+      "plant_b": "vaccinium-ovatum",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Polystichum munitum and Vaccinium ovatum in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest) and the CWH zone on the two atlas pages (minimum elevations 0 m and 2 m, province-wide means 229 m and 185 m; modal zones CWH / CWH); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "polystichum-munitum:vancouver_context:eflora01",
+        "vaccinium-ovatum:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:achillea-millefolium:arctostaphylos-uva-ursi:01",
+      "plant_a": "achillea-millefolium",
+      "plant_b": "arctostaphylos-uva-ursi",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Achillea millefolium and Arctostaphylos uva-ursi in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest, rocky), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest, rocky) and the CWH zone on the two atlas pages (minimum elevations 0 m and 6 m, province-wide means 1143 m and 1129 m; modal zones IDF / IDF — a modal zone other than CWH/CDF means the plant is marginal in the coastal zone); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "achillea-millefolium:vancouver_context:eflora01",
+        "arctostaphylos-uva-ursi:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:achillea-millefolium:cornus-nuttallii:01",
+      "plant_a": "achillea-millefolium",
+      "plant_b": "cornus-nuttallii",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Achillea millefolium and Cornus nuttallii in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest) and the CWH zone on the two atlas pages (minimum elevations 0 m and 0 m, province-wide means 1143 m and 194 m; modal zones IDF / CWH — a modal zone other than CWH/CDF means the plant is marginal in the coastal zone); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "achillea-millefolium:vancouver_context:eflora01",
+        "cornus-nuttallii:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:achillea-millefolium:cornus-sericea:01",
+      "plant_a": "achillea-millefolium",
+      "plant_b": "cornus-sericea",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Achillea millefolium and Cornus sericea in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest, grassland), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest, grassland) and the CWH zone on the two atlas pages (minimum elevations 0 m and 0 m, province-wide means 1143 m and 759 m; modal zones IDF / SBS — a modal zone other than CWH/CDF means the plant is marginal in the coastal zone); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "achillea-millefolium:vancouver_context:eflora01",
+        "cornus-sericea:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:achillea-millefolium:gaultheria-shallon:01",
+      "plant_a": "achillea-millefolium",
+      "plant_b": "gaultheria-shallon",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Achillea millefolium and Gaultheria shallon in the Coastal Western Hemlock zone at low elevation and in the same habitat class (coastal, forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (coastal, forest) and the CWH zone on the two atlas pages (minimum elevations 0 m and 0 m, province-wide means 1143 m and 219 m; modal zones IDF / CWH — a modal zone other than CWH/CDF means the plant is marginal in the coastal zone); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "achillea-millefolium:vancouver_context:eflora01",
+        "gaultheria-shallon:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:achillea-millefolium:polystichum-munitum:02",
+      "plant_a": "achillea-millefolium",
+      "plant_b": "polystichum-munitum",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Achillea millefolium and Polystichum munitum in the Coastal Western Hemlock zone at low elevation and in the same habitat class (forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (forest) and the CWH zone on the two atlas pages (minimum elevations 0 m and 0 m, province-wide means 1143 m and 229 m; modal zones IDF / CWH — a modal zone other than CWH/CDF means the plant is marginal in the coastal zone); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "achillea-millefolium:vancouver_context:eflora01",
+        "polystichum-munitum:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    },
+    {
+      "id": "rel:achillea-millefolium:vaccinium-ovatum:01",
+      "plant_a": "achillea-millefolium",
+      "plant_b": "vaccinium-ovatum",
+      "relation_type": "companion",
+      "direction": "mutual",
+      "text": "E-Flora BC records both Achillea millefolium and Vaccinium ovatum in the Coastal Western Hemlock zone at low elevation and in the same habitat class (coastal, forest), so they co-occur naturally in the Vancouver region.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "derived: shared habitat class (coastal, forest) and the CWH zone on the two atlas pages (minimum elevations 0 m and 2 m, province-wide means 1143 m and 185 m; modal zones IDF / CWH — a modal zone other than CWH/CDF means the plant is marginal in the coastal zone); the source does not state the association itself",
+      "rule": "REL-R1",
+      "confidence": 0.5,
+      "status": "retired",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/derive_relations.py (REL-R1)",
+      "derived_from": [
+        "achillea-millefolium:vancouver_context:eflora01",
+        "vaccinium-ovatum:vancouver_context:eflora01"
+      ],
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "note": "habitat co-occurrence, not a planting-design recommendation; two plants sharing a habitat class may still compete (see the salal placeholders)",
+      "retired_at": "2026-11-02",
+      "retired_reason": "REL-R1 withdrawn 2026-11-02 (brief 'Verification Workbench' §03A, methods M43): a shared E-Flora habitat class is an indirect connection expressed through the habitat / bgc_zone concept nodes both plants link to, not a direct companion relation; record kept as history"
+    }
+  ],
+  "outside_db": [
+    {
+      "plant": "gaultheria-shallon",
+      "companions_named": [
+        "Rhododendron",
+        "ferns"
+      ],
+      "source_id": "osu",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/gaultheria-shallon",
+      "note": "named companions are not in the db; recorded here so they are not lost. Polystichum munitum (survey candidate) would make this a relation."
+    },
+    {
+      "plant": "vaccinium-ovatum",
+      "companions_named": [
+        "rhododendrons (large-leaved contrast)"
+      ],
+      "source_id": "gpp",
+      "source_url": "https://www.greatplantpicks.org/plantlists/view/1611"
+    },
+    {
+      "plant": "cornus-nuttallii",
+      "companions_named": [
+        "cornus-nuttallii"
+      ],
+      "source_id": "rhs",
+      "source_url": "https://www.rhs.org.uk/plants/4402/wd/details",
+      "note": "no companion plants named",
+      "recorded_at": "2026-11-02"
+    },
+    {
+      "plant": "cornus-nuttallii",
+      "companions_named": [
+        "cornus-nuttallii"
+      ],
+      "source_id": "mobot",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "note": "no companions named; Cornus florida is cited only as the eastern look-alike",
+      "recorded_at": "2026-11-02"
+    },
+    {
+      "plant": "cornus-nuttallii",
+      "companions_named": [
+        "cornus-nuttallii"
+      ],
+      "source_id": "osu",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cornus-nuttallii",
+      "note": "no companions named; Cornus florida cited only as a species it is confused with",
+      "recorded_at": "2026-11-02"
+    },
+    {
+      "plant": "cornus-nuttallii",
+      "companions_named": [
+        "cornus-nuttallii"
+      ],
+      "source_id": "eflora",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cornus%20nuttallii",
+      "note": "no companions named; described generically as a shrub-layer component of mixed and coniferous forests",
+      "recorded_at": "2026-11-02"
+    },
+    {
+      "plant": "polystichum-munitum",
+      "companions_named": [
+        "Smilacina racemosa"
+      ],
+      "source_id": "gpp",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "note": "looks terrific with",
+      "recorded_at": "2026-11-02"
+    },
+    {
+      "plant": "polystichum-munitum",
+      "companions_named": [
+        "Lathyrus vernus"
+      ],
+      "source_id": "gpp",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "note": "looks terrific with",
+      "recorded_at": "2026-11-02"
+    },
+    {
+      "plant": "polystichum-munitum",
+      "companions_named": [
+        "Asarum europaeum"
+      ],
+      "source_id": "gpp",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "note": "looks terrific with",
+      "recorded_at": "2026-11-02"
+    },
+    {
+      "plant": "polystichum-munitum",
+      "companions_named": [
+        "Rhododendron"
+      ],
+      "source_id": "gpp",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "note": "looks terrific with",
+      "recorded_at": "2026-11-02"
+    },
+    {
+      "plant": "polystichum-munitum",
+      "companions_named": [
+        "Trillium ovatum"
+      ],
+      "source_id": "gpp",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "note": "Great Plant Combinations",
+      "recorded_at": "2026-11-02"
+    },
+    {
+      "plant": "polystichum-munitum",
+      "companions_named": [
+        "Hosta 'Fragrant Blue'"
+      ],
+      "source_id": "gpp",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "note": "Great Plant Combinations",
+      "recorded_at": "2026-11-02"
+    },
+    {
+      "plant": "polystichum-munitum",
+      "companions_named": [
+        "Arisaema sikokianum"
+      ],
+      "source_id": "gpp",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "note": "Great Plant Combinations",
+      "recorded_at": "2026-11-02"
+    },
+    {
+      "plant": "polystichum-munitum",
+      "companions_named": [
+        "Pulmonaria longifolia ssp. cevennensis"
+      ],
+      "source_id": "gpp",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "note": "Great Plant Combinations",
+      "recorded_at": "2026-11-02"
+    },
+    {
+      "plant": "polystichum-munitum",
+      "companions_named": [
+        "Pseudotsuga menziesii"
+      ],
+      "source_id": "gpp",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "note": "tolerates dry shade under dense Douglas fir (canopy, not a planting partner)",
+      "recorded_at": "2026-11-02"
+    },
+    {
+      "plant": "polystichum-munitum",
+      "companions_named": [
+        "Thuja plicata"
+      ],
+      "source_id": "gpp",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "note": "tolerates dry shade under western red cedar (canopy, not a planting partner)",
+      "recorded_at": "2026-11-02"
+    },
+    {
+      "plant": "polystichum-munitum",
+      "companions_named": [
+        "Achlys triphylla"
+      ],
+      "source_id": "eflora",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Polystichum%20munitum",
+      "note": "commonly associated species in BC",
+      "recorded_at": "2026-11-02"
+    },
+    {
+      "plant": "polystichum-munitum",
+      "companions_named": [
+        "Mahonia nervosa"
+      ],
+      "source_id": "eflora",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Polystichum%20munitum",
+      "note": "commonly associated species in BC",
+      "recorded_at": "2026-11-02"
+    },
+    {
+      "plant": "polystichum-munitum",
+      "companions_named": [
+        "Tiarella trifoliata"
+      ],
+      "source_id": "eflora",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Polystichum%20munitum",
+      "note": "commonly associated species in BC",
+      "recorded_at": "2026-11-02"
+    }
+  ]
+}

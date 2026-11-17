@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3D network · Knowledge · Planting Intelligence</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../platform/css/platform.css">
+<style>
+  :root {
+    --bg: #01020a; --ink: #d3d9e8; --ink-dim: #818a9f; --ink-faint: #4d5468;
+    --glass: rgba(5, 8, 20, 0.78); --line: rgba(190, 205, 255, 0.10);
+    --practitioner: #ffa94d; --database: #5ad1ff; --municipal: #6ff2b0; --model: #6d7384; --candidate: #ff5fb4; --plant: #fff1c2;
+    --mono: "DM Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace; --sans: "DM Sans", -apple-system, "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font: 13px/1.45 var(--sans); overflow: hidden; }
+  #graph { position: fixed; inset: 0; } #graph canvas { outline: none; }
+  .scene-nav-info, .scene-tooltip { display: none !important; }
+  a { color: #9fd3ff; text-decoration: none; border-bottom: 1px dotted rgba(159,211,255,.4); } em { font-style: italic; }
+  button { font: 12px var(--sans); color: #d3d9e8; background: rgba(255,255,255,.06); border: 1px solid var(--line); border-radius: 4px; padding: 5px 10px; cursor: pointer; }
+  button:hover { background: rgba(255,255,255,.12); color: #fff; } button.primary { background: rgba(255,241,194,.14); border-color: rgba(255,241,194,.35); }
+  input, textarea, select { font: 12.5px var(--sans); color: var(--ink); background: rgba(255,255,255,.05); border: 1px solid var(--line); border-radius: 4px; padding: 6px 8px; width: 100%; }
+  textarea { min-height: 64px; resize: vertical; }
+
+  /* projected labels: only plants, growth forms, cluster names and whatever is lit */
+  #labels { position: fixed; inset: 0; pointer-events: none; overflow: hidden; }
+  .lbl { position: absolute; transform: translate(-50%, 0); white-space: nowrap; color: var(--ink); font-size: 11.5px; line-height: 1.2; pointer-events: auto; cursor: pointer; text-shadow: 0 0 8px rgba(1,2,10,1), 0 0 2px rgba(1,2,10,1); transition: opacity .35s; text-align: center; }
+  .lbl.hidden { opacity: 0 !important; pointer-events: none; } .lbl.muted { opacity: .3; }
+  .lbl small { display: block; font-size: 10px; color: var(--ink-dim); font-family: var(--mono); }
+  .lbl.plant { font-size: 14px; color: #f4ead0; font-style: italic; } .lbl.plant small { font-style: normal; font-family: var(--sans); }
+  .lbl.gf { color: #ffe9a8; font-size: 12.5px; }
+  .lbl.cluster { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; opacity: .55; font-weight: 500; } .lbl.cluster small { text-transform: none; letter-spacing: 0; }
+  .lbl.lit { color: #fff; font-size: 11px; } .lbl.lit small { color: #c8cfdf; }
+  .lbl.source { font-size: 10.5px; color: #9fb8d8; }
+
+  #pitop { position: fixed; left: 0; right: 0; top: 0; z-index: 50; } #hud { position: fixed; inset: 52px 0 0 0; pointer-events: none; }
+  #card .pi-mini { margin: 4px 0 10px; background: rgba(255,255,255,.05); border-color: var(--line); color: var(--ink); } #card .pi-mini-n i { color: #f4ead0; } #card .pi-mini-n span { color: var(--ink-dim); } #card .pi-mini-a a { color: #9fd3ff; border: 0; text-decoration-color: rgba(159,211,255,.4); }
+  #hud > * { pointer-events: auto; }
+  #brand { position: absolute; left: 20px; top: 16px; max-width: 520px; }
+  #brand h1 { margin: 0; font-size: 15px; font-weight: 500; letter-spacing: .02em; color: #f4ead0; }
+  #brand h1 small { color: var(--ink-faint); font-weight: 400; font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; margin-left: 10px; }
+  #brand h1 small a { color: var(--ink-dim); border: 0; }
+  #stats { font: 10.5px var(--mono); color: var(--ink-faint); margin-top: 4px; }
+  #state { font: 11px var(--sans); color: var(--ink-dim); margin-top: 8px; min-height: 16px; } #state b { color: #f4ead0; font-weight: 500; }
+  #state .cand { color: var(--candidate); }
+
+  #askbar { position: absolute; right: 20px; top: 16px; width: 380px; display: flex; gap: 6px; align-items: center; }
+  #askbar input { background: var(--glass); backdrop-filter: blur(10px); border-color: rgba(190,205,255,.18); }
+  #askbar button { white-space: nowrap; background: var(--glass); backdrop-filter: blur(10px); }
+  #asknote { position: absolute; right: 20px; top: 50px; font: 10px var(--mono); color: var(--ink-faint); letter-spacing: .08em; }
+
+  #clusters { position: absolute; left: 20px; bottom: 18px; display: flex; flex-wrap: wrap; gap: 6px; max-width: 560px; }
+  #clusters button { font-size: 11px; padding: 4px 9px; display: inline-flex; align-items: center; gap: 6px; background: var(--glass); backdrop-filter: blur(8px); }
+  #clusters button .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; } #clusters button small { color: var(--ink-faint); font-family: var(--mono); font-size: 9.5px; }
+  #clusters button.on { background: rgba(255,255,255,.16); color: #fff; }
+  #legend { position: absolute; right: 20px; bottom: 18px; font: 10px var(--mono); color: var(--ink-faint); display: flex; gap: 12px; }
+  #legend i { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+  #legend i.ln { width: 14px; height: 2px; border-radius: 0; }
+
+  /* the card: appears only after a click or a question, bottom-right, compact by default */
+  #card { position: absolute; right: 20px; bottom: 50px; width: 380px; max-height: calc(100vh - 150px); overflow: auto; background: var(--glass); backdrop-filter: blur(14px); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px 12px; display: none; }
+  #card.open { display: block; }
+  #card h2 { margin: 0 0 2px; font-size: 15px; font-weight: 500; display: flex; align-items: center; gap: 8px; } #card h2 em { font-style: italic; }
+  #card .kicker { font: 10.5px var(--mono); color: var(--ink-dim); margin-bottom: 8px; }
+  #card .close { position: absolute; right: 10px; top: 8px; border: 0; background: transparent; color: var(--ink-faint); font-size: 14px; padding: 2px 6px; }
+  #card h3 { margin: 12px 0 5px; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-dim); font-weight: 500; display: flex; align-items: center; gap: 8px; }
+  #card h3 .step { font-family: var(--mono); color: var(--ink-faint); letter-spacing: 0; }
+  #card p { margin: 6px 0; } #card .lead { font-size: 13px; color: #e8ecf5; } #card .muted { color: var(--ink-dim); } #card .small { font-size: 11.5px; } #card .faint { color: var(--ink-faint); }
+  #card .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; vertical-align: middle; margin-right: 2px; }
+  #card .row { display: flex; gap: 8px; padding: 5px 6px; margin: 1px -6px; border-radius: 4px; cursor: pointer; align-items: flex-start; } #card .row:hover { background: rgba(255,255,255,.06); } #card .row.dim { opacity: .55; }
+  #card .row .st { width: 8px; height: 8px; border-radius: 50%; margin-top: 5px; flex: none; background: var(--c); } #card .row .st.unverified, #card .row .st.candidate { background: transparent; border: 1.5px solid var(--c); } #card .row .st.candidate { border-style: dashed; border-color: var(--candidate); }
+  #card .val { color: #e8ecf5; } #card .meta { font: 10.5px var(--mono); color: var(--ink-dim); }
+  #card .chips { display: flex; flex-wrap: wrap; gap: 4px; } #card .chip { font-size: 11px; padding: 2px 7px; border-radius: 10px; border: 1px solid var(--c); color: var(--ink); cursor: pointer; background: rgba(255,255,255,.03); } #card .chip:hover { background: rgba(255,255,255,.1); } #card .chip small { color: var(--ink-dim); font-family: var(--mono); margin-left: 3px; } #card .chip.cand { border-color: var(--candidate); color: var(--candidate); } #card .chip.on { background: rgba(255,255,255,.14); color: #fff; }
+  #card .tag { font: 10px var(--mono); padding: 1px 5px; border-radius: 3px; border: 1px solid var(--line); color: var(--ink-dim); } #card .tag.candidate { color: var(--candidate); border-color: var(--candidate); } #card .tag.supported, #card .tag.verified { color: #6ff2b0; border-color: rgba(111,242,176,.4); }
+  #card details { margin-top: 6px; } #card summary { cursor: pointer; color: var(--ink-dim); font-size: 11.5px; } #card summary:hover { color: #fff; }
+  #card .link { color: #9fd3ff; cursor: pointer; }
+  #card .warn { color: #ff8c6b; } #card .cand { color: var(--candidate); }
+  #card .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin: 6px 0; } #card label { font: 10px var(--mono); color: var(--ink-faint); display: block; margin-bottom: 2px; }
+  #card .changed { border-left: 2px solid var(--candidate); padding-left: 10px; margin-top: 10px; } #card .changed li { margin: 3px 0; font-size: 12px; }
+  #card .r { padding: 4px 0; border-bottom: 1px solid var(--line); font-size: 12px; } #card .r .why { font: 10px var(--mono); color: var(--ink-faint); } #card .r .rank { color: var(--ink-faint); font-family: var(--mono); }
+  #card .qbtns { display: flex; flex-wrap: wrap; gap: 4px; margin: 6px 0; } #card .qbtns button { font-size: 11px; text-align: left; }
+
+  #tip { position: fixed; display: none; pointer-events: none; background: var(--glass); border: 1px solid var(--line); border-radius: 4px; padding: 4px 8px; font-size: 11.5px; max-width: 300px; z-index: 5; } #tip .meta { font: 10px var(--mono); color: var(--ink-dim); }
+  #loading { position: fixed; inset: 0; display: grid; place-items: center; color: var(--ink-dim); font-family: var(--mono); font-size: 12px; background: var(--bg); z-index: 9; } #loading.gone { display: none; } #err { color: #ff8c6b; white-space: pre-wrap; max-width: 600px; }
+  @media (max-width: 900px) { #askbar { width: 260px; } #card { width: calc(100vw - 40px); } #clusters { max-width: 320px; } }
+</style>
+<script type="importmap">
+{ "imports": { "three": "../../vendor/three/three.module.js", "three/addons/": "../../vendor/three/examples/jsm/" } }
+</script>
+<script src="../../vendor/3d-force-graph.min.js"></script>
+</head>
+<body>
+<header id="pitop"></header>
+<div id="graph"></div>
+<div id="labels"></div>
+<div id="hud">
+  <header id="brand">
+    <h1>3D network <small>the same claims as one network</small></h1>
+    <div id="stats">loading…</div>
+    <div id="state"></div>
+  </header>
+  <div id="askbar"><input id="ask-input" placeholder="ask the store… e.g. evergreen shade-tolerant hedge for North Vancouver"><button id="ask-run">Ask</button><button id="btn-grow" hidden>+ Observation</button></div>
+  <div id="asknote">retrieval preview · not a full AI trace</div>
+  <nav id="clusters"></nav>
+  <div id="legend"></div>
+  <aside id="card"><button class="close" id="card-close">×</button><div id="card-body"></div></aside>
+</div>
+<div id="tip"></div>
+<div id="loading"><div>growing the network from brain/data/graph.json · ontology.json · plants/*.json …<div id="err"></div></div></div>
+<script type="module" src="./js/app5.js"></script>
+</body>
+</html>

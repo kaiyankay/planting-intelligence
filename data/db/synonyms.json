@@ -1,0 +1,536 @@
+{
+  "updated": "2026-11-13",
+  "note": "Keyword route for retrieval. Every name a user or respondent might type → canonical plant id. Includes every survey candidate (15 responses, 2026-11-14 export) so later additions resolve to the same ids. Entries with in_db=false are candidates only; names are kept as respondents typed them; taxon_review 'pending' marks an identity that has not been checked.",
+  "entries": [
+    {
+      "id": "acer-palmatum",
+      "in_db": true,
+      "scientific": "Acer palmatum",
+      "names": [
+        "Japanese maple",
+        "Japanese Maple",
+        "鸡爪槭",
+        "日本枫",
+        "jap maple"
+      ]
+    },
+    {
+      "id": "vaccinium-ovatum",
+      "in_db": true,
+      "scientific": "Vaccinium ovatum",
+      "names": [
+        "Evergreen huckleberry",
+        "California huckleberry",
+        "常绿越橘",
+        "huckleberry (evergreen)",
+        "Box huckleberry",
+        "Shot huckleberry",
+        "Californian huckleberry"
+      ]
+    },
+    {
+      "id": "gaultheria-shallon",
+      "in_db": true,
+      "scientific": "Gaultheria shallon",
+      "names": [
+        "Salal",
+        "莎伦",
+        "北美白珠树",
+        "shallon",
+        "lemon leaf",
+        "lemon leaves"
+      ]
+    },
+    {
+      "id": "cornus-nuttallii",
+      "in_db": true,
+      "scientific": "Cornus nuttallii",
+      "names": [
+        "Pacific dogwood",
+        "Western flowering dogwood",
+        "太平洋山茱萸",
+        "BC dogwood",
+        "Western dogwood",
+        "Mountain dogwood",
+        "Canadian dogwood",
+        "Benthamidia nuttallii",
+        "Benthamidia nuttallii (Audubon) Moldenke"
+      ]
+    },
+    {
+      "id": "cornus-sericea",
+      "in_db": true,
+      "scientific": "Cornus sericea",
+      "synonyms_scientific": [
+        "Cornus stolonifera",
+        "Cornus alba subsp. stolonifera",
+        "Swida sericea"
+      ],
+      "names": [
+        "Red osier dogwood",
+        "Red-osier dogwood",
+        "Red twig dogwood",
+        "Redosier dogwood",
+        "美洲红瑞木",
+        "red-twig dogwood",
+        "American dogwood",
+        "Cornus stolonifera Michx.",
+        "Cornus alba subsp. stolonifera (Michx.) Wangerin",
+        "Cornus alba var. californica (C.A. Mey.) B. Boivin",
+        "Cornus alba var. occidentalis (Torr. & A. Gray) B. Boivin",
+        "Cornus occidentalis (Torr. & A. Gray) Coville",
+        "Cornus ×californica C.A. Mey.",
+        "Cornus sericea subsp. sericea",
+        "Cornus sericea subsp. stolonifera (Michx.) Fosberg",
+        "Cornus stolonifera var. californica (C.A. Mey.) McMinn",
+        "Cornus stolonifera var. occidentalis (Torr. & A. Gray) C.L. Hitchc.",
+        "Cornus baileyi J.M. Coult. & Evans",
+        "Cornus interior (Rydb.) N. Petersen",
+        "Swida sericea (L.) Holub",
+        "Swida stolonifera (Michx.) Rydb.",
+        "Cornus alba misapplied"
+      ]
+    },
+    {
+      "id": "rhododendron-groenlandicum",
+      "in_db": false,
+      "scientific": "Rhododendron groenlandicum",
+      "synonyms_scientific": [
+        "Ledum groenlandicum"
+      ],
+      "names": [
+        "Labrador tea",
+        "拉布拉多茶",
+        "拉布拉多tee"
+      ],
+      "note": "respondent typed '拉布拉多tee'"
+    },
+    {
+      "id": "rubus-spectabilis",
+      "in_db": false,
+      "scientific": "Rubus spectabilis",
+      "names": [
+        "Salmonberry",
+        "Salmon berry",
+        "鲑莓"
+      ]
+    },
+    {
+      "id": "rosa-nutkana",
+      "in_db": false,
+      "scientific": "Rosa nutkana",
+      "names": [
+        "Nootka rose",
+        "努特卡玫瑰"
+      ]
+    },
+    {
+      "id": "gleditsia-triacanthos",
+      "in_db": false,
+      "scientific": "Gleditsia triacanthos",
+      "names": [
+        "Honey locust",
+        "Honey locust tree",
+        "皂荚",
+        "美国皂荚"
+      ]
+    },
+    {
+      "id": "cercidiphyllum-japonicum",
+      "in_db": true,
+      "scientific": "Cercidiphyllum japonicum",
+      "names": [
+        "Katsura",
+        "Katsura tree",
+        "连香树",
+        "katsuratree"
+      ]
+    },
+    {
+      "id": "arctostaphylos-uva-ursi",
+      "in_db": true,
+      "scientific": "Arctostaphylos uva-ursi",
+      "names": [
+        "Kinnikinnick",
+        "Kinnikinnicks",
+        "Bearberry",
+        "熊果",
+        "Common bearberry",
+        "kinnikinnik",
+        "red bearberry",
+        "mealberry",
+        "sandberry",
+        "uva-ursi",
+        "hog cranberry",
+        "mountain cranberry",
+        "Arbutus uva-ursi",
+        "Uva-ursi uva-ursi",
+        "Arctostaphylos officinalis",
+        "Arctostaphylos adenotricha (Fernald & J.F. Macbr.) Á. Löve & D. Löve & Kapoor",
+        "Arctostaphylos uva-ursi var. adenotricha Fernald & J.F. Macbr.",
+        "Arctostaphylos uva-ursi var. coactilis Fernald & J.F. Macbr.",
+        "Arctostaphylos uva-ursi subsp. uva-ursi",
+        "Uva-Ursi uva-ursi (L.) Britton"
+      ]
+    },
+    {
+      "id": "polystichum-munitum",
+      "in_db": true,
+      "scientific": "Polystichum munitum",
+      "names": [
+        "Western sword fern",
+        "Western Sword Fern",
+        "Sword fern",
+        "西部剑蕨",
+        "western swordfern (USDA)",
+        "giant holly fern (RHS)",
+        "Aspidium munitum",
+        "Polystichum munitum var. incisoserratum",
+        "western swordfern",
+        "giant holly fern"
+      ],
+      "note": "respondent typed role 'shrub'; KPU type is Fern"
+    },
+    {
+      "id": "malus-fusca",
+      "in_db": false,
+      "scientific": "Malus fusca",
+      "names": [
+        "Pacific crabapple",
+        "Western crabapple",
+        "太平洋海棠"
+      ]
+    },
+    {
+      "id": "achillea-millefolium",
+      "in_db": true,
+      "scientific": "Achillea millefolium",
+      "names": [
+        "Yarrow",
+        "Common yarrow",
+        "蓍草",
+        "西洋蓍草",
+        "milfoil",
+        "thousand-leaf",
+        "soldier's woundwort",
+        "nosebleed",
+        "devil's nettle",
+        "sanguinary",
+        "old man's pepper",
+        "rhs",
+        "eflora",
+        "eflora_native_bc_taxon",
+        "eflora_varieties_recognised_in_bc"
+      ]
+    },
+    {
+      "id": "trifolium-repens",
+      "in_db": false,
+      "scientific": "Trifolium repens",
+      "names": [
+        "White clover",
+        "白三叶",
+        "白车轴草"
+      ]
+    },
+    {
+      "id": "gaillardia-aristata",
+      "in_db": true,
+      "scientific": "Gaillardia aristata",
+      "names": [
+        "Blanketflower",
+        "Blanket flower",
+        "天人菊",
+        "Great blanketflower",
+        "common gaillardia",
+        "brown-eyed Susan",
+        "common blanketflower"
+      ]
+    },
+    {
+      "id": "eriophyllum-lanatum",
+      "in_db": false,
+      "scientific": "Eriophyllum lanatum",
+      "names": [
+        "Woolly sunflower",
+        "Oregon sunshine",
+        "绵毛菊"
+      ]
+    },
+    {
+      "id": "campanula-rotundifolia",
+      "in_db": false,
+      "scientific": "Campanula rotundifolia",
+      "names": [
+        "Harebell",
+        "Bluebell of Scotland",
+        "圆叶风铃草"
+      ]
+    },
+    {
+      "id": "parrotia-persica",
+      "scientific": "Parrotia persica",
+      "names": [
+        "parrotia persica",
+        "Persian ironwood",
+        "波斯铁木"
+      ],
+      "in_db": false
+    },
+    {
+      "id": "taxus-canadensis",
+      "scientific": "Taxus canadensis",
+      "names": [
+        "taxus canadensis",
+        "Canada yew",
+        "加拿大红豆杉"
+      ],
+      "in_db": false,
+      "note": "respondent's reason 'evergreen hedging' fits Taxus × media / T. baccata better than the prostrate T. canadensis; name kept as typed"
+    },
+    {
+      "id": "hylotelephium-autumn-joy",
+      "scientific": "Hylotelephium 'Herbstfreude' (Autumn Joy)",
+      "synonyms_scientific": [
+        "Sedum 'Autumn Joy'",
+        "Sedum spectabile 'Autumn Joy'"
+      ],
+      "names": [
+        "sedum autumn joy",
+        "Autumn Joy sedum",
+        "八宝景天 'Autumn Joy'"
+      ],
+      "in_db": false
+    },
+    {
+      "id": "lavandula-angustifolia",
+      "scientific": "Lavandula angustifolia",
+      "names": [
+        "lavandula angustifolia hidcote",
+        "English lavender",
+        "Lavender 'Hidcote'",
+        "薰衣草"
+      ],
+      "in_db": false,
+      "note": "respondent named the cultivar 'Hidcote'"
+    },
+    {
+      "id": "geranium-hardy",
+      "scientific": "Geranium (hardy cranesbill, species not given)",
+      "names": [
+        "Hardy geranium",
+        "cranesbill",
+        "老鹳草"
+      ],
+      "in_db": false,
+      "note": "genus-level entry; the respondent did not name a species"
+    },
+    {
+      "id": "dryopteris",
+      "scientific": "Dryopteris (species not given)",
+      "names": [
+        "Dryopteris Fern",
+        "wood fern",
+        "鳞毛蕨"
+      ],
+      "in_db": false,
+      "note": "genus-level entry"
+    },
+    {
+      "id": "fragaria",
+      "scientific": "Fragaria (strawberry, species not given)",
+      "names": [
+        "Strawberry",
+        "草莓"
+      ],
+      "in_db": false,
+      "note": "genus-level; could be F. × ananassa (garden) or the native F. chiloensis / F. vesca"
+    },
+    {
+      "id": "cyclamen",
+      "scientific": "Cyclamen (species not given)",
+      "names": [
+        "Cyclamen",
+        "仙客来"
+      ],
+      "in_db": false,
+      "note": "hardy cyclamen in a Vancouver garden is most often C. hederifolium or C. coum; not stated"
+    },
+    {
+      "id": "catgrass",
+      "scientific": "cat grass (Avena sativa / Hordeum vulgare, unspecified)",
+      "names": [
+        "Catgrass",
+        "cat grass",
+        "猫草"
+      ],
+      "in_db": false,
+      "note": "a trade name for cereal grasses grown for cats, not a landscape plant"
+    },
+    {
+      "id": "prunus-flowering-cherry",
+      "scientific": "Prunus (flowering cherry, species not given)",
+      "names": [
+        "Cherry blossom",
+        "flowering cherry",
+        "樱花"
+      ],
+      "in_db": false,
+      "note": "Vancouver street cherries are mostly P. serrulata and P. × yedoensis cultivars; not stated"
+    },
+    {
+      "id": "sorbus",
+      "scientific": "Sorbus (mountain ash, species not given)",
+      "names": [
+        "Mountain ash",
+        "rowan",
+        "花楸"
+      ],
+      "in_db": false,
+      "note": "could be the native S. sitchensis / S. scopulina or the planted S. aucuparia"
+    },
+    {
+      "id": "helleborus",
+      "scientific": "Helleborus (species not given)",
+      "names": [
+        "Helleborus",
+        "hellebore",
+        "Lenten rose",
+        "铁筷子"
+      ],
+      "in_db": false
+    },
+    {
+      "id": "metasequoia-glyptostroboides",
+      "scientific": "Metasequoia glyptostroboides",
+      "names": [
+        "Metasequoia glyptostroibodes",
+        "Dawn redwood",
+        "水杉"
+      ],
+      "in_db": false,
+      "note": "respondent's spelling 'glyptostroibodes'"
+    },
+    {
+      "id": "struthiopteris-spicant",
+      "scientific": "Struthiopteris spicant",
+      "synonyms_scientific": [
+        "Blechnum spicant"
+      ],
+      "names": [
+        "Deer fern",
+        "鹿蕨"
+      ],
+      "in_db": false
+    },
+    {
+      "id": "stewartia-pseudocamellia",
+      "scientific": "Stewartia pseudocamellia",
+      "names": [
+        "Stewart’s pseudocamelia",
+        "Japanese stewartia",
+        "夏椿"
+      ],
+      "in_db": false,
+      "note": "respondent's spelling"
+    },
+    {
+      "id": "ginkgo-biloba",
+      "scientific": "Ginkgo biloba",
+      "names": [
+        "Ginko biloba",
+        "Ginkgo",
+        "Maidenhair tree",
+        "银杏"
+      ],
+      "in_db": false,
+      "note": "respondent's spelling 'Ginko'"
+    },
+    {
+      "id": "quercus-garryana",
+      "scientific": "Quercus garryana",
+      "names": [
+        "Quercus garyanna",
+        "Garry oak",
+        "Oregon white oak",
+        "加里栎"
+      ],
+      "in_db": false,
+      "note": "respondent's spelling 'garyanna'"
+    },
+    {
+      "id": "typha-latifolia",
+      "scientific": "Typha latifolia",
+      "names": [
+        "Typha latifolia",
+        "Common cattail",
+        "broadleaf cattail",
+        "宽叶香蒲"
+      ],
+      "in_db": false
+    },
+    {
+      "id": "arbutus-menziesii",
+      "scientific": "Arbutus menziesii",
+      "names": [
+        "Arbitus menzesii",
+        "Arbutus",
+        "Pacific madrone",
+        "太平洋浆果鹃"
+      ],
+      "in_db": false,
+      "note": "respondent's spelling; carries a mixed-basis d2 note (hard to establish; needs sharp drainage) kept privately"
+    },
+    {
+      "id": "calamagrostis",
+      "scientific": "Calamagrostis spp.",
+      "names": [
+        "Calimagrastis spp.",
+        "reed grass",
+        "拂子茅"
+      ],
+      "in_db": false,
+      "note": "respondent's spelling; genus-level"
+    },
+    {
+      "id": "pseudotsuga-menziesii",
+      "scientific": "Pseudotsuga menziesii",
+      "names": [
+        "Douglas fir",
+        "Douglas-fir",
+        "花旗松"
+      ],
+      "in_db": false
+    },
+    {
+      "id": "amelanchier-autumn-brilliance",
+      "scientific": "Amelanchier 'Autumn Brilliance' (species unresolved)",
+      "names": [
+        "Amelanchier alnifolia 'Autumn Brilliance'"
+      ],
+      "taxon_review": "pending",
+      "in_db": false,
+      "note": "typed as A. alnifolia 'Autumn Brilliance'. The cultivar name 'Autumn Brilliance' is usually listed under Amelanchier × grandiflora, while A. alnifolia is the native saskatoon — the respondent may mean either. Species NOT decided; check before canonicalising."
+    },
+    {
+      "id": "miscanthus-sinensis",
+      "scientific": "Miscanthus sinensis",
+      "names": [
+        "Miscanthus sinensis 'Gracillimus'"
+      ],
+      "taxon_review": "pending",
+      "in_db": false,
+      "note": "respondent named the cultivar 'Gracillimus'; species-level id following the lavandula-angustifolia precedent. Cultivar identity not independently checked."
+    },
+    {
+      "id": "ribes-sanguineum",
+      "scientific": "Ribes sanguineum",
+      "names": [
+        "Ribes sanguinem"
+      ],
+      "taxon_review": "pending",
+      "in_db": false,
+      "note": "respondent's spelling 'sanguinem'; read as Ribes sanguineum (red-flowering currant) — a probable reading, not a confirmed identification."
+    }
+  ]
+}

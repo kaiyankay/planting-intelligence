@@ -1,0 +1,5256 @@
+{
+ "id": "demo-c",
+ "name": "Demo C · double row",
+ "created": "2026-11-17T03:44:04.752Z",
+ "schema": "planting-intelligence/design-project/0.1",
+ "knowledge_snapshot": {
+  "generated": "2026-11-13",
+  "generated_by": "tools/build_explorer.py",
+  "method": "M49",
+  "inputs": {
+   "kg_generated": "2026-11-13",
+   "xyz_generated": "2026-11-13",
+   "relations_updated": "2026-11-02",
+   "schema_version": "0.4.3",
+   "ontology_version": "0.2.0"
+  }
+ },
+ "conversation": [
+  {
+   "id": "msg-yna8",
+   "time": "2026-11-17T03:44:04.902Z",
+   "role": "user",
+   "text": "I have a 8 × 6 m backyard. I want privacy along the north edge and an open centre."
+  },
+  {
+   "id": "msg-ynaa",
+   "time": "2026-11-17T03:44:04.902Z",
+   "role": "ai",
+   "text": "",
+   "html": "<b>Read from what you said</b><ul><li>site set to 8 × 6 m (stated, rectangle assumed)</li><li>an open area (open centre) — sketched in the middle, as you said; its extent is not stated</li><li>goals: privacy, openness</li><li>screen → north edge (privacy → Screen (blocks a view); Scrim would only filter it)</li><li>scrim → north edge (openness + privacy → Scrim as the alternative to check) — alternative to check</li></ul><b>Unknown</b> (not assumed): light; soil type and drainage.<br><b>Starting layout:</b> Planting at the edges, open centre kept — 3 planting beds proposed; adjust them on the canvas or say what should change.",
+   "mode": "interpretation: offline-parser (rules: dimensions, open-centre, privacy, openness)"
+  },
+  {
+   "id": "msg-yu8b",
+   "time": "2026-11-17T03:44:05.152Z",
+   "role": "sys",
+   "text": "3 suggested beds confirmed as drawn — North bed 9.6 m², East bed 3.84 m², West bed 3.84 m²"
+  },
+  {
+   "id": "msg-zggc",
+   "time": "2026-11-17T03:44:05.952Z",
+   "role": "user",
+   "text": "Make the north bed deeper by 1.1 m."
+  },
+  {
+   "id": "msg-zggd",
+   "time": "2026-11-17T03:44:05.952Z",
+   "role": "ai",
+   "text": "",
+   "html": "<b>Proposed change — preview, nothing applied yet.</b> Located: named &quot;North bed&quot;.<ul><li>North bed: 9.6 → 16.64 m² (narrowest 2.3 m) — deeper by 1.1 m: the free edges move 1.1 m outward; the boundary, the open area and other beds hold it back</li><li class=\"warn\">1.76 m² would overlap another bed — kept out</li><li>15.14 m² of the growth fell outside the site boundary and was clipped (the bed already sits on that edge)</li></ul>Before (dashed) and after (solid) are drawn on the canvas.",
+   "mode": "interpretation: offline-parser (rule bed_resize) · geometry: spatial engine"
+  },
+  {
+   "id": "msg-zkme",
+   "time": "2026-11-17T03:44:06.102Z",
+   "role": "sys",
+   "text": "applied: North bed reshaped"
+  },
+  {
+   "id": "msg-zx4f",
+   "time": "2026-11-17T03:44:06.552Z",
+   "role": "sys",
+   "text": "North bed: single row — 9 plants proposed (was 15). The other beds keep the same plants in the same places. Nothing is planted until you generate."
+  },
+  {
+   "id": "msg-1042g",
+   "time": "2026-11-17T03:44:06.802Z",
+   "role": "sys",
+   "text": "North bed: staggered double row — 15 plants proposed (was 9). The other beds keep the same plants in the same places. Nothing is planted until you generate."
+  },
+  {
+   "id": "msg-10roh",
+   "time": "2026-11-17T03:44:07.652Z",
+   "role": "user",
+   "text": "The screen should be 1.2 m high."
+  },
+  {
+   "id": "msg-10roi",
+   "time": "2026-11-17T03:44:07.652Z",
+   "role": "ai",
+   "text": "",
+   "html": "<b>Read from what you said</b><ul><li>screen requirement: target height 1.2 m</li><li>goals: privacy</li><li>screen → stays on the north edge (already chosen)</li></ul><b>Unknown</b> (not assumed): light; soil type and drainage.<br><b>Starting layout:</b> Planting at the edges, open centre kept — 3 planting beds proposed; adjust them on the canvas or say what should change.",
+   "mode": "interpretation: offline-parser (rules: privacy, screen-height)"
+  },
+  {
+   "id": "msg-10x8j",
+   "time": "2026-11-17T03:44:07.852Z",
+   "role": "sys",
+   "text": "North bed: Screen target height 1.2 → 1.8 m. Nothing is planted until you generate."
+  },
+  {
+   "id": "msg-112sk",
+   "time": "2026-11-17T03:44:08.052Z",
+   "role": "sys",
+   "text": "North bed: Screen target height 1.8 → 1 m. Nothing is planted until you generate."
+  },
+  {
+   "id": "msg-118cl",
+   "time": "2026-11-17T03:44:08.252Z",
+   "role": "sys",
+   "text": "North bed: Screen target height 1 → 1.8 m. Nothing is planted until you generate."
+  },
+  {
+   "id": "msg-11dwn",
+   "time": "2026-11-17T03:44:08.452Z",
+   "role": "ai",
+   "text": "",
+   "html": "<b>Design v-11dwm</b> — 51 plant objects, 3 species in 3 beds (24.32 m²), seed 42; operators along_edge, stagger, fill_drift.<ul><li>North bed: 15 plants, 2 species · Screen</li><li>East bed: 27 plants, 2 species · Ground cover</li><li>West bed: 9 plants, 2 species · Ground cover</li><li>screen: <i>Gaultheria shallon</i> (gate unknown), <i>Vaccinium ovatum</i> (gate unknown)</li><li>ground: <i>Arctostaphylos uva-ursi</i> (gate unknown), <i>Gaultheria shallon</i> (gate unknown)</li><li>excluded: <i>Acer palmatum</i>, <i>Cercidiphyllum japonicum</i>, <i>Cornus nuttallii</i>, <i>Cornus sericea</i> — reasons in Assumptions</li><li>Screen along the north edge (North bed): row cover 8 m of 8 m (continuity 1, a geometric proxy)</li><li>51 plants rest on an <b>unknown</b> site gate (conditions not stated)</li><li data-preview-match=\"true\">Same as the Compose preview: all 51 plant objects (bed, species, role, position)</li></ul>Circle an area and say what should change, or drag plants directly.",
+   "mode": "engine: deterministic placement over the knowledge adapter (no model text)"
+  }
+ ],
+ "inputs": [],
+ "location": null,
+ "site": {
+  "id": "site-1",
+  "coordinate_system": "local-meters",
+  "orientation": {
+   "north_angle_degrees": 0,
+   "basis": "assumption (north = up until stated)"
+  },
+  "scale": {
+   "status": "user-stated",
+   "known_length_m": 8,
+   "source": "conversation: \"8 × 6 m\""
+  },
+  "boundary": [
+   [
+    0,
+    0
+   ],
+   [
+    8,
+    0
+   ],
+   [
+    8,
+    6
+   ],
+   [
+    0,
+    6
+   ]
+  ],
+  "boundary_status": "user-stated",
+  "features": [
+   {
+    "locked": true,
+    "kind": "no-plant-zone",
+    "polygon": [
+     [
+      2.4,
+      0.9
+     ],
+     [
+      5.6,
+      0.9
+     ],
+     [
+      5.6,
+      3.3
+     ],
+     [
+      2.4,
+      3.3
+     ]
+    ],
+    "label": "open (open centre)",
+    "source": "conversation: \"open centre\" — extent suggested (40 % × 40 % of the site, toward the front), not stated",
+    "status": "inferred",
+    "id": "open-yna9"
+   }
+  ],
+  "beds": [
+   {
+    "id": "bed-1",
+    "name": "North bed",
+    "polygon": [
+     [
+      0,
+      4.8
+     ],
+     [
+      0.8,
+      4.8
+     ],
+     [
+      0.8,
+      3.7
+     ],
+     [
+      7.2,
+      3.7
+     ],
+     [
+      7.2,
+      4.8
+     ],
+     [
+      8,
+      4.8
+     ],
+     [
+      8,
+      6
+     ],
+     [
+      0,
+      6
+     ]
+    ],
+    "holes": [],
+    "status": "user-edited",
+    "source": "said: \"Make the north bed deeper by 1.1 m.\" — deeper by 1.1 m: the free edges move 1.1 m outward; the boundary, the open area and other beds hold it back",
+    "goals": [],
+    "conditions_overrides": {},
+    "area_m2": 16.64,
+    "functions": [
+     {
+      "function": "z:screen",
+      "where": "north-edge",
+      "basis": "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen)",
+      "target_height_m": 1.8,
+      "target_basis": "stated in Compose"
+     }
+    ],
+    "strategy": "edge",
+    "strategy_params": {
+     "sides": [
+      "north"
+     ],
+     "width_m": 1.2,
+     "function": "z:screen"
+    },
+    "reasoning": [
+     "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen)"
+    ],
+    "notes": [],
+    "under_canopy": [],
+    "min_width_m": 2.3,
+    "proposal_id": "A",
+    "proposal_key": "A-1",
+    "confirmation": "confirmed",
+    "composition": {
+     "rows": "double"
+    }
+   },
+   {
+    "id": "bed-2",
+    "name": "East bed",
+    "polygon": [
+     [
+      7.2,
+      0
+     ],
+     [
+      8,
+      0
+     ],
+     [
+      8,
+      4.8
+     ],
+     [
+      7.2,
+      4.8
+     ]
+    ],
+    "holes": [],
+    "status": "user-accepted",
+    "source": "proposal A · edge",
+    "goals": [],
+    "conditions_overrides": {},
+    "area_m2": 3.84,
+    "functions": [
+     {
+      "function": "z:ground_cover",
+      "where": "east-edge",
+      "basis": "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open"
+     }
+    ],
+    "strategy": "edge",
+    "strategy_params": {
+     "sides": [
+      "east",
+      "west"
+     ],
+     "width_m": 0.8,
+     "function": "z:ground_cover"
+    },
+    "reasoning": [
+     "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open"
+    ],
+    "notes": [],
+    "under_canopy": [],
+    "min_width_m": 0.8,
+    "proposal_id": "A",
+    "proposal_key": "A-2",
+    "confirmation": "confirmed"
+   },
+   {
+    "id": "bed-3",
+    "name": "West bed",
+    "polygon": [
+     [
+      0,
+      0
+     ],
+     [
+      0.8,
+      0
+     ],
+     [
+      0.8,
+      4.8
+     ],
+     [
+      0,
+      4.8
+     ]
+    ],
+    "holes": [],
+    "status": "user-accepted",
+    "source": "proposal A · edge",
+    "goals": [],
+    "conditions_overrides": {},
+    "area_m2": 3.84,
+    "functions": [
+     {
+      "function": "z:ground_cover",
+      "where": "west-edge",
+      "basis": "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open"
+     }
+    ],
+    "strategy": "edge",
+    "strategy_params": {
+     "sides": [
+      "east",
+      "west"
+     ],
+     "width_m": 0.8,
+     "function": "z:ground_cover"
+    },
+    "reasoning": [
+     "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open"
+    ],
+    "notes": [],
+    "under_canopy": [],
+    "min_width_m": 0.8,
+    "proposal_id": "A",
+    "proposal_key": "A-3",
+    "confirmation": "confirmed"
+   }
+  ],
+  "proposals": {
+   "generated": "2026-11-17T03:44:04.902Z",
+   "engine": "spatial.js (polygon-clipping booleans, metre units)",
+   "inputs_fp": "[[[0,0],[8,0],[8,6],[0,6]],[[\"no-plant-zone\",null,[[2.4,0.9],[5.6,0.9],[5.6,3.3],[2.4,3.3]],null]],{\"privacy\":2,\"openness\":2},[[\"z:screen\",\"north-edge\",null],[\"z:scrim\",\"north-edge\",true]],{\"north_angle_degrees\":0,\"basis\":\"assumption (north = up until stated)\"}]",
+   "conceptual": false,
+   "site": {
+    "site_m2": 48,
+    "plantable_m2": 40.32,
+    "excluded": [
+     {
+      "id": "open-yna9",
+      "kind": "no-plant-zone",
+      "label": "open (open centre)",
+      "clearance_m": 0
+     }
+    ],
+    "open_areas": [
+     {
+      "id": "open-yna9",
+      "label": "open (open centre)",
+      "area_m2": 7.68,
+      "status": "inferred"
+     }
+    ],
+    "trees": [],
+    "access_edge": {
+     "side": "south",
+     "basis": "assumed: the site is entered from the south (front) edge until you say otherwise"
+    },
+    "assumptions": [
+     "access from the south edge is an assumption — say \"the gate is on the east side\" to change it"
+    ],
+    "questions": []
+   },
+   "intent": {
+    "screen_sides": [
+     "north"
+    ],
+    "wants_open": true,
+    "habitat": false,
+    "values": {
+     "privacy": 2,
+     "openness": 2
+    }
+   },
+   "candidates": [
+    {
+     "id": "A",
+     "label": "Recommended",
+     "recommended": true,
+     "summary": "Planting at the edges, open centre kept",
+     "strategies": [
+      {
+       "op": "edge",
+       "params": {
+        "sides": [
+         "north"
+        ],
+        "width_m": 1.2,
+        "function": "z:screen"
+       },
+       "basis": "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen)",
+       "note": null,
+       "produced": 1
+      },
+      {
+       "op": "edge",
+       "params": {
+        "sides": [
+         "east",
+         "west"
+        ],
+        "width_m": 0.8,
+        "function": "z:ground_cover"
+       },
+       "basis": "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open",
+       "note": null,
+       "produced": 2
+      }
+     ],
+     "beds": [
+      {
+       "key": "A-1",
+       "polygon": [
+        [
+         0,
+         4.8
+        ],
+        [
+         8,
+         4.8
+        ],
+        [
+         8,
+         6
+        ],
+        [
+         0,
+         6
+        ]
+       ],
+       "holes": [],
+       "area_m2": 9.6,
+       "min_width_m": 1.2,
+       "functions": [
+        {
+         "function": "z:screen",
+         "where": "north-edge",
+         "basis": "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen)",
+         "target_height_m": 1.8,
+         "target_basis": "stated in Compose"
+        }
+       ],
+       "side": "north",
+       "strategy": "edge",
+       "strategy_params": {
+        "sides": [
+         "north"
+        ],
+        "width_m": 1.2,
+        "function": "z:screen"
+       },
+       "basis": "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen)",
+       "reasoning": [
+        "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen)"
+       ],
+       "notes": [],
+       "under_canopy": [],
+       "name": "North bed"
+      },
+      {
+       "key": "A-2",
+       "polygon": [
+        [
+         7.2,
+         0
+        ],
+        [
+         8,
+         0
+        ],
+        [
+         8,
+         4.8
+        ],
+        [
+         7.2,
+         4.8
+        ]
+       ],
+       "holes": [],
+       "area_m2": 3.84,
+       "min_width_m": 0.8,
+       "functions": [
+        {
+         "function": "z:ground_cover",
+         "where": "east-edge",
+         "basis": "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open"
+        }
+       ],
+       "side": "east",
+       "strategy": "edge",
+       "strategy_params": {
+        "sides": [
+         "east",
+         "west"
+        ],
+        "width_m": 0.8,
+        "function": "z:ground_cover"
+       },
+       "basis": "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open",
+       "reasoning": [
+        "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open"
+       ],
+       "notes": [],
+       "under_canopy": [],
+       "name": "East bed"
+      },
+      {
+       "key": "A-3",
+       "polygon": [
+        [
+         0,
+         0
+        ],
+        [
+         0.8,
+         0
+        ],
+        [
+         0.8,
+         4.8
+        ],
+        [
+         0,
+         4.8
+        ]
+       ],
+       "holes": [],
+       "area_m2": 3.84,
+       "min_width_m": 0.8,
+       "functions": [
+        {
+         "function": "z:ground_cover",
+         "where": "west-edge",
+         "basis": "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open"
+        }
+       ],
+       "side": "west",
+       "strategy": "edge",
+       "strategy_params": {
+        "sides": [
+         "east",
+         "west"
+        ],
+        "width_m": 0.8,
+        "function": "z:ground_cover"
+       },
+       "basis": "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open",
+       "reasoning": [
+        "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open"
+       ],
+       "notes": [],
+       "under_canopy": [],
+       "name": "West bed"
+      }
+     ],
+     "dropped": [],
+     "open_centre": {
+      "polygon": [
+       [
+        0.8,
+        0
+       ],
+       [
+        7.2,
+        0
+       ],
+       [
+        7.2,
+        4.8
+       ],
+       [
+        0.8,
+        4.8
+       ]
+      ],
+      "area_m2": 23.04
+     },
+     "metrics": {
+      "site_m2": 48,
+      "plantable_m2": 40.32,
+      "planting_m2": 17.28,
+      "open_m2": 23.04,
+      "planting_share": 0.43,
+      "beds": 3
+     },
+     "reasoning_summary": [
+      "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen)",
+      "the centre is kept open as asked; beds frame it rather than fill it",
+      "the south edge stays free as access (assumed)"
+     ],
+     "assumptions": [
+      "access from the south edge is an assumption — say \"the gate is on the east side\" to change it"
+     ],
+     "source_constraints": [
+      {
+       "id": "fn:z:screen@north-edge",
+       "text": "screen along the north edge",
+       "from": "privacy"
+      },
+      {
+       "id": "keep-open",
+       "text": "keep open (open centre) free of plants",
+       "from": "open centre"
+      }
+     ],
+     "validation": {
+      "ok": true,
+      "issues": []
+     },
+     "status": "proposed"
+    },
+    {
+     "id": "B",
+     "label": "More open centre",
+     "recommended": false,
+     "summary": "Narrower screen band only; no side borders",
+     "strategies": [
+      {
+       "op": "edge",
+       "params": {
+        "sides": [
+         "north"
+        ],
+        "width_m": 0.9,
+        "function": "z:screen"
+       },
+       "basis": "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen) — narrowed to 0.9 m: one row only",
+       "note": null,
+       "produced": 1
+      }
+     ],
+     "beds": [
+      {
+       "key": "B-1",
+       "polygon": [
+        [
+         0,
+         5.1
+        ],
+        [
+         8,
+         5.1
+        ],
+        [
+         8,
+         6
+        ],
+        [
+         0,
+         6
+        ]
+       ],
+       "holes": [],
+       "area_m2": 7.2,
+       "min_width_m": 0.89,
+       "functions": [
+        {
+         "function": "z:screen",
+         "where": "north-edge",
+         "basis": "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen) — narrowed to 0.9 m: one row only"
+        }
+       ],
+       "side": "north",
+       "strategy": "edge",
+       "strategy_params": {
+        "sides": [
+         "north"
+        ],
+        "width_m": 0.9,
+        "function": "z:screen"
+       },
+       "basis": "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen) — narrowed to 0.9 m: one row only",
+       "reasoning": [
+        "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen) — narrowed to 0.9 m: one row only"
+       ],
+       "notes": [],
+       "under_canopy": [],
+       "name": "North bed"
+      }
+     ],
+     "dropped": [],
+     "open_centre": {
+      "polygon": [
+       [
+        0,
+        0
+       ],
+       [
+        8,
+        0
+       ],
+       [
+        8,
+        5.1
+       ],
+       [
+        0,
+        5.1
+       ]
+      ],
+      "area_m2": 33.12
+     },
+     "metrics": {
+      "site_m2": 48,
+      "plantable_m2": 40.32,
+      "planting_m2": 7.2,
+      "open_m2": 33.12,
+      "planting_share": 0.18,
+      "beds": 1
+     },
+     "reasoning_summary": [
+      "the screen band is cut to one row and the side borders are dropped, so the open ground is as large as the brief allows",
+      "trade-off: less ground-layer planting and a thinner screen"
+     ],
+     "assumptions": [
+      "access from the south edge is an assumption — say \"the gate is on the east side\" to change it"
+     ],
+     "source_constraints": [
+      {
+       "id": "fn:z:screen@north-edge",
+       "text": "screen along the north edge",
+       "from": "privacy"
+      },
+      {
+       "id": "keep-open",
+       "text": "keep open (open centre) free of plants",
+       "from": "open centre"
+      }
+     ],
+     "validation": {
+      "ok": true,
+      "issues": []
+     },
+     "status": "proposed"
+    },
+    {
+     "id": "C",
+     "label": "More planting area",
+     "recommended": false,
+     "summary": "Beds fill the plantable ground except the open area and access",
+     "strategies": [
+      {
+       "op": "edge",
+       "params": {
+        "sides": [
+         "north"
+        ],
+        "width_m": 1.5,
+        "function": "z:screen"
+       },
+       "basis": "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen) — widened to 1.5 m for a fuller screen",
+       "note": null,
+       "produced": 1
+      },
+      {
+       "op": "infill",
+       "params": {
+        "keep_out": 2,
+        "function": "z:ground_cover"
+       },
+       "basis": "everything plantable except the open area and the south access strip becomes bed",
+       "note": null,
+       "produced": 1
+      }
+     ],
+     "beds": [
+      {
+       "key": "C-1",
+       "polygon": [
+        [
+         0,
+         4.5
+        ],
+        [
+         8,
+         4.5
+        ],
+        [
+         8,
+         6
+        ],
+        [
+         0,
+         6
+        ]
+       ],
+       "holes": [],
+       "area_m2": 12,
+       "min_width_m": 1.49,
+       "functions": [
+        {
+         "function": "z:screen",
+         "where": "north-edge",
+         "basis": "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen) — widened to 1.5 m for a fuller screen"
+        }
+       ],
+       "side": "north",
+       "strategy": "edge",
+       "strategy_params": {
+        "sides": [
+         "north"
+        ],
+        "width_m": 1.5,
+        "function": "z:screen"
+       },
+       "basis": "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen) — widened to 1.5 m for a fuller screen",
+       "reasoning": [
+        "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen) — widened to 1.5 m for a fuller screen"
+       ],
+       "notes": [],
+       "under_canopy": [],
+       "name": "North bed"
+      },
+      {
+       "key": "C-2",
+       "polygon": [
+        [
+         0,
+         0.9
+        ],
+        [
+         2.4,
+         0.9
+        ],
+        [
+         2.4,
+         3.3
+        ],
+        [
+         5.6,
+         3.3
+        ],
+        [
+         5.6,
+         0.9
+        ],
+        [
+         8,
+         0.9
+        ],
+        [
+         8,
+         4.5
+        ],
+        [
+         0,
+         4.5
+        ]
+       ],
+       "holes": [],
+       "area_m2": 21.12,
+       "min_width_m": 2.39,
+       "functions": [
+        {
+         "function": "z:ground_cover",
+         "where": "bed-interior",
+         "basis": "everything plantable except the open area and the south access strip becomes bed"
+        }
+       ],
+       "side": null,
+       "strategy": "infill",
+       "strategy_params": {
+        "keep_out": 2,
+        "function": "z:ground_cover"
+       },
+       "basis": "everything plantable except the open area and the south access strip becomes bed",
+       "reasoning": [
+        "everything plantable except the open area and the south access strip becomes bed"
+       ],
+       "notes": [],
+       "under_canopy": [],
+       "name": "Centre bed"
+      }
+     ],
+     "dropped": [],
+     "open_centre": {
+      "polygon": [
+       [
+        0,
+        0
+       ],
+       [
+        8,
+        0
+       ],
+       [
+        8,
+        0.9
+       ],
+       [
+        0,
+        0.9
+       ]
+      ],
+      "area_m2": 7.2
+     },
+     "metrics": {
+      "site_m2": 48,
+      "plantable_m2": 40.32,
+      "planting_m2": 33.12,
+      "open_m2": 7.2,
+      "planting_share": 0.82,
+      "beds": 2
+     },
+     "reasoning_summary": [
+      "maximises planted area; the open area and the access strip are the only ground left",
+      "trade-off: little room to move, more to maintain"
+     ],
+     "assumptions": [
+      "access from the south edge is an assumption — say \"the gate is on the east side\" to change it"
+     ],
+     "source_constraints": [
+      {
+       "id": "fn:z:screen@north-edge",
+       "text": "screen along the north edge",
+       "from": "privacy"
+      },
+      {
+       "id": "keep-open",
+       "text": "keep open (open centre) free of plants",
+       "from": "open centre"
+      }
+     ],
+     "validation": {
+      "ok": true,
+      "issues": []
+     },
+     "status": "proposed"
+    }
+   ],
+   "recommended_id": "A",
+   "params": {
+    "screen_band_m": 1.2,
+    "side_band_m": 0.8,
+    "perimeter_band_m": 1,
+    "access_band_m": 0.9,
+    "path_clearance_m": 0.3,
+    "building_clearance_m": 0.3,
+    "min_bed_width_m": 0.5,
+    "min_bed_area_m2": 0.6,
+    "sliver_m2": 0.15,
+    "tree_island_pad_m": 0.6,
+    "small_site_m": 5,
+    "alt_min_difference": 0.12
+   },
+   "active_id": "A",
+   "stale": true,
+   "pending": null,
+   "chosen_by": "engine"
+  },
+  "history": [
+   {
+    "label": "dimensions stated",
+    "time": "2026-11-17T03:44:04.902Z",
+    "beds": [],
+    "features": []
+   },
+   {
+    "label": "accept layout",
+    "time": "2026-11-17T03:44:05.152Z",
+    "beds": [
+     {
+      "id": "bed-1",
+      "name": "North bed",
+      "polygon": [
+       [
+        0,
+        4.8
+       ],
+       [
+        8,
+        4.8
+       ],
+       [
+        8,
+        6
+       ],
+       [
+        0,
+        6
+       ]
+      ],
+      "holes": [],
+      "status": "ai-suggested",
+      "source": "proposal A · edge",
+      "goals": [],
+      "conditions_overrides": {},
+      "area_m2": 9.6,
+      "functions": [
+       {
+        "function": "z:screen",
+        "where": "north-edge",
+        "basis": "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen)"
+       }
+      ],
+      "strategy": "edge",
+      "strategy_params": {
+       "sides": [
+        "north"
+       ],
+       "width_m": 1.2,
+       "function": "z:screen"
+      },
+      "reasoning": [
+       "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen)"
+      ],
+      "notes": [],
+      "under_canopy": [],
+      "min_width_m": 1.2,
+      "proposal_id": "A",
+      "proposal_key": "A-1",
+      "confirmation": "proposed"
+     },
+     {
+      "id": "bed-2",
+      "name": "East bed",
+      "polygon": [
+       [
+        7.2,
+        0
+       ],
+       [
+        8,
+        0
+       ],
+       [
+        8,
+        4.8
+       ],
+       [
+        7.2,
+        4.8
+       ]
+      ],
+      "holes": [],
+      "status": "ai-suggested",
+      "source": "proposal A · edge",
+      "goals": [],
+      "conditions_overrides": {},
+      "area_m2": 3.84,
+      "functions": [
+       {
+        "function": "z:ground_cover",
+        "where": "east-edge",
+        "basis": "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open"
+       }
+      ],
+      "strategy": "edge",
+      "strategy_params": {
+       "sides": [
+        "east",
+        "west"
+       ],
+       "width_m": 0.8,
+       "function": "z:ground_cover"
+      },
+      "reasoning": [
+       "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open"
+      ],
+      "notes": [],
+      "under_canopy": [],
+      "min_width_m": 0.8,
+      "proposal_id": "A",
+      "proposal_key": "A-2",
+      "confirmation": "proposed"
+     },
+     {
+      "id": "bed-3",
+      "name": "West bed",
+      "polygon": [
+       [
+        0,
+        0
+       ],
+       [
+        0.8,
+        0
+       ],
+       [
+        0.8,
+        4.8
+       ],
+       [
+        0,
+        4.8
+       ]
+      ],
+      "holes": [],
+      "status": "ai-suggested",
+      "source": "proposal A · edge",
+      "goals": [],
+      "conditions_overrides": {},
+      "area_m2": 3.84,
+      "functions": [
+       {
+        "function": "z:ground_cover",
+        "where": "west-edge",
+        "basis": "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open"
+       }
+      ],
+      "strategy": "edge",
+      "strategy_params": {
+       "sides": [
+        "east",
+        "west"
+       ],
+       "width_m": 0.8,
+       "function": "z:ground_cover"
+      },
+      "reasoning": [
+       "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open"
+      ],
+      "notes": [],
+      "under_canopy": [],
+      "min_width_m": 0.8,
+      "proposal_id": "A",
+      "proposal_key": "A-3",
+      "confirmation": "proposed"
+     }
+    ],
+    "features": [
+     {
+      "locked": true,
+      "kind": "no-plant-zone",
+      "polygon": [
+       [
+        2.4,
+        0.9
+       ],
+       [
+        5.6,
+        0.9
+       ],
+       [
+        5.6,
+        3.3
+       ],
+       [
+        2.4,
+        3.3
+       ]
+      ],
+      "label": "open (open centre)",
+      "source": "conversation: \"open centre\" — extent suggested (40 % × 40 % of the site, toward the front), not stated",
+      "status": "inferred",
+      "id": "open-yna9"
+     }
+    ]
+   },
+   {
+    "label": "apply: Make the north bed deeper by 1.1 m.",
+    "time": "2026-11-17T03:44:06.102Z",
+    "beds": [
+     {
+      "id": "bed-1",
+      "name": "North bed",
+      "polygon": [
+       [
+        0,
+        4.8
+       ],
+       [
+        8,
+        4.8
+       ],
+       [
+        8,
+        6
+       ],
+       [
+        0,
+        6
+       ]
+      ],
+      "holes": [],
+      "status": "user-accepted",
+      "source": "proposal A · edge",
+      "goals": [],
+      "conditions_overrides": {},
+      "area_m2": 9.6,
+      "functions": [
+       {
+        "function": "z:screen",
+        "where": "north-edge",
+        "basis": "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen)"
+       }
+      ],
+      "strategy": "edge",
+      "strategy_params": {
+       "sides": [
+        "north"
+       ],
+       "width_m": 1.2,
+       "function": "z:screen"
+      },
+      "reasoning": [
+       "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen)"
+      ],
+      "notes": [],
+      "under_canopy": [],
+      "min_width_m": 1.2,
+      "proposal_id": "A",
+      "proposal_key": "A-1",
+      "confirmation": "confirmed"
+     },
+     {
+      "id": "bed-2",
+      "name": "East bed",
+      "polygon": [
+       [
+        7.2,
+        0
+       ],
+       [
+        8,
+        0
+       ],
+       [
+        8,
+        4.8
+       ],
+       [
+        7.2,
+        4.8
+       ]
+      ],
+      "holes": [],
+      "status": "user-accepted",
+      "source": "proposal A · edge",
+      "goals": [],
+      "conditions_overrides": {},
+      "area_m2": 3.84,
+      "functions": [
+       {
+        "function": "z:ground_cover",
+        "where": "east-edge",
+        "basis": "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open"
+       }
+      ],
+      "strategy": "edge",
+      "strategy_params": {
+       "sides": [
+        "east",
+        "west"
+       ],
+       "width_m": 0.8,
+       "function": "z:ground_cover"
+      },
+      "reasoning": [
+       "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open"
+      ],
+      "notes": [],
+      "under_canopy": [],
+      "min_width_m": 0.8,
+      "proposal_id": "A",
+      "proposal_key": "A-2",
+      "confirmation": "confirmed"
+     },
+     {
+      "id": "bed-3",
+      "name": "West bed",
+      "polygon": [
+       [
+        0,
+        0
+       ],
+       [
+        0.8,
+        0
+       ],
+       [
+        0.8,
+        4.8
+       ],
+       [
+        0,
+        4.8
+       ]
+      ],
+      "holes": [],
+      "status": "user-accepted",
+      "source": "proposal A · edge",
+      "goals": [],
+      "conditions_overrides": {},
+      "area_m2": 3.84,
+      "functions": [
+       {
+        "function": "z:ground_cover",
+        "where": "west-edge",
+        "basis": "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open"
+       }
+      ],
+      "strategy": "edge",
+      "strategy_params": {
+       "sides": [
+        "east",
+        "west"
+       ],
+       "width_m": 0.8,
+       "function": "z:ground_cover"
+      },
+      "reasoning": [
+       "an open centre is wanted → the remaining edges get a 0.8 m ground-layer border that frames it; the middle stays open"
+      ],
+      "notes": [],
+      "under_canopy": [],
+      "min_width_m": 0.8,
+      "proposal_id": "A",
+      "proposal_key": "A-3",
+      "confirmation": "confirmed"
+     }
+    ],
+    "features": [
+     {
+      "locked": true,
+      "kind": "no-plant-zone",
+      "polygon": [
+       [
+        2.4,
+        0.9
+       ],
+       [
+        5.6,
+        0.9
+       ],
+       [
+        5.6,
+        3.3
+       ],
+       [
+        2.4,
+        3.3
+       ]
+      ],
+      "label": "open (open centre)",
+      "source": "conversation: \"open centre\" — extent suggested (40 % × 40 % of the site, toward the front), not stated",
+      "status": "inferred",
+      "id": "open-yna9"
+     }
+    ]
+   }
+  ],
+  "concept": null,
+  "scratch": false,
+  "conditions": {
+   "light": {
+    "value": null,
+    "status": "unknown",
+    "source": null,
+    "note": null
+   },
+   "soil_type": {
+    "value": null,
+    "status": "unknown",
+    "source": null,
+    "note": null
+   },
+   "soil_drainage": {
+    "value": null,
+    "status": "unknown",
+    "source": null,
+    "note": null
+   },
+   "water": {
+    "value": null,
+    "status": "unknown",
+    "source": null,
+    "note": null
+   },
+   "wind": {
+    "value": null,
+    "status": "unknown",
+    "source": null,
+    "note": null
+   },
+   "irrigation": {
+    "value": null,
+    "status": "unknown",
+    "source": null,
+    "note": null
+   }
+  },
+  "values": [],
+  "notes": [
+   {
+    "kind": "no-plant-zone",
+    "where": "centre",
+    "where_status": "user-stated",
+    "reason": "open centre",
+    "evidence": "open centre",
+    "placed": true
+   }
+  ],
+  "bed_seq": 3
+ },
+ "brief": {
+  "provenance": "offline-parser",
+  "values": {
+   "privacy": 2,
+   "openness": 2
+  },
+  "hard_constraints": [
+   {
+    "id": "keep-open",
+    "kind": "no-plant-zone",
+    "text": "keep the centre open (open centre)",
+    "evidence": "open centre"
+   },
+   {
+    "id": "bed-only",
+    "kind": "bed-boundary",
+    "text": "never place plants outside accepted beds",
+    "evidence": "rule"
+   }
+  ],
+  "functions": [
+   {
+    "function": "z:screen",
+    "where": "north-edge",
+    "basis": "privacy → Screen (blocks a view); Scrim would only filter it",
+    "evidence": "privacy",
+    "target_height_m": 1.2,
+    "target_basis": "stated: \"1.2 m high\""
+   },
+   {
+    "function": "z:scrim",
+    "where": "north-edge",
+    "basis": "openness + privacy → Scrim as the alternative to check",
+    "evidence": "openness",
+    "alternative": true
+   }
+  ],
+  "composition": [
+   "taller layer along the screened edge",
+   "open middle, graded density toward the edge"
+  ],
+  "unknowns": [
+   "light",
+   "soil type and drainage"
+  ],
+  "evidence": [
+   {
+    "rule": "dimensions",
+    "text": "8 × 6 m",
+    "says": "site stated as 8 × 6 m"
+   },
+   {
+    "rule": "open-centre",
+    "text": "open centre",
+    "says": "an open space in the middle (open centre) — kept open at your request, so no bed goes there"
+   },
+   {
+    "rule": "privacy",
+    "text": "privacy",
+    "says": "value: privacy"
+   },
+   {
+    "rule": "openness",
+    "text": "open",
+    "says": "value: openness"
+   },
+   {
+    "rule": "privacy",
+    "text": "screen",
+    "says": "value: privacy"
+   },
+   {
+    "rule": "screen-height",
+    "text": "stated: \"1.2 m high\"",
+    "says": "screen target height 1.2 m"
+   }
+  ],
+  "updated": "2026-11-17T03:44:07.652Z"
+ },
+ "versions": [
+  {
+   "label": "generated (seed 42)",
+   "seed": 42,
+   "bed_id": "bed-1",
+   "bed_ids": [
+    "bed-1",
+    "bed-2",
+    "bed-3"
+   ],
+   "compositions": {
+    "bed-1": {
+     "rows": "double"
+    }
+   },
+   "bed_fps": {
+    "bed-1": "[[[0,4.8],[0.8,4.8],[0.8,3.7],[7.2,3.7],[7.2,4.8],[8,4.8],[8,6],[0,6]],[],[[\"z:screen\",\"north-edge\",1.8,null]],{\"rows\":\"double\"}]",
+    "bed-2": "[[[7.2,0],[8,0],[8,4.8],[7.2,4.8]],[],[[\"z:ground_cover\",\"east-edge\"]]]",
+    "bed-3": "[[[0,0],[0.8,0],[0.8,4.8],[0,4.8]],[],[[\"z:ground_cover\",\"west-edge\"]]]"
+   },
+   "generator": {
+    "operators": [
+     "along_edge",
+     "stagger",
+     "fill_drift"
+    ],
+    "density": 1,
+    "params": {
+     "density": 1,
+     "stagger": true,
+     "id_start": 0
+    }
+   },
+   "knowledge_snapshot": {
+    "generated": "2026-11-13",
+    "generated_by": "tools/build_explorer.py",
+    "method": "M49",
+    "inputs": {
+     "kg_generated": "2026-11-13",
+     "xyz_generated": "2026-11-13",
+     "relations_updated": "2026-11-02",
+     "schema_version": "0.4.3",
+     "ontology_version": "0.2.0"
+    }
+   },
+   "geometry_precision": "approximate (user-stated)",
+   "plant_objects": [
+    {
+     "id": "plant-001",
+     "species_id": "plant:gaultheria-shallon",
+     "bed_id": "bed-1",
+     "position_m": [
+      7.66,
+      5.62
+     ],
+     "proxy_radius_m": 0.38,
+     "proxy_source": {
+      "claim": "gaultheria-shallon:mature_spread:rhs01",
+      "range_m": [
+       0.5,
+       1
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 2.1,
+     "height_source": {
+      "claim": "gaultheria-shallon:mature_height:rhs01",
+      "range_m": [
+       1.2,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "screen",
+     "group_id": "group-bed-1-1",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-002",
+     "species_id": "plant:vaccinium-ovatum",
+     "bed_id": "bed-1",
+     "position_m": [
+      6.74,
+      5.37
+     ],
+     "proxy_radius_m": 0.63,
+     "proxy_source": {
+      "claim": "vaccinium-ovatum:mature_spread:rhs01",
+      "range_m": [
+       1,
+       1.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 1.75,
+     "height_source": {
+      "claim": "vaccinium-ovatum:mature_height:rhs01",
+      "range_m": [
+       0.5,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "screen",
+     "group_id": "group-bed-1-1",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-003",
+     "species_id": "plant:gaultheria-shallon",
+     "bed_id": "bed-1",
+     "position_m": [
+      5.83,
+      5.62
+     ],
+     "proxy_radius_m": 0.38,
+     "proxy_source": {
+      "claim": "gaultheria-shallon:mature_spread:rhs01",
+      "range_m": [
+       0.5,
+       1
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 2.1,
+     "height_source": {
+      "claim": "gaultheria-shallon:mature_height:rhs01",
+      "range_m": [
+       1.2,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "screen",
+     "group_id": "group-bed-1-1",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-004",
+     "species_id": "plant:vaccinium-ovatum",
+     "bed_id": "bed-1",
+     "position_m": [
+      4.91,
+      5.37
+     ],
+     "proxy_radius_m": 0.63,
+     "proxy_source": {
+      "claim": "vaccinium-ovatum:mature_spread:rhs01",
+      "range_m": [
+       1,
+       1.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 1.75,
+     "height_source": {
+      "claim": "vaccinium-ovatum:mature_height:rhs01",
+      "range_m": [
+       0.5,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "screen",
+     "group_id": "group-bed-1-1",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-005",
+     "species_id": "plant:gaultheria-shallon",
+     "bed_id": "bed-1",
+     "position_m": [
+      4,
+      5.62
+     ],
+     "proxy_radius_m": 0.38,
+     "proxy_source": {
+      "claim": "gaultheria-shallon:mature_spread:rhs01",
+      "range_m": [
+       0.5,
+       1
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 2.1,
+     "height_source": {
+      "claim": "gaultheria-shallon:mature_height:rhs01",
+      "range_m": [
+       1.2,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "screen",
+     "group_id": "group-bed-1-1",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-006",
+     "species_id": "plant:vaccinium-ovatum",
+     "bed_id": "bed-1",
+     "position_m": [
+      3.09,
+      5.37
+     ],
+     "proxy_radius_m": 0.63,
+     "proxy_source": {
+      "claim": "vaccinium-ovatum:mature_spread:rhs01",
+      "range_m": [
+       1,
+       1.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 1.75,
+     "height_source": {
+      "claim": "vaccinium-ovatum:mature_height:rhs01",
+      "range_m": [
+       0.5,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "screen",
+     "group_id": "group-bed-1-1",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-007",
+     "species_id": "plant:gaultheria-shallon",
+     "bed_id": "bed-1",
+     "position_m": [
+      2.17,
+      5.62
+     ],
+     "proxy_radius_m": 0.38,
+     "proxy_source": {
+      "claim": "gaultheria-shallon:mature_spread:rhs01",
+      "range_m": [
+       0.5,
+       1
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 2.1,
+     "height_source": {
+      "claim": "gaultheria-shallon:mature_height:rhs01",
+      "range_m": [
+       1.2,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "screen",
+     "group_id": "group-bed-1-1",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-008",
+     "species_id": "plant:vaccinium-ovatum",
+     "bed_id": "bed-1",
+     "position_m": [
+      1.26,
+      5.37
+     ],
+     "proxy_radius_m": 0.63,
+     "proxy_source": {
+      "claim": "vaccinium-ovatum:mature_spread:rhs01",
+      "range_m": [
+       1,
+       1.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 1.75,
+     "height_source": {
+      "claim": "vaccinium-ovatum:mature_height:rhs01",
+      "range_m": [
+       0.5,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "screen",
+     "group_id": "group-bed-1-1",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-009",
+     "species_id": "plant:gaultheria-shallon",
+     "bed_id": "bed-1",
+     "position_m": [
+      0.34,
+      5.62
+     ],
+     "proxy_radius_m": 0.38,
+     "proxy_source": {
+      "claim": "gaultheria-shallon:mature_spread:rhs01",
+      "range_m": [
+       0.5,
+       1
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 2.1,
+     "height_source": {
+      "claim": "gaultheria-shallon:mature_height:rhs01",
+      "range_m": [
+       1.2,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "screen",
+     "group_id": "group-bed-1-1",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-010",
+     "species_id": "plant:vaccinium-ovatum",
+     "bed_id": "bed-1",
+     "position_m": [
+      6.29,
+      4.36
+     ],
+     "proxy_radius_m": 0.63,
+     "proxy_source": {
+      "claim": "vaccinium-ovatum:mature_spread:rhs01",
+      "range_m": [
+       1,
+       1.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 1.75,
+     "height_source": {
+      "claim": "vaccinium-ovatum:mature_height:rhs01",
+      "range_m": [
+       0.5,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "screen-layer",
+     "group_id": "group-bed-1-2",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-011",
+     "species_id": "plant:vaccinium-ovatum",
+     "bed_id": "bed-1",
+     "position_m": [
+      5.37,
+      4.36
+     ],
+     "proxy_radius_m": 0.63,
+     "proxy_source": {
+      "claim": "vaccinium-ovatum:mature_spread:rhs01",
+      "range_m": [
+       1,
+       1.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 1.75,
+     "height_source": {
+      "claim": "vaccinium-ovatum:mature_height:rhs01",
+      "range_m": [
+       0.5,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "screen-layer",
+     "group_id": "group-bed-1-2",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-012",
+     "species_id": "plant:vaccinium-ovatum",
+     "bed_id": "bed-1",
+     "position_m": [
+      4.46,
+      4.36
+     ],
+     "proxy_radius_m": 0.63,
+     "proxy_source": {
+      "claim": "vaccinium-ovatum:mature_spread:rhs01",
+      "range_m": [
+       1,
+       1.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 1.75,
+     "height_source": {
+      "claim": "vaccinium-ovatum:mature_height:rhs01",
+      "range_m": [
+       0.5,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "screen-layer",
+     "group_id": "group-bed-1-2",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-013",
+     "species_id": "plant:vaccinium-ovatum",
+     "bed_id": "bed-1",
+     "position_m": [
+      3.54,
+      4.36
+     ],
+     "proxy_radius_m": 0.63,
+     "proxy_source": {
+      "claim": "vaccinium-ovatum:mature_spread:rhs01",
+      "range_m": [
+       1,
+       1.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 1.75,
+     "height_source": {
+      "claim": "vaccinium-ovatum:mature_height:rhs01",
+      "range_m": [
+       0.5,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "screen-layer",
+     "group_id": "group-bed-1-2",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-014",
+     "species_id": "plant:vaccinium-ovatum",
+     "bed_id": "bed-1",
+     "position_m": [
+      2.63,
+      4.36
+     ],
+     "proxy_radius_m": 0.63,
+     "proxy_source": {
+      "claim": "vaccinium-ovatum:mature_spread:rhs01",
+      "range_m": [
+       1,
+       1.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 1.75,
+     "height_source": {
+      "claim": "vaccinium-ovatum:mature_height:rhs01",
+      "range_m": [
+       0.5,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "screen-layer",
+     "group_id": "group-bed-1-2",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-015",
+     "species_id": "plant:vaccinium-ovatum",
+     "bed_id": "bed-1",
+     "position_m": [
+      1.71,
+      4.36
+     ],
+     "proxy_radius_m": 0.63,
+     "proxy_source": {
+      "claim": "vaccinium-ovatum:mature_spread:rhs01",
+      "range_m": [
+       1,
+       1.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 1.75,
+     "height_source": {
+      "claim": "vaccinium-ovatum:mature_height:rhs01",
+      "range_m": [
+       0.5,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "screen-layer",
+     "group_id": "group-bed-1-2",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-016",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.43,
+      0.16
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-017",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.7,
+      0.21
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-018",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.53,
+      0.41
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-019",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.41,
+      0.83
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-020",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.7,
+      0.77
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-021",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.58,
+      1.08
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-022",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.86,
+      1.12
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-023",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.43,
+      1.34
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-024",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.67,
+      1.33
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-025",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.54,
+      1.69
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-026",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.89,
+      1.64
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-027",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.43,
+      2.01
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-028",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.77,
+      1.91
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-029",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.51,
+      2.26
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-030",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.83,
+      2.2
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-031",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.72,
+      2.55
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-032",
+     "species_id": "plant:gaultheria-shallon",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.6,
+      2.86
+     ],
+     "proxy_radius_m": 0.38,
+     "proxy_source": {
+      "claim": "gaultheria-shallon:mature_spread:rhs01",
+      "range_m": [
+       0.5,
+       1
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 2.1,
+     "height_source": {
+      "claim": "gaultheria-shallon:mature_height:rhs01",
+      "range_m": [
+       1.2,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-033",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.75,
+      3.2
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-034",
+     "species_id": "plant:gaultheria-shallon",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.49,
+      3.4
+     ],
+     "proxy_radius_m": 0.38,
+     "proxy_source": {
+      "claim": "gaultheria-shallon:mature_spread:rhs01",
+      "range_m": [
+       0.5,
+       1
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 2.1,
+     "height_source": {
+      "claim": "gaultheria-shallon:mature_height:rhs01",
+      "range_m": [
+       1.2,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-035",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.84,
+      3.49
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-036",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.39,
+      3.79
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-037",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.7,
+      3.71
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-038",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.57,
+      4.03
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-039",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.84,
+      4.11
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-040",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.37,
+      4.3
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-041",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.76,
+      4.39
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-042",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-2",
+     "position_m": [
+      7.56,
+      4.62
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-2-1",
+     "zone_id": "zone-fill-bed-2",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-043",
+     "species_id": "plant:gaultheria-shallon",
+     "bed_id": "bed-3",
+     "position_m": [
+      0.3,
+      0.53
+     ],
+     "proxy_radius_m": 0.38,
+     "proxy_source": {
+      "claim": "gaultheria-shallon:mature_spread:rhs01",
+      "range_m": [
+       0.5,
+       1
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 2.1,
+     "height_source": {
+      "claim": "gaultheria-shallon:mature_height:rhs01",
+      "range_m": [
+       1.2,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "ground",
+     "group_id": "group-bed-3-1",
+     "zone_id": "zone-fill-bed-3",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-044",
+     "species_id": "plant:gaultheria-shallon",
+     "bed_id": "bed-3",
+     "position_m": [
+      0.31,
+      1.08
+     ],
+     "proxy_radius_m": 0.38,
+     "proxy_source": {
+      "claim": "gaultheria-shallon:mature_spread:rhs01",
+      "range_m": [
+       0.5,
+       1
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 2.1,
+     "height_source": {
+      "claim": "gaultheria-shallon:mature_height:rhs01",
+      "range_m": [
+       1.2,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "ground",
+     "group_id": "group-bed-3-1",
+     "zone_id": "zone-fill-bed-3",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-045",
+     "species_id": "plant:gaultheria-shallon",
+     "bed_id": "bed-3",
+     "position_m": [
+      0.29,
+      1.61
+     ],
+     "proxy_radius_m": 0.38,
+     "proxy_source": {
+      "claim": "gaultheria-shallon:mature_spread:rhs01",
+      "range_m": [
+       0.5,
+       1
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 2.1,
+     "height_source": {
+      "claim": "gaultheria-shallon:mature_height:rhs01",
+      "range_m": [
+       1.2,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "ground",
+     "group_id": "group-bed-3-1",
+     "zone_id": "zone-fill-bed-3",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-046",
+     "species_id": "plant:gaultheria-shallon",
+     "bed_id": "bed-3",
+     "position_m": [
+      0.57,
+      1.98
+     ],
+     "proxy_radius_m": 0.38,
+     "proxy_source": {
+      "claim": "gaultheria-shallon:mature_spread:rhs01",
+      "range_m": [
+       0.5,
+       1
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 2.1,
+     "height_source": {
+      "claim": "gaultheria-shallon:mature_height:rhs01",
+      "range_m": [
+       1.2,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "ground",
+     "group_id": "group-bed-3-1",
+     "zone_id": "zone-fill-bed-3",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-047",
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "bed_id": "bed-3",
+     "position_m": [
+      0.68,
+      2.31
+     ],
+     "proxy_radius_m": 0.15,
+     "proxy_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_spread:rhs01",
+      "range_m": [
+       0.1,
+       0.5
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "median of 2 claimed ranges"
+     },
+     "height_m": 0.1,
+     "height_source": {
+      "claim": "arctostaphylos-uva-ursi:mature_height:osu02",
+      "range_m": [
+       0.05,
+       0.15
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 0.5
+     },
+     "role": "ground",
+     "group_id": "group-bed-3-1",
+     "zone_id": "zone-fill-bed-3",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-048",
+     "species_id": "plant:gaultheria-shallon",
+     "bed_id": "bed-3",
+     "position_m": [
+      0.22,
+      2.6
+     ],
+     "proxy_radius_m": 0.38,
+     "proxy_source": {
+      "claim": "gaultheria-shallon:mature_spread:rhs01",
+      "range_m": [
+       0.5,
+       1
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 2.1,
+     "height_source": {
+      "claim": "gaultheria-shallon:mature_height:rhs01",
+      "range_m": [
+       1.2,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "ground",
+     "group_id": "group-bed-3-1",
+     "zone_id": "zone-fill-bed-3",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-049",
+     "species_id": "plant:gaultheria-shallon",
+     "bed_id": "bed-3",
+     "position_m": [
+      0.48,
+      3.2
+     ],
+     "proxy_radius_m": 0.38,
+     "proxy_source": {
+      "claim": "gaultheria-shallon:mature_spread:rhs01",
+      "range_m": [
+       0.5,
+       1
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 2.1,
+     "height_source": {
+      "claim": "gaultheria-shallon:mature_height:rhs01",
+      "range_m": [
+       1.2,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "ground",
+     "group_id": "group-bed-3-1",
+     "zone_id": "zone-fill-bed-3",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-050",
+     "species_id": "plant:gaultheria-shallon",
+     "bed_id": "bed-3",
+     "position_m": [
+      0.53,
+      3.75
+     ],
+     "proxy_radius_m": 0.38,
+     "proxy_source": {
+      "claim": "gaultheria-shallon:mature_spread:rhs01",
+      "range_m": [
+       0.5,
+       1
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 2.1,
+     "height_source": {
+      "claim": "gaultheria-shallon:mature_height:rhs01",
+      "range_m": [
+       1.2,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "ground",
+     "group_id": "group-bed-3-1",
+     "zone_id": "zone-fill-bed-3",
+     "locked": false,
+     "origin": "generated"
+    },
+    {
+     "id": "plant-051",
+     "species_id": "plant:gaultheria-shallon",
+     "bed_id": "bed-3",
+     "position_m": [
+      0.46,
+      4.39
+     ],
+     "proxy_radius_m": 0.38,
+     "proxy_source": {
+      "claim": "gaultheria-shallon:mature_spread:rhs01",
+      "range_m": [
+       0.5,
+       1
+      ],
+      "status": "proxy: half the claimed mature spread",
+      "note": "one claimed range"
+     },
+     "height_m": 2.1,
+     "height_source": {
+      "claim": "gaultheria-shallon:mature_height:rhs01",
+      "range_m": [
+       1.2,
+       3
+      ],
+      "status": "proxy from a claimed height range",
+      "max_claimed_m": 3
+     },
+     "role": "ground",
+     "group_id": "group-bed-3-1",
+     "zone_id": "zone-fill-bed-3",
+     "locked": false,
+     "origin": "generated"
+    }
+   ],
+   "groups": [
+    {
+     "id": "group-bed-1-1",
+     "bed_id": "bed-1",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "role": "screen",
+     "operator": "along_edge",
+     "params": {
+      "spacing": "0.75 × claimed mature spread",
+      "spacing_source": "heuristic",
+      "inset": "proxy radius",
+      "species": [
+       "plant:gaultheria-shallon",
+       "plant:vaccinium-ovatum"
+      ],
+      "alternate": true,
+      "fit": [
+       "uncertain",
+       "uncertain"
+      ],
+      "row_plans": [
+       {
+        "depth_m": 2.3,
+        "edge_length_m": 8,
+        "spacing_m": 0.76,
+        "step_m": 0.91,
+        "spacing_rule": "0.75 × claimed mature spread (mean of the two species, 1.01 m); the plants are then spread evenly over the edge, an odd number so both ends are the lead species",
+        "spacing_source": "heuristic",
+        "end_margin_m": 0.34,
+        "single_row": {
+         "feasible": true,
+         "needs_depth_m": 0.95
+        },
+        "staggered_row": {
+         "feasible": true,
+         "needs_depth_m": 2.21,
+         "enabled": true
+        },
+        "rows": 2,
+        "expected": [
+         9,
+         8
+        ],
+        "row1_t": [
+         0.342,
+         1.257,
+         2.171,
+         3.086,
+         4,
+         4.914,
+         5.829,
+         6.743,
+         7.658
+        ],
+        "row2_t": [
+         0.799,
+         1.714,
+         2.628,
+         3.543,
+         4.457,
+         5.371,
+         6.286,
+         7.2
+        ],
+        "reason": "two rows fit",
+        "edge": 0,
+        "placed": [
+         9,
+         6
+        ],
+        "lead": {
+         "species_id": "plant:gaultheria-shallon",
+         "radius_m": 0.38,
+         "claim": "gaultheria-shallon:mature_spread:rhs01"
+        },
+        "alternate": {
+         "species_id": "plant:vaccinium-ovatum",
+         "radius_m": 0.63,
+         "claim": "vaccinium-ovatum:mature_spread:rhs01"
+        },
+        "inner": {
+         "species_id": "plant:vaccinium-ovatum",
+         "radius_m": 0.63,
+         "claim": "vaccinium-ovatum:mature_spread:rhs01"
+        },
+        "shortfall": "2 position(s) dropped by a hole, an obstacle, a no-plant zone or a neighbouring plant"
+       }
+      ]
+     },
+     "plant_ids": [
+      "plant-001",
+      "plant-002",
+      "plant-003",
+      "plant-004",
+      "plant-005",
+      "plant-006",
+      "plant-007",
+      "plant-008",
+      "plant-009"
+     ]
+    },
+    {
+     "id": "group-bed-1-2",
+     "bed_id": "bed-1",
+     "zone_id": "zone-screen-north-edge-bed-1",
+     "role": "screen-layer",
+     "operator": "stagger",
+     "params": {
+      "offset": "1.6 × radius inward",
+      "offset_source": "heuristic",
+      "species": [
+       "plant:vaccinium-ovatum"
+      ]
+     },
+     "plant_ids": [
+      "plant-010",
+      "plant-011",
+      "plant-012",
+      "plant-013",
+      "plant-014",
+      "plant-015"
+     ]
+    },
+    {
+     "id": "group-bed-2-1",
+     "bed_id": "bed-2",
+     "zone_id": "zone-fill-bed-2",
+     "role": "ground",
+     "operator": "fill_drift",
+     "params": {
+      "pattern": "drifts",
+      "pattern_label": "Naturalistic drifts",
+      "grain": "medium",
+      "lattice": "hexagonal",
+      "spacing_m": 0.34,
+      "spacing_rule": "0.65 × the mean claimed mature spread of the ground species (0.53 m)",
+      "spacing_source": "heuristic",
+      "plantable_m2": 3.84,
+      "area_for_ground_m2": 3.84,
+      "area_basis": "bed area on a 0.1 m grid, minus no-plant zones and 0.6 × canopy radius around existing trunks",
+      "expected_count": 37,
+      "expected_note": "lattice estimate: area ÷ one hexagonal cell; the placed count is lower because stems keep their distance from the bed edge and from each other after the jitter",
+      "fit": [
+       "uncertain",
+       "uncertain"
+      ],
+      "species": [
+       "plant:arctostaphylos-uva-ursi",
+       "plant:gaultheria-shallon"
+      ],
+      "seed": 42,
+      "variation": 0,
+      "jitter": 0.35,
+      "drift_field": "value noise",
+      "drift_cell_m": 1.4,
+      "pattern_rule": "a jittered lattice (0.35 × spacing); the species follow a drift field with cells of 1.4 m (heuristic)",
+      "random": true,
+      "placed": 27
+     },
+     "plant_ids": [
+      "plant-016",
+      "plant-017",
+      "plant-018",
+      "plant-019",
+      "plant-020",
+      "plant-021",
+      "plant-022",
+      "plant-023",
+      "plant-024",
+      "plant-025",
+      "plant-026",
+      "plant-027",
+      "plant-028",
+      "plant-029",
+      "plant-030",
+      "plant-031",
+      "plant-032",
+      "plant-033",
+      "plant-034",
+      "plant-035",
+      "plant-036",
+      "plant-037",
+      "plant-038",
+      "plant-039",
+      "plant-040",
+      "plant-041",
+      "plant-042"
+     ]
+    },
+    {
+     "id": "group-bed-3-1",
+     "bed_id": "bed-3",
+     "zone_id": "zone-fill-bed-3",
+     "role": "ground",
+     "operator": "fill_drift",
+     "params": {
+      "pattern": "drifts",
+      "pattern_label": "Naturalistic drifts",
+      "grain": "medium",
+      "lattice": "hexagonal",
+      "spacing_m": 0.34,
+      "spacing_rule": "0.65 × the mean claimed mature spread of the ground species (0.53 m)",
+      "spacing_source": "heuristic",
+      "plantable_m2": 3.84,
+      "area_for_ground_m2": 3.84,
+      "area_basis": "bed area on a 0.1 m grid, minus no-plant zones and 0.6 × canopy radius around existing trunks",
+      "expected_count": 37,
+      "expected_note": "lattice estimate: area ÷ one hexagonal cell; the placed count is lower because stems keep their distance from the bed edge and from each other after the jitter",
+      "fit": [
+       "uncertain",
+       "uncertain"
+      ],
+      "species": [
+       "plant:arctostaphylos-uva-ursi",
+       "plant:gaultheria-shallon"
+      ],
+      "seed": 42,
+      "variation": 0,
+      "jitter": 0.35,
+      "drift_field": "value noise",
+      "drift_cell_m": 1.4,
+      "pattern_rule": "a jittered lattice (0.35 × spacing); the species follow a drift field with cells of 1.4 m (heuristic)",
+      "random": true,
+      "placed": 9
+     },
+     "plant_ids": [
+      "plant-043",
+      "plant-044",
+      "plant-045",
+      "plant-046",
+      "plant-047",
+      "plant-048",
+      "plant-049",
+      "plant-050",
+      "plant-051"
+     ]
+    }
+   ],
+   "zones": [
+    {
+     "id": "zone-screen-north-edge-bed-1",
+     "bed_id": "bed-1",
+     "kind": "edge",
+     "function": "z:screen",
+     "label": "Screen along the north edge (North bed)",
+     "edges": [
+      {
+       "a": [
+        8,
+        6
+       ],
+       "b": [
+        0,
+        6
+       ],
+       "n": [
+        0,
+        1
+       ]
+      }
+     ],
+     "priority": 1,
+     "basis": "privacy → a screen band along the north edge, sized for one row of screening plants (a second, staggered row needs a deeper bed: Compose says how deep for the plants chosen)",
+     "requirement": {
+      "target_height_m": 1.8,
+      "target_basis": "stated in Compose",
+      "year_round": false,
+      "year_round_basis": "not stated — winter cover is reported, not required"
+     },
+     "row_plans": [
+      {
+       "depth_m": 2.3,
+       "edge_length_m": 8,
+       "spacing_m": 0.76,
+       "step_m": 0.91,
+       "spacing_rule": "0.75 × claimed mature spread (mean of the two species, 1.01 m); the plants are then spread evenly over the edge, an odd number so both ends are the lead species",
+       "spacing_source": "heuristic",
+       "end_margin_m": 0.34,
+       "single_row": {
+        "feasible": true,
+        "needs_depth_m": 0.95
+       },
+       "staggered_row": {
+        "feasible": true,
+        "needs_depth_m": 2.21,
+        "enabled": true
+       },
+       "rows": 2,
+       "expected": [
+        9,
+        8
+       ],
+       "row1_t": [
+        0.342,
+        1.257,
+        2.171,
+        3.086,
+        4,
+        4.914,
+        5.829,
+        6.743,
+        7.658
+       ],
+       "row2_t": [
+        0.799,
+        1.714,
+        2.628,
+        3.543,
+        4.457,
+        5.371,
+        6.286,
+        7.2
+       ],
+       "reason": "two rows fit",
+       "edge": 0,
+       "placed": [
+        9,
+        6
+       ],
+       "lead": {
+        "species_id": "plant:gaultheria-shallon",
+        "radius_m": 0.38,
+        "claim": "gaultheria-shallon:mature_spread:rhs01"
+       },
+       "alternate": {
+        "species_id": "plant:vaccinium-ovatum",
+        "radius_m": 0.63,
+        "claim": "vaccinium-ovatum:mature_spread:rhs01"
+       },
+       "inner": {
+        "species_id": "plant:vaccinium-ovatum",
+        "radius_m": 0.63,
+        "claim": "vaccinium-ovatum:mature_spread:rhs01"
+       },
+       "shortfall": "2 position(s) dropped by a hole, an obstacle, a no-plant zone or a neighbouring plant"
+      }
+     ]
+    },
+    {
+     "id": "zone-open-open-yna9-bed-1",
+     "bed_id": "bed-1",
+     "kind": "open",
+     "label": "open (open centre)",
+     "polygon": [
+      [
+       2.4,
+       0.9
+      ],
+      [
+       5.6,
+       0.9
+      ],
+      [
+       5.6,
+       3.3
+      ],
+      [
+       2.4,
+       3.3
+      ]
+     ],
+     "priority": 1
+    },
+    {
+     "id": "zone-open-open-yna9-bed-2",
+     "bed_id": "bed-2",
+     "kind": "open",
+     "label": "open (open centre)",
+     "polygon": [
+      [
+       2.4,
+       0.9
+      ],
+      [
+       5.6,
+       0.9
+      ],
+      [
+       5.6,
+       3.3
+      ],
+      [
+       2.4,
+       3.3
+      ]
+     ],
+     "priority": 1
+    },
+    {
+     "id": "zone-fill-bed-2",
+     "bed_id": "bed-2",
+     "kind": "fill",
+     "label": "ground layer (East bed)",
+     "polygon": [
+      [
+       7.2,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       8,
+       4.8
+      ],
+      [
+       7.2,
+       4.8
+      ]
+     ],
+     "priority": 2
+    },
+    {
+     "id": "zone-open-open-yna9-bed-3",
+     "bed_id": "bed-3",
+     "kind": "open",
+     "label": "open (open centre)",
+     "polygon": [
+      [
+       2.4,
+       0.9
+      ],
+      [
+       5.6,
+       0.9
+      ],
+      [
+       5.6,
+       3.3
+      ],
+      [
+       2.4,
+       3.3
+      ]
+     ],
+     "priority": 1
+    },
+    {
+     "id": "zone-fill-bed-3",
+     "bed_id": "bed-3",
+     "kind": "fill",
+     "label": "ground layer (West bed)",
+     "polygon": [
+      [
+       0,
+       0
+      ],
+      [
+       0.8,
+       0
+      ],
+      [
+       0.8,
+       4.8
+      ],
+      [
+       0,
+       4.8
+      ]
+     ],
+     "priority": 2
+    }
+   ],
+   "assemblage": {
+    "picks": {
+     "screen": [
+      {
+       "id": "plant:gaultheria-shallon",
+       "why": [
+        "Screen (uncertain — site: site gates unknown: light unknown, water unknown, soil unknown; height: 2 of 4 claimed height ranges reach 1.8 m; the range used for the plan is 1.2–3 m (gaultheria-shallon:mature_height:rhs01); 2 claimed ranges stay below it): target 1.8 m (stated in Compose); 2 of 4 claimed height ranges reach 1.8 m; the range used for the plan is 1.2–3 m (gaultheria-shallon:mature_height:rhs01); 2 claimed ranges stay below it; evidence derived from recorded use Sheared hedge (KG-R1; claims unverified); site gates unknown: light unknown, water unknown, soil unknown"
+       ],
+       "gate": "unknown",
+       "proxy_radius_m": 0.38,
+       "fit": "uncertain"
+      },
+      {
+       "id": "plant:vaccinium-ovatum",
+       "why": [
+        "Screen (uncertain — evidence: derived from recorded use Hedge row, Screening, Sheared hedge (KG-R1; claims verified); a trait claim contradicts the use; site: site gates unknown: light unknown, water unknown, soil unknown; height: 3 of 5 claimed height ranges reach 1.8 m; the range used for the plan is 0.5–3 m (vaccinium-ovatum:mature_height:rhs01); 2 claimed ranges stay below it): target 1.8 m (stated in Compose); 3 of 5 claimed height ranges reach 1.8 m; the range used for the plan is 0.5–3 m (vaccinium-ovatum:mature_height:rhs01); 2 claimed ranges stay below it; evidence derived from recorded use Hedge row, Screening, Sheared hedge (KG-R1; claims verified); a trait claim contradicts the use; site gates unknown: light unknown, water unknown, soil unknown"
+       ],
+       "gate": "unknown",
+       "proxy_radius_m": 0.63,
+       "fit": "uncertain"
+      }
+     ],
+     "ground": [
+      {
+       "id": "plant:arctostaphylos-uva-ursi",
+       "why": [
+        "Ground Cover (uncertain — site: site gates unknown: light unknown, water unknown, soil unknown): evidence derived from recorded use Ground cover (KG-R1; claims unverified); site gates unknown: light unknown, water unknown, soil unknown; spread 0.1–0.5 m (arctostaphylos-uva-ursi:mature_spread:rhs01)"
+       ],
+       "gate": "unknown",
+       "proxy_radius_m": 0.15,
+       "fit": "uncertain"
+      },
+      {
+       "id": "plant:gaultheria-shallon",
+       "why": [
+        "Ground Cover (uncertain — site: site gates unknown: light unknown, water unknown, soil unknown): evidence derived from recorded use Ground cover (KG-R1; claims verified); site gates unknown: light unknown, water unknown, soil unknown; spread 0.5–1 m (gaultheria-shallon:mature_spread:rhs01)"
+       ],
+       "gate": "unknown",
+       "proxy_radius_m": 0.38,
+       "fit": "uncertain"
+      }
+     ],
+     "accent": [],
+     "canopy": []
+    },
+    "excluded": [
+     {
+      "id": "plant:acer-palmatum",
+      "reason": "a tree whose claimed mature spread (3–7.6 m, acer-palmatum:mature_spread:rhs01) exceeds the bed (8 × 2.3 m)"
+     },
+     {
+      "id": "plant:cercidiphyllum-japonicum",
+      "reason": "a tree whose claimed mature spread (7.6–18.3 m, cercidiphyllum-japonicum:mature_spread:mobot01) exceeds the bed (8 × 2.3 m)"
+     },
+     {
+      "id": "plant:cornus-nuttallii",
+      "reason": "a tree whose claimed mature spread (3–7.6 m, cornus-nuttallii:mature_spread:mobot01) exceeds the bed (8 × 2.3 m)"
+     },
+     {
+      "id": "plant:cornus-sericea",
+      "reason": "claimed mature spread 2.1–3 m is wider than this 0.8 m bed allows"
+     }
+    ],
+    "not_used": [
+     {
+      "id": "plant:achillea-millefolium",
+      "reason": "eligible but not needed by any zone"
+     },
+     {
+      "id": "plant:gaillardia-aristata",
+      "reason": "eligible but not needed by any zone"
+     },
+     {
+      "id": "plant:polystichum-munitum",
+      "reason": "eligible but not needed by any zone"
+     }
+    ]
+   },
+   "assemblages": {
+    "bed-1": {
+     "picks": {
+      "screen": [
+       {
+        "id": "plant:gaultheria-shallon",
+        "why": [
+         "Screen (uncertain — site: site gates unknown: light unknown, water unknown, soil unknown; height: 2 of 4 claimed height ranges reach 1.8 m; the range used for the plan is 1.2–3 m (gaultheria-shallon:mature_height:rhs01); 2 claimed ranges stay below it): target 1.8 m (stated in Compose); 2 of 4 claimed height ranges reach 1.8 m; the range used for the plan is 1.2–3 m (gaultheria-shallon:mature_height:rhs01); 2 claimed ranges stay below it; evidence derived from recorded use Sheared hedge (KG-R1; claims unverified); site gates unknown: light unknown, water unknown, soil unknown"
+        ],
+        "gate": "unknown",
+        "proxy_radius_m": 0.38,
+        "fit": "uncertain"
+       },
+       {
+        "id": "plant:vaccinium-ovatum",
+        "why": [
+         "Screen (uncertain — evidence: derived from recorded use Hedge row, Screening, Sheared hedge (KG-R1; claims verified); a trait claim contradicts the use; site: site gates unknown: light unknown, water unknown, soil unknown; height: 3 of 5 claimed height ranges reach 1.8 m; the range used for the plan is 0.5–3 m (vaccinium-ovatum:mature_height:rhs01); 2 claimed ranges stay below it): target 1.8 m (stated in Compose); 3 of 5 claimed height ranges reach 1.8 m; the range used for the plan is 0.5–3 m (vaccinium-ovatum:mature_height:rhs01); 2 claimed ranges stay below it; evidence derived from recorded use Hedge row, Screening, Sheared hedge (KG-R1; claims verified); a trait claim contradicts the use; site gates unknown: light unknown, water unknown, soil unknown"
+        ],
+        "gate": "unknown",
+        "proxy_radius_m": 0.63,
+        "fit": "uncertain"
+       }
+      ],
+      "ground": [],
+      "accent": [],
+      "canopy": []
+     },
+     "excluded": [
+      {
+       "id": "plant:acer-palmatum",
+       "reason": "a tree whose claimed mature spread (3–7.6 m, acer-palmatum:mature_spread:rhs01) exceeds the bed (8 × 2.3 m)"
+      },
+      {
+       "id": "plant:cercidiphyllum-japonicum",
+       "reason": "a tree whose claimed mature spread (7.6–18.3 m, cercidiphyllum-japonicum:mature_spread:mobot01) exceeds the bed (8 × 2.3 m)"
+      },
+      {
+       "id": "plant:cornus-nuttallii",
+       "reason": "a tree whose claimed mature spread (3–7.6 m, cornus-nuttallii:mature_spread:mobot01) exceeds the bed (8 × 2.3 m)"
+      }
+     ],
+     "not_used": [
+      {
+       "id": "plant:achillea-millefolium",
+       "reason": "eligible but not needed by any zone"
+      },
+      {
+       "id": "plant:arctostaphylos-uva-ursi",
+       "reason": "eligible but not needed by any zone"
+      },
+      {
+       "id": "plant:cornus-sericea",
+       "reason": "eligible but not needed by any zone"
+      },
+      {
+       "id": "plant:gaillardia-aristata",
+       "reason": "eligible but not needed by any zone"
+      },
+      {
+       "id": "plant:polystichum-munitum",
+       "reason": "eligible but not needed by any zone"
+      }
+     ],
+     "wanted": [
+      "z:screen"
+     ],
+     "notes": [
+      "North bed: no new tree placed — Acer palmatum, Cercidiphyllum japonicum, Cornus nuttallii exceed the bed at claimed mature spread"
+     ],
+     "candidates": {
+      "screen": [
+       {
+        "id": "plant:acer-palmatum",
+        "name": "Acer palmatum",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "meets",
+          "detail": "derived from recorded use Screening (KG-R1; claims unverified)",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:acer-palmatum>z:screen"
+         },
+         "form": {
+          "result": "fails",
+          "detail": "a tree — the row operators arrange shrubs and perennials; there is no tree-placement rule"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "height": {
+          "result": "meets",
+          "detail": "claimed mature height 3–7.6 m (acer-palmatum:mature_height:rhs01) starts at or above 1.8 m; no claimed range stays below it",
+          "verified": true,
+          "claims": [
+           "acer-palmatum:mature_height:rhs01",
+           "acer-palmatum:local_mature_size:cov01",
+           "acer-palmatum:mature_height:rhs02"
+          ]
+         },
+         "geometry": {
+          "result": "fails",
+          "detail": "the row does not fit: crown radius 2.65 m (acer-palmatum:mature_spread:rhs01) needs 3.97 m of bed depth, the bed has 2.3 m"
+         }
+        },
+        "reasons": [
+         "form: a tree — the row operators arrange shrubs and perennials; there is no tree-placement rule",
+         "site: site gates unknown: light unknown, water unknown, soil unknown",
+         "geometry: the row does not fit: crown radius 2.65 m (acer-palmatum:mature_spread:rhs01) needs 3.97 m of bed depth, the bed has 2.3 m"
+        ],
+        "verified": false,
+        "proxy_radius_m": 2.65,
+        "function": "z:screen"
+       },
+       {
+        "id": "plant:achillea-millefolium",
+        "name": "Achillea millefolium",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "fails",
+          "detail": "no screen link in the knowledge graph",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:achillea-millefolium>z:screen"
+         }
+        },
+        "reasons": [
+         "evidence: no screen link in the knowledge graph"
+        ],
+        "verified": false,
+        "proxy_radius_m": 0.15,
+        "function": "z:screen"
+       },
+       {
+        "id": "plant:arctostaphylos-uva-ursi",
+        "name": "Arctostaphylos uva-ursi",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "fails",
+          "detail": "no screen link in the knowledge graph",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:arctostaphylos-uva-ursi>z:screen"
+         }
+        },
+        "reasons": [
+         "evidence: no screen link in the knowledge graph"
+        ],
+        "verified": false,
+        "proxy_radius_m": 0.15,
+        "function": "z:screen"
+       },
+       {
+        "id": "plant:cercidiphyllum-japonicum",
+        "name": "Cercidiphyllum japonicum",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "uncertain",
+          "detail": "candidate — inferred from traits, no source states the use (KG-R4; claims none)",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:cercidiphyllum-japonicum>z:screen"
+         },
+         "form": {
+          "result": "fails",
+          "detail": "a tree — the row operators arrange shrubs and perennials; there is no tree-placement rule"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "height": {
+          "result": "meets",
+          "detail": "claimed mature height 12–18 m (cercidiphyllum-japonicum:mature_height:mobot01) starts at or above 1.8 m; no claimed range stays below it",
+          "verified": false,
+          "claims": [
+           "cercidiphyllum-japonicum:mature_height:mobot01"
+          ]
+         },
+         "geometry": {
+          "result": "fails",
+          "detail": "the row does not fit: crown radius 6.48 m (cercidiphyllum-japonicum:mature_spread:mobot01) needs 9.72 m of bed depth, the bed has 2.3 m"
+         }
+        },
+        "reasons": [
+         "evidence: candidate — inferred from traits, no source states the use (KG-R4; claims none)",
+         "form: a tree — the row operators arrange shrubs and perennials; there is no tree-placement rule",
+         "site: site gates unknown: light unknown, water unknown, soil unknown",
+         "geometry: the row does not fit: crown radius 6.48 m (cercidiphyllum-japonicum:mature_spread:mobot01) needs 9.72 m of bed depth, the bed has 2.3 m"
+        ],
+        "verified": false,
+        "proxy_radius_m": 6.48,
+        "function": "z:screen"
+       },
+       {
+        "id": "plant:cornus-nuttallii",
+        "name": "Cornus nuttallii",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "fails",
+          "detail": "no screen link in the knowledge graph",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:cornus-nuttallii>z:screen"
+         }
+        },
+        "reasons": [
+         "evidence: no screen link in the knowledge graph"
+        ],
+        "verified": false,
+        "proxy_radius_m": 2.65,
+        "function": "z:screen"
+       },
+       {
+        "id": "plant:cornus-sericea",
+        "name": "Cornus sericea",
+        "fit": "uncertain",
+        "checks": {
+         "evidence": {
+          "result": "uncertain",
+          "detail": "derived from recorded use Hedge row, Screening (KG-R1; claims unverified); a trait claim contradicts the use",
+          "verified": false,
+          "conflict": true,
+          "link": "link:plant:cornus-sericea>z:screen"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "height": {
+          "result": "meets",
+          "detail": "claimed mature height 2–3 m (cornus-sericea:mature_height:rhs01) starts at or above 1.8 m; no claimed range stays below it",
+          "verified": false,
+          "claims": [
+           "cornus-sericea:mature_height:rhs01",
+           "cornus-sericea:mature_height:eflora01"
+          ]
+         },
+         "geometry": {
+          "result": "meets",
+          "detail": "a row fits: needs 1.91 m of bed depth, has 2.3 m"
+         }
+        },
+        "reasons": [
+         "evidence: derived from recorded use Hedge row, Screening (KG-R1; claims unverified); a trait claim contradicts the use",
+         "site: site gates unknown: light unknown, water unknown, soil unknown"
+        ],
+        "verified": false,
+        "proxy_radius_m": 1.27,
+        "function": "z:screen"
+       },
+       {
+        "id": "plant:gaillardia-aristata",
+        "name": "Gaillardia aristata",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "fails",
+          "detail": "no screen link in the knowledge graph",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:gaillardia-aristata>z:screen"
+         }
+        },
+        "reasons": [
+         "evidence: no screen link in the knowledge graph"
+        ],
+        "verified": false,
+        "proxy_radius_m": 0.23,
+        "function": "z:screen"
+       },
+       {
+        "id": "plant:gaultheria-shallon",
+        "name": "Gaultheria shallon",
+        "fit": "uncertain",
+        "checks": {
+         "evidence": {
+          "result": "meets",
+          "detail": "derived from recorded use Sheared hedge (KG-R1; claims unverified)",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:gaultheria-shallon>z:screen"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "height": {
+          "result": "uncertain",
+          "detail": "2 of 4 claimed height ranges reach 1.8 m; the range used for the plan is 1.2–3 m (gaultheria-shallon:mature_height:rhs01); 2 claimed ranges stay below it",
+          "verified": false,
+          "claims": [
+           "gaultheria-shallon:mature_height:rhs01",
+           "gaultheria-shallon:mature_height:osu02"
+          ]
+         },
+         "geometry": {
+          "result": "meets",
+          "detail": "a row fits: needs 0.57 m of bed depth, has 2.3 m"
+         }
+        },
+        "reasons": [
+         "site: site gates unknown: light unknown, water unknown, soil unknown",
+         "height: 2 of 4 claimed height ranges reach 1.8 m; the range used for the plan is 1.2–3 m (gaultheria-shallon:mature_height:rhs01); 2 claimed ranges stay below it"
+        ],
+        "verified": false,
+        "proxy_radius_m": 0.38,
+        "function": "z:screen"
+       },
+       {
+        "id": "plant:polystichum-munitum",
+        "name": "Polystichum munitum",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "fails",
+          "detail": "no screen link in the knowledge graph",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:polystichum-munitum>z:screen"
+         }
+        },
+        "reasons": [
+         "evidence: no screen link in the knowledge graph"
+        ],
+        "verified": false,
+        "proxy_radius_m": 0.63,
+        "function": "z:screen"
+       },
+       {
+        "id": "plant:vaccinium-ovatum",
+        "name": "Vaccinium ovatum",
+        "fit": "uncertain",
+        "checks": {
+         "evidence": {
+          "result": "uncertain",
+          "detail": "derived from recorded use Hedge row, Screening, Sheared hedge (KG-R1; claims verified); a trait claim contradicts the use",
+          "verified": false,
+          "conflict": true,
+          "link": "link:plant:vaccinium-ovatum>z:screen"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "height": {
+          "result": "uncertain",
+          "detail": "3 of 5 claimed height ranges reach 1.8 m; the range used for the plan is 0.5–3 m (vaccinium-ovatum:mature_height:rhs01); 2 claimed ranges stay below it",
+          "verified": false,
+          "claims": [
+           "vaccinium-ovatum:mature_height:rhs01",
+           "vaccinium-ovatum:mature_height:gpp01",
+           "vaccinium-ovatum:mature_height:eflora01"
+          ]
+         },
+         "geometry": {
+          "result": "meets",
+          "detail": "a row fits: needs 0.95 m of bed depth, has 2.3 m"
+         }
+        },
+        "reasons": [
+         "evidence: derived from recorded use Hedge row, Screening, Sheared hedge (KG-R1; claims verified); a trait claim contradicts the use",
+         "site: site gates unknown: light unknown, water unknown, soil unknown",
+         "height: 3 of 5 claimed height ranges reach 1.8 m; the range used for the plan is 0.5–3 m (vaccinium-ovatum:mature_height:rhs01); 2 claimed ranges stay below it"
+        ],
+        "verified": false,
+        "proxy_radius_m": 0.63,
+        "function": "z:screen"
+       }
+      ],
+      "ground": []
+     },
+     "requirement": {
+      "target_height_m": 1.8,
+      "target_basis": "stated in Compose",
+      "year_round": false,
+      "year_round_basis": "not stated — winter cover is reported, not required"
+     }
+    },
+    "bed-2": {
+     "picks": {
+      "screen": [],
+      "ground": [
+       {
+        "id": "plant:arctostaphylos-uva-ursi",
+        "why": [
+         "Ground Cover (uncertain — site: site gates unknown: light unknown, water unknown, soil unknown): evidence derived from recorded use Ground cover (KG-R1; claims unverified); site gates unknown: light unknown, water unknown, soil unknown; spread 0.1–0.5 m (arctostaphylos-uva-ursi:mature_spread:rhs01)"
+        ],
+        "gate": "unknown",
+        "proxy_radius_m": 0.15,
+        "fit": "uncertain"
+       },
+       {
+        "id": "plant:gaultheria-shallon",
+        "why": [
+         "Ground Cover (uncertain — site: site gates unknown: light unknown, water unknown, soil unknown): evidence derived from recorded use Ground cover (KG-R1; claims verified); site gates unknown: light unknown, water unknown, soil unknown; spread 0.5–1 m (gaultheria-shallon:mature_spread:rhs01)"
+        ],
+        "gate": "unknown",
+        "proxy_radius_m": 0.38,
+        "fit": "uncertain"
+       }
+      ],
+      "accent": [],
+      "canopy": []
+     },
+     "excluded": [
+      {
+       "id": "plant:acer-palmatum",
+       "reason": "a tree whose claimed mature spread (3–7.6 m, acer-palmatum:mature_spread:rhs01) exceeds the bed (0.8 × 4.8 m)"
+      },
+      {
+       "id": "plant:cercidiphyllum-japonicum",
+       "reason": "a tree whose claimed mature spread (7.6–18.3 m, cercidiphyllum-japonicum:mature_spread:mobot01) exceeds the bed (0.8 × 4.8 m)"
+      },
+      {
+       "id": "plant:cornus-nuttallii",
+       "reason": "a tree whose claimed mature spread (3–7.6 m, cornus-nuttallii:mature_spread:mobot01) exceeds the bed (0.8 × 4.8 m)"
+      },
+      {
+       "id": "plant:cornus-sericea",
+       "reason": "claimed mature spread 2.1–3 m is wider than this 0.8 m bed allows"
+      }
+     ],
+     "not_used": [
+      {
+       "id": "plant:achillea-millefolium",
+       "reason": "eligible but not needed by any zone"
+      },
+      {
+       "id": "plant:gaillardia-aristata",
+       "reason": "eligible but not needed by any zone"
+      },
+      {
+       "id": "plant:polystichum-munitum",
+       "reason": "eligible but not needed by any zone"
+      },
+      {
+       "id": "plant:vaccinium-ovatum",
+       "reason": "eligible but not needed by any zone"
+      }
+     ],
+     "wanted": [
+      "z:ground_cover"
+     ],
+     "notes": [
+      "East bed: no new tree placed — Acer palmatum, Cercidiphyllum japonicum, Cornus nuttallii exceed the bed at claimed mature spread"
+     ],
+     "candidates": {
+      "screen": [],
+      "ground": [
+       {
+        "id": "plant:acer-palmatum",
+        "name": "Acer palmatum",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "fails",
+          "detail": "no ground cover link in the knowledge graph",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:acer-palmatum>z:ground_cover"
+         }
+        },
+        "reasons": [
+         "evidence: no ground cover link in the knowledge graph"
+        ],
+        "verified": false,
+        "proxy_radius_m": 2.65,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:achillea-millefolium",
+        "name": "Achillea millefolium",
+        "fit": "uncertain",
+        "checks": {
+         "evidence": {
+          "result": "meets",
+          "detail": "derived from recorded use Ground cover (KG-R1; claims unverified)",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:achillea-millefolium>z:ground_cover"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "geometry": {
+          "result": "meets",
+          "detail": "crown radius 0.15 m (achillea-millefolium:mature_spread:rhs01) fits the bed"
+         }
+        },
+        "reasons": [
+         "site: site gates unknown: light unknown, water unknown, soil unknown"
+        ],
+        "verified": false,
+        "proxy_radius_m": 0.15,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:arctostaphylos-uva-ursi",
+        "name": "Arctostaphylos uva-ursi",
+        "fit": "uncertain",
+        "checks": {
+         "evidence": {
+          "result": "meets",
+          "detail": "derived from recorded use Ground cover (KG-R1; claims unverified)",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:arctostaphylos-uva-ursi>z:ground_cover"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "geometry": {
+          "result": "meets",
+          "detail": "crown radius 0.15 m (arctostaphylos-uva-ursi:mature_spread:rhs01) fits the bed"
+         }
+        },
+        "reasons": [
+         "site: site gates unknown: light unknown, water unknown, soil unknown"
+        ],
+        "verified": false,
+        "proxy_radius_m": 0.15,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:cercidiphyllum-japonicum",
+        "name": "Cercidiphyllum japonicum",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "fails",
+          "detail": "no ground cover link in the knowledge graph",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:cercidiphyllum-japonicum>z:ground_cover"
+         }
+        },
+        "reasons": [
+         "evidence: no ground cover link in the knowledge graph"
+        ],
+        "verified": false,
+        "proxy_radius_m": 6.48,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:cornus-nuttallii",
+        "name": "Cornus nuttallii",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "uncertain",
+          "detail": "candidate — inferred from traits, no source states the use (KG-R4; claims none)",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:cornus-nuttallii>z:ground_cover"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "geometry": {
+          "result": "fails",
+          "detail": "a tree whose claimed mature spread (3–7.6 m, cornus-nuttallii:mature_spread:mobot01) exceeds the bed (0.8 × 4.8 m)"
+         }
+        },
+        "reasons": [
+         "evidence: candidate — inferred from traits, no source states the use (KG-R4; claims none)",
+         "site: site gates unknown: light unknown, water unknown, soil unknown",
+         "geometry: a tree whose claimed mature spread (3–7.6 m, cornus-nuttallii:mature_spread:mobot01) exceeds the bed (0.8 × 4.8 m)"
+        ],
+        "verified": false,
+        "proxy_radius_m": 2.65,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:cornus-sericea",
+        "name": "Cornus sericea",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "fails",
+          "detail": "no ground cover link in the knowledge graph",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:cornus-sericea>z:ground_cover"
+         }
+        },
+        "reasons": [
+         "evidence: no ground cover link in the knowledge graph"
+        ],
+        "verified": false,
+        "proxy_radius_m": 1.27,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:gaillardia-aristata",
+        "name": "Gaillardia aristata",
+        "fit": "uncertain",
+        "checks": {
+         "evidence": {
+          "result": "uncertain",
+          "detail": "candidate — inferred from traits, no source states the use (KG-R4; claims none)",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:gaillardia-aristata>z:ground_cover"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "geometry": {
+          "result": "meets",
+          "detail": "crown radius 0.23 m (gaillardia-aristata:mature_spread:rhs01) fits the bed"
+         }
+        },
+        "reasons": [
+         "evidence: candidate — inferred from traits, no source states the use (KG-R4; claims none)",
+         "site: site gates unknown: light unknown, water unknown, soil unknown"
+        ],
+        "verified": false,
+        "proxy_radius_m": 0.23,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:gaultheria-shallon",
+        "name": "Gaultheria shallon",
+        "fit": "uncertain",
+        "checks": {
+         "evidence": {
+          "result": "meets",
+          "detail": "derived from recorded use Ground cover (KG-R1; claims verified)",
+          "verified": true,
+          "conflict": false,
+          "link": "link:plant:gaultheria-shallon>z:ground_cover"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "geometry": {
+          "result": "meets",
+          "detail": "crown radius 0.38 m (gaultheria-shallon:mature_spread:rhs01) fits the bed"
+         }
+        },
+        "reasons": [
+         "site: site gates unknown: light unknown, water unknown, soil unknown"
+        ],
+        "verified": true,
+        "proxy_radius_m": 0.38,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:polystichum-munitum",
+        "name": "Polystichum munitum",
+        "fit": "uncertain",
+        "checks": {
+         "evidence": {
+          "result": "meets",
+          "detail": "derived from recorded use Ground cover (KG-R1; claims unverified)",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:polystichum-munitum>z:ground_cover"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "geometry": {
+          "result": "meets",
+          "detail": "crown radius 0.63 m (polystichum-munitum:mature_spread:rhs01) fits the bed"
+         }
+        },
+        "reasons": [
+         "site: site gates unknown: light unknown, water unknown, soil unknown"
+        ],
+        "verified": false,
+        "proxy_radius_m": 0.63,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:vaccinium-ovatum",
+        "name": "Vaccinium ovatum",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "fails",
+          "detail": "no ground cover link in the knowledge graph",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:vaccinium-ovatum>z:ground_cover"
+         }
+        },
+        "reasons": [
+         "evidence: no ground cover link in the knowledge graph"
+        ],
+        "verified": false,
+        "proxy_radius_m": 0.63,
+        "function": "z:ground_cover"
+       }
+      ]
+     },
+     "requirement": null
+    },
+    "bed-3": {
+     "picks": {
+      "screen": [],
+      "ground": [
+       {
+        "id": "plant:arctostaphylos-uva-ursi",
+        "why": [
+         "Ground Cover (uncertain — site: site gates unknown: light unknown, water unknown, soil unknown): evidence derived from recorded use Ground cover (KG-R1; claims unverified); site gates unknown: light unknown, water unknown, soil unknown; spread 0.1–0.5 m (arctostaphylos-uva-ursi:mature_spread:rhs01)"
+        ],
+        "gate": "unknown",
+        "proxy_radius_m": 0.15,
+        "fit": "uncertain"
+       },
+       {
+        "id": "plant:gaultheria-shallon",
+        "why": [
+         "Ground Cover (uncertain — site: site gates unknown: light unknown, water unknown, soil unknown): evidence derived from recorded use Ground cover (KG-R1; claims verified); site gates unknown: light unknown, water unknown, soil unknown; spread 0.5–1 m (gaultheria-shallon:mature_spread:rhs01)"
+        ],
+        "gate": "unknown",
+        "proxy_radius_m": 0.38,
+        "fit": "uncertain"
+       }
+      ],
+      "accent": [],
+      "canopy": []
+     },
+     "excluded": [
+      {
+       "id": "plant:acer-palmatum",
+       "reason": "a tree whose claimed mature spread (3–7.6 m, acer-palmatum:mature_spread:rhs01) exceeds the bed (0.8 × 4.8 m)"
+      },
+      {
+       "id": "plant:cercidiphyllum-japonicum",
+       "reason": "a tree whose claimed mature spread (7.6–18.3 m, cercidiphyllum-japonicum:mature_spread:mobot01) exceeds the bed (0.8 × 4.8 m)"
+      },
+      {
+       "id": "plant:cornus-nuttallii",
+       "reason": "a tree whose claimed mature spread (3–7.6 m, cornus-nuttallii:mature_spread:mobot01) exceeds the bed (0.8 × 4.8 m)"
+      },
+      {
+       "id": "plant:cornus-sericea",
+       "reason": "claimed mature spread 2.1–3 m is wider than this 0.8 m bed allows"
+      }
+     ],
+     "not_used": [
+      {
+       "id": "plant:achillea-millefolium",
+       "reason": "eligible but not needed by any zone"
+      },
+      {
+       "id": "plant:gaillardia-aristata",
+       "reason": "eligible but not needed by any zone"
+      },
+      {
+       "id": "plant:polystichum-munitum",
+       "reason": "eligible but not needed by any zone"
+      },
+      {
+       "id": "plant:vaccinium-ovatum",
+       "reason": "eligible but not needed by any zone"
+      }
+     ],
+     "wanted": [
+      "z:ground_cover"
+     ],
+     "notes": [
+      "West bed: no new tree placed — Acer palmatum, Cercidiphyllum japonicum, Cornus nuttallii exceed the bed at claimed mature spread"
+     ],
+     "candidates": {
+      "screen": [],
+      "ground": [
+       {
+        "id": "plant:acer-palmatum",
+        "name": "Acer palmatum",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "fails",
+          "detail": "no ground cover link in the knowledge graph",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:acer-palmatum>z:ground_cover"
+         }
+        },
+        "reasons": [
+         "evidence: no ground cover link in the knowledge graph"
+        ],
+        "verified": false,
+        "proxy_radius_m": 2.65,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:achillea-millefolium",
+        "name": "Achillea millefolium",
+        "fit": "uncertain",
+        "checks": {
+         "evidence": {
+          "result": "meets",
+          "detail": "derived from recorded use Ground cover (KG-R1; claims unverified)",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:achillea-millefolium>z:ground_cover"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "geometry": {
+          "result": "meets",
+          "detail": "crown radius 0.15 m (achillea-millefolium:mature_spread:rhs01) fits the bed"
+         }
+        },
+        "reasons": [
+         "site: site gates unknown: light unknown, water unknown, soil unknown"
+        ],
+        "verified": false,
+        "proxy_radius_m": 0.15,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:arctostaphylos-uva-ursi",
+        "name": "Arctostaphylos uva-ursi",
+        "fit": "uncertain",
+        "checks": {
+         "evidence": {
+          "result": "meets",
+          "detail": "derived from recorded use Ground cover (KG-R1; claims unverified)",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:arctostaphylos-uva-ursi>z:ground_cover"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "geometry": {
+          "result": "meets",
+          "detail": "crown radius 0.15 m (arctostaphylos-uva-ursi:mature_spread:rhs01) fits the bed"
+         }
+        },
+        "reasons": [
+         "site: site gates unknown: light unknown, water unknown, soil unknown"
+        ],
+        "verified": false,
+        "proxy_radius_m": 0.15,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:cercidiphyllum-japonicum",
+        "name": "Cercidiphyllum japonicum",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "fails",
+          "detail": "no ground cover link in the knowledge graph",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:cercidiphyllum-japonicum>z:ground_cover"
+         }
+        },
+        "reasons": [
+         "evidence: no ground cover link in the knowledge graph"
+        ],
+        "verified": false,
+        "proxy_radius_m": 6.48,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:cornus-nuttallii",
+        "name": "Cornus nuttallii",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "uncertain",
+          "detail": "candidate — inferred from traits, no source states the use (KG-R4; claims none)",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:cornus-nuttallii>z:ground_cover"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "geometry": {
+          "result": "fails",
+          "detail": "a tree whose claimed mature spread (3–7.6 m, cornus-nuttallii:mature_spread:mobot01) exceeds the bed (0.8 × 4.8 m)"
+         }
+        },
+        "reasons": [
+         "evidence: candidate — inferred from traits, no source states the use (KG-R4; claims none)",
+         "site: site gates unknown: light unknown, water unknown, soil unknown",
+         "geometry: a tree whose claimed mature spread (3–7.6 m, cornus-nuttallii:mature_spread:mobot01) exceeds the bed (0.8 × 4.8 m)"
+        ],
+        "verified": false,
+        "proxy_radius_m": 2.65,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:cornus-sericea",
+        "name": "Cornus sericea",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "fails",
+          "detail": "no ground cover link in the knowledge graph",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:cornus-sericea>z:ground_cover"
+         }
+        },
+        "reasons": [
+         "evidence: no ground cover link in the knowledge graph"
+        ],
+        "verified": false,
+        "proxy_radius_m": 1.27,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:gaillardia-aristata",
+        "name": "Gaillardia aristata",
+        "fit": "uncertain",
+        "checks": {
+         "evidence": {
+          "result": "uncertain",
+          "detail": "candidate — inferred from traits, no source states the use (KG-R4; claims none)",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:gaillardia-aristata>z:ground_cover"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "geometry": {
+          "result": "meets",
+          "detail": "crown radius 0.23 m (gaillardia-aristata:mature_spread:rhs01) fits the bed"
+         }
+        },
+        "reasons": [
+         "evidence: candidate — inferred from traits, no source states the use (KG-R4; claims none)",
+         "site: site gates unknown: light unknown, water unknown, soil unknown"
+        ],
+        "verified": false,
+        "proxy_radius_m": 0.23,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:gaultheria-shallon",
+        "name": "Gaultheria shallon",
+        "fit": "uncertain",
+        "checks": {
+         "evidence": {
+          "result": "meets",
+          "detail": "derived from recorded use Ground cover (KG-R1; claims verified)",
+          "verified": true,
+          "conflict": false,
+          "link": "link:plant:gaultheria-shallon>z:ground_cover"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "geometry": {
+          "result": "meets",
+          "detail": "crown radius 0.38 m (gaultheria-shallon:mature_spread:rhs01) fits the bed"
+         }
+        },
+        "reasons": [
+         "site: site gates unknown: light unknown, water unknown, soil unknown"
+        ],
+        "verified": true,
+        "proxy_radius_m": 0.38,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:polystichum-munitum",
+        "name": "Polystichum munitum",
+        "fit": "uncertain",
+        "checks": {
+         "evidence": {
+          "result": "meets",
+          "detail": "derived from recorded use Ground cover (KG-R1; claims unverified)",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:polystichum-munitum>z:ground_cover"
+         },
+         "site": {
+          "result": "uncertain",
+          "detail": "site gates unknown: light unknown, water unknown, soil unknown"
+         },
+         "geometry": {
+          "result": "meets",
+          "detail": "crown radius 0.63 m (polystichum-munitum:mature_spread:rhs01) fits the bed"
+         }
+        },
+        "reasons": [
+         "site: site gates unknown: light unknown, water unknown, soil unknown"
+        ],
+        "verified": false,
+        "proxy_radius_m": 0.63,
+        "function": "z:ground_cover"
+       },
+       {
+        "id": "plant:vaccinium-ovatum",
+        "name": "Vaccinium ovatum",
+        "fit": "fails",
+        "checks": {
+         "evidence": {
+          "result": "fails",
+          "detail": "no ground cover link in the knowledge graph",
+          "verified": false,
+          "conflict": false,
+          "link": "link:plant:vaccinium-ovatum>z:ground_cover"
+         }
+        },
+        "reasons": [
+         "evidence: no ground cover link in the knowledge graph"
+        ],
+        "verified": false,
+        "proxy_radius_m": 0.63,
+        "function": "z:ground_cover"
+       }
+      ]
+     },
+     "requirement": null
+    }
+   },
+   "assumptions": [
+    "North bed: no new tree placed — Acer palmatum, Cercidiphyllum japonicum, Cornus nuttallii exceed the bed at claimed mature spread",
+    "North bed: arrangement chosen in Compose — staggered double row. A composition choice, not a verified planting strategy.",
+    "East bed: no new tree placed — Acer palmatum, Cercidiphyllum japonicum, Cornus nuttallii exceed the bed at claimed mature spread",
+    "West bed: no new tree placed — Acer palmatum, Cercidiphyllum japonicum, Cornus nuttallii exceed the bed at claimed mature spread",
+    "plant sizes are proxies: half the claimed mature spread (one claim chosen per species, alternatives counted) — not measured plants; planting spacing is 0.75 × (screen rows) and 0.65 × (ground layer) the claimed mature spread, so canopies meet and overlap at maturity by design — both factors are heuristics (the database holds no spacing claim; see ARRANGEMENT_RULES)"
+   ],
+   "unresolved": [
+    "unknown: light",
+    "unknown: soil type and drainage"
+   ],
+   "edit_event": null,
+   "schedule": [
+    {
+     "species_id": "plant:arctostaphylos-uva-ursi",
+     "count": 26,
+     "roles": [
+      "ground"
+     ],
+     "beds": [
+      "bed-2",
+      "bed-3"
+     ]
+    },
+    {
+     "species_id": "plant:gaultheria-shallon",
+     "count": 15,
+     "roles": [
+      "screen",
+      "ground"
+     ],
+     "beds": [
+      "bed-1",
+      "bed-2",
+      "bed-3"
+     ]
+    },
+    {
+     "species_id": "plant:vaccinium-ovatum",
+     "count": 10,
+     "roles": [
+      "screen",
+      "screen-layer"
+     ],
+     "beds": [
+      "bed-1"
+     ]
+    }
+   ],
+   "validation": {
+    "ok": true,
+    "issues": []
+   },
+   "evaluation": {
+    "bed_area_m2": 24.32,
+    "beds": [
+     {
+      "bed_id": "bed-1",
+      "name": "North bed",
+      "area_m2": 16.64,
+      "plants": 15,
+      "species": 2,
+      "functions": [
+       "z:screen"
+      ]
+     },
+     {
+      "bed_id": "bed-2",
+      "name": "East bed",
+      "area_m2": 3.84,
+      "plants": 27,
+      "species": 2,
+      "functions": [
+       "z:ground_cover"
+      ]
+     },
+     {
+      "bed_id": "bed-3",
+      "name": "West bed",
+      "area_m2": 3.84,
+      "plants": 9,
+      "species": 2,
+      "functions": [
+       "z:ground_cover"
+      ]
+     }
+    ],
+    "plant_count": 51,
+    "species_count": 3,
+    "by_role": {
+     "screen": 9,
+     "screen-layer": 6,
+     "ground": 36
+    },
+    "edge_zones": [
+     {
+      "zone": "zone-screen-north-edge-bed-1",
+      "bed_id": "bed-1",
+      "label": "Screen along the north edge (North bed)",
+      "edge_length_m": 8,
+      "covered_m": 8,
+      "screen_row_cover_m": 8,
+      "continuity": 1,
+      "gaps": [],
+      "gap_total_m": 0,
+      "target_height_m": 1.8,
+      "target_basis": "stated in Compose",
+      "year_round_required": false,
+      "year_round_basis": "not stated — winter cover is reported, not required",
+      "cover_at_target_certain_m": 0,
+      "cover_at_target_possible_m": 8,
+      "cover_evergreen_m": 8,
+      "checks": {
+       "continuity": "met",
+       "target_height": "uncertain",
+       "year_round": "not required",
+       "evidence": "uncertain"
+      },
+      "status": "uncertain",
+      "species": [
+       {
+        "species_id": "plant:gaultheria-shallon",
+        "link": "link:plant:gaultheria-shallon>z:screen",
+        "link_status": "derived",
+        "conflict": false,
+        "link_verified": false,
+        "leaf": "evergreen"
+       },
+       {
+        "species_id": "plant:vaccinium-ovatum",
+        "link": "link:plant:vaccinium-ovatum>z:screen",
+        "link_status": "derived",
+        "conflict": true,
+        "link_verified": false,
+        "leaf": "evergreen"
+       }
+      ],
+      "reasons": [
+       {
+        "kind": "uncertain",
+        "text": "the target height 1.8 m is reached only if the plants grow to the upper end of their claimed height ranges (certain on 0 m, possible on 8 m of the 8 m the crowns cover)"
+       },
+       {
+        "kind": "conflict",
+        "text": "Vaccinium ovatum: a trait claim contradicts its Screen use — the function link is not settled"
+       }
+      ],
+      "verified_performance": false,
+      "note": "geometric estimate: mature crowns (half the claimed spread) projected on the edge, overlaps counted once; heights from claimed ranges. Not a measured or verified screening performance — 2 of 2 species rest on unverified claims."
+     }
+    ],
+    "ground_cover": [
+     {
+      "bed_id": "bed-2",
+      "name": "East bed",
+      "bed_m2": 3.84,
+      "plantable_m2": 3.84,
+      "area_for_ground_m2": 3.84,
+      "ground_cover_m2": 2.33,
+      "ground_cover_share": 0.61,
+      "any_crown_share": 0.61,
+      "plants": 27,
+      "expected_count": 37,
+      "spacing_m": 0.34,
+      "pattern": "drifts",
+      "patches": null,
+      "reasons": [],
+      "verified_performance": false,
+      "note": "geometric estimate: share of the plantable bed area under the mature crowns of the ground layer (claimed spreads, each point counted once). Not the cover a planting actually reaches, and not weed suppression."
+     },
+     {
+      "bed_id": "bed-3",
+      "name": "West bed",
+      "bed_m2": 3.84,
+      "plantable_m2": 3.84,
+      "area_for_ground_m2": 3.84,
+      "ground_cover_m2": 2.99,
+      "ground_cover_share": 0.78,
+      "any_crown_share": 0.78,
+      "plants": 9,
+      "expected_count": 37,
+      "spacing_m": 0.34,
+      "pattern": "drifts",
+      "patches": null,
+      "reasons": [],
+      "verified_performance": false,
+      "note": "geometric estimate: share of the plantable bed area under the mature crowns of the ground layer (claimed spreads, each point counted once). Not the cover a planting actually reaches, and not weed suppression."
+     }
+    ],
+    "findings": [
+     {
+      "kind": "uncertain",
+      "text": "the target height 1.8 m is reached only if the plants grow to the upper end of their claimed height ranges (certain on 0 m, possible on 8 m of the 8 m the crowns cover)",
+      "where": "Screen along the north edge (North bed)"
+     },
+     {
+      "kind": "conflict",
+      "text": "Vaccinium ovatum: a trait claim contradicts its Screen use — the function link is not settled",
+      "where": "Screen along the north edge (North bed)"
+     }
+    ],
+    "open_zones": [
+     {
+      "id": "open-yna9",
+      "area_m2": 7.68,
+      "plants_inside": 0
+     }
+    ],
+    "evidence_gates": {
+     "pass": 0,
+     "conditional": 0,
+     "unknown": 51
+    },
+    "cost": null,
+    "cost_note": "no prices in the database — not computed",
+    "ecology_score": null,
+    "ecology_note": "no pollinator-interaction data — no score; ecological-value claims are listed per species instead",
+    "unknown_conditions": [
+     "light",
+     "soil_type",
+     "soil_drainage",
+     "water",
+     "wind",
+     "irrigation"
+    ],
+    "rules": {
+     "size_proxy": {
+      "value": 0.5,
+      "unit": "× claimed mature spread = crown radius",
+      "source": "claim",
+      "note": "one claimed range per species (the median species-level range, or the range stated for the bed light); its claim id is on every plant object"
+     },
+     "screen_spacing": {
+      "value": 0.75,
+      "unit": "× claimed mature spread, centre to centre",
+      "source": "heuristic",
+      "note": "mature crowns overlap by a quarter so the row closes; the database holds no spacing claim"
+     },
+     "ground_spacing": {
+      "value": 0.65,
+      "unit": "× mean claimed mature spread of the ground species",
+      "source": "heuristic",
+      "note": "the database holds no spacing claim"
+     },
+     "row_inset": {
+      "value": 1,
+      "unit": "× crown radius between the screened edge and the stems",
+      "source": "geometry",
+      "note": "the mature crown touches the edge without crossing it"
+     },
+     "row_end_margin": {
+      "value": 0.9,
+      "unit": "× crown radius kept free at each end of a row",
+      "source": "heuristic"
+     },
+     "edge_tolerance": {
+      "value": 0.5,
+      "unit": "× crown radius: least distance of a stem from any bed edge",
+      "source": "heuristic",
+      "note": "a mature crown may overhang the inner bed edge by up to half its radius"
+     },
+     "stagger_offset": {
+      "value": 1.6,
+      "unit": "× inner-row crown radius between the two rows",
+      "source": "heuristic"
+     },
+     "stagger_clearance": {
+      "value": 0.9,
+      "unit": "× inner-row crown radius between the inner row and the inner bed edge",
+      "source": "heuristic"
+     },
+     "neighbour_clearance": {
+      "value": 0.6,
+      "unit": "× sum of two crown radii: least distance between stems",
+      "source": "heuristic"
+     },
+     "ground_jitter": {
+      "value": 0.35,
+      "unit": "× spacing (seeded)",
+      "source": "heuristic",
+      "note": "breaks the lattice into drifts"
+     },
+     "rhythm_band": {
+      "value": 2,
+      "unit": "× spacing: length of one species band along the bed (medium grain; bold 4, fine 1)",
+      "source": "heuristic",
+      "note": "a composition choice, not a horticultural rule"
+     },
+     "patch_radius": {
+      "value": 1.7,
+      "unit": "× spacing: radius of one patch (medium grain; bold 2.4, fine 1.15)",
+      "source": "heuristic",
+      "note": "a composition choice, not a horticultural rule"
+     },
+     "patch_gap": {
+      "value": 1.1,
+      "unit": "× spacing of open ground between two patches",
+      "source": "heuristic",
+      "note": "the ground between patches is left unplanted on purpose; the cover estimate counts it as uncovered"
+     },
+     "tree_keepout": {
+      "value": 0.6,
+      "unit": "× existing canopy radius kept free around the trunk",
+      "source": "heuristic"
+     },
+     "screen_target_height": {
+      "value": 1.8,
+      "unit": "m, used only when no target height is stated",
+      "source": "heuristic",
+      "note": "a standing eye-level default; state the height to replace it"
+     },
+     "gap_report_min": {
+      "value": 0.05,
+      "unit": "m: shortest uncovered stretch reported as a gap",
+      "source": "heuristic",
+      "note": "below the 1 cm × 5 drawing precision"
+     },
+     "area_sample": {
+      "value": 0.1,
+      "unit": "m sample grid for plantable area and cover",
+      "source": "geometry"
+     }
+    }
+   },
+   "input_fp": "p-8mexnh1v8zchi",
+   "id": "v-11dwm",
+   "created": "2026-11-17T03:44:08.452Z",
+   "parent_version_id": null,
+   "objects_fp": "o-9guopu",
+   "preview_match": {
+    "compared": 51,
+    "preview_count": 51,
+    "identical": true,
+    "what": "bed, species, role and position of every plant object, Compose preview against this version"
+   },
+   "bed_arrangements": {
+    "bed-1": {
+     "name": "North bed",
+     "arrangement": "staggered double row",
+     "plants": 15,
+     "composition": {
+      "rows": "double"
+     }
+    },
+    "bed-2": {
+     "name": "East bed",
+     "arrangement": "naturalistic drifts",
+     "plants": 27,
+     "composition": null
+    },
+    "bed-3": {
+     "name": "West bed",
+     "arrangement": "naturalistic drifts",
+     "plants": 9,
+     "composition": null
+    }
+   }
+  }
+ ],
+ "current_version_id": "v-11dwm",
+ "redo": [],
+ "plant_seq": 51,
+ "ui": {
+  "unlocked": {
+   "welcome": true,
+   "site": true,
+   "intent": true,
+   "garden": true
+  },
+  "stage": "intent",
+  "site_fp": "[[[0,0],[8,0],[8,6],[0,6]],[[\"no-plant-zone\",null,[[2.4,0.9],[5.6,0.9],[5.6,3.3],[2.4,3.3]],null]],{\"light\":{\"value\":null,\"status\":\"unknown\",\"source\":null,\"note\":null},\"soil_type\":{\"value\":null,\"status\":\"unknown\",\"source\":null,\"note\":null},\"soil_drainage\":{\"value\":null,\"status\":\"unknown\",\"source\":null,\"note\":null},\"water\":{\"value\":null,\"status\":\"unknown\",\"source\":null,\"note\":null},\"wind\":{\"value\":null,\"status\":\"unknown\",\"source\":null,\"note\":null},\"irrigation\":{\"value\":null,\"status\":\"unknown\",\"source\":null,\"note\":null}}]",
+  "view": {
+   "bedId": "bed-1",
+   "composeNone": false,
+   "cStep": 3,
+   "cPanel": null,
+   "mode": "plan",
+   "selectedPlant": null,
+   "selectedSpecies": null,
+   "evidenceOpen": false,
+   "drawer": null,
+   "whyOpen": true,
+   "whyFull": false,
+   "cWhy": null,
+   "gen": {
+    "seed": 42,
+    "density": 1,
+    "stagger": true
+   }
+  },
+  "entry": {},
+  "geometry_ack": "[[\"bed-1\",\"[[[0,4.8],[0.8,4.8],[0.8,3.7],[7.2,3.7],[7.2,4.8],[8,4.8],[8,6],[0,6]],[],[[\\\"z:screen\\\",\\\"north-edge\\\",1.8,null]],{\\\"rows\\\":\\\"double\\\"}]\"],[\"bed-2\",\"[[[7.2,0],[8,0],[8,4.8],[7.2,4.8]],[],[[\\\"z:ground_cover\\\",\\\"east-edge\\\"]]]\"],[\"bed-3\",\"[[[0,0],[0.8,0],[0.8,4.8],[0,4.8]],[],[[\\\"z:ground_cover\\\",\\\"west-edge\\\"]]]\"]]"
+ },
+ "considered": [],
+ "updated": "2026-11-16T20:44:06"
+}

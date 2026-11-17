@@ -1,0 +1,2604 @@
+{
+  "entity": {
+    "id": "cornus-nuttallii",
+    "scientific_name": "Cornus nuttallii",
+    "synonyms_scientific": [
+      "Benthamidia nuttallii"
+    ],
+    "common_names": {
+      "en": [
+        "Pacific dogwood",
+        "Western flowering dogwood",
+        "Western dogwood",
+        "Mountain dogwood",
+        "Canadian dogwood"
+      ],
+      "zh": [
+        "太平洋山茱萸"
+      ]
+    },
+    "family": "Cornaceae",
+    "kpu_plant_type": "Tree - deciduous",
+    "respondent_roles": [
+      "tree",
+      "tree"
+    ],
+    "raw_names": [
+      "Pacific dogwood",
+      "Pacific Dogwood"
+    ],
+    "survey_respondents": [
+      "survey-r01",
+      "survey-r07"
+    ],
+    "origin_status": "native_bc_west_of_cascades",
+    "external_refs": {
+      "kpu": "https://plantdatabase.kpu.ca/Plant/conu",
+      "mobot": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "gpp": null,
+      "osu": "https://landscapeplants.oregonstate.edu/plants/cornus-nuttallii",
+      "eflora": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cornus%20nuttallii",
+      "rhs": "https://www.rhs.org.uk/plants/4402/wd/details",
+      "usda": "https://plants.usda.gov/plant-profile/CONU4",
+      "inat": "https://www.inaturalist.org/taxa/76447"
+    },
+    "in_vancouver_street_tree_list": true,
+    "prototype_role": "BC-native flowering tree (provincial floral emblem); 2 survey mentions; 620 public trees in Vancouver — tests a native tree with a known disease problem (anthracnose) and a local record",
+    "survey_mentions": 2,
+    "added": "2026-11-02",
+    "added_by": "10-plant expansion (brief 2026-11-02); entity facts from the T5 extraction and the survey, see claims for evidence",
+    "usda_symbol": "CONU4",
+    "identity_review": {
+      "audited": "2026-11-02",
+      "method": "tools/identity_audit.py (M45): sources on file + entity notes; disputed = left for human judgement",
+      "taxonomic_identity": {
+        "status": "confirmed",
+        "note": "Cornus nuttallii Audubon ex Torr. & A. Gray; synonym Benthamidia nuttallii; the hybrid 'Eddie's White Wonder' (× C. florida) is a different taxon and was not used"
+      },
+      "geographic_origin": {
+        "status": "confirmed",
+        "note": "native to BC west of the Cascades (E-Flora Yellow S5; USDA native CAN/L48; BC floral emblem)",
+        "origin_status_on_entity": "native_bc_west_of_cascades"
+      },
+      "botanical_growth_form": {
+        "status": "confirmed",
+        "note": "read as tree from kpu (entity.kpu_plant_type), cov_trees, rhs, osu, eflora, survey (entity.respondent_roles) (supported; M29a)",
+        "kpu_plant_type": "Tree - deciduous"
+      },
+      "design_function": {
+        "status": "confirmed",
+        "note": "specimen flowering tree; respondents 'flowers', 'commonly planted'",
+        "respondent_roles_as_typed": [
+          "tree",
+          "tree"
+        ]
+      },
+      "synonyms_raw": [
+        "Benthamidia nuttallii",
+        "Benthamidia nuttallii (Audubon) Moldenke"
+      ]
+    }
+  },
+  "custom": [],
+  "fill_plan": {
+    "gate": {
+      "hardiness_zone": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "invasive_status": [
+        "iscbc"
+      ],
+      "water_drainage": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "mature_height": [
+        "kpu",
+        "gpp",
+        "pojar",
+        "osu"
+      ],
+      "mature_spread": [
+        "kpu",
+        "gpp"
+      ],
+      "maintenance_level": [
+        "gpp",
+        "growgreen"
+      ],
+      "ecological_value": [
+        "eflora",
+        "pojar",
+        "growgreen"
+      ]
+    },
+    "compare": {
+      "exposure": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "seasonal_interest": [
+        "kpu",
+        "gpp",
+        "pojar"
+      ],
+      "texture": [
+        "kpu"
+      ],
+      "form": [
+        "kpu",
+        "osu"
+      ],
+      "habit": [
+        "kpu"
+      ],
+      "soil_type": [
+        "kpu",
+        "mobot"
+      ],
+      "growth_rate": [
+        "gpp"
+      ],
+      "landscape_use": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "pest_susceptibility": [
+        "kpu"
+      ]
+    },
+    "extended": {
+      "time_to_intended_size": [
+        "gpp",
+        "practitioner"
+      ],
+      "local_mature_size": [
+        "practitioner",
+        "inat"
+      ],
+      "long_term_performance": [
+        "practitioner"
+      ],
+      "behaviour_with_others": [
+        "pojar",
+        "relations.json",
+        "practitioner"
+      ],
+      "toxicity": [
+        "aspca"
+      ],
+      "local_availability": [
+        "nats"
+      ],
+      "vancouver_context": [
+        "growgreen",
+        "eflora",
+        "inat"
+      ]
+    },
+    "not_available": {
+      "gpp": "no Great Plant Picks entry for the species (full plant list, 2116 entries, filtered for genus Cornus on 2026-11-02); only the hybrid Cornus 'Eddie's White Wonder' (C. nuttallii × C. florida, greatplantpicks.org/plantlists/view/425) is listed — a different taxon, not extracted",
+      "kpu": "tier C, link only (M8); no values taken",
+      "pojar": "awaiting Pojar pages"
+    },
+    "t5_extractions": [
+      "inputs/t5/cornus-nuttallii-2026-11-02.json"
+    ]
+  },
+  "claims": [
+    {
+      "id": "cornus-nuttallii:in_vancouver_street_tree_list:cov01",
+      "plant": "cornus-nuttallii",
+      "field": "in_vancouver_street_tree_list",
+      "value": true,
+      "value_kind": "categorical",
+      "text": "Cornus nuttallii is in the City of Vancouver public tree inventory (620 trees, snapshot 2026-11-02).",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "City of Vancouver public tree inventory, data snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded",
+      "confidence": 0.95,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "content"
+    },
+    {
+      "id": "cornus-nuttallii:vancouver_context:cov01",
+      "plant": "cornus-nuttallii",
+      "field": "vancouver_context",
+      "value": {
+        "public_trees_count": 620,
+        "cultivar_labels_recorded": 2,
+        "unlabelled": 608
+      },
+      "value_kind": "quantitative",
+      "text": "The City of Vancouver inventory lists 620 public Cornus nuttallii trees; 608 carry no cultivar label and the rest are spread over 2 cultivar names.",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "City of Vancouver public tree inventory, data snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded",
+      "confidence": 0.9,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "content"
+    },
+    {
+      "id": "cornus-nuttallii:vancouver_context:cov02",
+      "plant": "cornus-nuttallii",
+      "field": "vancouver_context",
+      "value": {
+        "cultivar_counts": {
+          "GOLDSPOT": 11,
+          "CORIGO GIANT": 1
+        },
+        "cultivar_group_threshold_n": 50
+      },
+      "value_kind": "quantitative",
+      "text": "Most frequent cultivar labels for public Cornus nuttallii in Vancouver: 'Goldspot' (11); 'Corigo Giant' (1).",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "City of Vancouver public tree inventory, data snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded",
+      "confidence": 0.85,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "note": "labels as recorded by Parks staff; 'NONE' means not recorded, not the straight species. Labels with n >= 50 have their own size claims (context cultivar:'Name'): .",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "content"
+    },
+    {
+      "id": "cornus-nuttallii:vancouver_context:cov03",
+      "plant": "cornus-nuttallii",
+      "field": "vancouver_context",
+      "value": {
+        "local_area_counts": {
+          "Killarney": 92,
+          "Riley Park": 66,
+          "West Point Grey": 56,
+          "Shaughnessy": 49,
+          "Dunbar-Southlands": 45,
+          "Marpole": 45,
+          "Kerrisdale": 36,
+          "South Cambie": 35,
+          "Kensington-Cedar Cottage": 28,
+          "Renfrew-Collingwood": 27,
+          "Hastings-Sunrise": 25,
+          "Kitsilano": 24,
+          "Sunset": 22,
+          "Victoria-Fraserview": 17,
+          "Oakridge": 15,
+          "Arbutus Ridge": 12,
+          "Strathcona": 7,
+          "Downtown": 6,
+          "West End": 2,
+          "Fairview": 2
+        },
+        "areas_present": 20
+      },
+      "value_kind": "quantitative",
+      "text": "Public Cornus nuttallii occur in 20 of Vancouver's local areas; most in Killarney (92), Riley Park (66), West Point Grey (56), Shaughnessy (49), Dunbar-Southlands (45).",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "City of Vancouver public tree inventory, data snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded",
+      "confidence": 0.9,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "content"
+    },
+    {
+      "id": "cornus-nuttallii:local_mature_size:cov01",
+      "plant": "cornus-nuttallii",
+      "field": "local_mature_size",
+      "value": {
+        "n": 620,
+        "p10": 7.6,
+        "median": 10.7,
+        "p90": 16.8,
+        "max": 32.0,
+        "unit": "m",
+        "measure": "height class midpoint",
+        "classes_ft": [
+          15,
+          25,
+          35,
+          45,
+          55
+        ]
+      },
+      "value_kind": "quantitative",
+      "text": "Height class midpoints of 620 public Cornus nuttallii in Vancouver (15/25/35 ft classes, all ages mixed): median class 10.7 m, 10th–90th percentile classes 7.6–16.8 m, highest class 32.0 m.",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "City of Vancouver public tree inventory, data snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded; height_m is a banded class (15/25/35/45/55 ft midpoints), not a measurement",
+      "confidence": 0.7,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "note": "95% of records sit on the class grid; treat as a class, not a figure. No planting dates in this snapshot, so ages are unknown. max is a single record and may be mis-keyed. Cultivar labels below the n >= 50 threshold are included here and not reported separately: 'Goldspot' (11), 'Corigo Giant' (1).",
+      "concepts": [
+        "height_class:7-10m",
+        "height_class:10-15m",
+        "height_class:15-22m"
+      ],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "content"
+    },
+    {
+      "id": "cornus-nuttallii:local_mature_size:cov02",
+      "plant": "cornus-nuttallii",
+      "field": "local_mature_size",
+      "value": {
+        "n": 480,
+        "median": 10.7,
+        "p90": 16.8,
+        "max": 32.0,
+        "unit": "m",
+        "subset": "established (DBH >= 20 cm, proxy)",
+        "threshold_dbh_cm": 20,
+        "measure": "height class midpoint"
+      },
+      "value_kind": "quantitative",
+      "text": "Among the 480 public Cornus nuttallii in Vancouver counted as established (DBH >= 20 cm, proxy), the median height class midpoint is 10.7 m and the 90th percentile class 16.8 m.",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "City of Vancouver public tree inventory, data snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded; established (DBH >= 20 cm, proxy) — trees without a planting date, see methods.md M2",
+      "confidence": 0.6,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "note": "proxy, not a measurement of age: confidence below age-cohort claims. Closest this source gets to 'real mature size under local conditions' (survey c2). Cultivar labels below the n >= 50 threshold are included here and not reported separately: 'Goldspot' (11), 'Corigo Giant' (1).",
+      "concepts": [
+        "height_class:10-15m",
+        "height_class:15-22m"
+      ],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [
+        "age:established"
+      ],
+      "cultivar": null,
+      "verification_scope": "content"
+    },
+    {
+      "id": "cornus-nuttallii:local_mature_size:cov03",
+      "plant": "cornus-nuttallii",
+      "field": "local_mature_size",
+      "value": {
+        "n": 620,
+        "median": 30.5,
+        "p90": 68.6,
+        "max": 251.5,
+        "unit": "cm DBH"
+      },
+      "value_kind": "quantitative",
+      "text": "Trunk diameters (DBH) of 620 public Cornus nuttallii in Vancouver: median 30.5 cm, 90th percentile 68.6 cm, largest 251.5 cm.",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "City of Vancouver public tree inventory, data snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "note": "max is a single record and may be mis-keyed. Cultivar labels below the n >= 50 threshold are included here and not reported separately: 'Goldspot' (11), 'Corigo Giant' (1).",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "content"
+    },
+    {
+      "id": "cornus-nuttallii:local_mature_size:cov04",
+      "plant": "cornus-nuttallii",
+      "field": "local_mature_size",
+      "value": {
+        "n": 608,
+        "p10": 7.6,
+        "median": 10.7,
+        "p90": 16.8,
+        "max": 32.0,
+        "unit": "m",
+        "measure": "height class midpoint",
+        "classes_ft": [
+          15,
+          25,
+          35,
+          45,
+          55
+        ]
+      },
+      "value_kind": "quantitative",
+      "text": "Height class midpoints of 608 public Cornus nuttallii (cultivar unrecorded) in Vancouver (15/25/35 ft classes, all ages mixed): median class 10.7 m, 10th–90th percentile classes 7.6–16.8 m, highest class 32.0 m.",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "cultivar:(unrecorded); CoV public trees, snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded; height_m is a banded class (15/25/35/45/55 ft midpoints), not a measurement",
+      "confidence": 0.7,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "note": "94% of records sit on the class grid; treat as a class, not a figure. No planting dates in this snapshot, so ages are unknown. max is a single record and may be mis-keyed. 'Unrecorded' means no label in the inventory, not the straight species; never merged into a cultivar group. interpretation (not data): the unrecorded class is larger and thicker than the labelled groups, consistent with older plantings that pre-date cultivar labelling; its 10.7 m established-class median is high for this species and may include mislabelled maples.",
+      "concepts": [
+        "height_class:7-10m",
+        "height_class:10-15m",
+        "height_class:15-22m"
+      ],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [],
+      "cultivar": "(unrecorded)",
+      "verification_scope": "content"
+    },
+    {
+      "id": "cornus-nuttallii:local_mature_size:cov05",
+      "plant": "cornus-nuttallii",
+      "field": "local_mature_size",
+      "value": {
+        "n": 472,
+        "median": 10.7,
+        "p90": 16.8,
+        "max": 32.0,
+        "unit": "m",
+        "subset": "established (DBH >= 20 cm, proxy)",
+        "threshold_dbh_cm": 20,
+        "measure": "height class midpoint"
+      },
+      "value_kind": "quantitative",
+      "text": "Among the 472 public Cornus nuttallii (cultivar unrecorded) in Vancouver counted as established (DBH >= 20 cm, proxy), the median height class midpoint is 10.7 m and the 90th percentile class 16.8 m.",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "cultivar:(unrecorded); CoV public trees, snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded; established (DBH >= 20 cm, proxy) — trees without a planting date, see methods.md M2",
+      "confidence": 0.6,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "note": "proxy, not a measurement of age: confidence below age-cohort claims. Closest this source gets to 'real mature size under local conditions' (survey c2). 'Unrecorded' means no label in the inventory, not the straight species; never merged into a cultivar group. interpretation (not data): the unrecorded class is larger and thicker than the labelled groups, consistent with older plantings that pre-date cultivar labelling; its 10.7 m established-class median is high for this species and may include mislabelled maples.",
+      "concepts": [
+        "height_class:10-15m",
+        "height_class:15-22m"
+      ],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [
+        "age:established"
+      ],
+      "cultivar": "(unrecorded)",
+      "verification_scope": "content"
+    },
+    {
+      "id": "cornus-nuttallii:local_mature_size:cov06",
+      "plant": "cornus-nuttallii",
+      "field": "local_mature_size",
+      "value": {
+        "n": 608,
+        "median": 30.5,
+        "p90": 68.6,
+        "max": 251.5,
+        "unit": "cm DBH"
+      },
+      "value_kind": "quantitative",
+      "text": "Trunk diameters (DBH) of 608 public Cornus nuttallii (cultivar unrecorded) in Vancouver: median 30.5 cm, 90th percentile 68.6 cm, largest 251.5 cm.",
+      "source_id": "cov_trees",
+      "source_type": "municipal",
+      "context": "cultivar:(unrecorded); CoV public trees, snapshot 2026-11-02; street (boulevard) and park trees only, private trees excluded",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "cov_trees_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_snapshot": "2026-11-02",
+      "note": "max is a single record and may be mis-keyed. 'Unrecorded' means no label in the inventory, not the straight species; never merged into a cultivar group. interpretation (not data): the unrecorded class is larger and thicker than the labelled groups, consistent with older plantings that pre-date cultivar labelling; its 10.7 m established-class median is high for this species and may include mislabelled maples.",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:city_of_vancouver",
+      "time": [],
+      "cultivar": "(unrecorded)",
+      "verification_scope": "content"
+    },
+    {
+      "id": "cornus-nuttallii:vancouver_context:inat01",
+      "plant": "cornus-nuttallii",
+      "field": "vancouver_context",
+      "value": {
+        "licensed_verifiable_observations": 386,
+        "research_grade": 252,
+        "all_licences": 509,
+        "years": [
+          2009,
+          2026
+        ]
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist holds 386 openly licensed verifiable observations of this plant in Greater Vancouver (252 research grade), recorded 2009–2026.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=76447&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "presence evidence; observation counts reflect observer effort as much as abundance",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:vancouver_context:inat02",
+      "plant": "cornus-nuttallii",
+      "field": "vancouver_context",
+      "value": {
+        "observations_by_month": {
+          "1": 4,
+          "2": 0,
+          "3": 3,
+          "4": 143,
+          "5": 111,
+          "6": 35,
+          "7": 16,
+          "8": 24,
+          "9": 36,
+          "10": 13,
+          "11": 1,
+          "12": 0
+        },
+        "n": 386,
+        "unit": "observations"
+      },
+      "value_kind": "quantitative",
+      "text": "Monthly spread of 386 Greater Vancouver observations: most in 4, 5, 9 (month numbers).",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03",
+      "confidence": 0.55,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=76447&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "observer effort, not plant activity — the plant is evergreen/visible year-round; use for 'when people notice it', not phenology",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:seasonal_interest:inat03",
+      "plant": "cornus-nuttallii",
+      "field": "seasonal_interest",
+      "value": {
+        "flowering_months": [
+          4,
+          5
+        ],
+        "annotated_n": 29,
+        "share_threshold": 0.1
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist phenology annotations in Greater Vancouver (n=29) put flowering mainly in months 4, 5.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03; community Plant Phenology annotations",
+      "confidence": 0.5,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=76447&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "month included when >= 10% of annotated observations; annotations are volunteer-made",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [
+        "month:4",
+        "month:5"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:seasonal_interest:sv01",
+      "plant": "cornus-nuttallii",
+      "field": "seasonal_interest",
+      "value_kind": "qualitative",
+      "value": {
+        "note": "flowers"
+      },
+      "text": "Pacific dogwood — Flowers.",
+      "source_id": "survey-r01",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.7,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "landscape designer; studio/academic planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false,
+        "note": "d1 'why' answers carry no basis — stored as selection reasons, never cited as observations (R2)"
+      },
+      "survey_question": "d1",
+      "respondent_role_as_typed": "Tree",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "cornus-nuttallii:vancouver_context:sv01",
+      "plant": "cornus-nuttallii",
+      "field": "vancouver_context",
+      "value_kind": "qualitative",
+      "value": {
+        "note": "commonly planted and good aesthetic values"
+      },
+      "text": "Pacific Dogwood — Commonly planted and good aesthetic values.",
+      "source_id": "survey-r07",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "practising landscape designer; personal-garden, professional and studio planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false,
+        "note": "d1 'why' answers carry no basis — stored as selection reasons, never cited as observations (R2)"
+      },
+      "survey_question": "d1",
+      "respondent_role_as_typed": "Tree",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "cornus-nuttallii:mature_height:rhs01",
+      "plant": "cornus-nuttallii",
+      "field": "mature_height",
+      "value": {
+        "min": 8,
+        "max": 12,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Cornus nuttallii an ultimate height of 8–12 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4402/wd/details",
+      "concepts": [
+        "height_class:7-10m",
+        "height_class:10-15m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:mature_spread:rhs01",
+      "plant": "cornus-nuttallii",
+      "field": "mature_spread",
+      "value": {
+        "min": 4,
+        "max": 8,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Cornus nuttallii an ultimate spread of 4–8 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4402/wd/details",
+      "concepts": [
+        "spread_class:4-5m",
+        "spread_class:5-7m",
+        "spread_class:7-10m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:time_to_intended_size:rhs01",
+      "plant": "cornus-nuttallii",
+      "field": "time_to_intended_size",
+      "value": {
+        "min": 10,
+        "max": 20,
+        "unit": "years",
+        "measure": "time to ultimate height"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Cornus nuttallii 10–20 years to reach its ultimate height.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4402/wd/details",
+      "note": "RHS profile labels this 'Time to Maturity'; recorded under the project's standard measure 'time to ultimate height' (survey c2 gap)",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:hardiness_zone:rhs01",
+      "plant": "cornus-nuttallii",
+      "field": "hardiness_zone",
+      "value": {
+        "rating": "H5",
+        "unit": "RHS",
+        "approx_min_c": -15,
+        "approx_max_c": -10
+      },
+      "value_kind": "quantitative",
+      "text": "RHS rates Cornus nuttallii hardiness H5 (hardy in most of the UK even in severe winters, about -15 to -10 °C).",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4402/wd/details",
+      "note": "RHS H-scale, not a Canadian or USDA zone; °C band is the RHS definition of H5, not from the plant page",
+      "concepts": [
+        "hardiness_rhs:H5"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:exposure:rhs01",
+      "plant": "cornus-nuttallii",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade",
+        "exposure:sheltered"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: full sun or partial shade; south- or west-facing aspect; exposed or sheltered sites.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4402/wd/details",
+      "note": "KPU has no 'Exposed' value; 'exposed or sheltered' → Sheltered only (as in the gaultheria/acer templates)",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade",
+        "Sheltered"
+      ],
+      "concepts": [
+        "exposure:sheltered",
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:soil_type:rhs01",
+      "plant": "cornus-nuttallii",
+      "field": "soil_type",
+      "value": [
+        "soil:well_drained",
+        "soil:humus_rich"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: loam or sand; moist but well-drained or well-drained; acid or neutral pH; cultivation note asks for fertile, humus-rich soil.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4402/wd/details",
+      "note": "loam/sand have no KPU class; 'acid or neutral' not mapped to Acidic because neutral is included; Humus rich taken from the cultivation note, not the soil-type list",
+      "value_label": [
+        "Well-drained",
+        "Humus rich"
+      ],
+      "concepts": [
+        "soil:humus_rich",
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:water_drainage:rhs01",
+      "plant": "cornus-nuttallii",
+      "field": "water_drainage",
+      "value": "water:average",
+      "value_kind": "categorical",
+      "text": "RHS: moist but well-drained or well-drained.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4402/wd/details",
+      "note": "'moist but well-drained or well-drained' → average (as in the gaultheria template); 'moist' would also be defensible",
+      "value_label": "average",
+      "concepts": [
+        "water:average"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:seasonal_interest:rhs01",
+      "plant": "cornus-nuttallii",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "White"
+        ],
+        "flowering_months": [
+          5,
+          6
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fall_colour": "red to purple (sometimes)",
+        "fruit": "orange-red, spherical, autumn",
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "RHS: deciduous; mid-green leaves sometimes turning red in autumn (season table: autumn foliage purple and red); late-spring heads of small purple-green flowers surrounded by 4–6 white or pink-tinged bracts; spherical orange-red fruit in autumn.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4402/wd/details",
+      "note": "'late spring' → months 5–6; flower_colour = the showy bracts (RHS season table: spring flower White); the true flowers are purple-green; fall_colour qualified 'sometimes' in the description",
+      "concepts": [
+        "colour:green",
+        "colour:white",
+        "evergreen:no",
+        "fruit:showy",
+        "interest:fall_colour"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [
+        "month:5",
+        "month:6"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:habit:rhs01",
+      "plant": "cornus-nuttallii",
+      "field": "habit",
+      "value": "habit:upright",
+      "value_kind": "categorical",
+      "text": "RHS habit: columnar upright.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4402/wd/details",
+      "note": "RHS 'Columnar upright' → Upright (KPU habit has no 'Columnar'; columnar is a KPU form value, see form:rhs01)",
+      "value_label": "Upright",
+      "concepts": [
+        "habit:upright"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:form:rhs01",
+      "plant": "cornus-nuttallii",
+      "field": "form",
+      "value": "form:pyramidal_widely",
+      "value_kind": "categorical",
+      "text": "RHS describes a conical deciduous tree; the habit label is 'columnar upright'.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4402/wd/details",
+      "note": "'conical' → Pyramidal - widely; the RHS habit label 'Columnar upright' would map to form Columnar instead — loose, two possible readings, confidence lowered",
+      "value_label": "Pyramidal - widely",
+      "concepts": [
+        "form:pyramidal_widely"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:pest_susceptibility:rhs01",
+      "plant": "cornus-nuttallii",
+      "field": "pest_susceptibility",
+      "value": [
+        "pest:scale_insects",
+        "pest:anthracnose",
+        "pest:root_rot"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: generally pest-free but may be susceptible to horse chestnut scale; may be susceptible to cornus anthracnose and honey fungus.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4402/wd/details",
+      "note": "horse chestnut scale → Scale insects; cornus anthracnose → Anthracnose; honey fungus (Armillaria) → Root rot — loose",
+      "value_label": [
+        "Scale insects",
+        "Anthracnose",
+        "Root rot"
+      ],
+      "concepts": [
+        "pest:anthracnose",
+        "pest:root_rot",
+        "pest:scale_insects"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:resistances:rhs01",
+      "plant": "cornus-nuttallii",
+      "field": "resistances",
+      "value": [
+        "pest:pest"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: generally pest-free.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4402/wd/details",
+      "value_label": [
+        "pest"
+      ],
+      "concepts": [
+        "pest:pest"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:maintenance_level:rhs01",
+      "plant": "cornus-nuttallii",
+      "field": "maintenance_level",
+      "value": "maintenance:low",
+      "value_kind": "categorical",
+      "text": "RHS: pruning group 1, best with minimal pruning.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/4402/wd/details",
+      "note": "'minimal pruning' → low; RHS gives no explicit maintenance rating",
+      "value_label": "low",
+      "concepts": [
+        "maintenance:low"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:hardiness_zone:mobot01",
+      "plant": "cornus-nuttallii",
+      "field": "hardiness_zone",
+      "value": {
+        "min": 7,
+        "max": 9,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden lists Cornus nuttallii for USDA zones 7 to 9.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "citation": "Cornus nuttallii, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341, Accessed November 2, 2026",
+      "concepts": [
+        "hardiness_usda:z7",
+        "hardiness_usda:z8",
+        "hardiness_usda:z9"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:mature_height:mobot01",
+      "plant": "cornus-nuttallii",
+      "field": "mature_height",
+      "value": {
+        "min": 4.6,
+        "max": 12.2,
+        "unit": "m",
+        "raw": "15–40 ft, infrequently to 70 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden gives Cornus nuttallii a height of 15–40 ft (4.6–12.2 m), infrequently to 70 ft.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "citation": "Cornus nuttallii, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341, Accessed November 2, 2026",
+      "concepts": [
+        "height_class:3-5m",
+        "height_class:5-7m",
+        "height_class:7-10m",
+        "height_class:10-15m"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:mature_spread:mobot01",
+      "plant": "cornus-nuttallii",
+      "field": "mature_spread",
+      "value": {
+        "min": 3.0,
+        "max": 7.6,
+        "unit": "m",
+        "raw": "10–25 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden gives Cornus nuttallii a spread of 10–25 ft (3–7.6 m).",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "citation": "Cornus nuttallii, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341, Accessed November 2, 2026",
+      "concepts": [
+        "spread_class:3-4m",
+        "spread_class:4-5m",
+        "spread_class:5-7m",
+        "spread_class:7-10m"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:water_drainage:mobot01",
+      "plant": "cornus-nuttallii",
+      "field": "water_drainage",
+      "value": "water:average",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden rates water needs as medium; average, medium-moisture, well-drained soils.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "citation": "Cornus nuttallii, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341, Accessed November 2, 2026",
+      "value_label": "average",
+      "concepts": [
+        "water:average"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:maintenance_level:mobot01",
+      "plant": "cornus-nuttallii",
+      "field": "maintenance_level",
+      "value": "maintenance:medium",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden rates maintenance as medium.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "note": "contrasts with RHS 'minimal pruning' → low; MOBOT's rating likely reflects the disease load when stressed (R1, both kept)",
+      "citation": "Cornus nuttallii, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341, Accessed November 2, 2026",
+      "value_label": "medium",
+      "concepts": [
+        "maintenance:medium"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:exposure:mobot01",
+      "plant": "cornus-nuttallii",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: full sun to part shade; prefers part shade with cool, mulched roots.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "citation": "Cornus nuttallii, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341, Accessed November 2, 2026",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:soil_type:mobot01",
+      "plant": "cornus-nuttallii",
+      "field": "soil_type",
+      "value": [
+        "soil:acidic",
+        "soil:humus_rich",
+        "soil:well_drained"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: average well-drained soil; prefers moist, organically rich, acidic soil.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "citation": "Cornus nuttallii, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341, Accessed November 2, 2026",
+      "value_label": [
+        "Acidic",
+        "Humus rich",
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:acidic",
+        "soil:humus_rich",
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:seasonal_interest:mobot01",
+      "plant": "cornus-nuttallii",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "White"
+        ],
+        "flowering_months": [
+          4,
+          5,
+          6
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fall_colour": "yellow to orange to red",
+        "fruit": "bright red or orange, about 1 cm, autumn",
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: bloom April to June, showy white bracts (six) around tiny purple-green flowers; dark green leaves with good yellow-orange-red fall colour; showy bright red or orange fruit.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "note": "'April to June' → months 4–6; flower_colour = the showy bracts; true flowers purple-green",
+      "citation": "Cornus nuttallii, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341, Accessed November 2, 2026",
+      "concepts": [
+        "colour:green",
+        "colour:white",
+        "evergreen:no",
+        "fruit:showy",
+        "interest:fall_colour"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [
+        "month:4",
+        "month:5",
+        "month:6"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:landscape_use:mobot01",
+      "plant": "cornus-nuttallii",
+      "field": "landscape_use",
+      "value": [
+        "use:specimen_plant",
+        "use:group_or_mass_planting",
+        "use:woodland_margin",
+        "use:native_planting",
+        "use:attract_birds",
+        "use:attract_butterflies"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden uses: specimen or small grouping near homes, patios and lawns; woodland, bird and native plant gardens; attracts birds and butterflies.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "note": "'woodland garden' → Woodland margin; 'small grouping' → Group or mass planting",
+      "citation": "Cornus nuttallii, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341, Accessed November 2, 2026",
+      "value_label": [
+        "Specimen plant",
+        "Group or mass planting",
+        "Woodland margin",
+        "Native planting",
+        "Attract birds",
+        "Attract butterflies"
+      ],
+      "concepts": [
+        "use:attract_birds",
+        "use:attract_butterflies",
+        "use:group_or_mass_planting",
+        "use:native_planting",
+        "use:specimen_plant",
+        "use:woodland_margin"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:ecological_value:mobot01",
+      "plant": "cornus-nuttallii",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: native to coastal regions west of the Cascades from southern British Columbia to southern California, with a disjunct population in northern Idaho.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "note": "MOBOT 'Attracts: Birds, Butterflies' recorded under landscape_use, not as bird_food/pollinator, because the profile does not state the plant is food or forage",
+      "citation": "Cornus nuttallii, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341, Accessed November 2, 2026",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:pest_susceptibility:mobot01",
+      "plant": "cornus-nuttallii",
+      "field": "pest_susceptibility",
+      "value": [
+        "pest:anthracnose",
+        "pest:fungal_leaf_spot",
+        "pest:canker_or_sap_rot",
+        "pest:root_rot",
+        "pest:blight_or_needle_cast",
+        "pest:leaf_miner_insect",
+        "pest:scale_insects"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: when stressed, susceptible to many diseases, most seriously dogwood anthracnose; also leaf spot, crown canker, root rot, leaf and twig blight; stressed trees vulnerable to borers; leaf miner and scale less serious.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions; mainly when the tree is stressed",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "note": "borers have no KPU pseudo-value; 'crown canker' → Canker or sap rot; 'leaf and twig blight' → Blight or needle cast; susceptibility conditioned on stress in the source",
+      "citation": "Cornus nuttallii, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341, Accessed November 2, 2026",
+      "value_label": [
+        "Anthracnose",
+        "Fungal leaf spot",
+        "Canker or sap rot",
+        "Root rot",
+        "Blight or needle cast",
+        "Leaf miner insect",
+        "Scale insects"
+      ],
+      "concepts": [
+        "pest:anthracnose",
+        "pest:blight_or_needle_cast",
+        "pest:canker_or_sap_rot",
+        "pest:fungal_leaf_spot",
+        "pest:leaf_miner_insect",
+        "pest:root_rot",
+        "pest:scale_insects"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:resistances:mobot01",
+      "plant": "cornus-nuttallii",
+      "field": "resistances",
+      "value": [
+        "browsing:deer",
+        "stress:clay_soil",
+        "stress:black_walnut"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden lists Cornus nuttallii as tolerating deer, clay soil and black walnut.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "note": "from the 'Tolerate' line; 'clay soil' and 'black walnut' are outside the starter resistances list (open list, M11)",
+      "citation": "Cornus nuttallii, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341, Accessed November 2, 2026",
+      "value_label": [
+        "deer",
+        "clay soil",
+        "black walnut"
+      ],
+      "concepts": [
+        "browsing:deer",
+        "stress:black_walnut",
+        "stress:clay_soil"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:resistances:mobot02",
+      "plant": "cornus-nuttallii",
+      "field": "resistances",
+      "value": [
+        "stress:drought"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: established plants have some drought tolerance.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions; once established",
+      "confidence": 0.65,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "note": "'some drought tolerance' once established — weak statement, confidence lowered; USDA rates drought tolerance low",
+      "citation": "Cornus nuttallii, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341, Accessed November 2, 2026",
+      "value_label": [
+        "drought"
+      ],
+      "concepts": [
+        "stress:drought"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [
+        "age:established"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:habit:mobot01",
+      "plant": "cornus-nuttallii",
+      "field": "habit",
+      "value": "habit:horizontal",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: horizontal tiered branching; rounded to conical crown.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "note": "'horizontal tiered branching' → Horizontal; crown 'rounded to conical' not mapped to form because it spans two KPU form values",
+      "citation": "Cornus nuttallii, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341, Accessed November 2, 2026",
+      "value_label": "Horizontal",
+      "concepts": [
+        "habit:horizontal"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:long_term_performance:mobot01",
+      "plant": "cornus-nuttallii",
+      "field": "long_term_performance",
+      "value": {
+        "regional_performance": "performs well in the western US; does not prosper in the eastern US",
+        "stress_response": "disease-prone when stressed"
+      },
+      "value_kind": "qualitative",
+      "text": "Missouri Botanical Garden: performs well in the western US but does not prosper in the eastern US; disease problems follow stress.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341",
+      "citation": "Cornus nuttallii, Missouri Botanical Garden Plant Finder, https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=279341, Accessed November 2, 2026",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:mature_height:osu01",
+      "plant": "cornus-nuttallii",
+      "field": "mature_height",
+      "value": {
+        "min": 9,
+        "max": 12,
+        "unit": "m",
+        "raw": "30–40 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Oregon State University gives Cornus nuttallii a height of 30–40 ft (9–12 m).",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cornus-nuttallii",
+      "note": "OSU gives no width figure",
+      "concepts": [
+        "height_class:7-10m",
+        "height_class:10-15m"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:hardiness_zone:osu01",
+      "plant": "cornus-nuttallii",
+      "field": "hardiness_zone",
+      "value": {
+        "usda_min": 7,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Oregon State University: hardy to USDA zone 7.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cornus-nuttallii",
+      "concepts": [
+        "hardiness_usda:z7",
+        "hardiness_usda:z8",
+        "hardiness_usda:z9",
+        "hardiness_usda:z10",
+        "hardiness_usda:z11"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:exposure:osu01",
+      "plant": "cornus-nuttallii",
+      "field": "exposure",
+      "value": [
+        "exposure:part_sun_part_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: part shade; bark damaged by hot sun.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cornus-nuttallii",
+      "value_label": [
+        "Part sun/part shade"
+      ],
+      "concepts": [
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:soil_type:osu01",
+      "plant": "cornus-nuttallii",
+      "field": "soil_type",
+      "value": [
+        "soil:well_drained",
+        "soil:acidic",
+        "soil:humus_rich"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: well-drained, acidic soil high in organic matter.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cornus-nuttallii",
+      "value_label": [
+        "Well-drained",
+        "Acidic",
+        "Humus rich"
+      ],
+      "concepts": [
+        "soil:acidic",
+        "soil:humus_rich",
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:habit:osu01",
+      "plant": "cornus-nuttallii",
+      "field": "habit",
+      "value": "habit:upright",
+      "value_kind": "categorical",
+      "text": "Oregon State University: upright (excurrent) tree.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cornus-nuttallii",
+      "value_label": "Upright",
+      "concepts": [
+        "habit:upright"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:seasonal_interest:osu01",
+      "plant": "cornus-nuttallii",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "White"
+        ],
+        "flowering_months": [
+          4,
+          5
+        ],
+        "fruit": "orange to bright red, clustered, autumn",
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "Oregon State University: deciduous; 4–8 showy white (rarely pink) bracts 5–8 cm long around 30–40 small dull green or purple flowers in spring, occasionally again in fall; orange to bright red fruit clusters in fall.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cornus-nuttallii",
+      "note": "'spring' → months 4–5; occasional second bloom in fall not added to flowering_months; bracts rarely pink — White only; OSU states no fall leaf colour",
+      "concepts": [
+        "colour:white",
+        "evergreen:no",
+        "fruit:showy"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [
+        "month:4",
+        "month:5"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:ecological_value:osu01",
+      "plant": "cornus-nuttallii",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: native to Oregon; range along the Pacific coast from just beyond Vancouver Island, BC, to southern California, with a disjunct population in north-central Idaho.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cornus-nuttallii",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:long_term_performance:osu01",
+      "plant": "cornus-nuttallii",
+      "field": "long_term_performance",
+      "value": {
+        "garden_performance": "often does not do well in garden conditions",
+        "stress_sensitivity": "high",
+        "bark": "damaged by hot sun"
+      },
+      "value_kind": "qualitative",
+      "text": "Oregon State University flags that the species often does poorly in garden conditions, is sensitive to many stresses, and suffers bark damage in hot sun.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "warning",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/cornus-nuttallii",
+      "note": "OSU page does not mention anthracnose (checked by text search 2026-11-02); anthracnose is sourced from RHS and MOBOT",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:ecological_value:eflora01",
+      "plant": "cornus-nuttallii",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "E-Flora BC lists Cornus nuttallii as native to BC (provincial list Yellow, rank S5 (2019), secure; COSEWIC not listed).",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cornus%20nuttallii",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:vancouver_context:eflora01",
+      "plant": "cornus-nuttallii",
+      "field": "vancouver_context",
+      "value": {
+        "habitat": [
+          "mesic forest",
+          "lowland",
+          "montane",
+          "shrub layer of mixed and coniferous forests",
+          "disturbed communities",
+          "water-shedding sites",
+          "colluvial slopes",
+          "young-seral mesothermal forest"
+        ],
+        "soils": "mesic, nitrogen-rich forest soils; moderately dry to fresh, Moder or Mull humus (coastal)",
+        "soil_moisture_regime": {
+          "min": 0,
+          "avg": 3,
+          "max": 7
+        },
+        "nutrient_regime_modal": "C",
+        "climate": "cool mesothermal",
+        "bgc_zones": [
+          "CDF",
+          "CWH",
+          "ICH",
+          "IDF",
+          "SBS"
+        ],
+        "modal_zone": "CWH",
+        "bgc_station_counts": {
+          "CDF": 82,
+          "CWH": 132,
+          "ICH": 2,
+          "IDF": 4,
+          "SBS": 1
+        },
+        "elevation_m": {
+          "min": 0,
+          "max": 833,
+          "mean": 194
+        },
+        "bc_distribution": "southwestern corner of the province, mainland and Vancouver Island",
+        "bc_emblem": "official floral emblem of BC since 1956"
+      },
+      "value_kind": "qualitative",
+      "text": "E-Flora BC: in BC confined to the southwest corner (mainland and Vancouver Island); mesic lowland to montane forests, shrub layer of mixed and coniferous stands, disturbed sites and water-shedding colluvial slopes on nitrogen-rich soils, mostly in the Coastal Western Hemlock and Coastal Douglas-fir zones, 0–833 m (mean 194 m); BC's floral emblem since 1956.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cornus%20nuttallii",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "bgc_zone:cdf",
+        "bgc_zone:cwh",
+        "bgc_zone:ich",
+        "bgc_zone:idf",
+        "bgc_zone:sbs",
+        "habitat:disturbed",
+        "habitat:forest"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:mature_height:eflora01",
+      "plant": "cornus-nuttallii",
+      "field": "mature_height",
+      "value": {
+        "max": 20,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "E-Flora BC: small, irregularly branched deciduous tree up to 20 m tall.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cornus%20nuttallii",
+      "note": "E-Flora's 20 m ceiling is a wild-stand maximum; horticultural sources give 8–12 m",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "height_class:lt_0.1m",
+        "height_class:0.1-0.2m",
+        "height_class:0.2-0.4m",
+        "height_class:0.4-0.7m",
+        "height_class:0.7-1.3m",
+        "height_class:1.3-2.0m",
+        "height_class:2-3m",
+        "height_class:3-5m",
+        "height_class:5-7m",
+        "height_class:7-10m",
+        "height_class:10-15m",
+        "height_class:15-22m"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:exposure:eflora01",
+      "plant": "cornus-nuttallii",
+      "field": "exposure",
+      "value": [
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "E-Flora BC habitat records place the species in the shrub layer of mixed and coniferous forests, on water-shedding slopes and in disturbed, young-seral communities.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page; inferred from habitat classes, not a cultivation rating",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cornus%20nuttallii",
+      "note": "exposure read off habitat classes; young-seral and disturbed communities suggest it also takes open sites",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": [
+        "Part sun/part shade",
+        "Filtered shade"
+      ],
+      "concepts": [
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:water_drainage:eflora01",
+      "plant": "cornus-nuttallii",
+      "field": "water_drainage",
+      "value": "water:average",
+      "value_kind": "categorical",
+      "text": "E-Flora BC: moderately dry to fresh soils; soil moisture regime 0–7 with an average of 3; water-shedding sites.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page; inferred from BEC indicator data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cornus%20nuttallii",
+      "note": "SMR average 3 ('fresh') → average; inferred from habitat indicator data, not a cultivation rating",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": "average",
+      "concepts": [
+        "water:average"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:seasonal_interest:eflora01",
+      "plant": "cornus-nuttallii",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "White",
+          "Pink"
+        ],
+        "flowering_months": [
+          4,
+          5
+        ],
+        "fall_colour": "red",
+        "fruit": "bright red drupe, about 10 mm, summer to fall",
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "E-Flora BC: deciduous; 4–7 showy white or pink-tinged bracts around tiny greenish-white flowers in mid-spring, often flowering again in fall; leaves turn red in fall; bright red drupes summer to fall.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Cornus%20nuttallii",
+      "note": "'mid-spring' → months 4–5; second fall flowering not added to flowering_months; flower_colour = bracts ('pink-tinged' → Pink)",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "colour:pink",
+        "colour:white",
+        "evergreen:no",
+        "fruit:showy",
+        "interest:fall_colour"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [
+        "month:4",
+        "month:5"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:ecological_value:usdaplants01",
+      "plant": "cornus-nuttallii",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: native in Canada and the lower 48 states.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/CONU4",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:mature_height:usdaplants01",
+      "plant": "cornus-nuttallii",
+      "field": "mature_height",
+      "value": {
+        "height_m": 15.2,
+        "unit": "m",
+        "raw": "50 ft mature; 12 ft maximum at 20 years"
+      },
+      "value_kind": "quantitative",
+      "text": "USDA PLANTS gives a mature height of 50 ft (15.2 m), with a maximum of 12 ft at 20 years.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/CONU4",
+      "note": "50 ft is above the horticultural ceilings (RHS 12 m, OSU 12 m, MOBOT 40 ft) and nearer E-Flora's wild 20 m; kept as given",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "height_class:15-22m"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:time_to_intended_size:usdaplants01",
+      "plant": "cornus-nuttallii",
+      "field": "time_to_intended_size",
+      "value": {
+        "years": 20,
+        "height_m": 3.7,
+        "unit": "m at 20 years",
+        "raw": "Height at 20 Years, Maximum (feet): 12"
+      },
+      "value_kind": "quantitative",
+      "text": "USDA PLANTS gives a maximum height of 12 ft (3.7 m) at 20 years.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/CONU4",
+      "note": "a direct, if coarse, answer to survey c2 'time to reach intended size'; implies slow early growth although USDA rates growth rate moderate",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "age:established"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:growth_rate:usdaplants01",
+      "plant": "cornus-nuttallii",
+      "field": "growth_rate",
+      "value": "growth_rate:moderate",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates growth rate moderate.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/CONU4",
+      "note": "sits oddly beside the 12 ft at 20 years figure from the same source",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "moderate",
+      "concepts": [
+        "growth_rate:moderate"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:exposure:usdaplants01",
+      "plant": "cornus-nuttallii",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates shade tolerance low.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.55,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/CONU4",
+      "note": "'Shade Tolerance: Low' contradicts OSU (part shade), MOBOT (prefers part shade) and E-Flora (forest shrub layer); kept side by side at low confidence",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "Full sun"
+      ],
+      "concepts": [
+        "exposure:full_sun"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:water_drainage:usdaplants01",
+      "plant": "cornus-nuttallii",
+      "field": "water_drainage",
+      "value": "water:average",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: moisture use medium, drought tolerance low, anaerobic tolerance low.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/CONU4",
+      "note": "medium moisture use → average; low drought and low anaerobic tolerance bracket it away from dry and wet",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "average",
+      "concepts": [
+        "water:average"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:soil_type:usdaplants01",
+      "plant": "cornus-nuttallii",
+      "field": "soil_type",
+      "value": [
+        "soil:acidic"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: pH 4.9–7.3, adapted to fine and medium textured soils but not coarse, no CaCO3 tolerance.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.65,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/CONU4",
+      "note": "pH range reaches neutral; Acidic chosen because of the 4.9 floor and zero CaCO3 tolerance — loose; 'not adapted to coarse soils' not mappable",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "Acidic"
+      ],
+      "concepts": [
+        "soil:acidic"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:seasonal_interest:usdaplants01",
+      "plant": "cornus-nuttallii",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "Green"
+        ],
+        "flowering_months": [
+          4,
+          5
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fall_colour": true,
+        "fruit": "red, conspicuous, summer to fall, not persistent",
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: green conspicuous flowers in mid spring, green foliage, conspicuous fall colour, abundant red fruit summer to fall, leaves not retained.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/CONU4",
+      "note": "'Mid Spring' → months 4–5; USDA 'Flower Color: Green' describes the true flowers, not the white bracts — do not merge with the White of other sources",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "colour:green",
+        "evergreen:no",
+        "fruit:showy",
+        "interest:fall_colour"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [
+        "month:4",
+        "month:5"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:texture:usdaplants01",
+      "plant": "cornus-nuttallii",
+      "field": "texture",
+      "value": "texture:medium",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates foliage texture medium.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/CONU4",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "Medium",
+      "concepts": [
+        "texture:medium"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:habit:usdaplants01",
+      "plant": "cornus-nuttallii",
+      "field": "habit",
+      "value": "habit:upright",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: erect shape and orientation; multiple-stem growth form.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/CONU4",
+      "note": "'Erect' → Upright",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "Upright",
+      "concepts": [
+        "habit:upright"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:toxicity:usdaplants01",
+      "plant": "cornus-nuttallii",
+      "field": "toxicity",
+      "value": {
+        "usda_rating": "none",
+        "humans": "unknown",
+        "pets": "unknown"
+      },
+      "value_kind": "categorical",
+      "text": "USDA PLANTS lists toxicity as none.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/CONU4",
+      "note": "USDA 'Toxicity' is a livestock / conservation-planting rating (M17); humans and pets stay unknown",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "toxicity:unknown"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:behaviour_with_others:usdaplants01",
+      "plant": "cornus-nuttallii",
+      "field": "behaviour_with_others",
+      "value": {
+        "growth_form": "multiple stem",
+        "resprout": true,
+        "coppice": false,
+        "allelopath": false,
+        "vegetative_spread": "none",
+        "seed_spread": "moderate",
+        "seedling_vigor": "high",
+        "lifespan": "long",
+        "fire_tolerance": "medium",
+        "nitrogen_fixation": "none"
+      },
+      "value_kind": "qualitative",
+      "text": "USDA PLANTS: multiple-stem growth form, resprouts but does not coppice, not allelopathic, no vegetative spread, moderate seed spread with high seedling vigour, long lifespan, medium fire tolerance.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/CONU4",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "cornus-nuttallii:invasive_status:iscbc01",
+      "plant": "cornus-nuttallii",
+      "field": "invasive_status",
+      "value": "invasive:not_listed",
+      "value_kind": "categorical",
+      "text": "Cornus nuttallii is not among the 68 plant profiles on the Invasive Species Council of BC 'Find an Invasive Species' list (checked 2026-11-02); no Cornus species is listed. It is a BC native.",
+      "source_id": "iscbc",
+      "source_type": "municipal",
+      "context": "BC; ISCBC online species profiles only",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://bcinvasives.ca/take-action/identify/",
+      "note": "BC Weed Control Act schedules and the Field Guide to Noxious Weeds were not checked page by page",
+      "value_label": "not_listed",
+      "concepts": [
+        "invasive:not_listed"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    }
+  ]
+}

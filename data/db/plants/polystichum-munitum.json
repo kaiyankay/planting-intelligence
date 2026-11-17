@@ -1,0 +1,2274 @@
+{
+  "entity": {
+    "id": "polystichum-munitum",
+    "scientific_name": "Polystichum munitum",
+    "synonyms_scientific": [
+      "Aspidium munitum",
+      "Polystichum munitum var. incisoserratum"
+    ],
+    "common_names": {
+      "en": [
+        "Western sword fern",
+        "Sword fern",
+        "western swordfern",
+        "giant holly fern"
+      ],
+      "zh": [
+        "西部剑蕨"
+      ]
+    },
+    "family": "Dryopteridaceae",
+    "kpu_plant_type": "Fern",
+    "respondent_roles": [
+      "shrub",
+      "groundcover",
+      "perennial_grass"
+    ],
+    "raw_names": [
+      "Western Sword Fern",
+      "Sword fern",
+      "Polystichum munitum"
+    ],
+    "survey_respondents": [
+      "survey-r06",
+      "survey-r08",
+      "survey-r10"
+    ],
+    "origin_status": "native_bc_west_of_cascades",
+    "external_refs": {
+      "kpu": "https://plantdatabase.kpu.ca/Plant/pomu",
+      "mobot": null,
+      "gpp": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "osu": "https://landscapeplants.oregonstate.edu/plants/polystichum-munitum",
+      "eflora": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Polystichum%20munitum",
+      "rhs": "https://www.rhs.org.uk/plants/13486/polystichum-munitum/details",
+      "usda": "https://plants.usda.gov/plant-profile/POMU",
+      "inat": "https://www.inaturalist.org/taxa/47751",
+      "usda_plants": "https://plants.usda.gov/plant-profile/POMU",
+      "usda_plants_api": "https://plantsservices.sc.egov.usda.gov/api/PlantProfile?symbol=POMU"
+    },
+    "in_vancouver_street_tree_list": false,
+    "prototype_role": "BC-native evergreen fern; 3 survey mentions typed as shrub, groundcover and perennial/grass — the clearest case of respondent role ≠ botanical form (schema R8); most-observed of the ten on iNaturalist",
+    "survey_mentions": 3,
+    "added": "2026-11-02",
+    "added_by": "10-plant expansion (brief 2026-11-02); entity facts from the T5 extraction and the survey, see claims for evidence",
+    "usda_symbol": "POMU",
+    "identity_review": {
+      "audited": "2026-11-02",
+      "method": "tools/identity_audit.py (M45): sources on file + entity notes; disputed = left for human judgement",
+      "taxonomic_identity": {
+        "status": "confirmed",
+        "note": "Polystichum munitum (Kaulf.) C. Presl; synonym Aspidium munitum; var. incisoserratum recognised (E-Flora, USDA)"
+      },
+      "geographic_origin": {
+        "status": "confirmed",
+        "note": "native to coastal BC (E-Flora Yellow S5; USDA native)",
+        "origin_status_on_entity": "native_bc_west_of_cascades"
+      },
+      "botanical_growth_form": {
+        "status": "confirmed",
+        "note": "read as fern from kpu (entity.kpu_plant_type), rhs, gpp, osu (supported; M29a)",
+        "kpu_plant_type": "Fern"
+      },
+      "design_function": {
+        "status": "confirmed",
+        "note": "ground layer / filler / massed ground cover (GPP, RHS); respondents typed shrub, groundcover and perennial — roles, kept raw",
+        "respondent_roles_as_typed": [
+          "shrub",
+          "groundcover",
+          "perennial_grass"
+        ]
+      },
+      "synonyms_raw": null
+    }
+  },
+  "custom": [],
+  "fill_plan": {
+    "gate": {
+      "hardiness_zone": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "invasive_status": [
+        "iscbc"
+      ],
+      "water_drainage": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "mature_height": [
+        "kpu",
+        "gpp",
+        "pojar",
+        "osu"
+      ],
+      "mature_spread": [
+        "kpu",
+        "gpp"
+      ],
+      "maintenance_level": [
+        "gpp",
+        "growgreen"
+      ],
+      "ecological_value": [
+        "eflora",
+        "pojar",
+        "growgreen"
+      ]
+    },
+    "compare": {
+      "exposure": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "seasonal_interest": [
+        "kpu",
+        "gpp",
+        "pojar"
+      ],
+      "texture": [
+        "kpu"
+      ],
+      "form": [
+        "kpu",
+        "osu"
+      ],
+      "habit": [
+        "kpu"
+      ],
+      "soil_type": [
+        "kpu",
+        "mobot"
+      ],
+      "growth_rate": [
+        "gpp"
+      ],
+      "landscape_use": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "pest_susceptibility": [
+        "kpu"
+      ]
+    },
+    "extended": {
+      "time_to_intended_size": [
+        "gpp",
+        "practitioner"
+      ],
+      "local_mature_size": [
+        "practitioner",
+        "inat"
+      ],
+      "long_term_performance": [
+        "practitioner"
+      ],
+      "behaviour_with_others": [
+        "pojar",
+        "relations.json",
+        "practitioner"
+      ],
+      "toxicity": [
+        "aspca"
+      ],
+      "local_availability": [
+        "nats"
+      ],
+      "vancouver_context": [
+        "growgreen",
+        "eflora",
+        "inat"
+      ]
+    },
+    "not_available": {
+      "mobot": "no Plant Finder entry for the species: the genus search on plantfinder.mobot.org returns 8 Polystichum entries, none P. munitum (checked 2026-11-02)",
+      "pojar": "awaiting Pojar pages",
+      "usda_plants.time_to_intended_size": "USDA characteristics give no 20-year height for POMU",
+      "mature_spread.osu": "OSU gives no spread figure",
+      "mature_spread.eflora": "E-Flora gives no spread figure",
+      "mature_spread.usda_plants": "USDA characteristics give no spread figure"
+    },
+    "t5_extractions": [
+      "inputs/t5/polystichum-munitum-2026-11-02.json"
+    ]
+  },
+  "claims": [
+    {
+      "id": "polystichum-munitum:vancouver_context:inat01",
+      "plant": "polystichum-munitum",
+      "field": "vancouver_context",
+      "value": {
+        "licensed_verifiable_observations": 8110,
+        "research_grade": 7816,
+        "all_licences": 10309,
+        "years": [
+          1997,
+          2026
+        ]
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist holds 8110 openly licensed verifiable observations of this plant in Greater Vancouver (7816 research grade), recorded 1997–2026.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=47751&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "presence evidence; observation counts reflect observer effort as much as abundance",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:vancouver_context:inat02",
+      "plant": "polystichum-munitum",
+      "field": "vancouver_context",
+      "value": {
+        "observations_by_month": {
+          "1": 544,
+          "2": 391,
+          "3": 732,
+          "4": 1516,
+          "5": 789,
+          "6": 580,
+          "7": 408,
+          "8": 575,
+          "9": 1031,
+          "10": 842,
+          "11": 434,
+          "12": 268
+        },
+        "n": 8110,
+        "unit": "observations"
+      },
+      "value_kind": "quantitative",
+      "text": "Monthly spread of 8110 Greater Vancouver observations: most in 4, 9, 10 (month numbers).",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03",
+      "confidence": 0.55,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=47751&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "observer effort, not plant activity — the plant is evergreen/visible year-round; use for 'when people notice it', not phenology",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:ecological_value:sv01",
+      "plant": "polystichum-munitum",
+      "field": "ecological_value",
+      "value_kind": "categorical",
+      "value": [
+        "origin:native"
+      ],
+      "text": "Sword fern — Native and beautiful.",
+      "source_id": "survey-r08",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.65,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student; studio and personal-garden planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false,
+        "note": "d1 'why' answers carry no basis — stored as selection reasons, never cited as observations (R2)"
+      },
+      "survey_question": "d1",
+      "respondent_role_as_typed": "Groundcover",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "polystichum-munitum:ecological_value:sv02",
+      "plant": "polystichum-munitum",
+      "field": "ecological_value",
+      "value_kind": "categorical",
+      "value": [
+        "origin:native"
+      ],
+      "text": "Polystichum munitum — Native and fills up space, evergreen.",
+      "source_id": "survey-r10",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student; former professional gardener; studio, personal-garden and professional planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false,
+        "note": "d1 'why' answers carry no basis — stored as selection reasons, never cited as observations (R2)"
+      },
+      "survey_question": "d1",
+      "respondent_role_as_typed": "Perennial or grass",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "polystichum-munitum:seasonal_interest:sv02",
+      "plant": "polystichum-munitum",
+      "field": "seasonal_interest",
+      "value_kind": "categorical",
+      "value": {
+        "evergreen": true
+      },
+      "text": "Polystichum munitum — Native and fills up space, evergreen.",
+      "source_id": "survey-r10",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student; former professional gardener; studio, personal-garden and professional planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false,
+        "note": "d1 'why' answers carry no basis — stored as selection reasons, never cited as observations (R2)"
+      },
+      "survey_question": "d1",
+      "respondent_role_as_typed": "Perennial or grass",
+      "concepts": [
+        "evergreen:yes"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "polystichum-munitum:landscape_use:sv03",
+      "plant": "polystichum-munitum",
+      "field": "landscape_use",
+      "value_kind": "categorical",
+      "value": [
+        "use:filler"
+      ],
+      "text": "Polystichum munitum — Native and fills up space, evergreen.",
+      "source_id": "survey-r10",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student; former professional gardener; studio, personal-garden and professional planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false,
+        "note": "d1 'why' answers carry no basis — stored as selection reasons, never cited as observations (R2)"
+      },
+      "survey_question": "d1",
+      "respondent_role_as_typed": "Perennial or grass",
+      "value_label": [
+        "Filler"
+      ],
+      "note": "'fills up space' read as the KPU use Filler; could also be Ground cover",
+      "concepts": [
+        "use:filler"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "polystichum-munitum:long_term_performance:sv04",
+      "plant": "polystichum-munitum",
+      "field": "long_term_performance",
+      "value_kind": "qualitative",
+      "value": {
+        "resilience": "survives anywhere it is put"
+      },
+      "text": "You can put this plant anywhere and it will survive!",
+      "source_id": "survey-r10",
+      "source_type": "practitioner",
+      "context": "survey d2 note (read); location not recorded",
+      "confidence": 0.85,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "observation",
+      "practitioner_meta": {
+        "basis": "read",
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student; former professional gardener; studio, personal-garden and professional planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L1",
+        "citable": true,
+        "caveat": "location not recorded"
+      },
+      "survey_question": "d2",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "polystichum-munitum:mature_height:rhs01",
+      "plant": "polystichum-munitum",
+      "field": "mature_height",
+      "value": {
+        "min": 1,
+        "max": 1.5,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Polystichum munitum an ultimate height of 1–1.5 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/13486/polystichum-munitum/details",
+      "concepts": [
+        "height_class:0.7-1.3m",
+        "height_class:1.3-2.0m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:mature_spread:rhs01",
+      "plant": "polystichum-munitum",
+      "field": "mature_spread",
+      "value": {
+        "min": 1,
+        "max": 1.5,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Polystichum munitum an ultimate spread of 1–1.5 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/13486/polystichum-munitum/details",
+      "concepts": [
+        "spread_class:1.0-1.5m",
+        "spread_class:1.5-2.0m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:time_to_intended_size:rhs01",
+      "plant": "polystichum-munitum",
+      "field": "time_to_intended_size",
+      "value": {
+        "min": 2,
+        "max": 5,
+        "unit": "years",
+        "measure": "time to ultimate height"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Polystichum munitum 2–5 years to reach its ultimate height.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/13486/polystichum-munitum/details",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:hardiness_zone:rhs01",
+      "plant": "polystichum-munitum",
+      "field": "hardiness_zone",
+      "value": {
+        "rating": "H7",
+        "unit": "RHS",
+        "approx_max_c": -20
+      },
+      "value_kind": "quantitative",
+      "text": "RHS rates Polystichum munitum hardiness H7 (very hardy, below -20 °C).",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/13486/polystichum-munitum/details",
+      "note": "page read 2026-11-02 shows H7, not the H6 anticipated in the task brief",
+      "concepts": [
+        "hardiness_rhs:H7"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:exposure:rhs01",
+      "plant": "polystichum-munitum",
+      "field": "exposure",
+      "value": [
+        "exposure:deep_shade",
+        "exposure:part_sun_part_shade",
+        "exposure:sheltered"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: full or partial shade; exposed or sheltered sites; north, east or west aspect.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/13486/polystichum-munitum/details",
+      "note": "KPU has no 'Exposed' value; RHS 'full shade' → Deep shade",
+      "value_label": [
+        "Deep shade",
+        "Part sun/part shade",
+        "Sheltered"
+      ],
+      "concepts": [
+        "exposure:sheltered",
+        "exposure:part_sun_part_shade",
+        "exposure:deep_shade"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:soil_type:rhs01",
+      "plant": "polystichum-munitum",
+      "field": "soil_type",
+      "value": [
+        "soil:well_drained",
+        "soil:humus_rich"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: moist but well-drained chalk, clay, loam or sand; acid, neutral or alkaline; cultivation note asks for fertile, humus-rich soil.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/13486/polystichum-munitum/details",
+      "note": "chalk/clay/loam/sand have no KPU class; acid-or-alkaline-or-neutral not mapped; 'Humus rich' taken from the cultivation note",
+      "value_label": [
+        "Well-drained",
+        "Humus rich"
+      ],
+      "concepts": [
+        "soil:humus_rich",
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:water_drainage:rhs01",
+      "plant": "polystichum-munitum",
+      "field": "water_drainage",
+      "value": "water:average",
+      "value_kind": "categorical",
+      "text": "RHS: moist but well-drained.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/13486/polystichum-munitum/details",
+      "note": "'moist but well-drained' → average",
+      "value_label": "average",
+      "concepts": [
+        "water:average"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:seasonal_interest:rhs01",
+      "plant": "polystichum-munitum",
+      "field": "seasonal_interest",
+      "value": {
+        "foliage_colour": [
+          "Green"
+        ],
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "RHS: evergreen fern with dark green pinnate fronds; no flowers.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/13486/polystichum-munitum/details",
+      "concepts": [
+        "colour:green",
+        "evergreen:yes"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:habit:rhs01",
+      "plant": "polystichum-munitum",
+      "field": "habit",
+      "value": "habit:dense",
+      "value_kind": "categorical",
+      "text": "RHS: bushy habit, forming a large clump of erect fronds.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/13486/polystichum-munitum/details",
+      "note": "'Bushy' has no KPU label → Dense, loose",
+      "value_label": "Dense",
+      "concepts": [
+        "habit:dense"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:resistances:rhs01",
+      "plant": "polystichum-munitum",
+      "field": "resistances",
+      "value": [
+        "pest:pest",
+        "pest:disease"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: generally pest-free outdoors and generally disease-free.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/13486/polystichum-munitum/details",
+      "value_label": [
+        "pest",
+        "disease"
+      ],
+      "concepts": [
+        "pest:disease",
+        "pest:pest"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:landscape_use:rhs01",
+      "plant": "polystichum-munitum",
+      "field": "landscape_use",
+      "value": [
+        "use:perennial_border",
+        "use:mixed_shrub_border"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS suggests cottage and informal gardens, flower borders and beds, and underplanting of roses and shrubs.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/13486/polystichum-munitum/details",
+      "note": "'flower borders and beds' → Perennial border; 'underplanting of roses and shrubs' → Mixed shrub border (loose); 'cottage and informal garden' has no KPU label",
+      "value_label": [
+        "Perennial border",
+        "Mixed shrub border"
+      ],
+      "concepts": [
+        "use:mixed_shrub_border",
+        "use:perennial_border"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:maintenance_level:rhs01",
+      "plant": "polystichum-munitum",
+      "field": "maintenance_level",
+      "value": "maintenance:low",
+      "value_kind": "categorical",
+      "text": "RHS: easy to grow; pruning limited to removing dead or damaged fronds.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/13486/polystichum-munitum/details",
+      "note": "'easy to grow' + minimal pruning → low",
+      "value_label": "low",
+      "concepts": [
+        "maintenance:low"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:long_term_performance:rhs01",
+      "plant": "polystichum-munitum",
+      "field": "long_term_performance",
+      "value": {
+        "winter_wet": "protect crowns from excessive winter wet"
+      },
+      "value_kind": "qualitative",
+      "text": "RHS advises protecting the crowns from excessive winter wet.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "warning",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/13486/polystichum-munitum/details",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:ecological_value:rhs01",
+      "plant": "polystichum-munitum",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: plant range western North America; not native to Great Britain or Ireland.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/13486/polystichum-munitum/details",
+      "note": "range statement, not a BC-specific native status",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:mature_height:gpp01",
+      "plant": "polystichum-munitum",
+      "field": "mature_height",
+      "value": {
+        "height_m": 1.2,
+        "unit": "m",
+        "raw": "4 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Great Plant Picks gives Polystichum munitum a mature height of 4 ft (1.2 m).",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "note": "mature height from the GPP search results table; the profile page gives only the 10-year size",
+      "concepts": [
+        "height_class:0.7-1.3m"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:time_to_intended_size:gpp01",
+      "plant": "polystichum-munitum",
+      "field": "time_to_intended_size",
+      "value": {
+        "years": 10,
+        "height_m": 0.91,
+        "spread_m": 0.91,
+        "unit": "m at 10 years"
+      },
+      "value_kind": "quantitative",
+      "text": "Great Plant Picks gives Polystichum munitum a 10-year size of 3 ft tall by 3 ft wide (0.9 × 0.9 m).",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "concepts": [
+        "age:establishing"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:hardiness_zone:gpp01",
+      "plant": "polystichum-munitum",
+      "field": "hardiness_zone",
+      "value": {
+        "min": 6,
+        "max": 8,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Great Plant Picks lists Polystichum munitum for USDA zones 6 to 8.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "concepts": [
+        "hardiness_usda:z6",
+        "hardiness_usda:z7",
+        "hardiness_usda:z8"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:exposure:gpp01",
+      "plant": "polystichum-munitum",
+      "field": "exposure",
+      "value": [
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade",
+        "exposure:deep_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: light to deep shade is best.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "note": "GPP 'light shade' → Part sun/part shade, 'dappled/open shade' → Filtered shade",
+      "value_label": [
+        "Part sun/part shade",
+        "Filtered shade",
+        "Deep shade"
+      ],
+      "concepts": [
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade",
+        "exposure:deep_shade"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:exposure:gpp02",
+      "plant": "polystichum-munitum",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun_only_if_soil_kept_moist"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: grows in full sun if watered regularly in summer.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest; full sun with regular summer watering",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "note": "second condition from the same source (M15)",
+      "value_label": [
+        "Full sun only if soil kept moist"
+      ],
+      "concepts": [
+        "exposure:full_sun_only_if_soil_kept_moist"
+      ],
+      "conditions": [
+        {
+          "facet": "exposure",
+          "concept_id": "exposure:full_sun"
+        }
+      ],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:water_drainage:gpp01",
+      "plant": "polystichum-munitum",
+      "field": "water_drainage",
+      "value": "water:wide_range",
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: tolerates wet to dry sites; water occasionally in dry periods.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "note": "'from wet to dry' → wide_range",
+      "value_label": "wide_range",
+      "concepts": [
+        "water:wide_range"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:resistances:gpp01",
+      "plant": "polystichum-munitum",
+      "field": "resistances",
+      "value": [
+        "stress:drought"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: drought tolerant in shade once established, including dry shade under Douglas fir and western red cedar.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest; in shade, once established",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "value_label": [
+        "drought"
+      ],
+      "concepts": [
+        "stress:drought"
+      ],
+      "conditions": [
+        {
+          "facet": "exposure",
+          "concept_id": "exposure:shade"
+        }
+      ],
+      "place": "place:pnw",
+      "time": [
+        "age:established"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:soil_type:gpp01",
+      "plant": "polystichum-munitum",
+      "field": "soil_type",
+      "value": [
+        "soil:well_drained",
+        "soil:humus_rich"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: well-drained, humus-rich soil preferred; tolerates poorer soil once established.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "value_label": [
+        "Well-drained",
+        "Humus rich"
+      ],
+      "concepts": [
+        "soil:humus_rich",
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:seasonal_interest:gpp01",
+      "plant": "polystichum-munitum",
+      "field": "seasonal_interest",
+      "value": {
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: evergreen; no flowers.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "concepts": [
+        "evergreen:yes"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:form:gpp01",
+      "plant": "polystichum-munitum",
+      "field": "form",
+      "value": "form:mounded",
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: forms a shapely, arching mound.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "value_label": "Mounded",
+      "concepts": [
+        "form:mounded"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:habit:gpp01",
+      "plant": "polystichum-munitum",
+      "field": "habit",
+      "value": "habit:arching",
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: arching fronds.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "value_label": "Arching",
+      "concepts": [
+        "habit:arching"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:landscape_use:gpp01",
+      "plant": "polystichum-munitum",
+      "field": "landscape_use",
+      "value": [
+        "use:specimen_plant",
+        "use:group_or_mass_planting",
+        "use:ground_cover",
+        "use:native_planting"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: a specimen or massed as a tall groundcover; a Pacific Northwest native staple.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "value_label": [
+        "Specimen plant",
+        "Group or mass planting",
+        "Ground cover",
+        "Native planting"
+      ],
+      "concepts": [
+        "use:ground_cover",
+        "use:group_or_mass_planting",
+        "use:native_planting",
+        "use:specimen_plant"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:maintenance_level:gpp01",
+      "plant": "polystichum-munitum",
+      "field": "maintenance_level",
+      "value": "maintenance:low",
+      "value_kind": "categorical",
+      "text": "Great Plant Picks: optional cut-back to the ground in late winter; only every three years on poor or dry soil.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "note": "single optional annual cut-back → low",
+      "value_label": "low",
+      "concepts": [
+        "maintenance:low"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:ecological_value:gpp01",
+      "plant": "polystichum-munitum",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "Great Plant Picks describes Polystichum munitum as one of the most useful native ferns of the Pacific Northwest.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:behaviour_with_others:gpp01",
+      "plant": "polystichum-munitum",
+      "field": "behaviour_with_others",
+      "value": {
+        "tolerates": "dry shade under dense Douglas fir and western red cedar",
+        "companions": [
+          "Smilacina racemosa",
+          "Lathyrus vernus",
+          "Asarum europaeum",
+          "Rhododendron",
+          "Trillium ovatum",
+          "Hosta 'Fragrant Blue'",
+          "Arisaema sikokianum",
+          "Vaccinium ovatum",
+          "Pulmonaria longifolia ssp. cevennensis"
+        ]
+      },
+      "value_kind": "qualitative",
+      "text": "Great Plant Picks: tolerates dry shade under Douglas fir and western red cedar; listed combinations include false Solomon's seal, spring vetchling, European wild ginger, rhododendrons, western trillium, Hosta 'Fragrant Blue', Arisaema sikokianum, evergreen huckleberry and Pulmonaria longifolia ssp. cevennensis.",
+      "source_id": "gpp",
+      "source_type": "database",
+      "context": "species; Great Plant Picks, maritime Pacific Northwest",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.greatplantpicks.org/search/plant-details/1222",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:mature_height:osu01",
+      "plant": "polystichum-munitum",
+      "field": "mature_height",
+      "value": {
+        "min": 0.3,
+        "max": 1.2,
+        "unit": "m",
+        "raw": "fronds 1–4 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Oregon State University: fronds 1–4 ft (0.3–1.2 m) long, stiffly erect from a dense crown.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/polystichum-munitum",
+      "note": "OSU gives frond length, not a plant height; used as height because the fronds are stiffly erect — loose",
+      "concepts": [
+        "height_class:0.2-0.4m",
+        "height_class:0.4-0.7m",
+        "height_class:0.7-1.3m"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:hardiness_zone:osu01",
+      "plant": "polystichum-munitum",
+      "field": "hardiness_zone",
+      "value": {
+        "usda_min": 4,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Oregon State University: hardy to USDA zone 4.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/polystichum-munitum",
+      "concepts": [
+        "hardiness_usda:z4",
+        "hardiness_usda:z5",
+        "hardiness_usda:z6",
+        "hardiness_usda:z7",
+        "hardiness_usda:z8",
+        "hardiness_usda:z9",
+        "hardiness_usda:z10",
+        "hardiness_usda:z11"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:exposure:osu01",
+      "plant": "polystichum-munitum",
+      "field": "exposure",
+      "value": [
+        "exposure:part_sun_part_shade",
+        "exposure:deep_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: part shade to shade.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/polystichum-munitum",
+      "note": "'shade' → Deep shade",
+      "value_label": [
+        "Part sun/part shade",
+        "Deep shade"
+      ],
+      "concepts": [
+        "exposure:part_sun_part_shade",
+        "exposure:deep_shade"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:exposure:osu02",
+      "plant": "polystichum-munitum",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: the compact sun form, var. imbricans, prefers full sun.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "var. imbricans (compact sun form); Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/polystichum-munitum",
+      "note": "variety-level condition, separate claim (M15)",
+      "value_label": [
+        "Full sun"
+      ],
+      "concepts": [
+        "exposure:full_sun"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:soil_type:osu01",
+      "plant": "polystichum-munitum",
+      "field": "soil_type",
+      "value": [
+        "soil:humus_rich"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: rich soil with organic matter.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/polystichum-munitum",
+      "value_label": [
+        "Humus rich"
+      ],
+      "concepts": [
+        "soil:humus_rich"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:water_drainage:osu01",
+      "plant": "polystichum-munitum",
+      "field": "water_drainage",
+      "value": "water:moist",
+      "value_kind": "categorical",
+      "text": "Oregon State University: ample water.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/polystichum-munitum",
+      "note": "'ample water' → moist",
+      "value_label": "moist",
+      "concepts": [
+        "water:moist"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:texture:osu01",
+      "plant": "polystichum-munitum",
+      "field": "texture",
+      "value": "texture:medium",
+      "value_kind": "categorical",
+      "text": "Oregon State University: medium texture.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/polystichum-munitum",
+      "value_label": "Medium",
+      "concepts": [
+        "texture:medium"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:habit:osu01",
+      "plant": "polystichum-munitum",
+      "field": "habit",
+      "value": "habit:stiffly_upright",
+      "value_kind": "categorical",
+      "text": "Oregon State University: stiffly erect fronds from a dense crown.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/polystichum-munitum",
+      "value_label": "Stiffly upright",
+      "concepts": [
+        "habit:stiffly_upright"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:seasonal_interest:osu01",
+      "plant": "polystichum-munitum",
+      "field": "seasonal_interest",
+      "value": {
+        "foliage_colour": [
+          "Green"
+        ],
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "Oregon State University: evergreen; leathery, shiny, dark green fronds.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/polystichum-munitum",
+      "concepts": [
+        "colour:green",
+        "evergreen:yes"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:ecological_value:osu01",
+      "plant": "polystichum-munitum",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: native from Alaska to California, east to western Montana; native to Oregon.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/polystichum-munitum",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:ecological_value:eflora01",
+      "plant": "polystichum-munitum",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "E-Flora BC lists Polystichum munitum as native to BC (provincial list Yellow, rank S5, secure; COSEWIC not listed).",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Polystichum%20munitum",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:vancouver_context:eflora01",
+      "plant": "polystichum-munitum",
+      "field": "vancouver_context",
+      "value": {
+        "habitat": [
+          "moist to mesic forests",
+          "lowland",
+          "montane",
+          "water-receiving and colluvial sites",
+          "Moder and Mull humus forms",
+          "nitrophytic"
+        ],
+        "bgc_zones": [
+          "CDF",
+          "CWH",
+          "ESSF",
+          "ICH",
+          "IDF",
+          "MH",
+          "MS"
+        ],
+        "modal_zone": "CWH",
+        "bgc_station_counts": {
+          "CDF": 315,
+          "CWH": 2153,
+          "ESSF": 4,
+          "ICH": 12,
+          "IDF": 24,
+          "MH": 18,
+          "MS": 5
+        },
+        "soil_moisture_regime": {
+          "modal": 4,
+          "label": "mesic",
+          "range": "0–8"
+        },
+        "nutrient_regime_modal": "D",
+        "climate_type": "cool mesothermal",
+        "elevation_m": {
+          "min": 0,
+          "max": 2050,
+          "mean": 229
+        },
+        "bc_distribution": "common in coastal BC; rare in SC and SE BC south of 54°N; rare northward"
+      },
+      "value_kind": "qualitative",
+      "text": "E-Flora BC: common in coastal BC in moist to mesic lowland and montane forests, overwhelmingly in the Coastal Western Hemlock zone, on mesic, nutrient-medium, nitrogen-rich sites.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Polystichum%20munitum",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "bgc_zone:cdf",
+        "bgc_zone:cwh",
+        "bgc_zone:essf",
+        "bgc_zone:ich",
+        "bgc_zone:idf",
+        "bgc_zone:mh",
+        "bgc_zone:ms",
+        "habitat:forest"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:mature_height:eflora01",
+      "plant": "polystichum-munitum",
+      "field": "mature_height",
+      "value": {
+        "min": 0.2,
+        "max": 1.5,
+        "unit": "m",
+        "raw": "leaves 20–150 cm long"
+      },
+      "value_kind": "quantitative",
+      "text": "E-Flora BC: evergreen perennial from a short stout rhizome, leaves 20–150 cm long.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Polystichum%20munitum",
+      "note": "leaf length, not a stated plant height — loose",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "height_class:0.2-0.4m",
+        "height_class:0.4-0.7m",
+        "height_class:0.7-1.3m",
+        "height_class:1.3-2.0m"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:exposure:eflora01",
+      "plant": "polystichum-munitum",
+      "field": "exposure",
+      "value": [
+        "exposure:filtered_shade",
+        "exposure:part_sun_part_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "E-Flora BC habitat is moist to mesic forest.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page; inferred from habitat classes, not a cultivation rating",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Polystichum%20munitum",
+      "note": "exposure read off habitat (forest understory)",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": [
+        "Filtered shade",
+        "Part sun/part shade"
+      ],
+      "concepts": [
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:water_drainage:eflora01",
+      "plant": "polystichum-munitum",
+      "field": "water_drainage",
+      "value": "water:average",
+      "value_kind": "categorical",
+      "text": "E-Flora BC: moist to mesic forests; average soil moisture regime 4 (mesic).",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page; inferred from habitat and soil moisture regime, not a cultivation rating",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Polystichum%20munitum",
+      "note": "mesic → average",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": "average",
+      "concepts": [
+        "water:average"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:seasonal_interest:eflora01",
+      "plant": "polystichum-munitum",
+      "field": "seasonal_interest",
+      "value": {
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "E-Flora BC: evergreen perennial.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Polystichum%20munitum",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "evergreen:yes"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:behaviour_with_others:eflora01",
+      "plant": "polystichum-munitum",
+      "field": "behaviour_with_others",
+      "value": {
+        "growth_form": "short, stout rhizome",
+        "associated_species": [
+          "Achlys triphylla",
+          "Mahonia nervosa",
+          "Tiarella trifoliata"
+        ]
+      },
+      "value_kind": "qualitative",
+      "text": "E-Flora BC: commonly associated with vanilla-leaf, dull Oregon-grape and three-leaved foamflower; grows from a short stout rhizome.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Polystichum%20munitum",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:ecological_value:usdaplants01",
+      "plant": "polystichum-munitum",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: native in Alaska, Canada and the lower 48 states.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/POMU",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:mature_height:usdaplants01",
+      "plant": "polystichum-munitum",
+      "field": "mature_height",
+      "value": {
+        "height_m": 1.07,
+        "unit": "m",
+        "raw": "3.5 ft mature"
+      },
+      "value_kind": "quantitative",
+      "text": "USDA PLANTS gives a mature height of 3.5 ft (1.1 m).",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/POMU",
+      "note": "no 20-year height is listed for this species",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "height_class:0.7-1.3m"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:growth_rate:usdaplants01",
+      "plant": "polystichum-munitum",
+      "field": "growth_rate",
+      "value": "growth_rate:moderate",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates growth rate moderate.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/POMU",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "moderate",
+      "concepts": [
+        "growth_rate:moderate"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:exposure:usdaplants01",
+      "plant": "polystichum-munitum",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates shade tolerance low.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.5,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/POMU",
+      "note": "'Shade Tolerance: Low' contradicts RHS, GPP, OSU and E-Flora (shade plant); kept side by side at low confidence (R1)",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "Full sun"
+      ],
+      "concepts": [
+        "exposure:full_sun"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:water_drainage:usdaplants01",
+      "plant": "polystichum-munitum",
+      "field": "water_drainage",
+      "value": "water:moist",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: moisture use high, drought tolerance low, anaerobic tolerance low.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/POMU",
+      "note": "drought tolerance low contradicts GPP 'drought tolerant in shade once established'",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "moist",
+      "concepts": [
+        "water:moist"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:soil_type:usdaplants01",
+      "plant": "polystichum-munitum",
+      "field": "soil_type",
+      "value": [
+        "soil:acidic"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: pH 5.8–7.5, adapted to medium-textured soils only; CaCO3 tolerance medium, salinity tolerance none.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/POMU",
+      "note": "pH range spans acid to mildly alkaline — Acidic is a loose mapping of the lower bound",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "Acidic"
+      ],
+      "concepts": [
+        "soil:acidic"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:texture:usdaplants01",
+      "plant": "polystichum-munitum",
+      "field": "texture",
+      "value": "texture:medium",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: foliage texture medium.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/POMU",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "Medium",
+      "concepts": [
+        "texture:medium"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:seasonal_interest:usdaplants01",
+      "plant": "polystichum-munitum",
+      "field": "seasonal_interest",
+      "value": {
+        "foliage_colour": [
+          "Green"
+        ],
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: dark green foliage; leaf retention recorded as no; fall conspicuous yes.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.5,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/POMU",
+      "note": "'Leaf Retention: No' contradicts RHS, GPP, OSU and E-Flora (evergreen); recorded as given at low confidence. USDA 'Flower Color: Brown / Flower Conspicuous: Yes' refer to sori on a fern and are not stored as flowers",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "colour:green",
+        "evergreen:no"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:toxicity:usdaplants01",
+      "plant": "polystichum-munitum",
+      "field": "toxicity",
+      "value": {
+        "usda_rating": "none",
+        "humans": "unknown",
+        "pets": "unknown"
+      },
+      "value_kind": "categorical",
+      "text": "USDA PLANTS lists toxicity as none.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/POMU",
+      "note": "livestock/conservation-planting characteristic, not a human or pet assessment (M17)",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "toxicity:unknown"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:behaviour_with_others:usdaplants01",
+      "plant": "polystichum-munitum",
+      "field": "behaviour_with_others",
+      "value": {
+        "growth_form": "rhizomatous",
+        "vegetative_spread_rate": "moderate",
+        "lifespan": "long",
+        "resprout": false,
+        "coppice": false,
+        "fire_tolerance": "medium",
+        "allelopathic": false
+      },
+      "value_kind": "qualitative",
+      "text": "USDA PLANTS: rhizomatous with moderate vegetative spread, long-lived, no resprout or coppice ability, medium fire tolerance, not allelopathic.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/POMU",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "polystichum-munitum:invasive_status:iscbc01",
+      "plant": "polystichum-munitum",
+      "field": "invasive_status",
+      "value": "invasive:not_listed",
+      "value_kind": "categorical",
+      "text": "Polystichum munitum is not among the plant profiles on the Invasive Species Council of BC list and returns no site-search result (checked 2026-11-02); it is a BC native.",
+      "source_id": "iscbc",
+      "source_type": "municipal",
+      "context": "BC; ISCBC online species profiles",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://bcinvasives.ca/take-action/identify/",
+      "value_label": "not_listed",
+      "concepts": [
+        "invasive:not_listed"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    }
+  ]
+}

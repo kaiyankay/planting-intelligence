@@ -1,0 +1,31 @@
+/* V4.3 · specimen sheet: the ten species as the 3D garden draws them. A reading page: one column, plates on the plate ground. */
+.sp-page { margin: 0; background: var(--pi-ivory); color: var(--pi-ink); font: 400 var(--pi-t-body)/1.55 var(--pi-sans); }
+.sp-page ::selection { background: var(--pi-olive-soft); }
+.sp-main { max-width: 1180px; margin: 0 auto; padding: 40px 32px 96px; }
+.sp-back { font-size: var(--pi-t-ui); color: var(--pi-olive-deep); text-decoration: underline; text-underline-offset: 3px; }
+.sp-back:focus-visible, .sp-sheet a:focus-visible { outline: 2px solid var(--pi-olive-deep); outline-offset: 3px; border-radius: 2px; }
+.sp-head h1 { font: 400 var(--pi-t-page)/1.02 var(--pi-display); letter-spacing: -.02em; margin: 28px 0 16px; }
+.sp-lede { font-size: var(--pi-t-lede); line-height: 1.5; max-width: 68ch; margin: 0; color: var(--pi-ink-2); }
+.sp-main h2 { font: 400 var(--pi-t-section)/1.15 var(--pi-display); letter-spacing: -.01em; margin: 72px 0 8px; }
+.sp-cap { font-size: var(--pi-t-ui); color: var(--pi-ink-3); max-width: 72ch; margin: 0 0 20px; }
+.sp-lineup-fig { position: relative; background: var(--pi-plate); border: 1px solid var(--pi-line); border-radius: 6px; overflow: hidden; margin-top: 20px; }
+.sp-lineup-fig canvas { display: block; width: 100%; height: auto; }
+.sp-lineup-names { list-style: none; margin: 0; padding: 0; position: relative; height: 64px; border-top: 1px solid var(--pi-line); }
+.sp-lineup-names li { position: absolute; top: 10px; transform: translateX(-50%); width: 9.2%; text-align: center; font-size: 11.5px; line-height: 1.25; color: var(--pi-ink-2); }
+.sp-lineup-names li b { display: block; font: 400 11px/1.3 var(--pi-mono); color: var(--pi-ink-3); font-variant-numeric: tabular-nums; }
+.sp-lineup .sp-cap { margin-top: 12px; }
+.sp-sheet { display: grid; grid-template-columns: 1fr; gap: 0; }
+.sp-row { display: grid; grid-template-columns: minmax(240px, 5fr) 7fr; gap: 40px; padding: 32px 0; border-top: 1px solid var(--pi-line); align-items: start; }
+.sp-row h3 { font: 400 var(--pi-t-card)/1.2 var(--pi-display); margin: 0 0 2px; }
+.sp-sci { font: var(--pi-sci); color: var(--pi-ink-2); margin: 0 0 18px; }
+.sp-rec { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; font-size: var(--pi-t-small); }
+.sp-rec dt { color: var(--pi-ink-3); }
+.sp-rec dd { margin: 0; font: 400 var(--pi-t-mono)/1.5 var(--pi-mono); color: var(--pi-ink); font-variant-numeric: tabular-nums; }
+.sp-rec dd.sp-words { font: 400 var(--pi-t-small)/1.45 var(--pi-sans); color: var(--pi-ink-2); }
+.sp-pair { margin: 0; background: var(--pi-plate); border: 1px solid var(--pi-line); border-radius: 6px; overflow: hidden; }
+.sp-pair canvas { display: block; width: 100%; height: auto; }
+.sp-pair figcaption { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--pi-line); font-size: 12px; color: var(--pi-ink-3); }
+.sp-pair figcaption span { padding: 8px 14px; } .sp-pair figcaption span + span { border-left: 1px solid var(--pi-line); color: var(--pi-ink-2); }
+.sp-wait, .sp-fail { color: var(--pi-ink-3); font-size: var(--pi-t-ui); padding: 24px 0; }
+.sp-fail { color: var(--pi-rust); }
+@media (max-width: 820px) { .sp-main { padding: 24px 16px 64px; } .sp-row { grid-template-columns: 1fr; gap: 16px; } .sp-lineup-names { display: none; } }

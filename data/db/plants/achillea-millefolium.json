@@ -1,0 +1,2218 @@
+{
+  "entity": {
+    "id": "achillea-millefolium",
+    "scientific_name": "Achillea millefolium",
+    "synonyms_scientific": [],
+    "common_names": {
+      "en": [
+        "Yarrow",
+        "Common yarrow",
+        "milfoil",
+        "thousand-leaf",
+        "soldier's woundwort",
+        "nosebleed",
+        "devil's nettle",
+        "sanguinary",
+        "old man's pepper"
+      ],
+      "zh": [
+        "蓍草",
+        "西洋蓍草"
+      ]
+    },
+    "family": "Asteraceae",
+    "kpu_plant_type": "Herbaceous perennial",
+    "respondent_roles": [
+      "groundcover",
+      "groundcover"
+    ],
+    "raw_names": [
+      "Achillea millefolium",
+      "Yarrow"
+    ],
+    "survey_respondents": [
+      "survey-r05",
+      "survey-r08"
+    ],
+    "origin_status": "native_bc_west_of_cascades",
+    "external_refs": {
+      "kpu": "https://plantdatabase.kpu.ca/Plant/acmi",
+      "mobot": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b282",
+      "gpp": null,
+      "osu": null,
+      "eflora": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Achillea%20millefolium",
+      "rhs": "https://www.rhs.org.uk/plants/311/achillea-millefolium/details",
+      "usda": "https://plants.usda.gov/plant-profile/ACMI2",
+      "inat": "https://www.inaturalist.org/taxa/52821",
+      "eflora_native_taxon": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Achillea%20millefolium%20var.%20borealis"
+    },
+    "in_vancouver_street_tree_list": false,
+    "prototype_role": "herbaceous perennial native to BC (native and introduced genotypes both occur); 2 survey mentions incl. a mixed-basis warning about vigorous spread — tests behaviour_with_others warnings and the herbaceous ground layer",
+    "survey_mentions": 2,
+    "added": "2026-11-02",
+    "added_by": "10-plant expansion (brief 2026-11-02); entity facts from the T5 extraction and the survey, see claims for evidence",
+    "usda_symbol": "ACMI2",
+    "notes": [
+      "origin_status to confirm (2026-11-02): E-Flora BC lists Achillea millefolium sensu stricto as Exotic (SNA) and the native coastal yarrow under Achillea borealis var. borealis (Yellow, S5); USDA gives both native and introduced for Canada. The entity keeps native_bc_west_of_cascades because the native coastal taxon is what a BC planting means by 'yarrow'; the claims record each source's wording (ecological_value:eflora01 cites the A. borealis page)."
+    ],
+    "identity_review": {
+      "audited": "2026-11-02",
+      "method": "tools/identity_audit.py (M45): sources on file + entity notes; disputed = left for human judgement",
+      "taxonomic_identity": {
+        "status": "disputed",
+        "note": "E-Flora BC treats Achillea millefolium sensu stricto as exotic (SNA) and the native coastal yarrow as Achillea borealis var. borealis (syn. A. millefolium var. borealis); RHS, MOBOT and USDA use A. millefolium in the broad sense. Which taxon a Vancouver planting means is a human decision; claims record each source's wording"
+      },
+      "geographic_origin": {
+        "status": "disputed",
+        "note": "native (A. borealis var. borealis, E-Flora Yellow S5; USDA native AND introduced for Canada) vs exotic (A. millefolium s.s., E-Flora). origin_status native_bc_west_of_cascades kept provisionally",
+        "origin_status_on_entity": "native_bc_west_of_cascades"
+      },
+      "botanical_growth_form": {
+        "status": "confirmed",
+        "note": "read as herbaceous_perennial from kpu (entity.kpu_plant_type), mobot (supported; M29a)",
+        "kpu_plant_type": "Herbaceous perennial"
+      },
+      "design_function": {
+        "status": "confirmed",
+        "note": "ground cover / wildflower / pollinator perennial (MOBOT, RHS; respondents 'groundcover')",
+        "respondent_roles_as_typed": [
+          "groundcover",
+          "groundcover"
+        ]
+      },
+      "synonyms_raw": [
+        "rhs",
+        "eflora",
+        "eflora_native_bc_taxon",
+        "eflora_varieties_recognised_in_bc"
+      ]
+    }
+  },
+  "custom": [],
+  "fill_plan": {
+    "gate": {
+      "hardiness_zone": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "invasive_status": [
+        "iscbc"
+      ],
+      "water_drainage": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "mature_height": [
+        "kpu",
+        "gpp",
+        "pojar",
+        "osu"
+      ],
+      "mature_spread": [
+        "kpu",
+        "gpp"
+      ],
+      "maintenance_level": [
+        "gpp",
+        "growgreen"
+      ],
+      "ecological_value": [
+        "eflora",
+        "pojar",
+        "growgreen"
+      ]
+    },
+    "compare": {
+      "exposure": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "seasonal_interest": [
+        "kpu",
+        "gpp",
+        "pojar"
+      ],
+      "texture": [
+        "kpu"
+      ],
+      "form": [
+        "kpu",
+        "osu"
+      ],
+      "habit": [
+        "kpu"
+      ],
+      "soil_type": [
+        "kpu",
+        "mobot"
+      ],
+      "growth_rate": [
+        "gpp"
+      ],
+      "landscape_use": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "pest_susceptibility": [
+        "kpu"
+      ]
+    },
+    "extended": {
+      "time_to_intended_size": [
+        "gpp",
+        "practitioner"
+      ],
+      "local_mature_size": [
+        "practitioner",
+        "inat"
+      ],
+      "long_term_performance": [
+        "practitioner"
+      ],
+      "behaviour_with_others": [
+        "pojar",
+        "relations.json",
+        "practitioner"
+      ],
+      "toxicity": [
+        "aspca"
+      ],
+      "local_availability": [
+        "nats"
+      ],
+      "vancouver_context": [
+        "growgreen",
+        "eflora",
+        "inat"
+      ]
+    },
+    "not_available": {
+      "gpp": "no Great Plant Picks entry for the species or any A. millefolium cultivar; the only Achillea in the full GPP list (1129 plants, searched 2026-11-02) is the hybrid Achillea 'Moonshine', which is not A. millefolium and was not used",
+      "osu": "no Oregon State University Landscape Plants page — /plants/achillea-millefolium returns 404 and the genus Achillea is absent from the site's Plant List by Genus (checked 2026-11-02)",
+      "rhs_season_table": "RHS season-by-season colour table not rendered in the fetched page; flowering taken from the profile description (summer, white/cream/pink)",
+      "pojar": "awaiting Pojar pages"
+    },
+    "t5_extractions": [
+      "inputs/t5/achillea-millefolium-2026-11-02.json"
+    ]
+  },
+  "claims": [
+    {
+      "id": "achillea-millefolium:vancouver_context:inat01",
+      "plant": "achillea-millefolium",
+      "field": "vancouver_context",
+      "value": {
+        "licensed_verifiable_observations": 2063,
+        "research_grade": 1502,
+        "all_licences": 2630,
+        "years": [
+          2012,
+          2026
+        ]
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist holds 2063 openly licensed verifiable observations of this plant in Greater Vancouver (1502 research grade), recorded 2012–2026.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=52821&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "presence evidence; observation counts reflect observer effort as much as abundance",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:vancouver_context:inat02",
+      "plant": "achillea-millefolium",
+      "field": "vancouver_context",
+      "value": {
+        "observations_by_month": {
+          "1": 45,
+          "2": 25,
+          "3": 44,
+          "4": 187,
+          "5": 159,
+          "6": 268,
+          "7": 294,
+          "8": 226,
+          "9": 332,
+          "10": 306,
+          "11": 111,
+          "12": 66
+        },
+        "n": 2063,
+        "unit": "observations"
+      },
+      "value_kind": "quantitative",
+      "text": "Monthly spread of 2063 Greater Vancouver observations: most in 9, 10, 7 (month numbers).",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03",
+      "confidence": 0.55,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=52821&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "observer effort, not plant activity — the plant is evergreen/visible year-round; use for 'when people notice it', not phenology",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:seasonal_interest:inat03",
+      "plant": "achillea-millefolium",
+      "field": "seasonal_interest",
+      "value": {
+        "flowering_months": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "annotated_n": 234,
+        "share_threshold": 0.1
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist phenology annotations in Greater Vancouver (n=234) put flowering mainly in months 6, 7, 8, 9, 10, 11.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-11-03; community Plant Phenology annotations",
+      "confidence": 0.5,
+      "status": "unverified",
+      "recorded_at": "2026-11-03",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-03",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=52821&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "month included when >= 10% of annotated observations; annotations are volunteer-made",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [
+        "month:6",
+        "month:7",
+        "month:8",
+        "month:9",
+        "month:10",
+        "month:11"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:ecological_value:sv01",
+      "plant": "achillea-millefolium",
+      "field": "ecological_value",
+      "value_kind": "categorical",
+      "value": [
+        "origin:native"
+      ],
+      "text": "Achillea millefolium — Native species.",
+      "source_id": "survey-r05",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.75,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student; studio and professional planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false,
+        "note": "d1 'why' answers carry no basis — stored as selection reasons, never cited as observations (R2)"
+      },
+      "survey_question": "d1",
+      "respondent_role_as_typed": "Groundcover",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "achillea-millefolium:vancouver_context:sv02",
+      "plant": "achillea-millefolium",
+      "field": "vancouver_context",
+      "value_kind": "qualitative",
+      "value": {
+        "performance": "does well in the local climate",
+        "origin_note": "native species"
+      },
+      "text": "Native species that does well in this local climate",
+      "source_id": "survey-r05",
+      "source_type": "practitioner",
+      "context": "survey d2 note (observed); location not recorded",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "observation",
+      "practitioner_meta": {
+        "basis": "observed",
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student; studio and professional planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L1",
+        "citable": true,
+        "caveat": "location not recorded",
+        "raw_export_text": "NativeSpeciesthatdoesWellinthislocalclimate",
+        "note": "spaces restored by hand from the export (form bug, M21)"
+      },
+      "survey_question": "d2",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "achillea-millefolium:ecological_value:sv03",
+      "plant": "achillea-millefolium",
+      "field": "ecological_value",
+      "value_kind": "categorical",
+      "value": [
+        "origin:native"
+      ],
+      "text": "Achillea millefolium: Native species that does well in this local climate",
+      "source_id": "survey-r05",
+      "source_type": "practitioner",
+      "context": "survey d2 note (observed); location not recorded; derived from achillea-millefolium:vancouver_context:sv02",
+      "confidence": 0.75,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (derived, same source)",
+      "claim_kind": "observation",
+      "derived_from": "achillea-millefolium:vancouver_context:sv02",
+      "practitioner_meta": {
+        "basis": "observed",
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student; studio and professional planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L1",
+        "citable": true,
+        "caveat": "location not recorded"
+      },
+      "survey_question": "d2",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "achillea-millefolium:seasonal_interest:sv01",
+      "plant": "achillea-millefolium",
+      "field": "seasonal_interest",
+      "value_kind": "qualitative",
+      "value": {
+        "note": "pretty flowers, many flowers"
+      },
+      "text": "Yarrow — Pretty flowers - many flowers.",
+      "source_id": "survey-r08",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.65,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student; studio and personal-garden planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false,
+        "note": "d1 'why' answers carry no basis — stored as selection reasons, never cited as observations (R2)"
+      },
+      "survey_question": "d1",
+      "respondent_role_as_typed": "Groundcover",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "achillea-millefolium:behaviour_with_others:sv02",
+      "plant": "achillea-millefolium",
+      "field": "behaviour_with_others",
+      "value_kind": "qualitative",
+      "value": {
+        "spread": "vigorous under certain conditions",
+        "advice": "use cautiously",
+        "upside": "large swathes can be beautiful"
+      },
+      "text": "Spreads vigorously under certain conditions so use cautiously. However, large swathes of yarrow can be beautiful.",
+      "source_id": "survey-r08",
+      "source_type": "practitioner",
+      "context": "survey d2 note (mixed); location not recorded",
+      "confidence": 0.7,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "warning",
+      "practitioner_meta": {
+        "basis": "mixed",
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student; studio and personal-garden planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L1",
+        "citable": true,
+        "caveat": "location not recorded"
+      },
+      "survey_question": "d2",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "achillea-millefolium:landscape_use:sv03",
+      "plant": "achillea-millefolium",
+      "field": "landscape_use",
+      "value_kind": "categorical",
+      "value": [
+        "use:group_or_mass_planting"
+      ],
+      "text": "Yarrow — derived from the respondent's note: Spreads vigorously under certain conditions so use cautiously. However, large sw…",
+      "source_id": "survey-r08",
+      "source_type": "practitioner",
+      "context": "survey d2 note (mixed); location not recorded; derived from achillea-millefolium:behaviour_with_others:sv02",
+      "confidence": 0.65,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (derived, same source)",
+      "claim_kind": "warning",
+      "derived_from": "achillea-millefolium:behaviour_with_others:sv02",
+      "practitioner_meta": {
+        "basis": "mixed",
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student; studio and personal-garden planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L1",
+        "citable": true,
+        "caveat": "location not recorded"
+      },
+      "survey_question": "d2",
+      "value_label": [
+        "Group or mass planting"
+      ],
+      "note": "'large swathes' read as mass planting",
+      "concepts": [
+        "use:group_or_mass_planting"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "achillea-millefolium:mature_height:rhs01",
+      "plant": "achillea-millefolium",
+      "field": "mature_height",
+      "value": {
+        "min": 0.5,
+        "max": 1,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Achillea millefolium an ultimate height of 0.5–1 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/311/achillea-millefolium/details",
+      "concepts": [
+        "height_class:0.4-0.7m",
+        "height_class:0.7-1.3m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:mature_spread:rhs01",
+      "plant": "achillea-millefolium",
+      "field": "mature_spread",
+      "value": {
+        "min": 0.1,
+        "max": 0.5,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Achillea millefolium an ultimate spread of 0.1–0.5 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/311/achillea-millefolium/details",
+      "note": "per plant; the species runs by rhizomes into patches (see behaviour_with_others)",
+      "concepts": [
+        "spread_class:0.1-0.3m",
+        "spread_class:0.3-0.6m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:time_to_intended_size:rhs01",
+      "plant": "achillea-millefolium",
+      "field": "time_to_intended_size",
+      "value": {
+        "min": 2,
+        "max": 5,
+        "unit": "years",
+        "measure": "time to ultimate height"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Achillea millefolium 2–5 years to reach its ultimate height.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/311/achillea-millefolium/details",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:hardiness_zone:rhs01",
+      "plant": "achillea-millefolium",
+      "field": "hardiness_zone",
+      "value": {
+        "rating": "H7",
+        "unit": "RHS",
+        "approx_max_c": -20
+      },
+      "value_kind": "quantitative",
+      "text": "RHS rates Achillea millefolium hardiness H7 (very hardy, below -20 °C).",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/311/achillea-millefolium/details",
+      "concepts": [
+        "hardiness_rhs:H7"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:exposure:rhs01",
+      "plant": "achillea-millefolium",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:sheltered"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: full sun; exposed or sheltered sites; any aspect.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/311/achillea-millefolium/details",
+      "note": "KPU has no 'Exposed' value; 'Sheltered' kept because RHS lists both",
+      "value_label": [
+        "Full sun",
+        "Sheltered"
+      ],
+      "concepts": [
+        "exposure:sheltered",
+        "exposure:full_sun"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:soil_type:rhs01",
+      "plant": "achillea-millefolium",
+      "field": "soil_type",
+      "value": [
+        "soil:well_drained"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: well-drained chalk, clay, loam or sand; acid, neutral or alkaline.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/311/achillea-millefolium/details",
+      "note": "chalk/clay/loam/sand have no KPU class; 'acid or alkaline or neutral' (any pH) not mapped to Acidic/Alkaline",
+      "value_label": [
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:water_drainage:rhs01",
+      "plant": "achillea-millefolium",
+      "field": "water_drainage",
+      "value": "water:average",
+      "value_kind": "categorical",
+      "text": "RHS: moist but well-drained to well-drained.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/311/achillea-millefolium/details",
+      "note": "→ average; RHS also lists the species under 'Plants for Wet & Dry Conditions'",
+      "value_label": "average",
+      "concepts": [
+        "water:average"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:resistances:rhs01",
+      "plant": "achillea-millefolium",
+      "field": "resistances",
+      "value": [
+        "stress:drought"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS marks Achillea millefolium as drought resistant.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/311/achillea-millefolium/details",
+      "value_label": [
+        "drought"
+      ],
+      "concepts": [
+        "stress:drought"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:seasonal_interest:rhs01",
+      "plant": "achillea-millefolium",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "White",
+          "Pink"
+        ],
+        "flowering_months": [
+          6,
+          7,
+          8
+        ],
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "RHS: deciduous herbaceous perennial; small white, cream or pink flowers in summer.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/311/achillea-millefolium/details",
+      "note": "'summer' → months 6–8; 'cream' has no kpu_colour value; season-by-season table not rendered, foliage colour not recorded",
+      "concepts": [
+        "colour:pink",
+        "colour:white",
+        "evergreen:no"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [
+        "month:6",
+        "month:7",
+        "month:8"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:habit:rhs01",
+      "plant": "achillea-millefolium",
+      "field": "habit",
+      "value": "habit:spreading",
+      "value_kind": "categorical",
+      "text": "RHS: spreading, branched habit.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/311/achillea-millefolium/details",
+      "note": "'Spreading branched' → Spreading",
+      "value_label": "Spreading",
+      "concepts": [
+        "habit:spreading"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:pest_susceptibility:rhs01",
+      "plant": "achillea-millefolium",
+      "field": "pest_susceptibility",
+      "value": [
+        "pest:aphids",
+        "pest:mildew"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: may be affected by aphids and powdery mildews.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/311/achillea-millefolium/details",
+      "value_label": [
+        "Aphids",
+        "Mildew"
+      ],
+      "concepts": [
+        "pest:aphids",
+        "pest:mildew"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:landscape_use:rhs01",
+      "plant": "achillea-millefolium",
+      "field": "landscape_use",
+      "value": [
+        "use:wild_flower_garden",
+        "use:rock_garden",
+        "use:attract_beneficial_insects"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS suggests wildflower meadows, wildlife gardens, gravel gardens and cottage/informal gardens; listed as an RHS Plant for Pollinators.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/311/achillea-millefolium/details",
+      "note": "'wildflower meadow' → Wild flower garden; 'gravel garden' → Rock garden (loose); 'wildlife gardens' + Plants for Pollinators → Attract beneficial insects; cottage/informal garden has no KPU value",
+      "value_label": [
+        "Wild flower garden",
+        "Rock garden",
+        "Attract beneficial insects"
+      ],
+      "concepts": [
+        "use:attract_beneficial_insects",
+        "use:rock_garden",
+        "use:wild_flower_garden"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:ecological_value:rhs01",
+      "plant": "achillea-millefolium",
+      "field": "ecological_value",
+      "value": [
+        "ecology:pollinator"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS lists Achillea millefolium as a Plant for Pollinators.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/311/achillea-millefolium/details",
+      "value_label": [
+        "pollinator"
+      ],
+      "concepts": [
+        "ecology:pollinator"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:behaviour_with_others:rhs01",
+      "plant": "achillea-millefolium",
+      "field": "behaviour_with_others",
+      "value": {
+        "spread": "spreads readily by rhizomes; can colonise fine lawns"
+      },
+      "value_kind": "qualitative",
+      "text": "RHS warns that the species spreads readily and is unwelcome in fine lawns; propagated by seed or spring division.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/311/achillea-millefolium/details",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:maintenance_level:rhs01",
+      "plant": "achillea-millefolium",
+      "field": "maintenance_level",
+      "value": "maintenance:low",
+      "value_kind": "categorical",
+      "text": "RHS: no pruning required.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.rhs.org.uk/plants/311/achillea-millefolium/details",
+      "note": "'no pruning required' → low; RHS gives no maintenance rating as such",
+      "value_label": "low",
+      "concepts": [
+        "maintenance:low"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:hardiness_zone:mobot01",
+      "plant": "achillea-millefolium",
+      "field": "hardiness_zone",
+      "value": {
+        "min": 3,
+        "max": 9,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden lists Achillea millefolium for USDA zones 3 to 9.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis (USDA zone 6) growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b282",
+      "concepts": [
+        "hardiness_usda:z3",
+        "hardiness_usda:z4",
+        "hardiness_usda:z5",
+        "hardiness_usda:z6",
+        "hardiness_usda:z7",
+        "hardiness_usda:z8",
+        "hardiness_usda:z9"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:mature_height:mobot01",
+      "plant": "achillea-millefolium",
+      "field": "mature_height",
+      "value": {
+        "min": 0.6,
+        "max": 0.9,
+        "unit": "m",
+        "raw": "2–3 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden gives a height of 2–3 ft (0.6–0.9 m).",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis (USDA zone 6) growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b282",
+      "concepts": [
+        "height_class:0.4-0.7m",
+        "height_class:0.7-1.3m"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:mature_spread:mobot01",
+      "plant": "achillea-millefolium",
+      "field": "mature_spread",
+      "value": {
+        "min": 0.6,
+        "max": 0.9,
+        "unit": "m",
+        "raw": "2–3 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Missouri Botanical Garden gives a spread of 2–3 ft (0.6–0.9 m).",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis (USDA zone 6) growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b282",
+      "note": "per clump; the species colonises by rhizomes and self-seeding (see behaviour_with_others)",
+      "concepts": [
+        "spread_class:0.6-1.0m"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:exposure:mobot01",
+      "plant": "achillea-millefolium",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: full sun.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis (USDA zone 6) growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b282",
+      "value_label": [
+        "Full sun"
+      ],
+      "concepts": [
+        "exposure:full_sun"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:water_drainage:mobot01",
+      "plant": "achillea-millefolium",
+      "field": "water_drainage",
+      "value": "water:average",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: dry to medium water.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis (USDA zone 6) growing conditions",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b282",
+      "note": "'dry to medium' spans dry–average; recorded as average with drought/dry-soil tolerance under resistances — Kay may prefer 'dry'",
+      "value_label": "average",
+      "concepts": [
+        "water:average"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:soil_type:mobot01",
+      "plant": "achillea-millefolium",
+      "field": "soil_type",
+      "value": [
+        "soil:well_drained"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: lean, well-drained sandy loam preferred; tolerates poor soil if drainage is good.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis (USDA zone 6) growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b282",
+      "note": "'sandy loam' has no KPU class",
+      "value_label": [
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:maintenance_level:mobot01",
+      "plant": "achillea-millefolium",
+      "field": "maintenance_level",
+      "value": "maintenance:medium",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden rates maintenance medium.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis (USDA zone 6) growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b282",
+      "value_label": "medium",
+      "concepts": [
+        "maintenance:medium"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:seasonal_interest:mobot01",
+      "plant": "achillea-millefolium",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "White"
+        ],
+        "flowering_months": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "foliage_colour": [
+          "Green"
+        ]
+      },
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: showy white flower heads June to September over fern-like aromatic green foliage.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis (USDA zone 6) growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b282",
+      "note": "'June to September' → months 6–9; 'medium green' → Green foliage description from the source kept here, not as a value key: fern-like, aromatic, medium green",
+      "concepts": [
+        "colour:green",
+        "colour:white"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [
+        "month:6",
+        "month:7",
+        "month:8",
+        "month:9"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:landscape_use:mobot01",
+      "plant": "achillea-millefolium",
+      "field": "landscape_use",
+      "value": [
+        "use:wild_flower_garden",
+        "use:rock_garden",
+        "use:ground_cover",
+        "use:cut_flower_or_foliage",
+        "use:dried_flower_or_fruit",
+        "use:attract_butterflies"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: naturalise in meadows, prairies, cottage, seaside and rock gardens; flowering ground cover or mown lawn substitute in sunny out-of-the-way areas; good fresh cut or dried flower; attracts butterflies; too weedy for borders.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis (USDA zone 6) growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b282",
+      "note": "'meadows, prairies, naturalized areas' → Wild flower garden; 'flowering ground cover or lawn' → Ground cover; cottage and seaside gardens have no KPU value; source states the species is too weedy for borders (not recorded as Perennial border)",
+      "value_label": [
+        "Wild flower garden",
+        "Rock garden",
+        "Ground cover",
+        "Cut flower or foliage",
+        "Dried flower or fruit",
+        "Attract butterflies"
+      ],
+      "concepts": [
+        "use:attract_butterflies",
+        "use:cut_flower_or_foliage",
+        "use:dried_flower_or_fruit",
+        "use:ground_cover",
+        "use:rock_garden",
+        "use:wild_flower_garden"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:resistances:mobot01",
+      "plant": "achillea-millefolium",
+      "field": "resistances",
+      "value": [
+        "browsing:deer",
+        "stress:drought",
+        "stress:urban_pollution"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden lists tolerance of deer, drought, dry soil and urban conditions.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis (USDA zone 6) growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b282",
+      "note": "'Dry Soil' folded into drought; 'Urban Conditions' kept as an open value (close to 'urban pollution' in the resistances list)",
+      "value_label": [
+        "deer",
+        "drought",
+        "urban conditions"
+      ],
+      "concepts": [
+        "browsing:deer",
+        "stress:drought",
+        "stress:urban_pollution"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:pest_susceptibility:mobot01",
+      "plant": "achillea-millefolium",
+      "field": "pest_susceptibility",
+      "value": [
+        "pest:mildew",
+        "pest:rust",
+        "pest:crown_rot"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: occasional powdery mildew, rust and stem rot.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis (USDA zone 6) growing conditions",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b282",
+      "note": "'stem rot' has no KPU value; mapped to Crown rot — loose",
+      "value_label": [
+        "Mildew",
+        "Rust",
+        "Crown rot"
+      ],
+      "concepts": [
+        "pest:crown_rot",
+        "pest:mildew",
+        "pest:rust"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:ecological_value:mobot01",
+      "plant": "achillea-millefolium",
+      "field": "ecological_value",
+      "value": [
+        "ecology:pollinator"
+      ],
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: flowers attract butterflies and other insect pollinators.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis (USDA zone 6) growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b282",
+      "value_label": [
+        "pollinator"
+      ],
+      "concepts": [
+        "ecology:pollinator"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:habit:mobot01",
+      "plant": "achillea-millefolium",
+      "field": "habit",
+      "value": "habit:spreading",
+      "value_kind": "categorical",
+      "text": "Missouri Botanical Garden: rhizomatous, spreading, upright to mat-forming perennial.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis (USDA zone 6) growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b282",
+      "note": "'upright to mat-forming' — Spreading chosen over Upright",
+      "value_label": "Spreading",
+      "concepts": [
+        "habit:spreading"
+      ],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:behaviour_with_others:mobot01",
+      "plant": "achillea-millefolium",
+      "field": "behaviour_with_others",
+      "value": {
+        "spread": "aggressive; rhizomes and self-seeding; naturalises into large colonies if unchecked",
+        "division": "every 2–3 years to keep the clump vigorous",
+        "weediness": "regarded by many as an aggressive weed"
+      },
+      "value_kind": "qualitative",
+      "text": "Missouri Botanical Garden: spreads aggressively by rhizomes and self-seeding and can form substantial colonies; divide every 2–3 years.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis (USDA zone 6) growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b282",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:long_term_performance:mobot01",
+      "plant": "achillea-millefolium",
+      "field": "long_term_performance",
+      "value": {
+        "stems": "weak, lodge easily; flop in hot humid weather or rich moist soil; wind and heavy rain flatten exposed plantings",
+        "management": "cut back in late spring before flowering to reduce height; cut to lateral buds after first bloom for rebloom; may be cut to basal foliage after flowering",
+        "appearance": "can become a tangled mass by mid to late summer if not cut back",
+        "siting": "shelter from strong winds if grown ornamentally"
+      },
+      "value_kind": "qualitative",
+      "text": "Missouri Botanical Garden flags weak, flopping stems (worse in rich moist soil), a tangled look by late summer unless cut back, and a need for shelter from strong wind.",
+      "source_id": "mobot",
+      "source_type": "database",
+      "context": "species; Missouri Botanical Garden Plant Finder, St. Louis (USDA zone 6) growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b282",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:st_louis",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:ecological_value:eflora01",
+      "plant": "achillea-millefolium",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "E-Flora BC treats the native coastal yarrow as Achillea borealis var. borealis (synonym A. millefolium var. borealis): origin Native, provincial list Yellow, rank S5 (secure). The A. millefolium species page itself carries origin status Exotic (SNA), while its taxonomic note recognises four native ecogeographic varieties (alpicola, lanulosa, borealis, pacifica).",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas — native yarrow genotypes keyed under Achillea borealis var. borealis; the A. millefolium species page is rated Exotic",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Achillea%20millefolium%20var.%20borealis",
+      "note": "native and introduced genotypes both occur in BC and E-Flora splits them by name: A. millefolium (species page) = Exotic / SNA; A. borealis var. borealis = Native / S5 / Yellow. The var. pacifica page is also marked Exotic / SNA. Confidence lowered from 0.9 because the native status is attached to a different accepted name",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:vancouver_context:eflora01",
+      "plant": "achillea-millefolium",
+      "field": "vancouver_context",
+      "value": {
+        "habitat": [
+          "coastal bluffs",
+          "meadows",
+          "grasslands",
+          "rocky slopes",
+          "open forests",
+          "mesic to dry",
+          "all vegetation zones"
+        ],
+        "bgc_zones": [
+          "AT",
+          "BAFA",
+          "BG",
+          "BWBS",
+          "CDF",
+          "CMA",
+          "CWH",
+          "ESSF",
+          "ICH",
+          "IDF",
+          "IMA",
+          "MH",
+          "MS",
+          "PP",
+          "SBPS",
+          "SBS",
+          "SWB"
+        ],
+        "modal_zone": "IDF",
+        "elevation_m": {
+          "min": 0,
+          "max": 2854,
+          "mean": 1143
+        },
+        "soil_moisture_regime": {
+          "min": 0,
+          "avg": 3,
+          "max": 8,
+          "scale": "0 very xeric – 4 mesic – 8 hydric"
+        },
+        "modal_nutrient_regime": "C",
+        "bc_distribution": "common throughout BC",
+        "eflora_origin_status": "Exotic, SNA (species page); native genotypes under A. borealis var. borealis",
+        "flowering_note": "observed flowering in the Fraser Delta in December"
+      },
+      "value_kind": "qualitative",
+      "text": "E-Flora BC: common throughout BC on mesic to dry coastal bluffs, meadows, grasslands, rocky slopes and open forests in every vegetation zone, from sea level to 2854 m (BEC plots: modal zone IDF, CDF and CWH both recorded); observed flowering in the Fraser Delta in December.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Achillea%20millefolium",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "bgc_zone:bafa",
+        "bgc_zone:bg",
+        "bgc_zone:bwbs",
+        "bgc_zone:cdf",
+        "bgc_zone:cma",
+        "bgc_zone:cwh",
+        "bgc_zone:essf",
+        "bgc_zone:ich",
+        "bgc_zone:idf",
+        "bgc_zone:ima",
+        "bgc_zone:mh",
+        "bgc_zone:ms",
+        "bgc_zone:pp",
+        "bgc_zone:sbps",
+        "bgc_zone:sbs",
+        "bgc_zone:swb",
+        "habitat:coastal",
+        "habitat:forest",
+        "habitat:grassland",
+        "habitat:meadow",
+        "habitat:rocky"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:mature_height:eflora01",
+      "plant": "achillea-millefolium",
+      "field": "mature_height",
+      "value": {
+        "min": 0.1,
+        "max": 1.0,
+        "unit": "m",
+        "raw": "10–100 cm"
+      },
+      "value_kind": "quantitative",
+      "text": "E-Flora BC (Illustrated Flora of BC): erect slender stems 10–100 cm tall; the coastal forms are keyed at 10–40 cm (var. borealis) and 30–100 cm (var. pacifica).",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Achillea%20millefolium",
+      "note": "height varies strongly by ecogeographic form; low-elevation coastal plants near Vancouver fall under var. pacifica (30–100 cm) or var. borealis (10–40 cm)",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "height_class:0.1-0.2m",
+        "height_class:0.2-0.4m",
+        "height_class:0.4-0.7m",
+        "height_class:0.7-1.3m"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:exposure:eflora01",
+      "plant": "achillea-millefolium",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "E-Flora BC habitat records are open sites — bluffs, meadows, grasslands, rocky slopes and open forests.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page; inferred from habitat classes, not a cultivation rating",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Achillea%20millefolium",
+      "note": "exposure read off habitat classes",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:water_drainage:eflora01",
+      "plant": "achillea-millefolium",
+      "field": "water_drainage",
+      "value": "water:wide_range",
+      "value_kind": "categorical",
+      "text": "E-Flora BC: habitat mesic to dry; BEC plot soil moisture regime runs from very xeric to hydric with a mesic-to-dry average.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page; inferred from habitat and BEC soil-moisture data, not a cultivation rating",
+      "confidence": 0.65,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Achillea%20millefolium",
+      "note": "SMR 0–8 (avg 3) → wide_range; a garden-watering value should come from the horticultural sources",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "value_label": "wide_range",
+      "concepts": [
+        "water:wide_range"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:seasonal_interest:eflora01",
+      "plant": "achillea-millefolium",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "White",
+          "Pink",
+          "Red"
+        ],
+        "winter_interest": "has been observed flowering in the Fraser Delta in December"
+      },
+      "value_kind": "categorical",
+      "text": "E-Flora BC (Illustrated Flora of BC): ray flowers white, sometimes pink or reddish, disk flowers cream; December flowering observed in the Fraser Delta.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Achillea%20millefolium",
+      "note": "'reddish' → Red; bloom period on the page is USDA data and is recorded under the USDA claim instead",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-11-02]",
+      "concepts": [
+        "colour:pink",
+        "colour:red",
+        "colour:white",
+        "interest:winter_interest"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:ecological_value:usdaplants01",
+      "plant": "achillea-millefolium",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS records Achillea millefolium as native in Alaska, Canada, the lower 48 states, Greenland and St Pierre et Miquelon, and as also introduced in Canada, the lower 48, Hawaii and St Pierre et Miquelon — native and introduced genotypes both present.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ACMI2",
+      "note": "USDA lists both N and I for CAN and L48; recorded as native with the dual status in the text",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:mature_height:usdaplants01",
+      "plant": "achillea-millefolium",
+      "field": "mature_height",
+      "value": {
+        "height_m": 0.9,
+        "unit": "m",
+        "raw": "3 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "USDA PLANTS gives a mature height of 3 ft (0.9 m).",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ACMI2",
+      "note": "no 'height at 20 years' characteristic for this species",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "height_class:0.7-1.3m"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:growth_rate:usdaplants01",
+      "plant": "achillea-millefolium",
+      "field": "growth_rate",
+      "value": "growth_rate:moderate",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates growth rate moderate.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ACMI2",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "moderate",
+      "concepts": [
+        "growth_rate:moderate"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:exposure:usdaplants01",
+      "plant": "achillea-millefolium",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates shade tolerance medium.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.65,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ACMI2",
+      "note": "'Shade Tolerance: Medium' → full sun to part shade, loose",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:water_drainage:usdaplants01",
+      "plant": "achillea-millefolium",
+      "field": "water_drainage",
+      "value": "water:average",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: moisture use medium, drought tolerance medium, anaerobic tolerance none.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ACMI2",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "average",
+      "concepts": [
+        "water:average"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:resistances:usdaplants01",
+      "plant": "achillea-millefolium",
+      "field": "resistances",
+      "value": [
+        "stress:drought"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates drought tolerance medium; salinity tolerance low.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ACMI2",
+      "note": "'Drought Tolerance: Medium' — borderline; recorded at low confidence; not salt tolerant",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "drought"
+      ],
+      "concepts": [
+        "stress:drought"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:seasonal_interest:usdaplants01",
+      "plant": "achillea-millefolium",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "White"
+        ],
+        "flowering_months": [
+          6
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fruit": "brown seed heads, summer, persistent",
+        "fall_colour": false,
+        "evergreen": false
+      },
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: conspicuous white flowers in early summer, inconspicuous brown persistent seed in summer, green foliage not retained, no fall colour.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ACMI2",
+      "note": "'Early Summer' → month 6; 'Leaf Retention: No' → evergreen false",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "colour:green",
+        "colour:white",
+        "evergreen:no",
+        "fruit:showy"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [
+        "month:6"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:soil_type:usdaplants01",
+      "plant": "achillea-millefolium",
+      "field": "soil_type",
+      "value": [
+        "soil:alkaline"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: pH 6.0–8.0, calcium-carbonate tolerance medium, adapted to medium-textured soils only.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ACMI2",
+      "note": "pH 6–8 is neutral to mildly alkaline; vocab has no 'neutral', so Alkaline is a loose fit — low confidence",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "Alkaline"
+      ],
+      "concepts": [
+        "soil:alkaline"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:texture:usdaplants01",
+      "plant": "achillea-millefolium",
+      "field": "texture",
+      "value": "texture:fine",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: foliage texture fine.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ACMI2",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "Fine",
+      "concepts": [
+        "texture:fine"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:habit:usdaplants01",
+      "plant": "achillea-millefolium",
+      "field": "habit",
+      "value": "habit:upright",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: shape and orientation erect.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ACMI2",
+      "note": "'Erect' → Upright",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "Upright",
+      "concepts": [
+        "habit:upright"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:toxicity:usdaplants01",
+      "plant": "achillea-millefolium",
+      "field": "toxicity",
+      "value": {
+        "usda_rating": "slight",
+        "humans": "unknown",
+        "pets": "unknown"
+      },
+      "value_kind": "categorical",
+      "text": "USDA PLANTS gives a toxicity rating of 'Slight' for this species; the rating is a US conservation-planting characteristic and says nothing specific about pets or people.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ACMI2",
+      "note": "USDA 'Toxicity' characteristic is a livestock / conservation rating (None / Slight / Moderate / Severe); humans and pets stay unknown until a tier-B toxicology source is recorded (M17)",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "toxicity:unknown"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:behaviour_with_others:usdaplants01",
+      "plant": "achillea-millefolium",
+      "field": "behaviour_with_others",
+      "value": {
+        "growth_form": "rhizomatous",
+        "vegetative_spread_rate": "slow",
+        "seed_spread_rate": "slow",
+        "resprout": false,
+        "coppice": false,
+        "fire_tolerance": "high",
+        "allelopath": false
+      },
+      "value_kind": "qualitative",
+      "text": "USDA PLANTS: rhizomatous growth form with slow vegetative and seed spread rates, high fire tolerance, not allelopathic.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ACMI2",
+      "note": "'slow' spread rates disagree with RHS ('spreads readily') and MOBOT ('aggressive'); kept side by side (R1)",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:long_term_performance:usdaplants01",
+      "plant": "achillea-millefolium",
+      "field": "long_term_performance",
+      "value": {
+        "lifespan": "moderate",
+        "seedling_vigor": "low",
+        "temperature_minimum_f": -38,
+        "frost_free_days_minimum": 120,
+        "precipitation_in": {
+          "min": 8,
+          "max": 60
+        },
+        "root_depth_min_in": 8
+      },
+      "value_kind": "qualitative",
+      "text": "USDA PLANTS: moderate lifespan, low seedling vigour, minimum temperature -38 °F, 120 frost-free days, 8–60 in precipitation, roots to at least 8 in.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://plants.usda.gov/plant-profile/ACMI2",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "achillea-millefolium:invasive_status:iscbc01",
+      "plant": "achillea-millefolium",
+      "field": "invasive_status",
+      "value": "invasive:not_listed",
+      "value_kind": "categorical",
+      "text": "Achillea millefolium is not among the plant profiles on the Invasive Species Council of BC list (checked 2026-11-02); ISCBC's Grow Me Instead material instead names yarrow as a native, non-invasive alternative to tansy, field scabious and baby's-breath.",
+      "source_id": "iscbc",
+      "source_type": "municipal",
+      "context": "BC; ISCBC online species profiles",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-11-02",
+      "source_url": "https://bcinvasives.ca/take-action/identify/",
+      "value_label": "not_listed",
+      "concepts": [
+        "invasive:not_listed"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    }
+  ]
+}

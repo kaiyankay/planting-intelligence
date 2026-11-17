@@ -1,0 +1,110 @@
+{
+  "note": "T6/graph test set = survey e2 ('one search you would actually type') and c4 ('one thing you could not find'), VERBATIM from responses-2026-11-14.csv via tools/survey_to_claims.py (replaces the 2026-10-29 proxies, methods M16). Ids are the anonymous respondent ids.",
+  "queries": [
+    {
+      "id": "e2-r01",
+      "status": "verbatim",
+      "query": "Easy to grow, less maintenance and offer seasonal interest"
+    },
+    {
+      "id": "c4-r01",
+      "status": "verbatim",
+      "query": "When some native plants produce fruits, we do not know if the plants are toxic to pets.",
+      "note": "a 'could not find' question — an honest empty answer with a named gap is a pass"
+    },
+    {
+      "id": "e2-r02",
+      "status": "verbatim",
+      "query": "House garden plants"
+    },
+    {
+      "id": "e2-r03",
+      "status": "verbatim",
+      "query": "Pollinator plants that are native to Vancouver"
+    },
+    {
+      "id": "c4-r03",
+      "status": "verbatim",
+      "query": "If it was a long day or short day plant for flowering",
+      "note": "a 'could not find' question — an honest empty answer with a named gap is a pass"
+    },
+    {
+      "id": "e2-r04",
+      "status": "verbatim",
+      "query": "Don’t know"
+    },
+    {
+      "id": "e2-r05",
+      "status": "verbatim",
+      "query": "What are some hardy ground cover plants for *my area*"
+    },
+    {
+      "id": "e2-r06",
+      "status": "verbatim",
+      "query": "Help me select an evergreen perennial species that will be planted on the north-facing side of an accessible roof garden located on the 38th floor."
+    },
+    {
+      "id": "e2-r07",
+      "status": "verbatim",
+      "query": "Provide a list of plants that works well in xxx situation and provide xxx functions."
+    },
+    {
+      "id": "c4-r07",
+      "status": "verbatim",
+      "query": "usually it's how well it works with other plants that ive chose.",
+      "note": "a 'could not find' question — an honest empty answer with a named gap is a pass"
+    },
+    {
+      "id": "e2-r08",
+      "status": "verbatim",
+      "query": "Most visually interesting plants for vancouver’s climate."
+    },
+    {
+      "id": "c4-r08",
+      "status": "verbatim",
+      "query": "Plant colour variations and if they are suitable for our climate. Some variants are not popular so there is little information about them.",
+      "note": "a 'could not find' question — an honest empty answer with a named gap is a pass"
+    },
+    {
+      "id": "e2-r09",
+      "status": "verbatim",
+      "query": "I am designing a medicinal garden for Vancouver and there are currently [types of trees/plans] on site that I plan to keep. Create a list of plants that is native and would help attract pollinators."
+    },
+    {
+      "id": "e2-r10",
+      "status": "verbatim",
+      "query": "Find me a plant that fits with my concept"
+    },
+    {
+      "id": "e2-r11",
+      "status": "verbatim",
+      "query": "I would like a tree that is climatically adaptable to the future Vancouver landscape, but can still be established in the current conditions."
+    },
+    {
+      "id": "e2-r12",
+      "status": "verbatim",
+      "query": "Which plants and what parts are poisonous and to what type of living being it is poisonous to"
+    },
+    {
+      "id": "c4-r12",
+      "status": "verbatim",
+      "query": "Medicinal value, how to treat pests",
+      "note": "a 'could not find' question — an honest empty answer with a named gap is a pass"
+    },
+    {
+      "id": "e2-r13",
+      "status": "verbatim",
+      "query": "Native aquatic plants of Vancouver"
+    },
+    {
+      "id": "e2-r14",
+      "status": "verbatim",
+      "query": "evergreen"
+    },
+    {
+      "id": "e2-r15",
+      "status": "verbatim",
+      "query": "Create a list of plants that would grow well together in a full sun courtyard garden with a calming colour palette and a naturalistic character that also attracted butterflies"
+    }
+  ]
+}

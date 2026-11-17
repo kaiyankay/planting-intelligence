@@ -1,0 +1,2004 @@
+{
+  "entity": {
+    "id": "gaultheria-shallon",
+    "scientific_name": "Gaultheria shallon",
+    "synonyms_scientific": [],
+    "common_names": {
+      "en": [
+        "Salal",
+        "Shallon",
+        "Lemon leaf (florist trade)"
+      ],
+      "zh": [
+        "莎伦",
+        "北美白珠树"
+      ]
+    },
+    "family": "Ericaceae",
+    "kpu_plant_type": "Broadleaf evergreen",
+    "respondent_roles": [
+      "shrub",
+      "shrub"
+    ],
+    "raw_names": [
+      "Gaultheria shallon",
+      "Salal"
+    ],
+    "origin_status": "native_bc_west_of_cascades",
+    "external_refs": {
+      "kpu": "https://plantdatabase.kpu.ca/Plant/gash",
+      "mobot": null,
+      "gpp": null,
+      "osu": "https://landscapeplants.oregonstate.edu/plants/gaultheria-shallon",
+      "eflora": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Gaultheria%20shallon",
+      "rhs": "https://www.rhs.org.uk/plants/7686/gaultheria-shallon/details",
+      "usda": "https://plants.usda.gov/plant-profile/GASH",
+      "inat": "https://www.inaturalist.org/taxa/48441"
+    },
+    "in_vancouver_street_tree_list": false,
+    "prototype_role": "native evergreen shrub / groundcover; aggressive rhizomatous spread — the main test case for behaviour_with_others and the relations layer. Co-listed with Vaccinium ovatum by the same respondent.",
+    "survey_mentions": 2,
+    "role_note": "respondent typed 'shrub' but gave 'evergreen ground cover' as the reason — both kept (schema rule R8)",
+    "external_refs_note": "gpp: no entry (searched 2026-10-29); mobot: no entry",
+    "survey_respondents": [
+      "survey-r07",
+      "survey-r03"
+    ],
+    "identity_review": {
+      "audited": "2026-11-02",
+      "method": "tools/identity_audit.py (M45): sources on file + entity notes; disputed = left for human judgement",
+      "taxonomic_identity": {
+        "status": "confirmed",
+        "note": "Gaultheria shallon Pursh; no synonyms in the sources on file"
+      },
+      "geographic_origin": {
+        "status": "confirmed",
+        "note": "native to coastal BC (E-Flora Yellow S5; USDA native)",
+        "origin_status_on_entity": "native_bc_west_of_cascades"
+      },
+      "botanical_growth_form": {
+        "status": "confirmed",
+        "note": "read as shrub from osu, eflora, survey (entity.respondent_roles) (supported; M29a)",
+        "kpu_plant_type": "Broadleaf evergreen"
+      },
+      "design_function": {
+        "status": "confirmed",
+        "note": "evergreen ground cover / mass planting / informal hedge (OSU, USDA; respondent 'evergreen ground cover' typed as shrub)",
+        "respondent_roles_as_typed": [
+          "shrub",
+          "shrub"
+        ]
+      },
+      "synonyms_raw": null
+    }
+  },
+  "claims": [
+    {
+      "id": "gaultheria-shallon:landscape_use:01",
+      "plant": "gaultheria-shallon",
+      "field": "landscape_use",
+      "value_kind": "categorical",
+      "value": [
+        "use:ground_cover"
+      ],
+      "text": "Gaultheria shallon — evergreen ground cover.",
+      "source_id": "survey-r03",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.7,
+      "status": "verified",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "survey-export",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "MLA student and practising landscape designer; studio, professional and personal-garden experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false
+      },
+      "value_label": [
+        "Ground cover"
+      ],
+      "concepts": [
+        "use:ground_cover"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "gaultheria-shallon:seasonal_interest:01",
+      "plant": "gaultheria-shallon",
+      "field": "seasonal_interest",
+      "value_kind": "categorical",
+      "value": {
+        "evergreen": true
+      },
+      "text": "Gaultheria shallon is evergreen.",
+      "source_id": "survey-r03",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver (survey d1 'why')",
+      "confidence": 0.7,
+      "status": "verified",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "survey-export",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "completeness": "L0",
+        "citable": false,
+        "observer_background": "MLA student and practising landscape designer; studio, professional and personal-garden experience"
+      },
+      "concepts": [
+        "evergreen:yes"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "gaultheria-shallon:behaviour_with_others:m1",
+      "plant": "gaultheria-shallon",
+      "field": "behaviour_with_others",
+      "value_kind": "qualitative",
+      "value": {
+        "spread": "rhizomatous, forms dense thickets",
+        "effect": "can outcompete smaller neighbours"
+      },
+      "text": "Gaultheria shallon spreads by rhizomes into dense thickets and can crowd out smaller or slower neighbours, especially in shade (model placeholder, unverified).",
+      "source_id": "model",
+      "source_type": "model",
+      "context": "general; PNW understory",
+      "confidence": 0.45,
+      "status": "retired",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "claude",
+      "claim_kind": "warning",
+      "verify_against": [
+        "pojar",
+        "gpp",
+        "practitioner"
+      ],
+      "note": "the key claim for this plant — needs a literature source and ideally a practitioner observation",
+      "retired_by": "gaultheria-shallon:behaviour_with_others:rhs01",
+      "retired_at": "2026-10-29",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:pnw",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:mature_height:m1",
+      "plant": "gaultheria-shallon",
+      "field": "mature_height",
+      "value_kind": "quantitative",
+      "value": {
+        "min": 0.4,
+        "max": 2,
+        "unit": "m"
+      },
+      "text": "Gaultheria shallon ranges from about 0.4 m in open, dry sites to 2 m or more in shaded coastal forest (model placeholder, unverified).",
+      "source_id": "model",
+      "source_type": "model",
+      "context": "general; strong sun/shade difference",
+      "confidence": 0.4,
+      "status": "retired",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "claude",
+      "claim_kind": "attribute",
+      "verify_against": [
+        "kpu",
+        "gpp",
+        "pojar",
+        "osu"
+      ],
+      "note": "expect sources to disagree widely — height is the textbook case for keeping multiple claims (rule R1)",
+      "retired_by": "gaultheria-shallon:mature_height:rhs01",
+      "retired_at": "2026-10-29",
+      "concepts": [
+        "height_class:0.4-0.7m",
+        "height_class:0.7-1.3m",
+        "height_class:1.3-2.0m",
+        "height_class:2-3m"
+      ],
+      "conditions": [],
+      "place": "place:global",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:exposure:m1",
+      "plant": "gaultheria-shallon",
+      "field": "exposure",
+      "value_kind": "categorical",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade",
+        "exposure:deep_shade"
+      ],
+      "text": "Gaultheria shallon tolerates full sun to deep shade; habit and height change with exposure (model placeholder, unverified).",
+      "source_id": "model",
+      "source_type": "model",
+      "context": "general",
+      "confidence": 0.45,
+      "status": "retired",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "claude",
+      "claim_kind": "attribute",
+      "verify_against": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "retired_by": "gaultheria-shallon:exposure:rhs01",
+      "retired_at": "2026-10-29",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade",
+        "Filtered shade",
+        "Deep shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade",
+        "exposure:deep_shade"
+      ],
+      "conditions": [],
+      "place": "place:global",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:ecological_value:m1",
+      "plant": "gaultheria-shallon",
+      "field": "ecological_value",
+      "value_kind": "categorical",
+      "value": [
+        "origin:native",
+        "ecology:pollinator",
+        "ecology:bird_food",
+        "ecology:wildlife_cover",
+        "ecology:erosion_control"
+      ],
+      "text": "Gaultheria shallon is a coastal BC native valued for pollinator flowers, edible berries, year-round cover and slope stabilisation (model placeholder, unverified).",
+      "source_id": "model",
+      "source_type": "model",
+      "context": "general",
+      "confidence": 0.45,
+      "status": "retired",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "claude",
+      "claim_kind": "attribute",
+      "verify_against": [
+        "eflora",
+        "pojar",
+        "growgreen"
+      ],
+      "retired_by": "gaultheria-shallon:ecological_value:osu01",
+      "retired_at": "2026-10-29",
+      "value_label": [
+        "native",
+        "pollinator",
+        "bird_food",
+        "wildlife_cover",
+        "erosion_control"
+      ],
+      "concepts": [
+        "origin:native",
+        "ecology:bird_food",
+        "ecology:erosion_control",
+        "ecology:pollinator",
+        "ecology:wildlife_cover"
+      ],
+      "conditions": [],
+      "place": "place:global",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:vancouver_context:inat01",
+      "plant": "gaultheria-shallon",
+      "field": "vancouver_context",
+      "value": {
+        "licensed_verifiable_observations": 5382,
+        "research_grade": 5214,
+        "all_licences": 6807,
+        "years": [
+          1998,
+          2026
+        ]
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist holds 5382 openly licensed verifiable observations of this plant in Greater Vancouver (5214 research grade), recorded 1998–2026.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-10-30",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-30",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=48441&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "presence evidence; observation counts reflect observer effort as much as abundance",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:vancouver_context:inat02",
+      "plant": "gaultheria-shallon",
+      "field": "vancouver_context",
+      "value": {
+        "observations_by_month": {
+          "1": 356,
+          "2": 250,
+          "3": 479,
+          "4": 1009,
+          "5": 469,
+          "6": 477,
+          "7": 459,
+          "8": 452,
+          "9": 514,
+          "10": 466,
+          "11": 300,
+          "12": 151
+        },
+        "n": 5382,
+        "unit": "observations"
+      },
+      "value_kind": "quantitative",
+      "text": "Monthly spread of 5382 Greater Vancouver observations: most in 4, 9, 3 (month numbers).",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-10-30",
+      "confidence": 0.55,
+      "status": "unverified",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-30",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=48441&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "observer effort, not plant activity — the plant is evergreen/visible year-round; use for 'when people notice it', not phenology",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:seasonal_interest:inat03",
+      "plant": "gaultheria-shallon",
+      "field": "seasonal_interest",
+      "value": {
+        "flowering_months": [
+          5,
+          6,
+          7
+        ],
+        "annotated_n": 129,
+        "share_threshold": 0.1
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist phenology annotations in Greater Vancouver (n=129) put flowering mainly in months 5, 6, 7.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-10-30; community Plant Phenology annotations",
+      "confidence": 0.5,
+      "status": "unverified",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-30",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=48441&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "month included when >= 10% of annotated observations; annotations are volunteer-made",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [
+        "month:5",
+        "month:6",
+        "month:7"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:seasonal_interest:inat04",
+      "plant": "gaultheria-shallon",
+      "field": "seasonal_interest",
+      "value": {
+        "fruiting_months": [
+          7,
+          8,
+          9
+        ],
+        "annotated_n": 96,
+        "share_threshold": 0.1
+      },
+      "value_kind": "quantitative",
+      "text": "iNaturalist phenology annotations in Greater Vancouver (n=96) put fruiting mainly in months 7, 8, 9.",
+      "source_id": "inat",
+      "source_type": "database",
+      "context": "Greater Vancouver, BC (iNaturalist place 27530); iNaturalist verifiable observations licensed CC0/CC-BY/CC-BY-NC, pulled 2026-10-30; community Plant Phenology annotations",
+      "confidence": 0.5,
+      "status": "unverified",
+      "recorded_at": "2026-10-30",
+      "recorded_by": "inat_to_claims.py",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-30",
+      "source_url": "https://www.inaturalist.org/observations?place_id=27530&taxon_id=48441&verifiable=true&license=cc0,cc-by,cc-by-nc",
+      "attribution": "iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org",
+      "note": "month included when >= 10% of annotated observations; annotations are volunteer-made",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [
+        "month:7",
+        "month:8",
+        "month:9"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:mature_height:rhs01",
+      "plant": "gaultheria-shallon",
+      "field": "mature_height",
+      "value": {
+        "min": 1,
+        "max": 1.5,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Gaultheria shallon an ultimate height of 1–1.5 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/7686/gaultheria-shallon/details",
+      "concepts": [
+        "height_class:0.7-1.3m",
+        "height_class:1.3-2.0m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:mature_spread:rhs01",
+      "plant": "gaultheria-shallon",
+      "field": "mature_spread",
+      "value": {
+        "min": 0.5,
+        "max": 1,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Gaultheria shallon an ultimate spread of 0.5–1 m.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/7686/gaultheria-shallon/details",
+      "note": "per plant; the species suckers into colonies (see behaviour_with_others)",
+      "concepts": [
+        "spread_class:0.3-0.6m",
+        "spread_class:0.6-1.0m",
+        "spread_class:1.0-1.5m"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:time_to_intended_size:rhs01",
+      "plant": "gaultheria-shallon",
+      "field": "time_to_intended_size",
+      "value": {
+        "min": 5,
+        "max": 10,
+        "unit": "years",
+        "measure": "time to ultimate height"
+      },
+      "value_kind": "quantitative",
+      "text": "RHS gives Gaultheria shallon 5–10 years to reach its ultimate height.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/7686/gaultheria-shallon/details",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:hardiness_zone:rhs01",
+      "plant": "gaultheria-shallon",
+      "field": "hardiness_zone",
+      "value": {
+        "rating": "H5",
+        "unit": "RHS",
+        "approx_min_c": -15,
+        "approx_max_c": -10
+      },
+      "value_kind": "quantitative",
+      "text": "RHS rates Gaultheria shallon hardiness H5 (cold winter, about -15 to -10 °C).",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/7686/gaultheria-shallon/details",
+      "concepts": [
+        "hardiness_rhs:H5"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:exposure:rhs01",
+      "plant": "gaultheria-shallon",
+      "field": "exposure",
+      "value": [
+        "exposure:deep_shade",
+        "exposure:part_sun_part_shade",
+        "exposure:sheltered"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: full or partial shade; exposed or sheltered sites; any aspect.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/7686/gaultheria-shallon/details",
+      "note": "KPU has no 'Exposed' value; RHS 'full shade' → Deep shade",
+      "value_label": [
+        "Deep shade",
+        "Part sun/part shade",
+        "Sheltered"
+      ],
+      "concepts": [
+        "exposure:sheltered",
+        "exposure:part_sun_part_shade",
+        "exposure:deep_shade"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:soil_type:rhs01",
+      "plant": "gaultheria-shallon",
+      "field": "soil_type",
+      "value": [
+        "soil:well_drained"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: well-drained clay, loam or sand; acid or neutral.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/7686/gaultheria-shallon/details",
+      "note": "clay/loam/sand have no KPU class; acid-or-neutral not mapped to Acidic",
+      "value_label": [
+        "Well-drained"
+      ],
+      "concepts": [
+        "soil:well_drained"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:water_drainage:rhs01",
+      "plant": "gaultheria-shallon",
+      "field": "water_drainage",
+      "value": "water:average",
+      "value_kind": "categorical",
+      "text": "RHS: moist but well-drained to well-drained.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/7686/gaultheria-shallon/details",
+      "note": "→ average",
+      "value_label": "average",
+      "concepts": [
+        "water:average"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:seasonal_interest:rhs01",
+      "plant": "gaultheria-shallon",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "Pink",
+          "White"
+        ],
+        "flowering_months": [
+          6
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fruit": "dark purple, late summer",
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "RHS: evergreen; light pink and white flowers in early summer; dark purple fruit ripening late summer.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/7686/gaultheria-shallon/details",
+      "note": "'early summer' → month 6",
+      "concepts": [
+        "colour:green",
+        "colour:pink",
+        "colour:white",
+        "evergreen:yes",
+        "fruit:showy"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [
+        "month:6"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:habit:rhs01",
+      "plant": "gaultheria-shallon",
+      "field": "habit",
+      "value": "habit:spreading",
+      "value_kind": "categorical",
+      "text": "RHS: suckering habit.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/7686/gaultheria-shallon/details",
+      "note": "'Suckering' → Spreading",
+      "value_label": "Spreading",
+      "concepts": [
+        "habit:spreading"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:resistances:rhs01",
+      "plant": "gaultheria-shallon",
+      "field": "resistances",
+      "value": [
+        "pest:pest"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: generally pest-free.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/7686/gaultheria-shallon/details",
+      "note": "M11 2026-10-30: vocab term 'pests' renamed 'pest' (starter list), value unchanged in meaning",
+      "value_label": [
+        "pest"
+      ],
+      "concepts": [
+        "pest:pest"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:pest_susceptibility:rhs01",
+      "plant": "gaultheria-shallon",
+      "field": "pest_susceptibility",
+      "value": [
+        "pest:root_rot"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS: may be susceptible to honey fungus.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/7686/gaultheria-shallon/details",
+      "note": "honey fungus (Armillaria) mapped to Root rot — loose",
+      "value_label": [
+        "Root rot"
+      ],
+      "concepts": [
+        "pest:root_rot"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:landscape_use:rhs01",
+      "plant": "gaultheria-shallon",
+      "field": "landscape_use",
+      "value": [
+        "use:rock_garden",
+        "use:container_planting",
+        "use:erosion_control",
+        "use:cut_flower_or_foliage",
+        "use:mixed_shrub_border",
+        "use:urban_agriculture",
+        "use:small_garden_space"
+      ],
+      "value_kind": "categorical",
+      "text": "RHS suggests cottage, gravel and rock gardens, city gardens, containers, banks and slopes, cut foliage, borders and edible fruit.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/7686/gaultheria-shallon/details",
+      "note": "'banks and slopes' → Erosion control; 'edible fruit' → Urban agriculture",
+      "value_label": [
+        "Rock garden",
+        "Container planting",
+        "Erosion control",
+        "Cut flower or foliage",
+        "Mixed shrub border",
+        "Urban agriculture",
+        "Small garden/space"
+      ],
+      "concepts": [
+        "use:container_planting",
+        "use:cut_flower_or_foliage",
+        "use:erosion_control",
+        "use:mixed_shrub_border",
+        "use:rock_garden",
+        "use:small_garden_space",
+        "use:urban_agriculture"
+      ],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:behaviour_with_others:rhs01",
+      "plant": "gaultheria-shallon",
+      "field": "behaviour_with_others",
+      "value": {
+        "spread": "suckering; spreads by underground stems"
+      },
+      "value_kind": "qualitative",
+      "text": "RHS records a suckering habit: the plant spreads by underground stems into colonies.",
+      "source_id": "rhs",
+      "source_type": "database",
+      "context": "species; RHS plant profile, UK growing conditions",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-10-29",
+      "source_url": "https://www.rhs.org.uk/plants/7686/gaultheria-shallon/details",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:uk",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:mature_height:osu01",
+      "plant": "gaultheria-shallon",
+      "field": "mature_height",
+      "value": {
+        "max": 0.6,
+        "unit": "m",
+        "raw": "under 2 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Oregon State University: under 2 ft (0.6 m) in full sun on poor soil.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley; full sun, poor soil",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/gaultheria-shallon",
+      "note": "same source gives 1.2–3 m in shade on good soil — site-dependent height, two claims kept (R1)",
+      "concepts": [
+        "height_class:lt_0.1m",
+        "height_class:0.1-0.2m",
+        "height_class:0.2-0.4m",
+        "height_class:0.4-0.7m"
+      ],
+      "conditions": [
+        {
+          "facet": "exposure",
+          "concept_id": "exposure:full_sun"
+        },
+        {
+          "facet": "soil",
+          "concept_id": "soil:rocky_or_gravelly_or_dry"
+        }
+      ],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:mature_height:osu02",
+      "plant": "gaultheria-shallon",
+      "field": "mature_height",
+      "value": {
+        "min": 1.2,
+        "max": 3,
+        "unit": "m",
+        "raw": "4–10 ft"
+      },
+      "value_kind": "quantitative",
+      "text": "Oregon State University: 4–10 ft (1.2–3 m) in shade on good soil.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley; shade, good soil",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/gaultheria-shallon",
+      "note": "OSU: spread nearly equal to height (no separate spread figure — folded in here because mature_spread takes numbers or bins only)",
+      "concepts": [
+        "height_class:0.7-1.3m",
+        "height_class:1.3-2.0m",
+        "height_class:2-3m",
+        "height_class:3-5m"
+      ],
+      "conditions": [
+        {
+          "facet": "exposure",
+          "concept_id": "exposure:shade"
+        },
+        {
+          "facet": "soil",
+          "concept_id": "soil:humus_rich"
+        }
+      ],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:hardiness_zone:osu01",
+      "plant": "gaultheria-shallon",
+      "field": "hardiness_zone",
+      "value": {
+        "usda_min": 6,
+        "unit": "USDA"
+      },
+      "value_kind": "quantitative",
+      "text": "Oregon State University: hardy to USDA zone 6.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/gaultheria-shallon",
+      "concepts": [
+        "hardiness_usda:z6",
+        "hardiness_usda:z7",
+        "hardiness_usda:z8",
+        "hardiness_usda:z9",
+        "hardiness_usda:z10",
+        "hardiness_usda:z11"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:exposure:osu01",
+      "plant": "gaultheria-shallon",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: sun or part shade.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/gaultheria-shallon",
+      "value_label": [
+        "Full sun",
+        "Part sun/part shade"
+      ],
+      "concepts": [
+        "exposure:full_sun",
+        "exposure:part_sun_part_shade"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:soil_type:osu01",
+      "plant": "gaultheria-shallon",
+      "field": "soil_type",
+      "value": [
+        "soil:acidic"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: acid soil.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/gaultheria-shallon",
+      "value_label": [
+        "Acidic"
+      ],
+      "concepts": [
+        "soil:acidic"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:seasonal_interest:osu01",
+      "plant": "gaultheria-shallon",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "White",
+          "Pink"
+        ],
+        "flowering_months": [
+          5,
+          6
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fruit": "black, about 1 cm, summer, edible but bland",
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "Oregon State University: evergreen glossy leaves; white or pinkish urn flowers in late spring; black edible fruit in summer.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/gaultheria-shallon",
+      "note": "'late spring' → months 5–6",
+      "concepts": [
+        "colour:green",
+        "colour:pink",
+        "colour:white",
+        "evergreen:yes",
+        "fruit:edible"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [
+        "month:5",
+        "month:6"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:habit:osu01",
+      "plant": "gaultheria-shallon",
+      "field": "habit",
+      "value": "habit:dense",
+      "value_kind": "categorical",
+      "text": "Oregon State University: dense, erect-branched shrub.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/gaultheria-shallon",
+      "value_label": "Dense",
+      "concepts": [
+        "habit:dense"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:ecological_value:osu01",
+      "plant": "gaultheria-shallon",
+      "field": "ecological_value",
+      "value": [
+        "origin:native",
+        "ecology:bird_food"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: native to western North America (Alaska to California); fruit taken by birds.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/gaultheria-shallon",
+      "value_label": [
+        "native",
+        "bird_food"
+      ],
+      "concepts": [
+        "origin:native",
+        "ecology:bird_food"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:behaviour_with_others:osu01",
+      "plant": "gaultheria-shallon",
+      "field": "behaviour_with_others",
+      "value": {
+        "spread": "forms thickets",
+        "companions": [
+          "Rhododendron",
+          "ferns"
+        ],
+        "transplanting": "difficult"
+      },
+      "value_kind": "qualitative",
+      "text": "Oregon State University: forms thickets; listed companions are rhododendrons and ferns; difficult to transplant.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/gaultheria-shallon",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:long_term_performance:osu01",
+      "plant": "gaultheria-shallon",
+      "field": "long_term_performance",
+      "value": {
+        "frost_sensitivity": "high",
+        "transplanting": "difficult"
+      },
+      "value_kind": "qualitative",
+      "text": "Oregon State University flags high frost sensitivity and difficult transplanting.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.65,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "warning",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/gaultheria-shallon",
+      "note": "'frost sensitivity: high' is surprising for a zone-6 native; kept as stated, low confidence",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:landscape_use:osu01",
+      "plant": "gaultheria-shallon",
+      "field": "landscape_use",
+      "value": [
+        "use:cut_flower_or_foliage"
+      ],
+      "value_kind": "categorical",
+      "text": "Oregon State University: foliage sold in the florist trade as 'lemon leaves'.",
+      "source_id": "osu",
+      "source_type": "database",
+      "context": "species; Oregon State University Landscape Plants, Willamette Valley",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://landscapeplants.oregonstate.edu/plants/gaultheria-shallon",
+      "value_label": [
+        "Cut flower or foliage"
+      ],
+      "concepts": [
+        "use:cut_flower_or_foliage"
+      ],
+      "conditions": [],
+      "place": "place:willamette_valley",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:ecological_value:eflora01",
+      "plant": "gaultheria-shallon",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "E-Flora BC lists Gaultheria shallon as native to BC (provincial list Yellow, rank S5, secure).",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Gaultheria%20shallon",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-10-29]",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:vancouver_context:eflora01",
+      "plant": "gaultheria-shallon",
+      "field": "vancouver_context",
+      "value": {
+        "habitat": [
+          "forest",
+          "bog",
+          "dry to wet",
+          "lowland",
+          "montane",
+          "coastal",
+          "open-canopy coniferous",
+          "cutover",
+          "shaded understory",
+          "mor humus"
+        ],
+        "bgc_zones": [
+          "CDF",
+          "CWH",
+          "ICH",
+          "IDF",
+          "MH"
+        ],
+        "modal_zone": "CWH",
+        "elevation_m": {
+          "min": 0,
+          "max": 1700,
+          "mean": 219
+        },
+        "bc_distribution": "common in western BC, rare in SE BC"
+      },
+      "value_kind": "qualitative",
+      "text": "E-Flora BC: common in western BC from dry to wet forest, bog, cutover and shaded understory at low to montane elevations, mostly in the Coastal Western Hemlock zone.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Gaultheria%20shallon",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-10-29]",
+      "concepts": [
+        "bgc_zone:cdf",
+        "bgc_zone:cwh",
+        "bgc_zone:ich",
+        "bgc_zone:idf",
+        "bgc_zone:mh",
+        "habitat:bog",
+        "habitat:coastal",
+        "habitat:disturbed",
+        "habitat:forest"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:mature_height:eflora01",
+      "plant": "gaultheria-shallon",
+      "field": "mature_height",
+      "value": {
+        "typical_max_m": 1.5,
+        "occasional_max_m": 3,
+        "unit": "m"
+      },
+      "value_kind": "quantitative",
+      "text": "E-Flora BC: creeping to erect shrub, typically to 1.5 m, occasionally 3 m.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page",
+      "confidence": 0.85,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Gaultheria%20shallon",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-10-29]",
+      "concepts": [
+        "height_class:lt_0.1m",
+        "height_class:0.1-0.2m",
+        "height_class:0.2-0.4m",
+        "height_class:0.4-0.7m",
+        "height_class:0.7-1.3m",
+        "height_class:1.3-2.0m"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:exposure:eflora01",
+      "plant": "gaultheria-shallon",
+      "field": "exposure",
+      "value": [
+        "exposure:filtered_shade",
+        "exposure:deep_shade",
+        "exposure:part_sun_part_shade"
+      ],
+      "value_kind": "categorical",
+      "text": "E-Flora BC habitat records include shaded understory and open-canopy coniferous forest.",
+      "source_id": "eflora",
+      "source_type": "database",
+      "context": "BC; E-Flora BC atlas page; inferred from habitat classes, not a cultivation rating",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=Gaultheria%20shallon",
+      "note": "exposure read off habitat classes",
+      "citation": "In Klinkenberg, Brian. (Editor) 2020. E-Flora BC: Electronic Atlas of the Plants of British Columbia [eflora.bc.ca]. Lab for Advanced Spatial Analysis, Department of Geography, University of British Columbia, Vancouver. [Accessed: 2026-10-29]",
+      "value_label": [
+        "Filtered shade",
+        "Deep shade",
+        "Part sun/part shade"
+      ],
+      "concepts": [
+        "exposure:part_sun_part_shade",
+        "exposure:filtered_shade",
+        "exposure:deep_shade"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:ecological_value:usdaplants01",
+      "plant": "gaultheria-shallon",
+      "field": "ecological_value",
+      "value": [
+        "origin:native"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: native in Alaska, Canada and the lower 48 states.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.8,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/GASH",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "native"
+      ],
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:mature_height:usdaplants01",
+      "plant": "gaultheria-shallon",
+      "field": "mature_height",
+      "value": {
+        "height_m": 1.8,
+        "unit": "m",
+        "raw": "6 ft mature; 1 ft maximum at 20 years"
+      },
+      "value_kind": "quantitative",
+      "text": "USDA PLANTS gives a mature height of 6 ft (1.8 m), while listing only 1 ft at 20 years.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/GASH",
+      "note": "the 20-year figure contradicts the mature figure; recorded as given, low confidence",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "height_class:1.3-2.0m"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:growth_rate:usdaplants01",
+      "plant": "gaultheria-shallon",
+      "field": "growth_rate",
+      "value": "growth_rate:fast",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates growth rate rapid.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/GASH",
+      "note": "disagrees with the common 'slow to establish' experience; kept (R1)",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "fast",
+      "concepts": [
+        "growth_rate:fast"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:exposure:usdaplants01",
+      "plant": "gaultheria-shallon",
+      "field": "exposure",
+      "value": [
+        "exposure:full_sun"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates shade tolerance low.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.55,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/GASH",
+      "note": "'Shade Tolerance: Low' contradicts RHS, OSU and E-Flora (shade); kept side by side at low confidence",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "Full sun"
+      ],
+      "concepts": [
+        "exposure:full_sun"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:water_drainage:usdaplants01",
+      "plant": "gaultheria-shallon",
+      "field": "water_drainage",
+      "value": "water:moist",
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: moisture use high, drought tolerance low.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/GASH",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": "moist",
+      "concepts": [
+        "water:moist"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:seasonal_interest:usdaplants01",
+      "plant": "gaultheria-shallon",
+      "field": "seasonal_interest",
+      "value": {
+        "flower_colour": [
+          "White"
+        ],
+        "flowering_months": [
+          4,
+          5
+        ],
+        "foliage_colour": [
+          "Green"
+        ],
+        "fruit": "purple, summer to fall, persistent",
+        "evergreen": true
+      },
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: conspicuous white flowers mid spring, abundant purple fruit summer to fall, leaves retained.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/GASH",
+      "note": "'Mid Spring' → months 4–5",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [
+        "colour:green",
+        "colour:white",
+        "evergreen:yes",
+        "fruit:showy"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [
+        "month:4",
+        "month:5"
+      ],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:soil_type:usdaplants01",
+      "plant": "gaultheria-shallon",
+      "field": "soil_type",
+      "value": [
+        "soil:acidic"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS: pH 5.5–7.0, adapted to coarse, medium and fine soils.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/GASH",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "Acidic"
+      ],
+      "concepts": [
+        "soil:acidic"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:toxicity:usdaplants01",
+      "plant": "gaultheria-shallon",
+      "field": "toxicity",
+      "value": {
+        "usda_rating": "none",
+        "humans": "unknown",
+        "pets": "unknown"
+      },
+      "value_kind": "categorical",
+      "text": "USDA PLANTS gives a toxicity rating of 'None' for this species; the rating is a US conservation-planting characteristic and says nothing specific about pets or people.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.7,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/GASH",
+      "note": "Track B 2026-10-30: value restructured from {humans: none} to {usda_rating: none, humans: unknown, pets: unknown}. The USDA 'Toxicity' characteristic is a single rating (None / Slight / Moderate / Severe) aimed at livestock and conservation plantings; it is not a human- or pet-specific assessment, so both stay unknown until a tier-B toxicology source is recorded (D1, M12, M17).",
+      "attribution": "U.S. Department of Agriculture",
+      "edited": "2026-10-30 (Track B item 2, value shape; status unchanged)",
+      "concepts": [
+        "toxicity:unknown"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:behaviour_with_others:usdaplants01",
+      "plant": "gaultheria-shallon",
+      "field": "behaviour_with_others",
+      "value": {
+        "growth_form": "rhizomatous",
+        "resprout": true,
+        "coppice": true,
+        "fire_tolerance": "high"
+      },
+      "value_kind": "qualitative",
+      "text": "USDA PLANTS: rhizomatous growth form, resprouts and coppices, high fire tolerance.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.75,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "observation",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/GASH",
+      "attribution": "U.S. Department of Agriculture",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:landscape_use:usdaplants01",
+      "plant": "gaultheria-shallon",
+      "field": "landscape_use",
+      "value": [
+        "use:sheared_hedge"
+      ],
+      "value_kind": "categorical",
+      "text": "USDA PLANTS rates hedge tolerance high.",
+      "source_id": "usda_plants",
+      "source_type": "database",
+      "context": "USDA PLANTS characteristics, US-wide conservation plant data",
+      "confidence": 0.6,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://plants.usda.gov/plant-profile/GASH",
+      "note": "'Hedge Tolerance: High' → Sheared hedge, loose",
+      "attribution": "U.S. Department of Agriculture",
+      "value_label": [
+        "Sheared hedge"
+      ],
+      "concepts": [
+        "use:sheared_hedge"
+      ],
+      "conditions": [],
+      "place": "place:north_america",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:invasive_status:iscbc01",
+      "plant": "gaultheria-shallon",
+      "field": "invasive_status",
+      "value": "invasive:not_listed",
+      "value_kind": "categorical",
+      "text": "Gaultheria shallon is not among the plant profiles on the Invasive Species Council of BC list (checked 2026-10-29); it is a BC native.",
+      "source_id": "iscbc",
+      "source_type": "municipal",
+      "context": "BC; ISCBC online species profiles",
+      "confidence": 0.9,
+      "status": "unverified",
+      "recorded_at": "2026-10-29",
+      "recorded_by": "claude (T5 assisted extraction, structured values only)",
+      "claim_kind": "attribute",
+      "accessed": "2026-10-29",
+      "source_url": "https://bcinvasives.ca/take-action/identify/",
+      "value_label": "not_listed",
+      "concepts": [
+        "invasive:not_listed"
+      ],
+      "conditions": [],
+      "place": "place:bc",
+      "time": [],
+      "cultivar": null
+    },
+    {
+      "id": "gaultheria-shallon:ecological_value:sv01",
+      "plant": "gaultheria-shallon",
+      "field": "ecological_value",
+      "value_kind": "categorical",
+      "value": [
+        "origin:native"
+      ],
+      "text": "Salal — Common native shrub species, have ecological values.",
+      "source_id": "survey-r07",
+      "source_type": "practitioner",
+      "context": "Metro Vancouver, hypothetical plant list (survey d1)",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "selection_reason",
+      "practitioner_meta": {
+        "basis": null,
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "practising landscape designer; personal-garden, professional and studio planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L0",
+        "citable": false,
+        "note": "d1 'why' answers carry no basis — stored as selection reasons, never cited as observations (R2)"
+      },
+      "survey_question": "d1",
+      "respondent_role_as_typed": "Shrub",
+      "value_label": [
+        "native"
+      ],
+      "note": "'ecological values' left unmapped — no specific function named",
+      "concepts": [
+        "origin:native"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "gaultheria-shallon:vancouver_context:sv02",
+      "plant": "gaultheria-shallon",
+      "field": "vancouver_context",
+      "value_kind": "qualitative",
+      "value": {
+        "where_used": "Pacific Northwest native-plant-focused gardens",
+        "less_seen_in": "other private / commercial greenspace"
+      },
+      "text": "usually it's used in a more pacific northwest native plants focused gardens, less seen in other types of private/commercial greenspace.",
+      "source_id": "survey-r07",
+      "source_type": "practitioner",
+      "context": "survey d2 note (observed); location not recorded",
+      "confidence": 0.85,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (responses-2026-11-03.csv)",
+      "claim_kind": "observation",
+      "practitioner_meta": {
+        "basis": "observed",
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "practising landscape designer; personal-garden, professional and studio planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L1",
+        "citable": true,
+        "caveat": "location not recorded"
+      },
+      "survey_question": "d2",
+      "concepts": [],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    },
+    {
+      "id": "gaultheria-shallon:landscape_use:sv03",
+      "plant": "gaultheria-shallon",
+      "field": "landscape_use",
+      "value_kind": "categorical",
+      "value": [
+        "use:native_planting"
+      ],
+      "text": "Salal — derived from the respondent's note: usually it's used in a more pacific northwest native plants focused gardens, les…",
+      "source_id": "survey-r07",
+      "source_type": "practitioner",
+      "context": "survey d2 note (observed); location not recorded; derived from gaultheria-shallon:vancouver_context:sv02",
+      "confidence": 0.8,
+      "status": "verified",
+      "recorded_at": "2026-11-02",
+      "recorded_by": "tools/survey_to_claims.py (derived, same source)",
+      "claim_kind": "observation",
+      "derived_from": "gaultheria-shallon:vancouver_context:sv02",
+      "practitioner_meta": {
+        "basis": "observed",
+        "location": null,
+        "maintenance_received": null,
+        "observer_background": "practising landscape designer; personal-garden, professional and studio planting experience",
+        "site_conditions": null,
+        "season_observed": null,
+        "plant_age_years": null,
+        "completeness": "L1",
+        "citable": true,
+        "caveat": "location not recorded"
+      },
+      "survey_question": "d2",
+      "value_label": [
+        "Native planting"
+      ],
+      "concepts": [
+        "use:native_planting"
+      ],
+      "conditions": [],
+      "place": "place:vancouver",
+      "time": [],
+      "cultivar": null,
+      "verification_scope": "statement"
+    }
+  ],
+  "custom": [],
+  "fill_plan": {
+    "gate": {
+      "hardiness_zone": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "invasive_status": [
+        "iscbc"
+      ],
+      "water_drainage": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "mature_height": [
+        "kpu",
+        "gpp",
+        "pojar",
+        "osu"
+      ],
+      "mature_spread": [
+        "kpu",
+        "gpp"
+      ],
+      "maintenance_level": [
+        "gpp",
+        "growgreen"
+      ],
+      "ecological_value": [
+        "eflora",
+        "pojar",
+        "growgreen"
+      ]
+    },
+    "compare": {
+      "exposure": [
+        "kpu",
+        "gpp",
+        "mobot"
+      ],
+      "seasonal_interest": [
+        "kpu",
+        "gpp",
+        "pojar"
+      ],
+      "texture": [
+        "kpu"
+      ],
+      "form": [
+        "kpu",
+        "osu"
+      ],
+      "habit": [
+        "kpu"
+      ],
+      "soil_type": [
+        "kpu",
+        "mobot"
+      ],
+      "growth_rate": [
+        "gpp"
+      ],
+      "landscape_use": [
+        "kpu",
+        "gpp",
+        "growgreen"
+      ],
+      "pest_susceptibility": [
+        "kpu"
+      ]
+    },
+    "extended": {
+      "time_to_intended_size": [
+        "gpp",
+        "practitioner"
+      ],
+      "local_mature_size": [
+        "practitioner",
+        "inat"
+      ],
+      "long_term_performance": [
+        "practitioner"
+      ],
+      "behaviour_with_others": [
+        "pojar",
+        "relations.json",
+        "practitioner"
+      ],
+      "toxicity": [
+        "aspca"
+      ],
+      "local_availability": [
+        "nats"
+      ],
+      "vancouver_context": [
+        "growgreen",
+        "eflora",
+        "inat"
+      ]
+    },
+    "open_questions": [
+      "Establishment is often reported as slow and unreliable from nursery stock, then aggressive once established — if sources say this, it is the best example of time_to_intended_size vs long_term_performance pulling in opposite directions.",
+      "Height disagreement between sources is expected; record each with its context (sun/shade, coastal/inland)."
+    ],
+    "not_available": {
+      "mobot": "no Plant Finder entry for the species (checked 2026-10-29)",
+      "pojar": "awaiting Pojar pages",
+      "gpp": "no Great Plant Picks entry (searched 2026-10-29)"
+    }
+  }
+}

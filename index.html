@@ -1,15 +1,127 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Planting Intelligence</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planting Intelligence — imagine your garden</title>
+<meta name="description" content="Describe a site in your own words, shape it into planting beds, say what the planting should do, and generate an arrangement from a sourced plant knowledge base.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="./css/journey.css">
+<link rel="stylesheet" href="./css/workspace.css">
+<link rel="stylesheet" href="./css/studio.css">
+<link rel="stylesheet" href="./platform/css/platform.css">
+<link rel="stylesheet" href="./css/platform-studio.css">
+<link rel="stylesheet" href="./css/v4.css">
+<link rel="stylesheet" href="./css/v42.css">
+<link rel="stylesheet" href="./css/v43-algo.css">
+<link rel="stylesheet" href="./css/v42-shape.css">
+<link rel="stylesheet" href="./css/v43-3d.css">
+<script type="importmap">{ "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/examples/jsm/" } }</script>
+</head>
+<body data-stage="welcome">
+
+<nav id="top" aria-label="Design stages">
+  <a class="wordmark" href="#s-welcome" data-stage-link="welcome">Planting Intelligence</a>
+  <span id="pinav"></span>
+  <ol id="stagenav"></ol>
+  <div class="right">
+    <span id="interp" class="tag offline" title="how language is interpreted on this page">offline rules</span>
+    <button id="newproj" class="btn ghost small">New project</button>
+  </div>
+</nav>
+
+<main>
+  <!-- 1 · Imagine -->
+  <section id="s-welcome" class="stage" aria-labelledby="h-welcome">
+    <div class="wrap">
+      <div class="hero">
+        <h1 id="h-welcome">Imagine <em>your garden.</em></h1>
+        <p class="lede">Describe your space and what you want to create.</p>
+        <form class="composer" id="welcome-form">
+          <label class="sr" for="say0">Describe your space and what you want to create</label>
+          <textarea id="say0" placeholder="I have a small backyard with an old tree. I'd like more privacy and ecological value, but still want it to feel open."></textarea>
+          <div class="sources" id="welcome-sources" aria-live="polite"></div>
+          <div class="source-panel" id="welcome-panel" hidden></div>
+          <div class="foot">
+            <div class="inputs" id="welcome-inputs" role="group" aria-label="Add what you know about the site"></div>
+            <span class="spacer"></span>
+            <button type="submit" class="btn primary big" id="start">Start designing</button>
+          </div>
+        </form>
+        <div class="after">
+          <button type="button" class="btn ghost small" id="example">Try the example</button>
+          <button type="button" class="btn ghost small" data-input="draw" title="skip the description and draw the site outline yourself">Draw the site yourself</button>
+        </div>
+        <div id="resume" hidden></div>
+      </div>
+      <figure class="hero-art" id="hero-art" aria-label="Plants of the knowledge base, drawn with the workspace's own plant symbols"></figure>
+    </div>
+  </section>
+
+  <!-- 2 · Shape: the site model workspace -->
+  <section id="s-site" class="stage" aria-labelledby="h-site" hidden>
+    <div class="ws ws-shape">
+      <header class="ws-head"><h2 id="h-site">Shape</h2><span class="ws-model sr" id="ws-model"></span><span class="ws-scale sr" id="ws-scale"></span><ol class="ws-phase" id="ws-phase" aria-label="Where the site model stands"></ol><p id="site-lede" class="sr"></p><div class="ws-context" id="ws-context"></div><div class="ws-lens" id="ws-lens" role="group" aria-label="Site conditions"></div></header>
+      <nav class="ws-rail" id="site-tools" aria-label="Tools"></nav>
+      <div class="ws-canvas site-canvas">
+        <div id="site-canvas-body" class="canvas-home"><div class="canvas-hint" id="site-hint"></div><div id="site-preview" hidden></div><div class="canvas-empty" id="site-empty" hidden></div></div>
+        <div class="ws-panel" id="ws-panel"><button class="ws-panel-x" data-act="panel-close" aria-label="close the panel">×</button><div id="site-goals"></div><div class="conditions" id="site-conditions"></div><div id="site-evidence"></div><div id="site-location"></div></div>
+        <div class="ws-zoom" id="ws-zoom"></div>
+        <div class="ws-say" id="ws-say"></div>
+      </div>
+      <aside class="ws-inspector shape-side" id="shape-side" aria-label="Inspector and layers"></aside>
+      <footer class="ws-status"><div class="canvas-foot" id="site-foot"></div><span class="why-not" id="to-intent-why"></span><button class="btn primary" id="to-intent">Compose the planting</button></footer>
+    </div>
+  </section>
+
+  <!-- 3 · Compose: the same workspace and the same plan, read by spatial function -->
+  <section id="s-intent" class="stage" aria-labelledby="h-intent" hidden>
+    <div class="ws ws-compose">
+      <header class="ws-head"><h2 id="h-intent">Compose</h2><span class="ws-model" id="cws-model">Spatial function plan</span><span class="ws-scale sr" id="cws-scale"></span><ol class="ws-phase seq" id="cws-seq" aria-label="How a bed is composed"></ol><div class="ws-lens" id="fn-legend" role="group" aria-label="Spatial functions"></div></header>
+      <nav class="ws-rail" id="compose-tools" aria-label="Tools"></nav>
+      <div class="ws-canvas site-canvas">
+        <div id="compose-canvas-body" class="canvas-home"><div class="canvas-hint" id="compose-hint"></div></div>
+        <div class="ws-panel" id="cws-panel"><button class="ws-panel-x" data-act="cpanel-close" aria-label="close the panel">×</button><div id="brief-left"></div><div id="cws-evidence" aria-live="polite"></div></div>
+        <div class="ws-zoom" id="cws-zoom"></div>
+        <div class="ws-say" id="cws-say"></div>
+      </div>
+      <aside class="ws-inspector compose-side" id="compose-side" aria-label="Beds and inspector"><div class="bedtabs" id="compose-layers"><h2 class="insp-h">Planting beds</h2><div id="compose-beds"></div></div><div id="brief-right" aria-live="polite"></div></aside>
+      <footer class="ws-status"><div class="canvas-foot" id="compose-foot"></div><span class="why-not" id="generate-why"></span><button class="btn" id="back-site" data-go="site">Back to Shape</button><button class="btn primary" id="generate" disabled>Generate my garden</button></footer>
+    </div>
+  </section>
+
+  <!-- 4 · Garden (document gate; the stage itself is the fixed overlay below) -->
+  <section id="s-gate" class="stage" aria-labelledby="h-gate" hidden>
+    <div class="wrap">
+      <div class="stage-head"><h2 id="h-gate">Your garden.</h2><p id="gate-lede"></p><div class="cta-row"><button class="btn primary big" id="open-garden">Open the garden</button><button class="btn" id="regen-gate">Regenerate</button></div></div>
+      <div id="gate-thumb" title="open the garden"></div>
+    </div>
+  </section>
+</main>
+<footer class="site-foot"><div class="wrap"><span>Planting Intelligence · ARCH 540</span><span id="foot-pi"></span><span>V4.3</span><span id="foot-kb"></span></div></footer>
+
+<!-- 4 · Grow: the same workspace shell and the same plan; the garden is the subject. The one SVG moves here from the site canvas -->
+<div id="stage" hidden>
+  <div class="ws ws-grow">
+    <header class="ws-head" id="gtop"></header>
+    <nav class="ws-rail" id="gtools" aria-label="Tools"></nav>
+    <div class="ws-canvas site-canvas">
+      <div id="garden-canvas-body" class="canvas-home"><div id="gl"></div><div class="canvas-hint" id="garden-hint"></div></div>
+      <div id="banner" hidden></div>
+      <div class="ws-panel" id="gpanel"><button class="ws-panel-x" data-act="gpanel-close" aria-label="close the panel">×</button><div id="drawer"></div><div id="evidence"></div></div>
+      <div class="ws-zoom" id="gzoom"></div>
+      <div class="ws-say" id="gcomposer"></div>
+    </div>
+    <aside class="ws-inspector grow-side" id="grow-side" aria-label="Inspector"><div id="revision" hidden></div><div id="grow-change"></div><div id="plantcard" hidden></div><div id="grow-overview"></div></aside>
+    <footer class="ws-status"><div class="canvas-foot" id="cfoot"></div><span class="why-not" id="grow-why"></span><button class="btn" data-go="intent" id="back-compose">Back to Compose</button><button class="btn primary" id="export" title="model JSON · plan SVG · schedule CSV · assumptions MD — same ids and counts in all">Export</button></footer>
+  </div>
+</div>
+<svg id="svg" aria-label="site plan"></svg>
+<div id="tip"></div>
+<input type="file" id="imgfile" accept="image/*" hidden>
+<div id="loading"><div>loading the knowledge projection…<div id="err"></div></div></div>
+<script type="module" src="./js/app.js"></script>
+</body>
 </html>

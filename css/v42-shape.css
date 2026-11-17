@@ -1,0 +1,71 @@
+/* Planting Intelligence · V4.2 · Shape: editing the site outline (design/js/boundary.js) and the Screen depth offer in Compose.
+   Line language as elsewhere on the plan: solid = what will be, dashed = what was, rust = cut off or refused. */
+
+/* ---- the plan while an outline is being edited: the working ring leads, everything else steps back */
+#svg.be-on .site { stroke-opacity: .25; fill-opacity: .5; }
+#svg.be-on .cframe, #svg.be-on .handle:not(.be) { display: none; }
+#svg.be-on [data-bed], #svg.be-on [data-feat] { opacity: .62; pointer-events: none; }
+#be-ov .be-ring { fill: rgba(91, 122, 87, .07); stroke: var(--olive-deep); stroke-width: 2.2; stroke-linejoin: round; pointer-events: none; }
+#be-ov .be-ring.bad { stroke: var(--rust); fill: rgba(176, 79, 54, .06); stroke-dasharray: 2 5; stroke-linecap: round; }
+#be-ov .be-base { fill: none; stroke: var(--ink-3); stroke-width: 1.2; stroke-dasharray: 6 5; pointer-events: none; }
+#be-ov .be-cut { fill: rgba(176, 79, 54, .28); stroke: var(--rust); stroke-width: 1; stroke-dasharray: 3 3; pointer-events: none; }
+#be-ov .be-len { font: 12px/1 var(--mono); fill: var(--ink-2); paint-order: stroke; stroke: var(--paper); stroke-width: 4px; pointer-events: none; }
+#be-ov .hit { fill: transparent; stroke: none; }
+#be-ov .be-v { cursor: grab; outline: none; }
+#be-ov .be-v circle:not(.hit) { fill: var(--paper); stroke: var(--olive-deep); stroke-width: 2; transition: r .12s; }
+#be-ov .be-v:hover circle:not(.hit) { r: 8; }
+#be-ov .be-v.on circle:not(.hit) { fill: var(--olive-deep); stroke: var(--paper); r: 8; }
+#be-ov .be-v text { font: 500 11px/1 var(--mono); fill: var(--ink-3); pointer-events: none; paint-order: stroke; stroke: var(--paper); stroke-width: 3px; }
+#be-ov .be-v.on text { fill: var(--olive-deep); }
+#be-ov .be-v:focus-visible circle:not(.hit), #be-ov .be-mid:focus-visible circle:not(.hit) { stroke: var(--caramel); stroke-width: 3; }
+#be-ov .be-mid { cursor: copy; outline: none; }
+#be-ov .be-mid circle:not(.hit) { fill: var(--paper); stroke: var(--sage); stroke-width: 1.5; opacity: .9; }
+#be-ov .be-mid:hover circle:not(.hit) { stroke: var(--olive-deep); r: 6; }
+@media (prefers-reduced-motion: reduce) { #be-ov .be-v circle { transition: none; } }
+
+/* ---- the panel: one task in the inspector while the outline is edited */
+#shape-side.be-on > :not(#be-panel) { display: none !important; }
+#be-panel { padding: 4px 2px 16px; }
+#be-panel h3 { font: 600 22px/1.15 var(--display); letter-spacing: -.03em; margin: 2px 0 6px; }
+#be-panel .be-lede { margin: 0 0 14px; font-size: 14px; line-height: 1.5; color: var(--ink-2); }
+#be-panel .be-lede b { font-weight: 600; color: var(--ink); } #be-panel .be-was { color: var(--ink-3); }
+#be-panel .be-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+#be-panel .be-tools .btn, #be-panel .be-undo .btn { min-height: 36px; }
+#be-panel .btn:disabled { opacity: .45; cursor: default; }
+#be-panel .be-size { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--ink-2); }
+#be-panel .be-size input { width: 68px; padding: 6px 8px; font-size: 14px; }
+#be-panel .be-hint { margin: 8px 0 0; font-size: 13px; line-height: 1.45; color: var(--ink-3); }
+#be-panel .be-undo { display: flex; align-items: center; gap: 4px; margin: 14px 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-3); }
+#be-panel .be-undo span { margin-left: 6px; }
+#be-panel .be-status { margin: 14px 0 0; padding: 12px 14px; border-radius: 10px; font-size: 13.5px; line-height: 1.5; background: var(--sage-soft); color: var(--ink); }
+#be-panel .be-status b { font-weight: 600; }
+#be-panel .be-status ul { margin: 6px 0 0; padding-left: 18px; } #be-panel .be-status li + li { margin-top: 4px; } #be-panel .be-status p { margin: 8px 0 0; color: var(--ink-2); }
+#be-panel .be-status.bad { background: var(--rust-soft); border-left: 3px solid var(--rust); }
+#be-panel .be-status.warn { background: var(--caramel-soft); border-left: 3px solid var(--caramel); }
+#be-panel .be-status.ok { background: var(--olive-soft); }
+#be-panel .be-tag { font: 11px/1.6 var(--mono); padding: 0 5px; border: 1px solid var(--line-2); border-radius: 4px; color: var(--ink-2); }
+#be-panel .be-pts { margin: 14px 0 0; font-size: 13px; }
+#be-panel .be-pts summary { cursor: pointer; padding: 8px 0; color: var(--olive-deep); font-weight: 500; }
+#be-panel .be-pts table { width: 100%; border-collapse: collapse; }
+#be-panel .be-pts th, #be-panel .be-pts td { padding: 3px 6px 3px 0; text-align: left; font-weight: 400; color: var(--ink-3); }
+#be-panel .be-pts thead th { font: 11px/1.6 var(--mono); }
+#be-panel .be-pts input { width: 100%; min-width: 0; padding: 5px 8px; font: 13px/1.3 var(--mono); }
+#be-panel .be-pts tr.on input { border-color: var(--olive-deep); }
+#be-panel .be-pts .link { min-width: 28px; min-height: 28px; font: 12px var(--mono); }
+#be-panel .be-actions { position: sticky; bottom: 0; display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; padding: 12px 0 4px; background: linear-gradient(to top, var(--paper) 70%, transparent); }
+#be-panel .be-actions .btn { min-height: 40px; }
+/* a narrow window: the inspector is a sheet under the plan — the panel stays reachable, nothing scrolls sideways */
+@media (max-width: 1000px) { #be-panel { padding: 12px 14px 16px; } #be-panel h3 { font-size: 20px; } #be-panel .be-pts table { table-layout: fixed; } }
+
+/* ---- Compose · Rows: what a second row would take on this bed */
+.be-deepen { margin-top: 8px; padding: 10px 12px; border-radius: 10px; background: var(--paper-2); font-size: 13px; line-height: 1.5; color: var(--ink-2); }
+.be-deepen p { margin: 0 0 8px; } .be-deepen b { font-weight: 600; color: var(--ink); } .be-deepen .btn { min-height: 36px; }
+
+/* V4.3 · P0 */
+.insp-meta.was { font-size: 12.5px; color: var(--ink-3); margin-top: -4px; }
+.pick .pn2 { flex-wrap: wrap; row-gap: 4px; }
+.pick .gate-why { flex: 1 1 100%; font-size: 12px; line-height: 1.35; color: #8a5f1c; } .pick .gate-why.mismatch { color: var(--pi-rust, #a4472c); }
+.be-snap { display: flex; align-items: center; gap: 7px; margin: 8px 0 2px; font-size: 13px; color: var(--ink-2); cursor: pointer; } .be-snap input { accent-color: var(--olive-deep); margin: 0; } .be-snap span { margin-left: auto; font-size: 12px; color: var(--ink-3); }
+.be-remove { margin-top: 8px; } .be-remove .be-ok { display: flex; align-items: center; gap: 7px; margin-top: 6px; font-weight: 500; cursor: pointer; } .be-remove .be-ok input { accent-color: var(--pi-rust, #a4472c); margin: 0; }
+.rl .gate-why { display: block; margin-top: 3px; font-size: 12.5px; line-height: 1.4; color: #8a5f1c; } .rl .gate-why b { font-weight: 600; } .rl .gate-why.mismatch { color: var(--pi-rust, #a4472c); }
+.obj .gate-why { display: block; margin-top: 6px; padding-top: 6px; border-top: 1px dashed var(--line, #d9d4c6); font-size: 12.5px; line-height: 1.4; color: #8a5f1c; } .obj .gate-why b { font-weight: 600; } .obj .gate-why.mismatch { color: var(--pi-rust, #a4472c); }

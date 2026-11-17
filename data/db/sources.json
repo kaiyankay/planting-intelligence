@@ -1,0 +1,739 @@
+{
+  "updated": "2026-11-02",
+  "notes": [
+    "geo_specificity drives ranking (schema rule R5): vancouver > bc > pnw > north_america > global.",
+    "baseline_confidence is the default confidence for a claim extracted from this source before any review.",
+    "url_verified=false means the URL is the known domain and must be checked when the first claim is extracted.",
+    "licence is recorded so extraction stays within terms; MOBOT and OSU are educational/non-commercial; KPU has its own copyright page; Pojar is a book — structured excerpts with page numbers only.",
+    "licence_tier: A = open data, import; B = cite facts, never copy text; C = do not import, link only (kpu, aspca). Checked per source on licence_checked; see HANDOFF §4 and methods.md M8."
+  ],
+  "sources": [
+    {
+      "id": "kpu",
+      "name": "KPU School of Horticulture Plant Database",
+      "type": "database",
+      "url": "https://plantdatabase.kpu.ca/",
+      "url_verified": true,
+      "publisher": "Kwantlen Polytechnic University, Langley BC",
+      "geo_specificity": "bc",
+      "covers_fields": [
+        "hardiness_zone",
+        "mature_height",
+        "mature_spread",
+        "exposure",
+        "soil_type",
+        "water_drainage",
+        "seasonal_interest",
+        "landscape_use",
+        "pest_susceptibility",
+        "form",
+        "habit",
+        "texture",
+        "kpu_plant_type",
+        "origin_status"
+      ],
+      "baseline_confidence": 0.85,
+      "licence": "see https://plantdatabase.kpu.ca/Copyright — check before bulk extraction",
+      "role_in_db": "schema backbone; controlled vocabularies; primary BC source for gate/compare fields",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "gpp",
+      "name": "Great Plant Picks",
+      "type": "database",
+      "url": "https://www.greatplantpicks.org/",
+      "url_verified": true,
+      "publisher": "Elisabeth C. Miller Botanical Garden, Seattle",
+      "geo_specificity": "pnw",
+      "covers_fields": [
+        "mature_height",
+        "mature_spread",
+        "exposure",
+        "water_drainage",
+        "maintenance_level",
+        "seasonal_interest",
+        "landscape_use",
+        "growth_rate"
+      ],
+      "baseline_confidence": 0.85,
+      "licence": "No terms page. Footer (greatplantpicks.org, 2026-10-29): 'Text and photos ©2025 Great Plant Picks/Elisabeth Carey Miller Garden except where otherwise noted'. GPP describes itself as 'the primary educational program of the Elisabeth C. Miller Botanical Garden'.",
+      "role_in_db": "PNW design-oriented recommendations; strongest cultivar coverage for Acer palmatum; second source to create legitimate disagreement with KPU",
+      "accessed": "2026-10-29",
+      "licence_checked": "2026-10-29",
+      "licence_tier": "B",
+      "licence_note": "Facts with credit, no text or photos. Optional: email for explicit academic permission."
+    },
+    {
+      "id": "mobot",
+      "name": "Missouri Botanical Garden Plant Finder",
+      "type": "database",
+      "url": "https://www.missouribotanicalgarden.org/plantfinder/",
+      "url_verified": true,
+      "publisher": "Missouri Botanical Garden",
+      "geo_specificity": "global",
+      "covers_fields": [
+        "hardiness_zone",
+        "mature_height",
+        "mature_spread",
+        "exposure",
+        "water_drainage",
+        "maintenance_level",
+        "seasonal_interest",
+        "pest_susceptibility",
+        "growth_rate"
+      ],
+      "baseline_confidence": 0.8,
+      "licence": "Conditions of Use (missouribotanicalgarden.org/conditions): texts/images copyrighted; 'may not be used for any commercial purpose without permission'; 'may not be re-published in print or electronic form without permission'; 'educators are welcome to print out items'; users may not download pages to mount on their own servers. Plant Finder publishes a citation format (FAQ #1144): (Plant), Missouri Botanical Garden Plant Finder, URL, Accessed (date).",
+      "role_in_db": "most regular field structure; wide coverage; non-local baseline (hardiness given in USDA zones — record with unit USDA)",
+      "accessed": "2026-10-29",
+      "licence_checked": "2026-10-29",
+      "licence_tier": "B",
+      "licence_note": "Non-commercial academic use. Only structured values are stored, with the published citation; no sentences copied. 'Re-published in electronic form' is about their text/images, not facts — Kay to confirm this reading."
+    },
+    {
+      "id": "osu",
+      "name": "Oregon State University Landscape Plants",
+      "type": "database",
+      "url": "https://landscapeplants.oregonstate.edu/",
+      "url_verified": true,
+      "publisher": "Oregon State University, Dept. of Horticulture",
+      "geo_specificity": "pnw",
+      "covers_fields": [
+        "mature_height",
+        "mature_spread",
+        "form",
+        "habit",
+        "texture",
+        "seasonal_interest",
+        "exposure"
+      ],
+      "baseline_confidence": 0.8,
+      "licence": "No terms of use published. Footer: 'Copyright ©2026 Oregon State University'; oregonstate.edu/copyright is a DMCA notice page only. Site is a Dept. of Horticulture teaching resource with a references page.",
+      "role_in_db": "third source for size/form; detailed morphology descriptions",
+      "accessed": "2026-10-29",
+      "licence_checked": "2026-10-29",
+      "licence_tier": "B",
+      "licence_note": "Facts with citation, no text copied."
+    },
+    {
+      "id": "rhs",
+      "name": "Royal Horticultural Society — Plants (plant profiles)",
+      "type": "database",
+      "url": "https://www.rhs.org.uk/plants/",
+      "url_verified": true,
+      "publisher": "Royal Horticultural Society, UK",
+      "geo_specificity": "global",
+      "covers_fields": [
+        "mature_height",
+        "mature_spread",
+        "time_to_intended_size",
+        "exposure",
+        "soil_type",
+        "water_drainage",
+        "hardiness_zone",
+        "seasonal_interest",
+        "pest_susceptibility",
+        "maintenance_level"
+      ],
+      "baseline_confidence": 0.85,
+      "licence": "No site-wide terms page found (2026-10-29); rhs.org.uk/terms-and-conditions redirects to ChatBotanist terms. Section-specific terms (VLE, heritage catalogue) state RHS owns copyright in site content and bar copying except personal, non-commercial use. Plant profiles carry no licence statement.",
+      "licence_checked": "2026-10-29",
+      "licence_tier": "B",
+      "licence_note": "Facts with citation only (UK hardiness ratings H1–H7 are an RHS scheme — record as unit 'RHS'). Unique value: 'time to ultimate height'.",
+      "role_in_db": "only source giving time to ultimate height (survey c2 gap); cultivar-level sizes; UK-based, so climate context differs from Vancouver",
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "eflora",
+      "name": "E-Flora BC: Electronic Atlas of the Flora of British Columbia",
+      "type": "database",
+      "url": "https://linnet.geog.ubc.ca/biodiversity/eflora/",
+      "url_verified": true,
+      "publisher": "UBC Department of Geography",
+      "geo_specificity": "bc",
+      "covers_fields": [
+        "origin_status",
+        "ecological_value",
+        "vancouver_context"
+      ],
+      "baseline_confidence": 0.9,
+      "licence": "Home page (linnet.geog.ubc.ca/biodiversity/eflora/, 2026-10-29): 'All content on E-Flora BC is covered by Canadian Copyright Law.' Photographs: 'adherence to copyright law is the responsibility of the photographer' — 'Contact the photographers directly for permissions for photo use.' No terms-of-use page; no data licence stated.",
+      "role_in_db": "authority for native status and BC distribution/habitat",
+      "accessed": "2026-10-29",
+      "atlas_url_pattern": "https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?sciname=<Genus%20species>",
+      "licence_checked": "2026-10-29",
+      "licence_tier": "B",
+      "licence_note": "Facts (native status, habitat class, BC distribution) with citation; no text or photos. Atlas pages carry a recommended citation line — record it per claim when present."
+    },
+    {
+      "id": "usda_plants",
+      "name": "USDA PLANTS Database",
+      "type": "database",
+      "url": "https://plants.usda.gov/",
+      "api": "https://plantsservices.sc.egov.usda.gov/api/PlantProfile?symbol=<SYMBOL>",
+      "url_verified": true,
+      "publisher": "USDA Natural Resources Conservation Service",
+      "geo_specificity": "north_america",
+      "covers_fields": [
+        "origin_status",
+        "kpu_plant_type",
+        "mature_height",
+        "ecological_value"
+      ],
+      "baseline_confidence": 0.8,
+      "licence": "USDA Policies and Links (usda.gov/about-usda/policies-and-links, 2026-10-29): 'Most information presented on the USDA Web site is considered public domain information. Public domain information may be freely distributed or copied, but use of appropriate byline/photo/image credits is requested. Attribution may be cited as follows: \"U.S. Department of Agriculture.\"' Some materials are third-party copyrighted and labelled as such.",
+      "licence_checked": "2026-10-29",
+      "licence_tier": "A",
+      "licence_note": "Public domain, attribute 'U.S. Department of Agriculture'. US-centric: native status is for the US; use for origin and basic traits only.",
+      "role_in_db": "open baseline for native status / growth habit of natives; HANDOFF §4 tier A",
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "growgreen",
+      "name": "Grow Green Guide (Metro Vancouver)",
+      "type": "municipal",
+      "url": "https://www.growgreenguide.ca/",
+      "url_verified": false,
+      "publisher": "Metro Vancouver with UBC Botanical Garden",
+      "geo_specificity": "vancouver",
+      "covers_fields": [
+        "water_drainage",
+        "exposure",
+        "maintenance_level",
+        "ecological_value",
+        "landscape_use",
+        "vancouver_context"
+      ],
+      "baseline_confidence": 0.85,
+      "licence": "to check",
+      "role_in_db": "Metro Vancouver site-condition matching; most local design-facing source",
+      "accessed": null
+    },
+    {
+      "id": "cov_trees",
+      "name": "City of Vancouver Public Trees (Open Data)",
+      "type": "municipal",
+      "url": "https://opendata.vancouver.ca/explore/dataset/public-trees/",
+      "api": "https://opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/public-trees",
+      "url_verified": true,
+      "publisher": "City of Vancouver",
+      "geo_specificity": "vancouver",
+      "covers_fields": [
+        "in_vancouver_street_tree_list",
+        "vancouver_context",
+        "local_mature_size"
+      ],
+      "baseline_confidence": 0.9,
+      "licence": "Open Government Licence – Vancouver (https://opendata.vancouver.ca/pages/licence/) — open data, values stored directly",
+      "licence_verified": "2026-10-29",
+      "role_in_db": "evidence that a species is actually planted in the city; counts, height class and DBH support local_mature_size",
+      "snapshot": {
+        "data_processed": "2026-11-02",
+        "records_count": 184152,
+        "fields": [
+          "asset_id",
+          "address",
+          "common_name",
+          "genus_name",
+          "species_name",
+          "cultivar_name",
+          "height_m",
+          "diameter_cm",
+          "local_area",
+          "geom",
+          "geo_point_2d"
+        ],
+        "note": "used for the 2026-11-02 claims on Cercidiphyllum japonicum and Cornus nuttallii; the Acer palmatum claims stay on the 2026-10-26 snapshot (methods M6 — refresh is a decision for Kay)"
+      },
+      "data_notes": [
+        "No date_planted field in the 2026-10-26 snapshot (earlier releases had one) — time_to_intended_size cannot be derived from this source until it returns.",
+        "height_m is a banded class, not a measurement: values cluster at 4.6 / 7.6 / 10.7 / 13.7 / 16.8 m (15 / 25 / 35 / 45 / 55 ft midpoints).",
+        "cultivar_name 'NONE' means not recorded, not the straight species."
+      ],
+      "methods": {
+        "established_proxy": "trees without a planting date: DBH >= 20 cm = 'established (DBH >= 20 cm, proxy)'; threshold written into each claim's value.threshold_dbh_cm and context; confidence 0.65, below the 0.75 of age cohorts for trees with date_planted; the two subsets are never combined (methods.md M2)",
+        "cultivar_groups": "cultivar label with n >= 50 gets its own claim group, context cultivar:'Name'; smaller labels stay in the species-level claims and are listed in their note; unlabelled trees are their own class cultivar:(unrecorded), never merged into a cultivar (methods.md M3)",
+        "height_class": "height_m is a banded class (15/25/35/45/55 ft midpoints); claims say 'height class' and set value.measure accordingly (methods.md M4)",
+        "confidence": "presence 0.95, counts 0.9, label frequencies 0.85, DBH 0.8, height class 0.75, age cohort 0.75, established proxy 0.65 (methods.md M1)"
+      },
+      "local_copy": "data/cov_trees/ (fetched by tools/cov_trees_fetch.py)",
+      "accessed": "2026-11-02",
+      "snapshot_history": [
+        {
+          "data_processed": "2026-10-26",
+          "records_count": 184217,
+          "fields": [
+            "asset_id",
+            "address",
+            "common_name",
+            "genus_name",
+            "species_name",
+            "cultivar_name",
+            "height_m",
+            "diameter_cm",
+            "local_area",
+            "geom",
+            "geo_point_2d"
+          ]
+        }
+      ],
+      "coverage_check_2026-11-02": {
+        "in_inventory": {
+          "cercidiphyllum-japonicum": 2647,
+          "cornus-nuttallii": 620,
+          "acer-palmatum": "1848 (2026-10-26 snapshot)"
+        },
+        "absent": [
+          "cornus-sericea",
+          "arctostaphylos-uva-ursi",
+          "polystichum-munitum",
+          "achillea-millefolium",
+          "gaillardia-aristata",
+          "gaultheria-shallon",
+          "vaccinium-ovatum"
+        ],
+        "note": "absence from a street/park TREE inventory says nothing about whether a shrub, fern or perennial grows in Vancouver"
+      }
+    },
+    {
+      "id": "pojar",
+      "name": "Pojar, J. & MacKinnon, A. — Plants of the Pacific Northwest Coast (Lone Pine)",
+      "type": "literature",
+      "url": null,
+      "url_verified": false,
+      "publisher": "Lone Pine Publishing",
+      "geo_specificity": "pnw",
+      "covers_fields": [
+        "origin_status",
+        "ecological_value",
+        "behaviour_with_others",
+        "vancouver_context",
+        "mature_height"
+      ],
+      "baseline_confidence": 0.85,
+      "licence": "copyrighted book — structured excerpts with page numbers only, no passages",
+      "role_in_db": "habitat, plant-community associations and ethnobotany for natives; main source for Gaultheria–Vaccinium relations",
+      "accessed": null
+    },
+    {
+      "id": "iscbc",
+      "name": "Invasive Species Council of BC",
+      "type": "municipal",
+      "url": "https://bcinvasives.ca/",
+      "url_verified": true,
+      "publisher": "ISCBC",
+      "geo_specificity": "bc",
+      "covers_fields": [
+        "invasive_status"
+      ],
+      "baseline_confidence": 0.95,
+      "licence": "No terms of use. Footer: '© 2023 Invasive Species Council of BC. All rights reserved.' Only a privacy policy PDF is linked (Policy 304, Feb 2019).",
+      "role_in_db": "authority for the invasive_status gate",
+      "accessed": "2026-10-29",
+      "licence_checked": "2026-10-29",
+      "licence_tier": "B",
+      "licence_note": "The only value taken is whether a species appears on their lists (a fact about listing, not their content)."
+    },
+    {
+      "id": "aspca",
+      "name": "ASPCA Toxic and Non-Toxic Plants List",
+      "type": "database",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants",
+      "url_verified": true,
+      "publisher": "ASPCA Animal Poison Control",
+      "geo_specificity": "global",
+      "covers_fields": [],
+      "baseline_confidence": 0.9,
+      "licence": "Legal Information / Terms of Use (aspca.org/about-us/legal-information, last modified 2026-10-28): website 'solely for personal, non-commercial use'; 'You must not copy, download, reproduce, republish, reuse, distribute, transmit, store, create derivative works of, publicly display, or modify any of the material on the Website for any purpose without the ASPCA's express written permission'; one personal copy of a page allowed; prohibited: 'any robot, spider or other automatic device' and 'any manual process to monitor or copy any of the material'.",
+      "role_in_db": "link only (tier C). Toxicity needs another source: check terms of Cornell Poisonous Plants, Canadian poison centres, CVMA first.",
+      "accessed": "2026-10-29",
+      "licence_checked": "2026-10-29",
+      "licence_tier": "C",
+      "licence_note": "D1 2026-10-29: demoted to tier C — terms prohibit storing any material and any automated or manual copying. Link only; nothing from this source is stored. The one claim taken on 2026-10-29 (acer-palmatum:toxicity:aspca01) is retired."
+    },
+    {
+      "id": "nats",
+      "name": "NATS Nursery catalogue",
+      "type": "database",
+      "url": "https://www.natsnursery.com/",
+      "url_verified": false,
+      "publisher": "NATS Nursery Ltd., Langley BC",
+      "geo_specificity": "vancouver",
+      "covers_fields": [
+        "local_availability",
+        "origin_status"
+      ],
+      "baseline_confidence": 0.7,
+      "licence": "commercial catalogue — availability only",
+      "role_in_db": "named by a survey respondent (b3); local availability; indirect evidence of local suitability",
+      "accessed": null
+    },
+    {
+      "id": "inat",
+      "name": "iNaturalist observations",
+      "type": "database",
+      "url": "https://www.inaturalist.org/",
+      "url_verified": true,
+      "publisher": "iNaturalist / California Academy of Sciences",
+      "geo_specificity": "vancouver",
+      "covers_fields": [
+        "vancouver_context",
+        "seasonal_interest"
+      ],
+      "baseline_confidence": 0.5,
+      "licence": "Site terms page (inaturalist.org/pages/terms) could not be read on 2026-10-29: Cloudflare bot check blocked both WebFetch and the built-in browser. Recorded instead: (1) api.inaturalist.org swagger info.description — public read API, 'The domain a photo is hosted under reflects the license under which the photo is being shared'; (2) GBIF dataset 'iNaturalist Research-grade Observations' licence CC-BY-NC 4.0, built from observations 'Published under one of the following licenses or waivers' CC0 / CC-BY / CC-BY-NC. Per-observation licences are user-chosen and exposed as license_code.",
+      "role_in_db": "named by a survey respondent (b3); corroborates local presence and seasonal appearance; low baseline confidence (unverified community IDs)",
+      "accessed": "2026-11-02",
+      "api": "https://api.inaturalist.org/v1/",
+      "licence_texts": "data/inat/licence_texts.json",
+      "licence_checked": "2026-10-29",
+      "licence_tier": "B",
+      "licence_note": "Only aggregate counts and month histograms over observations licensed CC0 / CC-BY / CC-BY-NC are stored (methods M13); no observation ids, usernames, coordinates or photos. Attribution: 'iNaturalist community observations, CC0/CC-BY/CC-BY-NC, via api.inaturalist.org'. Tier B confirmed 2026-10-30; next step: switch to the GBIF export of research-grade observations (dataset licence CC-BY-NC 4.0) so the licence is a single documented dataset licence rather than per-observation choices.",
+      "methods": {
+        "place": "Greater Vancouver, BC — iNaturalist place 27530 (Metro Vancouver regional district)",
+        "filters": "verifiable=true, license=cc0,cc-by,cc-by-nc",
+        "phenology": "Plant Phenology annotations (term 12): flowering (13), fruiting (14); month histograms",
+        "see": "methods.md M13"
+      },
+      "licence_tier_confirmed": "2026-10-30 by Kay (overnight brief, Track B item 3)",
+      "note": "switch to GBIF export for research-grade licensing",
+      "pulls": [
+        "data/inat/greater_vancouver_2026-10-29.json (3 plants)",
+        "data/inat/greater_vancouver_2026-11-03.json (10 plants; tools/inat_fetch.py; file date is UTC)"
+      ]
+    },
+    {
+      "id": "model",
+      "name": "Language-model inference (no external source)",
+      "type": "model",
+      "url": null,
+      "url_verified": true,
+      "geo_specificity": "global",
+      "covers_fields": [
+        "*"
+      ],
+      "baseline_confidence": 0.4,
+      "confidence_cap": 0.5,
+      "role_in_db": "placeholder values written by the AI while a field is unfilled; always status=unverified; must be replaced or confirmed by a real source"
+    },
+    {
+      "id": "survey",
+      "name": "ARCH 540 Planting Intelligence user survey — 'How you work with plants'",
+      "type": "practitioner",
+      "url": "https://kaiyankay.github.io/planting-survey/",
+      "url_verified": true,
+      "publisher": "research team (UBC MLA, ARCH 540)",
+      "geo_specificity": "vancouver",
+      "questions_version": 1,
+      "responses_as_of": {
+        "date": "2026-11-14",
+        "n": 15
+      },
+      "role_in_db": "parent record; individual respondents below are the citable sources",
+      "export_bug": "d2 / attached_note text submitted before 2026-10-29 lost its spaces (form bug fixed in planting-survey 00ee216); wording restored by hand in data/survey/mapping-<date>.json (M21)",
+      "privacy": "response ids and timestamps live only in inputs/survey/respondent_map.json (gitignored); respondent records here are roles + experience only (brief 2026-11-02 §02)"
+    },
+    {
+      "id": "survey-r01",
+      "parent": "survey",
+      "type": "practitioner",
+      "roles": [
+        "Landscape designer or landscape architect"
+      ],
+      "experience": [
+        "Studio or academic projects"
+      ],
+      "observer_background": "landscape designer; studio/academic planting experience",
+      "geo_specificity": "vancouver",
+      "baseline_confidence": 0.7
+    },
+    {
+      "id": "survey-r02",
+      "parent": "survey",
+      "type": "practitioner",
+      "roles": [
+        "Student in a related field"
+      ],
+      "experience": [
+        "None yet"
+      ],
+      "observer_background": "related-field student; no planting experience yet",
+      "geo_specificity": "vancouver",
+      "baseline_confidence": 0.4,
+      "note": "answered e2 only; no plant claims"
+    },
+    {
+      "id": "survey-r03",
+      "parent": "survey",
+      "type": "practitioner",
+      "roles": [
+        "MLA student",
+        "Landscape designer or landscape architect",
+        "Student in a related field"
+      ],
+      "experience": [
+        "Studio or academic projects",
+        "Professional projects",
+        "Personal gardening"
+      ],
+      "observer_background": "MLA student and practising landscape designer; studio, professional and personal-garden experience",
+      "geo_specificity": "vancouver",
+      "baseline_confidence": 0.8
+    },
+    {
+      "id": "survey-r04",
+      "parent": "survey",
+      "type": "practitioner",
+      "roles": [
+        "MLA student",
+        "Student in a related field"
+      ],
+      "experience": [
+        "Studio or academic projects"
+      ],
+      "observer_background": "MLA student; studio planting experience",
+      "geo_specificity": "vancouver",
+      "baseline_confidence": 0.6
+    },
+    {
+      "id": "survey-r05",
+      "parent": "survey",
+      "type": "practitioner",
+      "roles": [
+        "MLA student"
+      ],
+      "experience": [
+        "Studio or academic projects",
+        "Professional projects"
+      ],
+      "observer_background": "MLA student; studio and professional planting experience",
+      "geo_specificity": "vancouver",
+      "baseline_confidence": 0.75
+    },
+    {
+      "id": "survey-r06",
+      "parent": "survey",
+      "type": "practitioner",
+      "roles": [
+        "MLA student",
+        "Landscape designer or landscape architect",
+        "Student in a related field"
+      ],
+      "experience": [
+        "Studio or academic projects",
+        "Professional projects"
+      ],
+      "observer_background": "MLA student and practising landscape designer; studio and professional experience",
+      "geo_specificity": "vancouver",
+      "baseline_confidence": 0.8
+    },
+    {
+      "id": "robinson",
+      "name": "Robinson, N. — The Planting Design Handbook, 3rd ed. (Routledge, 2016)",
+      "type": "literature",
+      "url": "https://www.routledge.com/The-Planting-Design-Handbook/Robinson/p/book/9781472415493",
+      "url_verified": false,
+      "publisher": "Routledge",
+      "geo_specificity": "global",
+      "covers_fields": [
+        "landscape_use"
+      ],
+      "baseline_confidence": 0.8,
+      "licence": "copyrighted book — chapter headings cited from the published table of contents (checked 2026-11-02); no passages copied",
+      "licence_tier": "B",
+      "role_in_db": "Z dimension: spatial characteristics of plants (height bands, ch. 3), creating spaces with plants (enclosure, permeability, ch. 4), plant assemblages and canopy structures (ch. 8), accents and planting patterns (ch. 12)",
+      "accessed": "2026-11-02",
+      "note": "page-level wording of every requires_trait relation is 'to confirm' until Kay checks the chapter"
+    },
+    {
+      "id": "rainer_west",
+      "name": "Rainer, T. & West, C. — Planting in a Post-Wild World (Timber Press, 2015)",
+      "type": "literature",
+      "url": "https://www.timberpress.com/9781604695533/planting-in-a-post-wild-world/",
+      "url_verified": false,
+      "publisher": "Timber Press",
+      "geo_specificity": "north_america",
+      "covers_fields": [
+        "landscape_use"
+      ],
+      "baseline_confidence": 0.8,
+      "licence": "copyrighted book — design-layer terms cited (structural and framework, seasonal theme, ground cover, dynamic filler); no passages copied",
+      "licence_tier": "B",
+      "role_in_db": "Z dimension: planting roles as design layers of a designed plant community",
+      "accessed": "2026-11-02"
+    },
+    {
+      "id": "oudolf_kingsbury",
+      "name": "Oudolf, P. & Kingsbury, N. — Planting: A New Perspective (Timber Press, 2013)",
+      "type": "literature",
+      "url": "https://www.timberpress.com/9781604693706/planting/",
+      "url_verified": false,
+      "publisher": "Timber Press",
+      "geo_specificity": "global",
+      "covers_fields": [
+        "landscape_use"
+      ],
+      "baseline_confidence": 0.8,
+      "licence": "copyrighted book — composition terms cited (matrix, primary, scatter, drift, block); no passages copied",
+      "licence_tier": "B",
+      "role_in_db": "Z dimension: planting composition patterns",
+      "accessed": "2026-11-02"
+    },
+    {
+      "id": "mooney",
+      "name": "Mooney, P. — Planting Design: Connecting People and Place (Routledge, 2020)",
+      "type": "literature",
+      "url": "https://www.routledge.com/Planting-Design-Connecting-People-and-Place/Mooney/p/book/9781138026056",
+      "url_verified": true,
+      "publisher": "Routledge",
+      "geo_specificity": "north_america",
+      "covers_fields": [
+        "landscape_use"
+      ],
+      "baseline_confidence": 0.8,
+      "licence": "copyrighted book — chapter titles cited from the publisher page (checked 2026-11-02); no passages copied",
+      "licence_tier": "B",
+      "role_in_db": "Z dimension: space and place (ch. 5), elements of design (ch. 6) — the local (UBC) planting-design text",
+      "accessed": "2026-11-02"
+    },
+    {
+      "id": "survey-r07",
+      "parent": "survey",
+      "type": "practitioner",
+      "roles": [
+        "Landscape designer or landscape architect"
+      ],
+      "experience": [
+        "Personal gardening",
+        "Professional projects",
+        "Studio or academic projects"
+      ],
+      "observer_background": "practising landscape designer; personal-garden, professional and studio planting experience",
+      "geo_specificity": "vancouver",
+      "baseline_confidence": 0.8
+    },
+    {
+      "id": "survey-r08",
+      "parent": "survey",
+      "type": "practitioner",
+      "roles": [
+        "MLA student"
+      ],
+      "experience": [
+        "Studio or academic projects",
+        "Personal gardening"
+      ],
+      "observer_background": "MLA student; studio and personal-garden planting experience",
+      "geo_specificity": "vancouver",
+      "baseline_confidence": 0.65
+    },
+    {
+      "id": "survey-r09",
+      "parent": "survey",
+      "type": "practitioner",
+      "roles": [
+        "Student in a related field"
+      ],
+      "experience": [
+        "None yet"
+      ],
+      "observer_background": "related-field student; no planting experience yet",
+      "geo_specificity": "vancouver",
+      "baseline_confidence": 0.4,
+      "note": "no plant list; e1/e2/c-section answers only"
+    },
+    {
+      "id": "survey-r10",
+      "parent": "survey",
+      "type": "practitioner",
+      "roles": [
+        "MLA student",
+        "Other: Former professional gardener"
+      ],
+      "experience": [
+        "Studio or academic projects",
+        "Personal gardening",
+        "Professional projects"
+      ],
+      "observer_background": "MLA student; former professional gardener; studio, personal-garden and professional planting experience",
+      "geo_specificity": "vancouver",
+      "baseline_confidence": 0.8
+    },
+    {
+      "id": "survey-r11",
+      "parent": "survey",
+      "type": "practitioner",
+      "roles": [
+        "MLA student"
+      ],
+      "experience": [
+        "Studio or academic projects",
+        "Personal gardening",
+        "Professional projects"
+      ],
+      "observer_background": "MLA student; studio, personal-garden and professional planting experience",
+      "geo_specificity": "vancouver",
+      "baseline_confidence": 0.8
+    },
+    {
+      "id": "survey-r12",
+      "parent": "survey",
+      "type": "practitioner",
+      "roles": [
+        "MLA student"
+      ],
+      "experience": [
+        "Personal gardening"
+      ],
+      "observer_background": "MLA student; personal-garden planting experience",
+      "geo_specificity": "vancouver",
+      "baseline_confidence": 0.65
+    },
+    {
+      "id": "survey-r13",
+      "parent": "survey",
+      "type": "practitioner",
+      "roles": [
+        "Student in a related field"
+      ],
+      "experience": [
+        "None yet"
+      ],
+      "observer_background": "related-field student; no planting experience yet",
+      "geo_specificity": "vancouver",
+      "baseline_confidence": 0.4,
+      "note": "no plant list; e1/e2/c-section answers only"
+    },
+    {
+      "id": "survey-r14",
+      "parent": "survey",
+      "type": "practitioner",
+      "roles": [
+        "Landscape designer or landscape architect"
+      ],
+      "experience": [
+        "Professional projects"
+      ],
+      "observer_background": "practising landscape designer; professional planting experience",
+      "geo_specificity": "vancouver",
+      "baseline_confidence": 0.8
+    },
+    {
+      "id": "survey-r15",
+      "parent": "survey",
+      "type": "practitioner",
+      "roles": [
+        "Landscape designer or landscape architect"
+      ],
+      "experience": [
+        "Professional projects",
+        "Personal gardening",
+        "Studio or academic projects"
+      ],
+      "observer_background": "practising landscape designer; professional, personal-garden and studio planting experience",
+      "geo_specificity": "vancouver",
+      "baseline_confidence": 0.8,
+      "privacy_note": "one further self-reported role withheld from the public record (unique combination in the sample; re-identification risk)"
+    }
+  ]
+}

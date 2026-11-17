@@ -1,0 +1,42 @@
+/* Planting Intelligence · V4.1 brand-type trial (2026-11-16). NOT the type system: this sheet is loaded by platform/js/platform.js only
+   when a trial variant is asked for (?type=a|b|c, kept for the tab), so the V4 default — Bricolage Grotesque / DM Sans / DM Mono — is
+   untouched until Kay confirms a variant.
+
+   The face is Kay's own typeface, family name "nct127" (one style: Regular, usWeightClass 500; 465 glyphs, Latin + Latin Extended-A;
+   no italic, no arrows). platform/fonts/nct127-Regular.woff2 is a lossless WOFF2 re-wrap of her TTF: outlines, metrics, kerning
+   (GPOS kern) and name table are unchanged. Used here with her permission for this website.
+
+     a   wordmark only
+     b   wordmark + the Imagine headline
+     c   wordmark + the main page titles of every destination
+
+   Body text stays DM Sans, records stay DM Mono, scientific names stay DM Sans italic. A character the face lacks (→ for one) falls
+   through to Bricolage Grotesque, then DM Sans; nothing is synthesised: no faux bold, no faux italic. */
+@font-face { font-family: "nct127"; src: url("../fonts/nct127-Regular.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+:root { --pi-brand: "nct127", "Bricolage Grotesque", "DM Sans", -apple-system, "Helvetica Neue", sans-serif; }
+
+/* a · b · c — the wordmark. The face is wider and more open than Bricolage at 650, so it is set a little smaller and without the
+   negative tracking that Bricolage needs. */
+html[data-type] .pi-wordmark, html[data-type] body.pi-page .pi-top a.pi-wordmark, html[data-type] #top .wordmark {
+  font-family: var(--pi-brand); font-weight: 500; font-size: 17px; letter-spacing: .005em; font-synthesis: none; font-kerning: normal; }
+html[data-type] .pi-wordmark::before { font-family: var(--pi-brand); font-weight: 500; }
+
+/* b · c — the Imagine headline */
+html[data-type="b"] .hero h1, html[data-type="c"] .hero h1 {
+  font-family: var(--pi-brand); font-weight: 500; font-size: clamp(50px, 5.6vw, 90px); line-height: .98; letter-spacing: -.02em; font-synthesis: none; font-kerning: normal; }
+
+/* c — the main title of each destination (one per page). Panel, card and section headings stay Bricolage Grotesque. */
+html[data-type="c"] .pi-mast h1, html[data-type="c"] .pi-hero h1, html[data-type="c"] .ab-mast h1, html[data-type="c"] .kn .kn-mast h1,
+html[data-type="c"] .stage-head h2, html[data-type="c"] [data-type-title] {
+  font-family: var(--pi-brand); font-weight: 500; letter-spacing: -.015em; line-height: 1.04; font-synthesis: none; font-kerning: normal; }
+html[data-type="c"] .pi-mast h1, html[data-type="c"] .ab-mast h1 { font-size: calc(var(--pi-t-page) * .9); }
+
+/* the trial switch: only present while a trial is on */
+.pi-typeswitch { position: fixed; left: 14px; bottom: 14px; z-index: 90; display: flex; align-items: center; gap: 2px; padding: 4px; border: 1px solid var(--pi-line-2, #cfd3c8); border-radius: 999px;
+  background: var(--pi-paper, #fffdf8); box-shadow: 0 6px 20px rgb(40 60 45 / .12); font: 12px/1 var(--pi-sans, "DM Sans", sans-serif); color: var(--pi-ink-2, #555b51); }
+.pi-typeswitch span { padding: 0 8px 0 10px; font: 11px/1 var(--pi-mono, "DM Mono", monospace); letter-spacing: .04em; text-transform: uppercase; }
+.pi-typeswitch a { padding: 6px 10px; border-radius: 999px; color: inherit; text-decoration: none; white-space: nowrap; }
+.pi-typeswitch a:hover { background: var(--pi-sage, #e4ebdd); }
+.pi-typeswitch a[aria-current="true"] { background: var(--pi-olive-deep, #365b42); color: #fff; }
+@media (max-width: 560px) { .pi-typeswitch span { display: none; } }
+@media print { .pi-typeswitch { display: none; } }
