@@ -1,5 +1,9 @@
 # Planting Intelligence
 
+> **Archived (2026-11-17).** This is the October 2026 mid-review prototype. The project continues in
+> [kaiyankay/planting-db](https://github.com/kaiyankay/planting-db); the current version is
+> **<https://kaiyankay.github.io/planting-db/platform-v4-3-preview/>**.
+
 *Exploring knowledge-driven AI for planting design.* UBC ARCH 540, Assignment 2 (mid review, October 2026).
 
 **[Open the live prototype →](https://kaiyankay.github.io/planting-intelligence/)** · [Watch the mid-review video](https://kaiyankay.github.io/planting-intelligence/video.html)
